@@ -4,17 +4,25 @@ The skill supplies instructions, templates and interface metadata. It installs n
 
 ## First-use setup
 
-Claude has two install routes and they behave differently.
+Each host family has a folder route that can run the board and save the record, and a chat route that cannot. Install the identical `fitness-review-board/` folder either way; keep its single root intact.
 
-**Claude.ai:** **Customize → Skills → upload the skill ZIP → enable it**, following the [current official instructions](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills). Keep the single `fitness-review-board/` root intact. Claude's guide requires code execution to be enabled. If Skills or upload is unavailable, check that setting and any organization restrictions using the linked guide. Explain the needed setting; do not change it automatically.
+### Claude
 
-**Claude Code:** put the `fitness-review-board/` folder in `~/.claude/skills/` for all projects, or in a project's `.claude/skills/`. It loads on the next turn and `/fitness-review-board` starts it explicitly. This is the route that can actually run the board and save the record.
+**Claude Code:** put the folder in `~/.claude/skills/` for all projects, or in a project's `.claude/skills/`. It loads on the next turn and `/fitness-review-board` starts it explicitly. This is the Claude route that can actually run the board and save the record.
+
+**Claude.ai:** **Customize → Skills → upload the skill ZIP → enable it**, following the [current official instructions](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills). Claude's guide requires code execution to be enabled. If Skills or upload is unavailable, check that setting and any organization restrictions using the linked guide. Explain the needed setting; do not change it automatically.
+
+### ChatGPT and Codex
+
+**Codex:** put the folder in `~/.codex/skills/`. `$fitness-review-board` starts it, and `agents/openai.yaml` in the folder supplies the display name and default prompt. This is the OpenAI route that can actually run the board and save the record.
+
+**ChatGPT app:** no folder install exists. The athlete pastes the starter prompt and their current `athlete.md`, or keeps both in a Project. Ask for the record at the start of a conversation; it cannot be retrieved otherwise.
 
 Then say: “Use fitness-review-board. Start with my goals and current workouts, and keep a Training Record.” The discovery description stays under 200 characters to satisfy both the Help Center's shorter limit and broader platform guidance.
 
 A private Project can collect the conversation and latest `athlete.md`; Rowan creates that record during onboarding. A generated replacement does not automatically replace Project knowledge. When no write tool exists, ask the user to replace the file at meaningful check-ins, not every casual message. See [memory](memory.md).
 
-For a full automated board, prefer a host that actually exposes separate reviewer tasks: this can include Claude Code, Cowork, or Codex. Confirm against the [Claude tool map](#claude-tool-map) rather than the product name. [Cowork documentation](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork) describes files and subagents, and [Claude Code documentation](https://code.claude.com/docs/en/sub-agents) describes separate contexts. Product names do not prove the current session has those tools. If normal Claude chat lacks them, explain that intake/logging works and suggest an available agent-capable mode; offer manual review only if the user wants it. Never replace independent execution with role-play to make setup appear easier.
+For a full automated board, prefer a host that actually exposes separate reviewer tasks: this can include Claude Code, Cowork, or Codex. Confirm against the [Claude tool map](#claude-tool-map) or the [ChatGPT and Codex tool map](#chatgpt-and-codex-tool-map) rather than the product name. [Cowork documentation](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork) describes files and subagents, and [Claude Code documentation](https://code.claude.com/docs/en/sub-agents) describes separate contexts. Product names do not prove the current session has those tools. If a plain chat surface lacks them, explain that intake/logging works and suggest an available agent-capable mode; offer manual review only if the user wants it. Never replace independent execution with role-play to make setup appear easier.
 
 ## Claude tool map
 
@@ -29,6 +37,20 @@ Claude surfaces differ. Read the tools actually present in this session; a produ
 | Background upkeep | Only a real scheduling tool exposed in this session. Reuse an existing matching job and store its actual identifier. | On-use checks only; say so once. |
 
 Subagents in a Claude session usually share this model and prompt lineage. A separate context satisfies this board's independence rule; it does not deliver an independent model or independent errors. Record the execution mode exactly that way and do not upgrade the claim. A subagent's report returns to Rowan and is not shown to the user, so surface the findings the user needs. Give each reviewer a read-only brief; reviewers never write the canonical record.
+
+## ChatGPT and Codex tool map
+
+The same rule applies: read the tools actually present in this session.
+
+| Need | Codex | ChatGPT chat |
+|---|---|---|
+| Independent reviewers | A delegation or separate-task tool if this session exposes one: one call per reviewer, fresh context, bounded prompt, no peer verdicts. If the session has none, say so and use the manual fallback; a shell is not a reviewer. | Absent. Intake, logging, education and exact retrieval still work; a new prescription needs the manual fallback or an agent-capable session. |
+| Training Record | Real shell and filesystem: read/write `athlete.md` at a user-owned path outside `~/.codex/skills/`. Read back and compare before saying **FILE_SAVED_VERIFIED**. | Code interpreter is per-conversation storage. Files written there do not survive the conversation, so that is **replacement ready**, not saved. A Project holds a file the athlete replaces by hand. |
+| HASH_BOUND digests | Shell: `shasum -a 256 payload.txt` (or `sha256sum`) over the frozen bytes. | No persistent shell; use TEXT_BOUND. |
+| TEXT_BOUND comparison | Shell `diff` between the returned `input_echo` and the retained canonical packet. | Explicit user comparison attestation. |
+| Background upkeep | Only a real scheduling tool exposed in this session. Reuse an existing matching job and store its actual identifier. | On-use checks only; say so once. |
+
+A Codex session's own reasoning is not a reviewer, and neither is a second prompt in the same context. The independence rule is unchanged across hosts: a reviewer runs in a context that never saw the author's deliberation or a peer verdict. Where the delegated worker shares this model, record separation rather than independent error, exactly as for Claude.
 
 ## Capability receipt
 
@@ -56,7 +78,7 @@ If neither route works, keep new prescriptions pending and continue useful intak
 
 ## Install, update and remove
 
-For Claude Code, copy the reviewed `fitness-review-board/` folder into `~/.claude/skills/` or a project's `.claude/skills/`. For local Codex, install it into the user's skills directory through the supported installer workflow or a verified local copy for an authored package. It becomes available on the next turn. Keep personal files outside that directory. Compare installed/exported bytes to the reviewed manifest; replacing a previously installed version preserves a rollback copy and never overwrites user records. No background process starts.
+Copy the reviewed `fitness-review-board/` folder into the host's skills directory: `~/.claude/skills/` or a project's `.claude/skills/` for Claude Code, `~/.codex/skills/` for Codex, or the supported installer workflow where the host provides one. It becomes available on the next turn. Keep personal files outside that directory. Compare installed/exported bytes to the reviewed manifest; replacing a previously installed version preserves a rollback copy and never overwrites user records. No background process starts.
 
 Share the clean skill ZIP plus a short setup message. Personal starters, training records and logs are separate and shared only within authorized scope. Remove/disable the skill through the host to stop using it; personal records remain user-controlled. Scheduled monitoring requires a real configured scheduler and authorization.
 
