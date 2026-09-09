@@ -4,7 +4,7 @@ description: "Coach intermediate and advanced athletes: keep effective programs,
 license: MIT
 metadata:
   author: Bradley Dworkin
-  version: "1.5.0"
+  version: "1.5.1"
 ---
 
 # Rowan and the Fitness Review Board

@@ -6,32 +6,47 @@ Rowan is a portable AI coaching skill for intermediate and advanced athletes. Br
 
 [**Download the skill ZIP**](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest/download/Rowan-Fitness-Skill.zip) · [Setup help](docs/SETUP.md) · [How it learns](docs/HOW-IT-WORKS.md)
 
-## Start in Claude
+## Get the folder
 
-**Claude Code** — the Claude mode that can run the full review board and save your record
+The copy-the-folder routes below need `fitness-review-board/` on your machine. The release ZIP extracts to that folder directly:
 
 ```bash
-mkdir -p ~/.claude/skills && cp -R skills/fitness-review-board ~/.claude/skills/
+unzip Rowan-Fitness-Skill.zip
+```
+
+Or clone the repo, where it lives at `skills/fitness-review-board`:
+
+```bash
+git clone https://github.com/MuscleOtter/rowan-fitness-skill.git && cd rowan-fitness-skill
+```
+
+Run the commands below from that directory, adjusting the source path to match the route you used. Full steps, including replacing an existing install, are in [setup](docs/SETUP.md).
+
+## Start in Claude
+
+**Claude Code** — the Claude route that can run the full board and save your record
+
+```bash
+mkdir -p ~/.claude/skills && cp -R fitness-review-board ~/.claude/skills/
 ```
 
 Then `/fitness-review-board`, or just start talking about your training.
 
-**Claude.ai**
+**Claude.ai chat** — download the **skill ZIP** above, leave it zipped, then **Customize → Skills**, upload and enable. Code execution must be enabled. [Official instructions](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills).
 
-1. Download the **skill ZIP** above and leave it zipped.
-2. Open **Customize → Skills**, upload it and enable it. Code execution must be enabled. [Official instructions](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills).
+**Cowork** — use the same account upload; it does not read your local skills folder. It may expose subagents and files, so ask Rowan what the session actually has.
 
 ## Start in ChatGPT or Codex
 
-**Codex CLI** — the OpenAI mode that can run the full review board and save your record
+**Codex CLI** — the OpenAI route that can run the full board and save your record
 
 ```bash
-mkdir -p ~/.codex/skills && cp -R skills/fitness-review-board ~/.codex/skills/
+mkdir -p ~/.codex/skills && cp -R fitness-review-board ~/.codex/skills/
 ```
 
 Then `$fitness-review-board`.
 
-**ChatGPT app** — no folder install. Paste the starter prompt below with your current `athlete.md`, or keep both in a Project so every new conversation starts from them.
+**ChatGPT app** — no skills folder, so upload the rules as files: create a Project and add `SKILL.md`, `references/` and `assets/` as Project knowledge, plus your `athlete.md`. Naming the skill does not transfer it. [Full steps](docs/SETUP.md#chatgpt-app).
 
 ## The starter prompt
 
@@ -39,7 +54,7 @@ Whichever host you chose, start a conversation and paste:
 
 > Use fitness-review-board. I'm an experienced trainee. Start with my goals, current program and training history. Ask only for what you need next. Help me keep what works, learn my gym and create a Training Record. Set up automatic maintenance with the tools available here, and tell me what can actually run in the background. Be candid when my request isn't supported.
 
-**For full plan reviews, use a session with real separate-agent tools.** Claude Code and Codex may have them; ordinary Claude.ai and ChatGPT chat usually do not. Rowan checks the actual session during setup. Chat can handle intake and logging; it cannot pretend independent reviews happened. See [setup](docs/SETUP.md).
+**For full plan reviews, use a session with real separate-agent tools.** Claude Code, Cowork and Codex may have them; ordinary Claude.ai and ChatGPT chat do not. Rowan checks the actual session during setup. Chat can handle intake and logging; it cannot pretend independent reviews happened. See [setup](docs/SETUP.md).
 
 ## Use it like a coach
 
