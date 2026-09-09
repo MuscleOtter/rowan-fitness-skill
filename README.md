@@ -63,6 +63,7 @@ Whichever host you chose, start a conversation and paste:
 | Say this | Rowan should do this |
 |---|---|
 | “Here's my program. Help me keep it.” | Learn the block, progression, results and preferences before suggesting changes. |
+| “Find my previous fitness chats and tracking data.” | Search accessible history and authorized sources, separate completed work from old suggestions, and ask only for missing context. |
 | “Log this session.” | Record completed work and clarify only consequential ambiguity. |
 | “Review my week.” | Compare results with expectations; keep, investigate or propose a reviewed change. |
 | “This machine is always busy.” | Learn the constraint and retrieve an applicable approved alternative, or queue a review. |
@@ -79,5 +80,7 @@ New recommendations go through **three critique/rewrite passes, then a fresh che
 Your source of truth is one private **Training Record**, `athlete.md`. File-capable sessions can save and verify it. In ordinary chat, save the replacement Rowan gives you and bring it to the next conversation.
 
 Upkeep checks run automatically when you return. Background work requires a real configured scheduler. No database, device connector or unattended service is installed with this ZIP.
+
+Rowan encourages bringing useful records together through your existing apps. Apple Health can be a collection hub when supported; Rowan verifies both app-to-Health sharing and an actual reader into the session. Phone permissions may need a one-time setup step. [Connect your history](docs/SETUP.md#bring-your-history-together).
 
 [What has been tested—and what hasn't](docs/VALIDATION.md) · [Update your installation](docs/SETUP.md#update-or-remove) · [Contribute](CONTRIBUTING.md) · [MIT license](LICENSE)

@@ -59,6 +59,8 @@ A Codex session's own reasoning is not a reviewer, and neither is a second promp
 
 ## Capability receipt
 
+Also check actual previous-chat search/list/read tools and fitness-data readers using [history discovery and connections](history-and-connections.md). Native chat memory, cross-chat retrieval, a connected app and an actual Health read are distinct capabilities. In Codex desktop use exposed chat/task listing and reading; in Claude use exposed native chat or host-provided session-transcript tools, distinguishing their source scope. Neither a shell nor a product name proves cross-chat or Apple Health access. If absent, offer a selected export and record the coverage limitation.
+
 Determine from actual accessible tools whether the host can read references, create fresh reviewer contexts, compare exact packets, and read/write the selected record. Distinguish listed capability from a completed operation. A real reviewer output and read-back prove only that operation succeeded. Do not ask the user to configure a database or paste passwords. Do not probe unrelated accounts.
 
 Report only what matters, once: “I can run the independent reviews here and save your record in [selected location],” or “We can start in chat; new prescriptions need independent reviewers, and I will give you a record to save.” Revisit only when capabilities change. Do not repeatedly disclose the entire limitation list on every log or question.

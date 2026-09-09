@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.6.0 — 2026-09-09
+
+Adds bounded discovery of previous fitness conversations and available integrations before repeating intake questions. Ellis tracks athlete identity, source scope, coverage, corrections and mirrored imports. Apple Health setup now verifies app-to-Health and Health-to-Rowan separately, reuses existing permissions, and gives an honest export fallback. Adds an optional source registry for incremental on-use refresh and portable handoffs; background imports require a real reader and scheduler. Existing review thresholds and coaching gates are unchanged.
+
 ## 1.5.3 — 2026-09-09
 
 Corrects the bundled research header to preserve its original date and first public release without claiming refreshed research. Attributes the corrected host maps to 1.5.1, restores version-free README links, and adds a copyable backup command that keeps old skills outside discovery. Rebuilds the ZIP because the research reference ships inside it. Coaching behavior and host capabilities are unchanged.

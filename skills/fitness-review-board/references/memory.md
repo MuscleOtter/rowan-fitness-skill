@@ -6,6 +6,8 @@ Use chat for everyday coaching. Keep one selected **Training Record** as the sou
 
 Raw conversation history is evidence, not a guaranteed complete database. Native model memory is a useful recall aid, not the authoritative set log or latest approved prescription. A record survives a new conversation only when the host can actually retrieve it or the user supplies it. Ask for missing current records without restarting the entire intake.
 
+Use [history discovery and connections](history-and-connections.md) for bounded recovery from previous fitness chats and connected sources. Preserve who said what, dates, search coverage and import lineage. Carry source scope, exclusions and represented intervals with the record; old search hits never override current corrections. Source cursors and observations must be saved together. This adds optional source-registry fields to older records without resetting personal state.
+
 ## Choose the simplest available mode once
 
 | Mode | Canonical current record | Normal workflow and truthful receipt |

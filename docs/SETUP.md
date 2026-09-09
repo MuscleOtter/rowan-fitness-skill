@@ -93,6 +93,16 @@ Ask “Show my Training Record.” Keep the latest `athlete.md` in your own priv
 
 When starting a new conversation, attach that current record. Ask Rowan to identify the loaded version and any missing interval. Keep health records outside this public repository.
 
+## Bring your history together
+
+During initial setup, Rowan checks actual chat-search and connected-app tools, retrieves relevant authorized fitness history, and shows what it found before repeating questions. You can also request this later: “Find my previous fitness conversations and available workout data. Keep my current program and ask only for what is missing.” If those tools are absent, one selected chat export or recent completed workout is enough to start. It does not treat someone else's history or an old assistant suggestion as your completed training.
+
+In Claude, available chat search and local session-history tools cover different sources; Rowan tells you which it used. If Claude chat search is disabled, check **Settings → Memory → Search and reference chats**; older accounts may show **Settings → Capabilities → Preferences** instead. Availability depends on your account and session. [Claude's guide](https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context). Every import receipt also says whether the result was saved, remains in chat, or needs a save retry.
+
+For Apple Health, say: “Help me connect the useful data from my existing apps.” Rowan checks two paths: your apps/devices feeding Health, and an authorized reader bringing Health data into this session. It can use already authorized routes automatically; a native permission prompt or new connection still needs your setup action. Choose relevant categories and verify a recent sample. Owning an Apple Watch or syncing Health through iCloud does not itself give Rowan access. [Apple's access and source guide](https://support.apple.com/en-us/108779).
+
+If there is no Health reader, use a selected app export or small summary. A full Health export is optional and contains much more than workouts. Refreshes run when you return unless a real scheduler and working background reader have been configured. Your Training Record retains source coverage and exclusions so repeated imports do not double-count workouts or restore deleted facts.
+
 ## Other hosts
 
 | Host | Install | Start |

@@ -2,7 +2,7 @@
 
 Fill with this user's actual facts; `unknown` is a valid value. Save outside the skill folder. This is a template, not a preapproved plan.
 
-- Schema: FRB-state-1.3
+- Schema: FRB-state-1.4 (adds optional source registry; preserve older fields and unknowns)
 - Profile ID / preferred name:
 - Revision / parent revision / created date and timezone:
 - Authoritative location or manual copy selected by user:
@@ -22,6 +22,19 @@ Fill with this user's actual facts; `unknown` is a valid value. Save outside the
 - Nutrition approach, constraints, targets and their source if any:
 - Devices/data availability, units, coverage, sync lineage:
 - Gym/exercise IDs, equipment/setup, likes/dislikes, alternatives:
+
+## Source registry and history coverage
+
+Fill only for used sources; retain this section in handoffs when it governs imports.
+
+- Athlete/profile identity; source/account label; source kind and locator:
+- Authorized read scope/date range, exclusions and content-free deleted-source IDs:
+- Original source → sync intermediaries → Rowan reader; supported metrics:
+- Availability status; each connection leg's setup/verification status:
+- Per-metric source authority, units/timezone and unresolved lineage conflicts:
+- Last attempted/read-success dates, searched/imported range, coverage/truncation:
+- Saved import cursor or interval represented with observations; reader boundary/overlap policy and late-correction limits; pending unsaved batch/pages:
+- Refresh mode and trigger; actual background reader/job evidence if configured:
 
 ## Current plan and review state
 

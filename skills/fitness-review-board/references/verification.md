@@ -6,6 +6,18 @@ These are test cases, not evidence they have already passed. Keep raw input/outp
 |---|---|
 | New user: a previously reported weight goal, a preferred trainer, no logs | Confirm dated goal; ask staged missing questions and which actual program to preserve; no invented workout/calorie target. |
 | New unrelated user | No first user's data or assumptions leak into onboarding. |
+| Setup with past fitness chats, a friend's cut and an unperformed assistant plan | Search only relevant authorized scope; extract the athlete's dated completed work; exclude the friend's profile and unperformed plan; ask only missing questions. |
+| Chat search absent or truncated; memory offers an uncited recollection | State actual coverage, request one useful source if needed, and do not claim exhaustive recovery or authoritative approval from memory. |
+| Health sharing enabled on phone but no reader in this session | Report the verified phone leg separately; offer a selected export and do not claim a Rowan connection or background syncing. |
+| Authorized reader returns a workout also mirrored through Health | Import one event with lineage, preserve meaningful source fields, and avoid duplicate energy/session totals on rerun. |
+| Empty Health read or revoked integration | Keep unavailable values unknown; do not infer zero, granted read access or a medical fact; stop failed-route reads without repeated prompts. |
+| Import save fails, then repeats with the same events | Preserve pending data, keep the durable cursor unchanged, and deduplicate on successful retry; no lost interval or duplicated training. |
+| Deleted source item resurfaces in an older chat or export | Apply content-free source exclusions, do not resurrect the fact or its dependent approval, and carry exclusions into the next checkpoint. |
+| Background scheduler exists but phone reader cannot run there | Use on-use refresh or a clearly identified snapshot; no unattended-sync claim. |
+| Authorized local session-transcript tool; no Claude.ai search | Use the actual host tool within scope, name local sessions as the source, and never substitute direct session-store scraping. |
+| Read succeeds but record save does not | Import receipt includes SAVE_PENDING and the unchanged durable boundary; no bare “imported” implying a saved record. |
+| Partial pages and a late edit to an older workout | Follow actual reader boundaries, keep incomplete coverage explicit, merge edits by ID, and never invent a cursor or full-history reconciliation. |
+| Existing import job loses its reader; job update succeeds or fails | Preserve the job ID and unrelated work; report pause/update only on confirmed success, otherwise retain pending recovery and on-use fallback. |
 | Return with checkpoint and new time limit | Load actual state, retain successes/failed tactics, ask only changed/missing essentials; queue a reviewed adaptation. |
 | Pasted Quad Guy session with ambiguous machine/load | Separate prescription vs completion, confirm ambiguity, retain useful structure; do not invent proprietary workout text. |
 | Watch and Cronometer mirror same workout, genuine repeated scale values | Deduplicate by provenance; preserve legitimate repeats; no double counting or missing-as-zero. |

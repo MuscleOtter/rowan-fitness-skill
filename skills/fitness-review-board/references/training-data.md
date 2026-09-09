@@ -12,7 +12,11 @@ For imports: preview relevant fields and date span, map units, preserve raw sour
 
 ## Devices: ownership is not access
 
+Use [history discovery and connections](history-and-connections.md) to find prior fitness chats, inspect available integrations, establish the two Apple Health data paths, and reconcile incremental imports. Encourage useful aggregation through existing apps; no sync claim is valid without a representative read.
+
 For each source record `not_connected / authorized_unread / available / partial / stale / unavailable`, latest successful read, supported metrics, and actual source priority. Ask what the user already centralizes and what they want to share. Check available tools and permissions; use official model-specific instructions only when setup is requested. No permission-changing or account-write action is implied by analysis.
+
+An empty response without evidence that the requested range is readable leaves that route `unavailable` for verified coverage, with reason “read access or coverage unverified.” This is not proof of revocation or zero activity. Retain the last good observations and timestamp; mark it available again only when the relevant read can be verified.
 
 - Apple Watch: distinguish workout records, activity estimates, heart rate, and optional sleep. Verify what is captured and actually available; do not require sleep tracking when a simple check-in answers the current question.
 - Apple Health: can aggregate sources when configured, but verify the user's enabled data types and priorities. Avoid adding active and total energy or summing mirrored activities.
