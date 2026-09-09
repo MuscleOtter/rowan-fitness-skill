@@ -12,6 +12,6 @@ Documentation-only corrections need proportionate checks. Do not rerun unrelated
 
 For changes only to repository documentation, check links and `python3 tools/package.py --check`; keep the skill version and published ZIP unchanged. When publishing a new skill version, also update the README's current-release link and verify that the public download matches the packaged checksum without signing in.
 
-When reporting a scan, identify **both** the Rowan target (repository, commit or release, and package checksum) and the evaluator (repository and exact commit). Link each commit to its own repository. Record scan configuration, date and incomplete checks; retain the raw report privately and publish a summary without local paths or personal records. [The 1.5.2 receipt](docs/validation-1.5.2.json) is an example. A failed or incomplete security scan must remain labeled incomplete.
+When reporting a scan, identify **both** the Rowan target (repository, commit or release, and package checksum) and the evaluator (repository and exact commit). Link each commit to its own repository. Record scan configuration, date and incomplete checks; retain the raw report privately and publish a summary without local paths or personal records. [The 1.5.2 receipt](docs/validation-1.5.2.json) is an example. Preserve failed and incomplete results as reported; neither is a passing security assessment.
 
 The source of truth for the distributable is `skills/fitness-review-board/`; `dist/` is generated. A package rollback restores instructions only, never an athlete's old record.
