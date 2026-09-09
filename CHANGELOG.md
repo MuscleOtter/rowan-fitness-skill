@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.2 — 2026-09-09
+
+Uses the maintainer's GitHub no-reply address to satisfy author-format validation without publishing a personal email. Validation notes now distinguish the Rowan package being tested from the NVIDIA evaluator's own source commit, with linked provenance and a fresh static assessment. Rebuilds the ZIP and checksum. Coaching behavior and host setup are unchanged.
+
 ## 1.5.1 — 2026-09-09
 
 Corrects defects an independent review found in the 1.5.0 host layer. 1.5.0 was merged but never released, so no published package carried them. Coaching policy, roles, rubric and thresholds remain unchanged.

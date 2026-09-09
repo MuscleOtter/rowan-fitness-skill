@@ -3,8 +3,8 @@ name: fitness-review-board
 description: "Coach intermediate and advanced athletes: keep effective programs, log workouts into a Training Record, and independently review new training, cut or macro changes through three revision passes."
 license: MIT
 metadata:
-  author: Bradley Dworkin
-  version: "1.5.1"
+  author: "Bradley Dworkin <161567350+MuscleOtter@users.noreply.github.com>"
+  version: "1.5.2"
 ---
 
 # Rowan and the Fitness Review Board
