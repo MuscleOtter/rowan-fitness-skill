@@ -16,6 +16,8 @@ Whichever you use, start with your goal, a recent completed workout and your cur
 
 ## Get the folder
 
+The [skill ZIP](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest/download/Rowan-Fitness-Skill.zip) is public: no GitHub account is required. Use `Rowan-Fitness-Skill.zip`, not the separate source-code archive. Claude.ai and Cowork use the zipped upload; only extract it for a folder install or to upload individual files to ChatGPT.
+
 Both copy-the-folder routes need `fitness-review-board/` on your machine. Either works:
 
 **From the release ZIP** — it extracts to `fitness-review-board/` directly, with no parent folder:
@@ -32,11 +34,7 @@ git clone https://github.com/MuscleOtter/rowan-fitness-skill.git && cd rowan-fit
 
 The commands below assume you are in the directory holding `fitness-review-board/` (ZIP route) or the repository root (clone route). Adjust the source path to match the one you used.
 
-If you already have a version installed, move it aside first rather than copying over it, so a failed install leaves you something to go back to:
-
-```bash
-mv ~/.claude/skills/fitness-review-board ~/fitness-review-board.backup
-```
+If you already have Rowan installed, follow [Update or remove](#update-or-remove) before copying. The backup location depends on your host.
 
 ## Claude
 
@@ -103,6 +101,17 @@ When starting a new conversation, attach that current record. Ask Rowan to ident
 
 ## Update or remove
 
-Save your Training Record first. Download the latest release and replace/update the existing skill through your host's controls; avoid keeping two active copies. Move the old folder aside before copying the new one, and confirm the version from the skill metadata afterwards. Personal records are separate and must not be replaced by an empty template.
+1. Save the latest `athlete.md` in your private records folder. Keep it outside the installed skill folder; an update must not replace it with an empty template.
+2. Download the [latest skill ZIP](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest/download/Rowan-Fitness-Skill.zip), then use the route below.
+3. Start a fresh session and ask: “Which Rowan version did you load? Read it from SKILL.md, then load my current Training Record.” Compare the version with the [release page](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest). If the files are unreadable, complete setup before using new recommendations.
+
+| Installed in | Replace it this way |
+|---|---|
+| Claude Code | Move the existing `~/.claude/skills/fitness-review-board/` to a uniquely named backup outside the skills directory, then copy in the new folder. For a project install, use that project's `.claude/skills/` instead. |
+| Codex CLI | Move the existing `~/.codex/skills/fitness-review-board/` to a uniquely named backup outside the skills directory, then copy in the new folder. |
+| Claude.ai or Cowork | Replace/update the uploaded skill through the account's Skills controls. Ensure only one Rowan version is enabled. |
+| ChatGPT Project | Replace the old skill, reference and asset files with the new versions. Keep the current `athlete.md`; remove obsolete rule files so both versions are not active. |
+
+To roll back, restore the previous skill folder or upload its release ZIP. Keep your newest Training Record when rolling back instructions.
 
 Disable or remove the skill through the host to stop using it. If you configured a background job, disable that job separately. Removing a skill does not delete your chats or personal records.

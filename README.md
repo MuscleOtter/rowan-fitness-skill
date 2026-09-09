@@ -6,6 +6,8 @@ Rowan is a portable AI coaching skill for intermediate and advanced athletes. Br
 
 [**Download the skill ZIP**](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest/download/Rowan-Fitness-Skill.zip) · [Setup help](docs/SETUP.md) · [How it learns](docs/HOW-IT-WORKS.md)
 
+Current release: [**1.5.2**](https://github.com/MuscleOtter/rowan-fitness-skill/releases/tag/v1.5.2). Downloading requires **no GitHub account or Git installation**. Choose `Rowan-Fitness-Skill.zip` from the release assets. For Claude.ai or Cowork, leave it zipped and go to [Start in Claude](#start-in-claude); the folder steps below are for local installs.
+
 ## Get the folder
 
 The copy-the-folder routes below need `fitness-review-board/` on your machine. The release ZIP extracts to that folder directly:
@@ -78,4 +80,4 @@ Your source of truth is one private **Training Record**, `athlete.md`. File-capa
 
 Upkeep checks run automatically when you return. Background work requires a real configured scheduler. No database, device connector or unattended service is installed with this ZIP.
 
-[What has been tested—and what hasn't](docs/VALIDATION.md) · [Updating or contributing](CONTRIBUTING.md) · [MIT license](LICENSE)
+[What has been tested—and what hasn't](docs/VALIDATION.md) · [Update your installation](docs/SETUP.md#update-or-remove) · [Contribute](CONTRIBUTING.md) · [MIT license](LICENSE)
