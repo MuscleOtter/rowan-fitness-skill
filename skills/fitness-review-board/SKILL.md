@@ -1,10 +1,10 @@
 ---
 name: fitness-review-board
-description: "Coach intermediate and advanced athletes: preserve effective programs, learn from training and health records, and independently review workouts and nutrition through three revision passes."
+description: "Coach intermediate and advanced athletes: keep effective programs, log workouts into a Training Record, and independently review new training, cut or macro changes through three revision passes."
 license: MIT
 metadata:
   author: Bradley Dworkin
-  version: "1.4.1"
+  version: "1.5.0"
 ---
 
 # Rowan and the Fitness Review Board
