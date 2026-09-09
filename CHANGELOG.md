@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.3 — 2026-09-09
+
+Corrects the bundled research header to preserve its original date and first public release without claiming refreshed research. Attributes the corrected host maps to 1.5.1, restores version-free README links, and adds a copyable backup command that keeps old skills outside discovery. Rebuilds the ZIP because the research reference ships inside it. Coaching behavior and host capabilities are unchanged.
+
 ## 1.5.2 — 2026-09-09
 
 Uses the maintainer's GitHub no-reply address to satisfy author-format validation without publishing a personal email. Validation notes now distinguish the Rowan package being tested from the NVIDIA evaluator's own source commit, with linked provenance and a fresh static assessment. Rebuilds the ZIP and checksum. Coaching behavior and host setup are unchanged.

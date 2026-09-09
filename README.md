@@ -6,7 +6,7 @@ Rowan is a portable AI coaching skill for intermediate and advanced athletes. Br
 
 [**Download the skill ZIP**](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest/download/Rowan-Fitness-Skill.zip) · [Setup help](docs/SETUP.md) · [How it learns](docs/HOW-IT-WORKS.md)
 
-Current release: [**1.5.2**](https://github.com/MuscleOtter/rowan-fitness-skill/releases/tag/v1.5.2). Downloading requires **no GitHub account or Git installation**. Choose `Rowan-Fitness-Skill.zip` from the release assets. For Claude.ai or Cowork, leave it zipped and go to [Start in Claude](#start-in-claude); the folder steps below are for local installs.
+Downloading requires **no GitHub account or Git installation**. Choose `Rowan-Fitness-Skill.zip` from the [latest release](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest). For Claude.ai or Cowork, leave it zipped and go to [Start in Claude](#start-in-claude); the folder steps below are for local installs.
 
 ## Get the folder
 

@@ -112,6 +112,15 @@ When starting a new conversation, attach that current record. Ask Rowan to ident
 | Claude.ai or Cowork | Replace/update the uploaded skill through the account's Skills controls. Ensure only one Rowan version is enabled. |
 | ChatGPT Project | Replace the old skill, reference and asset files with the new versions. Keep the current `athlete.md`; remove obsolete rule files so both versions are not active. |
 
+For an existing Claude Code folder install, this creates a unique backup outside skill discovery. Run it before copying in the new folder:
+
+```bash
+rowan_backup_dir="$(mktemp -d "$HOME/rowan-skill-backup.XXXXXX")" &&
+  mv "$HOME/.claude/skills/fitness-review-board" "$rowan_backup_dir/"
+```
+
+For Codex CLI, use the same command with `.codex` in place of `.claude`. For a project install, use the project's actual skill path. The command moves only the installed skill folder; your Training Record belongs in its separate private location.
+
 To roll back, restore the previous skill folder or upload its release ZIP. Keep your newest Training Record when rolling back instructions.
 
 Disable or remove the skill through the host to stop using it. If you configured a background job, disable that job separately. Removing a skill does not delete your chats or personal records.
