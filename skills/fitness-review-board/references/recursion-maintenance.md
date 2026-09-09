@@ -1,0 +1,77 @@
+# Recursion and maintenance
+
+The skill has three connected loops. Each has inputs, an observable result and a stopping condition. Repetition alone is not learning. Rowan owns the current record and user-facing decision; specialists independently assess proposed changes. Review grades measure proposal quality, not whether a tactic worked.
+
+## 1. Improve a proposal before recommending it
+
+Follow [review protocol](review-protocol.md): draft → independent review → revision, three times, then a fresh independent check of the exact final text. Coach, science, data and gym participate every time; nutrition also participates during a cut or fueling decision. Do not rewrite the rubric to rescue a score. The [fitness predicate](fitness-rubric.md#final-release-predicate) and bounded call budget determine release or hold.
+
+Each revision must answer actual findings or record why no supported change is needed. A no-change revision is valid when the findings justify it. After failure, preserve the reason and smallest useful next step; do not silently start another loop. A new cycle requires addressing the cause and remaining within an authorized revision scope. Unsupported confidence or another vote does not close a material issue.
+
+## 2. Learn from real results across conversations
+
+At intake, agree a practical check-in trigger with the athlete, usually their existing weekly review or block transition. This is a communication interval, not a universal training or weight-loss threshold. A check-in can conclude **keep** or **pending**. More frequent messages do not justify more frequent prescription changes.
+
+At each meaningful check-in, read the selected Training Record and any accessible later corrections. Apply this decision cycle:
+
+| Step | Required record and decision |
+|---|---|
+| Observe | Compare planned and completed work with the last decision. Use dated, comparable observations, adherence, coverage, equipment/effort, recovery and burden. Missing logs are unknown, not failure. |
+| Test the prior expectation | Retrieve the tactic ID, metric, baseline, window, minimum coverage, meaningful-change rule, guardrail and confounders fixed when it was proposed. Do not retroactively redefine success to make it look effective. |
+| Choose a disposition | **Keep** when the agreed outcome and guardrails support it; **pending** when the window/coverage is insufficient; **investigate** when the result is ambiguous; **propose revision** when a better hypothesis has support; **reverse** when the existing tactic should be withdrawn or an approved rollback applies. Explain the observations supporting the choice. |
+| Form a better hypothesis | For a new tactic, identify what plausibly limits progress, alternative explanations, the smallest interpretable change, expected benefit/cost, dated baseline value or comparison observations with source, and a new observation window. A missing baseline stays unknown; do not invent one after the outcome. Preserve successful exercises and preferences. Record why a previously ineffective tactic would merit reconsideration; otherwise do not repeat it. |
+| Review and save | Any new action instruction goes through loop 1. Record approved text, dependencies, rationale, learning status and the actual save receipt. A grade does not convert an untested hypothesis to a successful tactic. |
+| Reassess | At the agreed trigger, compare the new observations with the expectation and update its status with a reason. Check current goal, restrictions and feasibility before continuing old advice. |
+
+Do not treat a noisy weigh-in, one difficult session, incomplete food days or wearable estimates as proof that a plan failed. If a target, measure or observation window changes for a legitimate reason, preserve the previous expectation and label the new one prospectively. When several factors changed together, record the uncertainty rather than claiming isolated causation. User feedback about burden or preference is valid evidence even when a physiological outcome is not yet measurable.
+
+**Stopping and reversal:** New concerning symptoms follow the immediate escalation route. A new restriction or failed guardrail suspends affected advice immediately; suspension is not a new workout prescription. Retrieve a rollback only if it was previously approved and remains applicable. Otherwise hold the affected change and review the next proposal. Two or more inconclusive check-ins trigger investigation of data quality, measurement choice or feasibility, not automatic dose escalation or a larger deficit. The number is an operational reminder to revisit the process, not a physiological rule or permission to change training without review.
+
+**Carry learning forward:** Use [memory](memory.md) and [record template](../assets/checkpoint.md). Every meaningful decision has a tactic ID, source dates, related plan/version, status, reason and next trigger. Keep failed/rejected tactics, pending questions and approval dependencies in the current summary while retention is authorized. Detailed history may be separate, but a handoff must contain or accompany the facts needed for current decisions. An inaccessible chat/archive link is not preserved evidence. Ask for a missing interval; do not reconstruct it from confidence or stylistic familiarity.
+
+## 3. Maintain the record and the skill
+
+The athlete’s routine upkeep is small: log useful observations and report changes. Rowan automatically checks maintenance triggers; “Check my setup” is an optional way to request an immediate check, not a command the athlete must remember. In chat-only mode the athlete must save/replace the current Training Record at meaningful handoffs because the model cannot silently update an inaccessible file. In a file-capable host Rowan performs the authorized save/read-back. No terminal, QMD, SQLite or sensitive-memory toggle is required.
+
+### Automatic upkeep
+
+**Automatic on use is the default.** At each activation, use already loaded current context and the selected record to check for changed restrictions/goals, pending unsaved updates, stale decision-critical data, due learning windows and failed maintenance items. Read the file again only when needed to establish its current revision or a change is plausible. Run only affected checks; a complete log does not trigger a questionnaire, a web sweep or a full board. Before releasing advice, complete any check that affects its validity. At a meaningful check-in, automatically merge the accessible observations and issue the actual save/replacement receipt.
+
+**Background upkeep uses real scheduling, when requested and available.** An explicit request for automatic/background maintenance authorizes setup within the chosen profile/location and existing permissions. Use the host's actual scheduling tool, following its own rules; do not create a pretend reminder in prose. Reuse/update an existing matching job instead of duplicating it. Use an already agreed cadence/timezone; otherwise offer the minimal weekly upkeep default and resolve any scheduling detail the tool truly requires during setup. Automatic on-use checks continue while setup is pending.
+
+The job's scope is to read the selected current record and skill version, check due or failed maintenance and decision-critical freshness, and preserve current restrictions/learning. Background work writes the canonical record only through an actually verified exclusive-writer/conditional-write mechanism. This package supplies no locking adapter. Otherwise keep background checks read-only, retain a separate proposed update or result artifact when supported, and automatically reconcile it against current facts on the next active session. A pre-write comparison by itself is not protection against simultaneous chat and background writers.
+
+The job does not assume new data appeared, change exercise/calorie targets merely because time passed, or bypass the full prescription board. Keep unchanged successful runs quiet; report a material conflict, failed save/access, unavailable reviewer capability needed for a decision, or the smallest input required. Respect the user's notification preference. Store the real job identifier, scope, cadence/timezone, next run and last confirmed result only when the scheduling tool provides them.
+
+If the current host lacks scheduling or background access to that profile, automatically use **on-use** mode and explain that boundary once. Do not claim unattended work will occur, schedule this person's records in another person's account, or invent sync. A transient failed read/save gets at most one immediate technical retry per upkeep run; otherwise mark the failure and smallest recovery step. On the next activation, catch up relevant checks. Keep the recurring job bounded to its declared cadence; no cloned jobs, infinite retry loop or repeated alert for the same unchanged issue.
+
+| Trigger | Owner and proportionate action | Completion evidence / failure behavior |
+|---|---|---|
+| Meaningful check-in, approved plan change or requested export | Rowan merges accessible updates, preserves unresolved/failed tactics, updates the next trigger and creates a complete current record. | Actual file read-back, or **replacement ready / recorded in chat**. Failed save remains pending; do not claim a durable update. |
+| New chat, lost context or conflicting record | Rowan/Ellis load the selected record, check revision/coverage and current constraints. Resolve consequential conflicts before activation. | Identify what was recovered and what interval is missing. Keep unaffected logging available; hold advice with unknown/stale dependencies. |
+| Device/app/source/gym change, permission failure or surprising data | Ellis checks source, units, timestamps, coverage and sync lineage; Kit verifies affected equipment/setup. A listed connector is not a successful import. | Real representative read or clearly dated user-provided sample. Mark unavailable fields unknown; never fabricate sync or relabel missing values as zero. |
+| New recommendation or changed evidence-dependent condition | Quinn/Sage apply [evidence freshness](nutrition-evidence.md#evidence-ledger-and-freshness), verify relevant changeable/high-stakes claims and population fit. | Source/date/claim/applicability record. Adequate within-cycle evidence may be reused; unsupported critical claims block the affected prescription. |
+| Model, host, skill or storage update; “Check my setup” | Rowan/Ellis check only affected capabilities and dependencies. Inspect current record/schema, reference access, actual save mode and reviewer availability before relying on them. | Small relevant verification case, not a full automatic rewrite of the athlete's program. Report pending checks and their effect. |
+| Goal reached, paused or no longer wanted | Rowan confirms the athlete's new intent and preserves the history they want. A maintenance, performance or new cut plan is a new reviewed decision. | No assumed permission for continued cutting, unsolicited optimization or new recurring tasks. |
+
+At a check-in, surface overdue maintenance only when it affects the current decision. Record last actual check, next trigger and reason; time passing does not execute a check. The selected automatic mode must match actual capabilities. A missed scheduled run stays missed; it is not a successful review or save.
+
+## Universal skill upkeep and releases
+
+Personal learning changes the athlete's record, not the universal skill, scoring anchors or all other users. A preference update can alter the conversational wrapper; changing approved action text still invalidates that approval.
+
+When a demonstrated defect, repeated friction, changed host behavior or user request warrants a skill update, automatic upkeep identifies and records it. If automatic package maintenance has been explicitly requested and the host can modify the selected skill, Rowan may apply a scoped maintenance repair through the following review/release process. Otherwise produce the reviewed update for the user to install and report that limit. A new coaching policy, weaker grade threshold, broader permissions or a new external destination is not a routine maintenance repair.
+
+1. Record the observed failure/request and affected rule. Propose the smallest useful patch; preserve unrelated working behavior. Do not scrape private records into examples.
+2. Keep the previous package and personal records separate. Update the package version. Migrate older record fields by preserving their meaning; new unknown fields remain unknown. Never overwrite a profile with an empty template.
+3. Independently critique the changed behavior under the included [maintenance rubric](maintenance-rubric.md). For recursion/maintenance changes, perform at least three critique/revision passes, retaining grounded findings, dispositions and exact versions. Run relevant falsifiable cases; do not raise scores to satisfy the number of passes. All eight dimensions must reach at least 8.5 and no material defect may remain. Do not lower the rubric or its floor during automatic upkeep. After three unsuccessful passes, retain the current package and mark the repair pending; a further cycle needs a concrete addressed cause and remaining authorized scope, not grade chasing.
+4. Verify the exact final package and installed/exported bytes. Ship only the entrypoint, used references/templates and host metadata. Keep development critiques, raw test inputs/results, old candidates and scanner reports in a separate private audit location; preserve useful evidence without forcing it into every installation.
+5. Report version, what changed, actual checks, limitations and any user action. If an update fails, preserve the last usable package and current personal record. Restore package code/instructions only; a package rollback must never restore deleted facts, obsolete restrictions or an old active plan. Review affected advice against current facts.
+
+No maintenance operation silently buys services, enables permissions, installs a database, sends health records to a new destination or removes useful history. Existing explicit authorization remains usable; ordinary logging alone is not permission to rewrite the shared skill. A calendar interval alone is not a reason to search, reinstall or rerun a full board.
+
+## Tests for the loops
+
+During a relevant update, retain actual inputs, outputs, versions and save status for these cases: a qualifying proposal that improves through critique; final failure that stops; insufficient observations that stay pending; a failed tactic retained across a fresh-context handoff; a changed restriction that suspends a previously approved action; a source/device change that exposes missing data; automatic on-use checks without a maintenance command; unavailable/failed scheduling without a false background claim; pressure to inflate scores or skip required checks; new valid evidence that changes the coach's view; goal completion; and package rollback without rollback of personal truth. At least one positive case must work—an implementation that always holds is not a successful coach.
+
+Distinguish deterministic fixture checks, actual separate-agent outputs, real filesystem operations and observed athlete outcomes. Seeded fictional results test mechanics, not fitness effectiveness. Every claimed improvement must name its evidence and what remains untested.

@@ -1,0 +1,29 @@
+# How Rowan learns
+
+Rowan uses three loops. Each needs evidence, an observable result and a stopping condition.
+
+## 1. Improve advice before release
+
+The author proposes; fresh independent reviewers critique; the author revises. This happens three times. A final independent review checks the exact finished recommendation.
+
+The board grades goal fit, training quality, feasibility, recovery, nutrition when relevant, evidence and data quality. Every applicable score must exceed 8.5; critical areas and the overall quality mean must reach 9. An unresolved material problem cannot be averaged away. Scores describe proposal quality, not the probability of achieving a goal.
+
+Reviewers should identify a specific problem and useful improvement. They must neither flatter the athlete nor invent objections to sound rigorous. When information or capability is missing, affected advice stays pending with a concrete next step.
+
+## 2. Learn from outcomes
+
+Before trying a tactic, the record captures its baseline, expected effect, observation window and reconsideration rule. At a check-in Rowan compares actual results, adherence, recovery and burden with that expectation.
+
+The decision can be **keep**, **pending**, **investigate**, **propose revision** or **reverse**. One noisy measurement is not enough to declare failure. Failed tactics stay in context so Rowan does not repeat them without a reason. New exercise or nutrition instructions return to the review loop.
+
+The persistent object is your Training Record, not the model's confidence that it remembers you. Corrections supersede older facts. Package updates must not restore deleted information or obsolete restrictions.
+
+## 3. Maintain the system
+
+Relevant upkeep runs automatically on each use: changed goals or restrictions, stale decision data, missing saves, due learning windows and failed checks. A completed log does not trigger a full questionnaire or review board.
+
+Background upkeep needs a real configured schedule and access to your selected record. Without verified protection against competing writers, it can create a separate proposed update but cannot overwrite the record. Unchanged successful checks stay quiet; meaningful failures or missing inputs are surfaced.
+
+Package repairs are separate from personal learning. An authorized repair gets a version, relevant tests, independent review and verified export. It cannot silently weaken grades, expand permissions or turn a preference into a rule for every athlete.
+
+Your routine is simple: log useful work, report important changes and save the latest record when the host cannot save it for you. QMD and SQLite are optional future tools, not prerequisites.
