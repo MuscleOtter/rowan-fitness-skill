@@ -1,6 +1,8 @@
 # Validation and limits
 
-**1.5.0 is a host-adaptation release.** It changes the discovery description, names the tools each Claude and each ChatGPT/Codex surface actually supplies, and gives concrete install routes for Claude Code and Codex. Coaching policy, roles, rubric, thresholds, the review cycle and record semantics are unchanged from 1.4.1, so the evidence below still describes the behavior that ships — but no reviewer cycle, scenario run or external validator has been rerun on 1.5.0.
+**1.5.1 corrects the 1.5.0 host layer after independent review.** That review found the ChatGPT route transferred no instructions, install commands that could not run as written, a demoted Cowork route, binding selection keyed to the wrong capability, and delegation modes that inherit context and therefore cannot supply an independent reviewer. All five are fixed here. 1.5.0 was merged but never released, so no published package carried them.
+
+**1.5.0 was a host-adaptation release.** It changes the discovery description, names the tools each Claude and each ChatGPT/Codex surface actually supplies, and gives concrete install routes for Claude Code and Codex. Coaching policy, roles, rubric, thresholds, the review cycle and record semantics are unchanged from 1.4.1, so the evidence below still describes the behavior that ships — but no reviewer cycle, scenario run or external validator has been rerun on 1.5.0.
 
 **1.4.1 was the first public release.** It removes first-user context, generalizes one intake example and adds public documentation and packaging. The coaching rules are inherited from the reviewed 1.4.0 package; the older score is not a fresh efficacy claim for this release.
 

@@ -16,7 +16,7 @@ Each host family has a folder route that can run the board and save the record, 
 
 **Codex:** put the folder in `~/.codex/skills/`. `$fitness-review-board` starts it, and `agents/openai.yaml` in the folder supplies the display name and default prompt. This is the OpenAI route that can actually run the board and save the record.
 
-**ChatGPT app:** no folder install exists. The athlete pastes the starter prompt and their current `athlete.md`, or keeps both in a Project. Ask for the record at the start of a conversation; it cannot be retrieved otherwise.
+**ChatGPT app:** no folder install exists, so the instructions must be supplied as files. The athlete creates a Project and uploads this skill's `SKILL.md`, `references/` and `assets/` as Project knowledge, plus their current `athlete.md`. Verify the session can quote a specific rule from an uploaded file before relying on it. Retrieval over uploaded files is not the same as a loaded skill: re-read the relevant reference before a consequential step rather than assuming it is in context. This route gives the rules and the record; it does not give delegation, so new prescriptions still need the manual fallback.
 
 Then say: “Use fitness-review-board. Start with my goals and current workouts, and keep a Training Record.” The discovery description stays under 200 characters to satisfy both the Help Center's shorter limit and broader platform guidance.
 
@@ -28,15 +28,17 @@ For a full automated board, prefer a host that actually exposes separate reviewe
 
 Claude surfaces differ. Read the tools actually present in this session; a product name does not prove a capability.
 
-| Need | Claude Code and other agent sessions | Claude.ai chat |
-|---|---|---|
-| Independent reviewers | The session's subagent/task delegation tool: one call per reviewer, fresh context, bounded prompt, no peer verdicts. Run a stage's reviewers concurrently where slots allow. | Usually absent. Intake, logging, education and exact retrieval still work; a new prescription needs the manual fallback or an agent-capable session. |
-| Training Record | File read/write/edit on a user-owned path outside the skill folder. Read back and compare before saying **FILE_SAVED_VERIFIED**. | Code execution provides a per-conversation sandbox only. Files written there do not survive the conversation, so that is **replacement ready**, not saved. |
-| HASH_BOUND digests | Shell: `shasum -a 256 payload.txt` (or `sha256sum`) over the frozen bytes. | No persistent shell in ordinary chat; use TEXT_BOUND. |
-| TEXT_BOUND comparison | Shell `diff` between the returned `input_echo` and the retained canonical packet. | Explicit user comparison attestation. |
-| Background upkeep | Only a real scheduling tool exposed in this session. Reuse an existing matching job and store its actual identifier. | On-use checks only; say so once. |
+Three Claude surfaces behave differently, and the product name is not the boundary. Check each capability in the session in front of you.
 
-Subagents in a Claude session usually share this model and prompt lineage. A separate context satisfies this board's independence rule; it does not deliver an independent model or independent errors. Record the execution mode exactly that way and do not upgrade the claim. A subagent's report returns to Rowan and is not shown to the user, so surface the findings the user needs. Give each reviewer a read-only brief; reviewers never write the canonical record.
+| Need | Claude Code | Cowork | Claude.ai chat |
+|---|---|---|---|
+| Independent reviewers | The session's subagent/task delegation tool, if present: one call per reviewer, non-inheriting context, bounded prompt, no peer verdicts. Run a stage's reviewers concurrently where slots allow. | Documented as an agentic mode with subagent coordination. Treat as conditional: confirm a delegation tool exists in this session before promising a board. | Usually absent. Intake, logging, education and exact retrieval still work; a new prescription needs the manual fallback or an agent-capable session. |
+| Training Record | File read/write/edit on a user-owned path outside the skill folder. Read back and compare before saying **FILE_SAVED_VERIFIED**. | Documented file access; confirm the actual path and read back before claiming a save. | Code execution provides a per-conversation sandbox only. Files written there do not survive the conversation, so that is **replacement ready**, not saved. |
+| HASH_BOUND digests | `shasum -a 256 payload.txt` or `sha256sum` over the frozen bytes. | Whatever this session actually exposes; verify once on a real payload. | Available whenever code execution can read the payload: `hashlib.sha256` computes a real digest. Lack of persistence does not prevent hashing. |
+| TEXT_BOUND comparison | `diff` between the returned `input_echo` and the retained canonical packet. | Same, using the session's actual tools. | A code-execution equality check over the two strings. Fall back to user attestation only when no tool can compare. |
+| Background upkeep | Only a real scheduling tool exposed in this session. Reuse an existing matching job and store its actual identifier. | Same rule; a cloud session is not a scheduler. | On-use checks only; say so once. |
+
+Subagents in a Claude session usually share this model and prompt lineage. A non-inheriting separate context satisfies this board's independence rule; it does not deliver an independent model or independent errors. Confirm which mode the delegation tool starts: a fork or continuation mode inherits this conversation and is not a reviewer, however well its report is bound. Record the execution mode exactly that way and do not upgrade the claim. A subagent's report returns to Rowan and is not shown to the user, so surface the findings the user needs. Give each reviewer a read-only brief; reviewers never write the canonical record.
 
 ## ChatGPT and Codex tool map
 
@@ -46,9 +48,12 @@ The same rule applies: read the tools actually present in this session.
 |---|---|---|
 | Independent reviewers | A delegation or separate-task tool if this session exposes one: one call per reviewer, fresh context, bounded prompt, no peer verdicts. If the session has none, say so and use the manual fallback; a shell is not a reviewer. | Absent. Intake, logging, education and exact retrieval still work; a new prescription needs the manual fallback or an agent-capable session. |
 | Training Record | Real shell and filesystem: read/write `athlete.md` at a user-owned path outside `~/.codex/skills/`. Read back and compare before saying **FILE_SAVED_VERIFIED**. | Code interpreter is per-conversation storage. Files written there do not survive the conversation, so that is **replacement ready**, not saved. A Project holds a file the athlete replaces by hand. |
-| HASH_BOUND digests | Shell: `shasum -a 256 payload.txt` (or `sha256sum`) over the frozen bytes. | No persistent shell; use TEXT_BOUND. |
-| TEXT_BOUND comparison | Shell `diff` between the returned `input_echo` and the retained canonical packet. | Explicit user comparison attestation. |
+| Skill instructions | Installed from the skills folder; nothing to attach. | Not installed. The athlete must upload this skill's files as Project knowledge; see below. Without them the session has a name and no rules. |
+| HASH_BOUND digests | `shasum -a 256 payload.txt` or `sha256sum` over the frozen bytes. | Available whenever code interpreter can read the payload: `hashlib.sha256` computes a real digest. Lack of persistence does not prevent hashing. |
+| TEXT_BOUND comparison | `diff` between the returned `input_echo` and the retained canonical packet. | A code-interpreter equality check over the two strings. Fall back to user attestation only when no tool can compare. |
 | Background upkeep | Only a real scheduling tool exposed in this session. Reuse an existing matching job and store its actual identifier. | On-use checks only; say so once. |
+
+**Naming this skill does not transfer it.** A chat host with no skills folder has none of these instructions until the athlete uploads them. Before working, confirm the session can actually read the files: ask it to quote a specific rule, such as the release predicate in the fitness rubric. If it cannot, the rules are not loaded, and coaching from the skill's name alone is improvisation wearing Rowan's label. Say so plainly and ask for the upload.
 
 A Codex session's own reasoning is not a reviewer, and neither is a second prompt in the same context. The independence rule is unchanged across hosts: a reviewer runs in a context that never saw the author's deliberation or a peer verdict. Where the delegated worker shares this model, record separation rather than independent error, exactly as for Claude.
 
