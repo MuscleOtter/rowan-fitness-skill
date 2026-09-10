@@ -1,18 +1,32 @@
 # Setup
 
-Rowan is one folder of instructions. Every host installs that same folder; what differs is whether the host can run the independent review board and write your Training Record to disk.
+## Start without a terminal
 
-| | Runs the board | Saves your record | Install |
-|---|---|---|---|
-| **Claude Code** | If the session exposes subagents | Yes, to a real path | Copy the folder |
-| **Claude Cowork** | If the session exposes subagents | Confirm the path, then yes | Account upload |
-| **Claude.ai chat** | No — intake and logging only | No, gives you a replacement to keep | Upload the ZIP |
-| **Codex CLI** | If the session exposes delegation | Yes, to a real path | Copy the folder |
-| **ChatGPT app** | No — intake and logging only | No, gives you a replacement to keep | Upload the files to a Project |
+Use the [three-step Claude setup](../README.md#start-in-claude): download the ready-made ZIP, upload it in Claude's Skills settings, then start Rowan. Choose Cowork in the message box when available so Rowan can check whether independent reviewers can run. You can use ordinary chat for setup and logging while review capability is unavailable.
 
-Rowan checks the session it is actually in, so a row here is a starting expectation, not a promise about your account.
+Start with your goal and the program you already use. A rough note or one workout screenshot is enough to begin; Rowan asks for other details when needed. You do not need to understand agents, edit files or connect a device to begin. The rest of this page covers specific apps and troubleshooting.
 
-Whichever you use, start with your goal, a recent completed workout and your current program. Approximate or incomplete notes are fine. Rowan builds the equipment list and asks for nutrition or device data when those facts affect a decision. Never send passwords.
+## Stuck during setup
+
+| What happened | Next step |
+|---|---|
+| You downloaded a folder instead of a ZIP | Look in Downloads for the original `Rowan-Fitness-Skill.zip`. Upload that file, not the opened folder or GitHub's “Source code” archive. If it is gone, download the ready-made ZIP again and save it without opening/extracting it; no repackaging is needed. |
+| Skills or upload controls are missing | For an individual Claude account, check **Settings → Capabilities → Code execution and file creation**. Work accounts may need their owner to enable Skills or uploads. Follow [Claude's current guide](https://support.claude.com/en/articles/12512180-use-skills-in-claude); if your app looks different, try Claude on the web and tell Rowan which button you cannot find. |
+| Rowan isn't starting | Check that the uploaded skill is enabled, then paste the [starter prompt](../README.md#the-starter-prompt). Ask “Can you read Rowan's installed instructions and tell me their version?” Its name alone is not proof it loaded. |
+| Rowan cannot run the review team here | Continue logging or organizing your program. If Cowork is available, start a Cowork conversation with Rowan and your latest Training Record. Rowan checks the available tools; it cannot approve new advice by pretending the team ran. |
+| You cannot find your Training Record | Say “Help me find my latest Training Record.” Rowan checks accessible history/files, identifies gaps and can record today's log while recovering it. It must not guess your old plan. |
+| A save or connection failed | Tell Rowan what the app displayed. It should give one next step or a simpler fallback, without asking you to debug code, edit a database or supply passwords. |
+
+## Choose your app
+
+| App | What to expect |
+|---|---|
+| Claude Cowork | Upload the skill through your account; Rowan checks whether separate reviews and a saved record are available. |
+| Claude.ai chat | Upload the skill; use it for setup and logging. Download the record Rowan prepares when it cannot save a lasting copy. |
+| Claude Code / Codex | The assistant can manage files and reviews when the necessary tools are available. Manual folder instructions follow. |
+| ChatGPT app | Upload the rule files to a Project using the steps below. New prescriptions still need independent review. |
+
+These are starting expectations. Rowan checks the current app and explains only the limits relevant to what you want to do.
 
 ## Get the folder
 
@@ -20,7 +34,9 @@ The [skill ZIP](https://github.com/MuscleOtter/rowan-fitness-skill/releases/late
 
 Both copy-the-folder routes need `fitness-review-board/` on your machine. Either works:
 
-**From the release ZIP** — it extracts to `fitness-review-board/` directly, with no parent folder:
+**From the release ZIP** — on a Mac, double-click the ZIP in Finder. On Windows, right-click it in File Explorer and choose **Extract All**. Open the resulting `fitness-review-board` folder to find the files for ChatGPT. Keep the ZIP intact if you are uploading to Claude's Skills settings.
+
+For terminal users, the equivalent command is:
 
 ```bash
 unzip Rowan-Fitness-Skill.zip
@@ -44,7 +60,7 @@ If you already have Rowan installed, follow [Update or remove](#update-or-remove
 mkdir -p ~/.claude/skills && cp -R fitness-review-board ~/.claude/skills/
 ```
 
-From a clone, use `skills/fitness-review-board` as the source. Use a project's `.claude/skills/` instead of `~/.claude/skills/` if you want it scoped to one project. It loads on the next turn; `/fitness-review-board` starts it explicitly. Confirm the version with `head -7 ~/.claude/skills/fitness-review-board/SKILL.md`.
+From a clone, use `skills/fitness-review-board` as the source. Use a project's `.claude/skills/` instead of `~/.claude/skills/` if you want it scoped to one project. It loads on the next turn; `/fitness-review-board` starts it explicitly. Ask “Which Rowan version did you load? Read it from SKILL.md.”
 
 Keep your Training Record in your own folder, outside `~/.claude/skills/`, so skill updates never touch it.
 
@@ -77,15 +93,22 @@ There is no skills folder, so the instructions have to be uploaded as files. Nam
 1. Create a Project.
 2. Upload the contents of `fitness-review-board/` as Project knowledge: `SKILL.md`, everything in `references/`, and everything in `assets/`.
 3. Upload your current `athlete.md` too, or paste it at the start of each conversation.
-4. Ask the session to quote the release predicate from the fitness rubric. If it cannot, the files are not readable and the rules are not loaded.
+4. Ask: “Read Rowan’s uploaded instructions. Tell me the version and how new advice is checked.” Rowan must verify the files itself; you do not need to interpret review formulas.
 
 This gives Rowan the rules and your record. It does not give independent reviewers, so new prescriptions still need the manual review route or an agent-capable session. ChatGPT's code interpreter is per-conversation storage like Claude.ai's, so Rowan gives you a replacement record to keep rather than claiming a saved file.
 
 ## What the board needs
 
+Rowan handles the team. When separate reviewers are available, you can keep talking to Rowan while it organizes their work. Otherwise it explains that new advice is waiting for review and offers one practical way forward. Manual copying between reviewer chats is an optional fallback, not a normal setup step.
+
+<details>
+<summary>Technical details for reviewers and host setup</summary>
+
 For automatic independent reviews, choose a mode with separate-agent tools. Claude Code, Cowork and Codex may provide them; Rowan must check the actual session, not the product name. A reviewer also has to start from an empty context — a fork or continuation mode that inherits the conversation is not an independent reviewer, however correct its report looks. A complete new-plan review takes four calls per required reviewer: 16 for the core board, 20 with nutrition or conditioning, 24 when both participate, and 28 when a combined plan also includes recipes/meal prep reviewed by Jules. Tasks use names such as “Nico — Conditioning — Pass 1” when the host supports custom labels. Logging and retrieving unchanged, valid approved plans use lighter routes.
 
 No real independent-review tools means no approved new prescription. Rowan can still organize history, log observations and prepare missing inputs. It should explain an available alternative instead of fabricating a board.
+
+</details>
 
 ## Make it easy to keep using Rowan
 
@@ -97,9 +120,9 @@ Grocery help can be a list, a prepared cart or an authorized order when supporte
 
 ## Keep your progress
 
-Ask “Show my Training Record.” Keep the latest `athlete.md` in your own private folder, Claude Project or ChatGPT Project. Project knowledge does not update merely because Rowan generated a replacement: replace it yourself unless an actual file tool has saved and verified it.
+Say **“Save my Training Record.”** Rowan should either confirm a verified save or give you a ready-to-download file. Keep that newest file somewhere private. You do not need to edit it. If downloads are unavailable, Rowan gives you the complete text to copy.
 
-When starting a new conversation, attach that current record. Ask Rowan to identify the loaded version and any missing interval. Keep health records outside this public repository.
+When starting a new conversation, attach that file (or paste the complete record) and say **“Continue from this Training Record.”** Rowan checks its date and any missing updates. If you keep the record in a Claude or ChatGPT Project, replace the older record with this newest one unless Rowan has actually saved it there. Generating a new file alone does not update your Project. Keep health records outside this public repository.
 
 ## Bring your history together
 

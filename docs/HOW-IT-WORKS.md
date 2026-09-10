@@ -18,7 +18,7 @@ Before trying a tactic, the record captures its baseline, expected effect, obser
 
 The decision can be **keep**, **pending**, **investigate**, **propose revision** or **reverse**. One noisy measurement is not enough to declare failure. Failed tactics stay in context so Rowan does not repeat them without a reason. New exercise or nutrition instructions return to the review loop.
 
-The persistent object is your Training Record, not the model's confidence that it remembers you. Corrections supersede older facts. Package updates must not restore deleted information or obsolete restrictions.
+Your Training Record carries your progress between conversations; an assistant saying it remembers you is not a saved record. Corrections replace older facts. Package updates must not restore deleted information or obsolete restrictions.
 
 The same learning loop applies to your support routine. Rowan asks what gets in the way, tries one agreed change and checks whether it helped. Keep a useful workout reminder or prep routine; adjust or stop unwanted nudges and their actual scheduled jobs. Silence is unknown, not a missed workout. New channels and purchases need the relevant authorization; convenience never lowers the fitness review bar.
 
@@ -30,4 +30,4 @@ Background upkeep needs a real configured schedule and access to your selected r
 
 Package repairs are separate from personal learning. An authorized repair gets a version, relevant tests, independent review and verified export. It cannot silently weaken grades, expand permissions or turn a preference into a rule for every athlete.
 
-Your routine is simple: log useful work, report important changes and save the latest record when the host cannot save it for you. QMD and SQLite are optional future tools, not prerequisites.
+Your routine is simple: log useful work, report important changes and save the latest record when the app cannot save it for you. No extra database or app is required.

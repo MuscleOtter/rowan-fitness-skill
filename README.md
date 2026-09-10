@@ -8,57 +8,33 @@ Make it fit your day: Rowan can also help organize approved workouts, check-ins 
 
 [**Download the skill ZIP**](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest/download/Rowan-Fitness-Skill.zip) · [Setup help](docs/SETUP.md) · [How it learns](docs/HOW-IT-WORKS.md)
 
-Downloading requires **no GitHub account or Git installation**. Choose `Rowan-Fitness-Skill.zip` from the [latest release](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest). For Claude.ai or Cowork, leave it zipped and go to [Start in Claude](#start-in-claude); the folder steps below are for local installs.
-
-## Get the folder
-
-The copy-the-folder routes below need `fitness-review-board/` on your machine. The release ZIP extracts to that folder directly:
-
-```bash
-unzip Rowan-Fitness-Skill.zip
-```
-
-Or clone the repo, where it lives at `skills/fitness-review-board`:
-
-```bash
-git clone https://github.com/MuscleOtter/rowan-fitness-skill.git && cd rowan-fitness-skill
-```
-
-Run the commands below from that directory, adjusting the source path to match the route you used. Full steps, including replacing an existing install, are in [setup](docs/SETUP.md).
-
 ## Start in Claude
 
-**Claude Code** — supports the full board and saved records when reviewer and file tools are available
+No coding, terminal or GitHub account is needed for this route.
 
-```bash
-mkdir -p ~/.claude/skills && cp -R fitness-review-board ~/.claude/skills/
-```
+1. **Download** `Rowan-Fitness-Skill.zip` using the link above. Leave it zipped; this is the file to upload.
+2. **Add it to Claude:** open **Customize → Skills → + → Create skill → Upload a skill**, choose the ZIP and enable Rowan. [Claude's instructions](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
+3. **Start a conversation.** Choose **Cowork** in the message box if available, then paste the starter below. Cowork can provide the separate reviewers Rowan needs; Rowan checks your actual session. [About Cowork](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork).
 
-Then `/fitness-review-board`, or just start talking about your training.
-
-**Claude.ai chat** — download the **skill ZIP** above, leave it zipped, then **Customize → Skills**, upload and enable. Code execution must be enabled. [Official instructions](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills).
-
-**Cowork** — use the same account upload; it does not read your local skills folder. It may expose subagents and files, so ask Rowan what the session actually has.
-
-## Start in ChatGPT or Codex
-
-**Codex CLI** — supports the full board and saved records when reviewer and file tools are available
-
-```bash
-mkdir -p ~/.codex/skills && cp -R fitness-review-board ~/.codex/skills/
-```
-
-Then `$fitness-review-board`.
-
-**ChatGPT app** — no skills folder, so upload the rules as files: create a Project and add `SKILL.md`, `references/` and `assets/` as Project knowledge, plus your `athlete.md`. Naming the skill does not transfer it. [Full steps](docs/SETUP.md#chatgpt-app).
+If Cowork is unavailable, ordinary chat can still collect your goals, organize history and log workouts. New workout or nutrition advice waits until the required independent reviews can run. Rowan explains the next useful step; you do not need to set up agents yourself. Missing buttons or an upload problem? [Get setup help](docs/SETUP.md#stuck-during-setup).
 
 ## The starter prompt
 
-Whichever host you chose, start a conversation and paste:
+> Use fitness-review-board. I'm experienced with training; keep the technology simple. Start with my goal and the program I already use. Ask only what you need next, help me keep what works, and guide me one step at a time. Check what you can do here and help me save my progress.
 
-> Use fitness-review-board. I'm an experienced trainee. Start with my goals, current lifting and cardio, eating pattern and training history. Ask only for what you need next. Help me keep what works, learn my gym and create a Training Record. Set up automatic maintenance with the tools available here, and tell me what can actually run in the background. Be candid when my request isn't supported.
+Bring a rough workout note or one screenshot if you have it. No spreadsheet, complete gym inventory or connected device is needed to begin. Rowan introduces himself and asks a few short questions. You meet the relevant specialists as they help; ask to see the full team whenever you like.
 
-**For full plan reviews, use a session with real separate-agent tools.** Claude Code, Cowork and Codex may have them; ordinary Claude.ai and ChatGPT chat do not. Rowan checks the actual session during setup. Chat can handle intake and logging; it cannot pretend independent reviews happened. See [setup](docs/SETUP.md).
+## Start in ChatGPT or Codex
+
+**Already using Codex?** Ask it: “Install fitness-review-board from https://github.com/MuscleOtter/rowan-fitness-skill, then help me get started.” A session with the supported installer can handle the files. Rowan still checks its reviewer and save tools.
+
+**ChatGPT app:** follow the [Project setup](docs/SETUP.md#chatgpt-app) to add Rowan's rules. A starter prompt alone does not install them. This route supports intake and logging; new prescriptions need independent reviews elsewhere.
+
+**Claude Code or a manual folder install:** [copy-the-folder instructions](docs/SETUP.md#get-the-folder). These are optional routes for people already using those tools.
+
+## Get the folder
+
+Only local folder installs and ChatGPT's individual-file upload need extraction. Keep the ZIP intact for Claude's Skills upload. [Folder instructions](docs/SETUP.md#get-the-folder).
 
 ## Use it like a coach
 
@@ -83,9 +59,9 @@ New recommendations go through **three critique/rewrite passes, then a fresh che
 
 ## Memory and upkeep
 
-Your source of truth is one private **Training Record**, `athlete.md`. File-capable sessions can save and verify it. In ordinary chat, save the replacement Rowan gives you and bring it to the next conversation.
+Your private **Training Record** holds your goals, program and progress. Say **“Save my Training Record.”** Rowan saves it when the app allows, or gives you a file to download and attach next time. You do not need to edit its contents. Keep the newest copy; ask Rowan for help if you lose it.
 
-Upkeep checks run automatically when you return. Background work requires a real configured scheduler. No database, device connector or unattended service is installed with this ZIP.
+Rowan checks for relevant updates when you return. Reminders and background work need separate setup; installing the ZIP does not turn them on.
 
 For Apple Health, Rowan starts with **Claude on iPhone and its native permission prompt**, when available. It guides one step at a time, verifies a sample and offers a simple fallback. [Connect your history](docs/SETUP.md#bring-your-history-together).
 

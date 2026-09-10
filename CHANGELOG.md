@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.8.1 — 2026-09-09
+
+Makes setup and everyday conversation easier for nontechnical athletes: Claude app/Cowork steps come first, opening questions are shorter, specialists are introduced when relevant, technical details stay with Rowan, and record handoffs use ready files or complete copyable text. Adds practical help for missing buttons, unavailable reviews, lost records and failed saves. Training expertise remains separate from technical comfort. Review coverage, all 8.8/9.0 and stricter standards, permissions and memory semantics are unchanged.
+
 ## 1.8.0 — 2026-09-09
 
 Adds a personal follow-through routine owned by Rowan: optional phone delivery of approved workouts, brief check-ins, reminders and grocery help through actual authorized tools. Tracks configuration, delivery and purchase states honestly; reconciles uncertain sends/orders; verifies stop/snooze; and learns which support to keep, adjust or discard. Existing routines and chat-only use remain valid. No job, message, device connection or purchase is activated by installing the package.

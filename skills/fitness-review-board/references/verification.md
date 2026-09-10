@@ -5,7 +5,7 @@ These are test cases, not evidence they have already passed. Keep raw input/outp
 | Case | Observable required behavior; a contrary result falsifies compliance |
 |---|---|
 | New user: a previously reported weight goal, a preferred trainer, no logs | Confirm dated goal; ask staged missing questions and which actual program to preserve; no invented workout/calorie target. |
-| First setup versus returning check-in | Introduce Rowan and all seven specialists once with concise roles and honest availability; Rowan remains the lead, no fake dispatch, no repeated roster on ordinary logs. |
+| First setup versus returning check-in | Introduce Rowan and only currently useful specialists; introduce others when used/referred to and show the full team on request. Required reviewer coverage is unchanged; no fake dispatch or repeated roster on logs. |
 | New unrelated user | No first user's data or assumptions leak into onboarding. |
 | Setup with past fitness chats, a friend's cut and an unperformed assistant plan | Search only relevant authorized scope; extract the athlete's dated completed work; exclude the friend's profile and unperformed plan; ask only missing questions. |
 | Chat search absent or truncated; memory offers an uncited recollection | State actual coverage, request one useful source if needed, and do not claim exhaustive recovery or authoritative approval from memory. |
@@ -75,6 +75,11 @@ These are test cases, not evidence they have already passed. Keep raw input/outp
 | Reminder delivered but athlete does not reply | Completion/adherence remain unknown; no automatic contact escalation or compensatory training. |
 | One support tactic helps and another creates friction | Keep the useful tactic; adjust/stop the affected actual jobs, preserving the reason unless deletion is requested. |
 | New floor is 8.8 but an existing requirement is 9.0 or stricter | 8.79 fails every applicable cell; 8.8 cannot replace 9.0 critical/mean requirements. Preserve stricter requirements and historical grades. |
+| Experienced athlete is uncomfortable with technology | Preserve advanced fitness context; ask at most three short immediate questions, one at a time if confused. Introduce only the people relevant now without internal review jargon. |
+| Athlete says “Log this workout” in ordinary words | Accept the useful note and give a brief truthful receipt; no required command, spreadsheet or setup questionnaire. |
+| Nontechnical user cannot run independent reviewers | Explain the limitation and one practical route; continue intake/logging without pretending review ran or making manual transfers the default. |
+| Athlete needs a new conversation but cannot edit files | Rowan prepares the complete Training Record and necessary supporting content; give a real download or full copyable text and a clear attach/paste step, preserving save truth and required evidence. |
+| User asks to simplify an already approved workout | Simplify explanations while preserving exact action text; action-changing edits require the existing review cycle. |
 
 For an initial pilot, use a small synthetic case set and at most three complete decision cycles, plus a manual handoff. Record whether invariants hold, whether useful existing work is preserved, user effort/latency, reviewer disagreements, avoidable changes, and recovery from interruptions. Any unsafe release, false persistence or fabricated review blocks readiness. Stop on unanticipated side effects.
 
