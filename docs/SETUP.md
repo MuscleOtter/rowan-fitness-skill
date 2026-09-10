@@ -1,5 +1,7 @@
 # Setup
 
+[Claude upload](#claudeai-chat) · [ChatGPT](#chatgpt-app) · [Claude Code](#claude-code) · [Codex](#codex-cli) · [Your record](#keep-your-progress) · [Connections](#bring-your-history-together) · [Troubleshooting](#stuck-during-setup) · [Update or remove](#update-or-remove)
+
 ## Start without a terminal
 
 Use the [three-step Claude setup](../README.md#start-in-claude): download the ready-made ZIP, upload it in Claude's Skills settings, then start Rowan. Choose Cowork in the message box when available so Rowan can check whether independent reviewers can run. You can use ordinary chat for setup and logging while review capability is unavailable.
@@ -70,6 +72,8 @@ Cowork is documented as an agentic mode with subagent coordination and file acce
 
 ### Claude.ai chat
 
+Claude chat and Cowork use the same account upload:
+
 1. [Download Rowan-Fitness-Skill.zip](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest/download/Rowan-Fitness-Skill.zip). Use this asset, not GitHub's “Source code” archive, and leave it zipped.
 2. In **Customize → Skills**, upload the ZIP and enable it. Keep the folder inside the ZIP intact. If the controls are missing, check that code execution is enabled and your organization permits Skills. [Claude's guide](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills).
 3. Paste the [starter prompt](../README.md#the-starter-prompt). Rowan should introduce itself, ask a few relevant questions and explain the capabilities available in your session.
@@ -88,11 +92,13 @@ From a clone, use `skills/fitness-review-board` as the source. Start it with `$f
 
 ### ChatGPT app
 
+**For intake and logging; new recommendations need a separate review-capable session.** This route uploads individual rule files. Claude’s single-ZIP upload is the simpler starting route if you have access to it.
+
 There is no skills folder, so the instructions have to be uploaded as files. Naming the skill does not transfer it — a session that has only the starter prompt has Rowan's name and none of Rowan's rules.
 
 1. Create a Project.
 2. Upload the contents of `fitness-review-board/` as Project knowledge: `SKILL.md`, everything in `references/`, and everything in `assets/`.
-3. Upload your current `athlete.md` too, or paste it at the start of each conversation.
+3. If you already have a Training Record, upload it too or paste it at the start of the conversation. Otherwise, Rowan helps create your first record.
 4. Ask: “Read Rowan’s uploaded instructions. Tell me the version and how new advice is checked.” Rowan must verify the files itself; you do not need to interpret review formulas.
 
 This gives Rowan the rules and your record. It does not give independent reviewers, so new prescriptions still need the manual review route or an agent-capable session. ChatGPT's code interpreter is per-conversation storage like Claude.ai's, so Rowan gives you a replacement record to keep rather than claiming a saved file.

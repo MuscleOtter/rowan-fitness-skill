@@ -2,6 +2,8 @@
 
 Prefer a specific failure, a small fix and evidence that the fix works. For issues, include the skill version, host, expected behavior and a de-identified example. Do not post health records, private conversations, credentials or paid program libraries.
 
+Nontechnical feedback is welcome: use the [feedback form](https://github.com/MuscleOtter/rowan-fitness-skill/issues/new/choose) for setup friction, unclear instructions or a useful missing workflow. For public descriptions and reusable artwork, see [Share Rowan](docs/SHARE.md). Keep marketing claims tied to actual capabilities and the published validation limits.
+
 1. Edit `skills/fitness-review-board/`. Keep personal state outside the repository.
 2. Bump the version in `SKILL.md` and add a short `CHANGELOG.md` entry.
 3. Exercise the relevant cases in `references/verification.md`. Preserve required reviewers, grading floors and exact-final approval. Every applicable final specialist score must reach 8.8; existing 9.0 and stricter requirements remain. Recursion or maintenance changes require three independent critique/revision passes under `references/maintenance-rubric.md`, with every final dimension at least 8.8. Never regrade historical reports automatically or lower criteria to pass.

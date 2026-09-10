@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Setup help and common questions
+    url: https://github.com/MuscleOtter/rowan-fitness-skill/blob/main/docs/FAQ.md
+    about: Start here for installation, app capabilities, memory and updates.
