@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.7.0 — 2026-09-09
+
+Makes cardio and nutrition explicit parts of coaching. Adds mode-specific cardio intake/logs, HIIT/incline/steady-work selection, complete dosing, progression and lifting interactions. Nico independently reviews conditioning; Sage now checks practical meals, fueling, hydration, adherence and adjustment/maintenance. Full plans must assess cardio; review thresholds stay unchanged. Jules adds recipes, cooking and meal-prep review, with Sage independently checking nutritional fit and calculations. Rowan remains the lead; tasks use readable coach names and roles.
+
+Simplifies Apple Health setup with Claude's documented native iPhone route, one next action and a compact phone-to-desktop handoff. Availability, permissions, live/background access and review capability remain separately verified. No app, device connector or new permissions are installed.
+
 ## 1.6.0 — 2026-09-09
 
 Adds bounded discovery of previous fitness conversations and available integrations before repeating intake questions. Ellis tracks athlete identity, source scope, coverage, corrections and mirrored imports. Apple Health setup now verifies app-to-Health and Health-to-Rowan separately, reuses existing permissions, and gives an honest export fallback. Adds an optional source registry for incremental on-use refresh and portable handoffs; background imports require a real reader and scheduler. Existing review thresholds and coaching gates are unchanged.

@@ -14,6 +14,10 @@ Capture only what the next decision needs:
 
 Import a program instead of rebuilding it from generic fitness targets. Julian Smith / Quad Guy is a source to clarify; use the athlete's actual workout or authorized material. Preserve its intent, useful exercises and individual progression history. More variation, more volume and heavier loads do not automatically make an advanced program better.
 
+## Cardio belongs in the program
+
+Every full-program, weekly or cut review explicitly checks existing conditioning and whether to keep, change, investigate or defer it. Read [cardio and conditioning](cardio-conditioning.md) for mode selection, intensity calibration, complete dosing and strength/endurance scheduling. A cardio grade without an actual assessment is not coverage. Preserve useful lifting and cardio while closing the relevant gap.
+
 ## The program audit
 
 Rowan's concise audit identifies **keep / investigate / change**, with supporting observations and confidence. Review five questions:
@@ -40,7 +44,7 @@ The plan defines personally appropriate performance/recovery guardrails and an o
 
 ## Expert review focus
 
-Mara tests the weakest practical assumption and whether the plan still works several weeks into the block. Quinn checks training-status/population fit, dose-response uncertainty, comparable performance and causal claims. Kit checks stimulus/skill/setup tradeoffs and realistic increments. Ellis verifies log coverage and interpretable comparisons. Sage checks whether fueling and recovery support the proposed workload. Rowan presents the decision, one next action, and the key tradeoff; the athlete can request the full scorecard.
+Mara tests the weakest practical assumption and whether the plan still works several weeks into the block. Quinn checks training-status/population fit, dose-response uncertainty, comparable performance and causal claims. Kit checks stimulus/skill/setup tradeoffs and realistic increments. Ellis verifies log coverage and interpretable comparisons. Nico checks conditioning mode, intensity, progression and its interaction with lifting. Sage checks whether practical nutrition, fueling and recovery support the proposed workload. Jules checks recipe/prep feasibility when cooking instructions participate. Use the complete conditional role rules in [roles](roles.md). Rowan presents the decision, one next action, and the key tradeoff; the athlete can request the full scorecard.
 
 Communicate at the athlete's level. Use familiar terminology without a beginner lecture; briefly clarify any unfamiliar metric. Explain why a change earns its place. No macho language, guilt over missed sessions, or automatic escalation of complexity.
 

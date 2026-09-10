@@ -2,7 +2,7 @@
 
 **Keep what works. Review what changes. Learn from what happens.**
 
-Rowan is a portable AI coaching skill for intermediate and advanced athletes. Bring your current program, gym and goals. Rowan helps you log training, understand progress and prepare changes that independent reviewers must check before recommendation.
+Rowan is a portable AI coaching skill for intermediate and advanced athletes. Bring your lifting, cardio, nutrition, gym and goals. Rowan helps you log training, understand progress and prepare changes that independent reviewers must check before recommendation.
 
 [**Download the skill ZIP**](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest/download/Rowan-Fitness-Skill.zip) · [Setup help](docs/SETUP.md) · [How it learns](docs/HOW-IT-WORKS.md)
 
@@ -54,7 +54,7 @@ Then `$fitness-review-board`.
 
 Whichever host you chose, start a conversation and paste:
 
-> Use fitness-review-board. I'm an experienced trainee. Start with my goals, current program and training history. Ask only for what you need next. Help me keep what works, learn my gym and create a Training Record. Set up automatic maintenance with the tools available here, and tell me what can actually run in the background. Be candid when my request isn't supported.
+> Use fitness-review-board. I'm an experienced trainee. Start with my goals, current lifting and cardio, eating pattern and training history. Ask only for what you need next. Help me keep what works, learn my gym and create a Training Record. Set up automatic maintenance with the tools available here, and tell me what can actually run in the background. Be candid when my request isn't supported.
 
 **For full plan reviews, use a session with real separate-agent tools.** Claude Code, Cowork and Codex may have them; ordinary Claude.ai and ChatGPT chat do not. Rowan checks the actual session during setup. Chat can handle intake and logging; it cannot pretend independent reviews happened. See [setup](docs/SETUP.md).
 
@@ -65,13 +65,16 @@ Whichever host you chose, start a conversation and paste:
 | “Here's my program. Help me keep it.” | Learn the block, progression, results and preferences before suggesting changes. |
 | “Find my previous fitness chats and tracking data.” | Search accessible history and authorized sources, separate completed work from old suggestions, and ask only for missing context. |
 | “Log this session.” | Record completed work and clarify only consequential ambiguity. |
+| “Should I use HIIT, incline walks or another cardio option?” | Compare fit, conditioning and fatigue; review a complete dose and progression alongside lifting. |
+| “Make my nutrition easier to follow.” | Review practical meals/portions, training fuel, hunger and adjustment rules that fit your life. |
+| “Give me recipes and a meal-prep plan.” | Develop practical portions, cooking steps, shopping and storage; independently check nutrition and recipe feasibility. |
 | “Review my week.” | Compare results with expectations; keep, investigate or propose a reviewed change. |
 | “This machine is always busy.” | Learn the constraint and retrieve an applicable approved alternative, or queue a review. |
 | “Show my Training Record.” | Give you the current portable record and an honest save status. |
 
 ## A coach with a review board
 
-Rowan is your calm, direct point of contact. Mara challenges training quality; Quinn checks evidence; Ellis checks data; Kit knows equipment; Sage reviews nutrition and joins every cut-related plan review.
+Rowan is your calm, direct point of contact. Mara challenges training quality; Quinn checks evidence; Ellis checks data; Kit knows equipment; Nico reviews conditioning; Sage reviews practical nutrition and joins every cut-related plan review; Jules handles recipes and meal prep with Sage checking their nutrition. Cardio choices and food strategy are assessed together with lifting and recovery.
 
 New recommendations go through **three critique/rewrite passes, then a fresh check of the exact final plan**. Praise and pressure cannot improve a grade. Relevant new evidence can change a judgment. These are AI roles, not credentialed human professionals.
 
@@ -81,6 +84,6 @@ Your source of truth is one private **Training Record**, `athlete.md`. File-capa
 
 Upkeep checks run automatically when you return. Background work requires a real configured scheduler. No database, device connector or unattended service is installed with this ZIP.
 
-Rowan encourages bringing useful records together through your existing apps. Apple Health can be a collection hub when supported; Rowan verifies both app-to-Health sharing and an actual reader into the session. Phone permissions may need a one-time setup step. [Connect your history](docs/SETUP.md#bring-your-history-together).
+For Apple Health, Rowan starts with **Claude on iPhone and its native permission prompt**, when available. It guides one step at a time, verifies a sample and offers a simple fallback. [Connect your history](docs/SETUP.md#bring-your-history-together).
 
 [What has been tested—and what hasn't](docs/VALIDATION.md) · [Update your installation](docs/SETUP.md#update-or-remove) · [Contribute](CONTRIBUTING.md) · [MIT license](LICENSE)

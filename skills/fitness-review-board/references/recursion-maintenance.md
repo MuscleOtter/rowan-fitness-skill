@@ -4,7 +4,7 @@ The skill has three connected loops. Each has inputs, an observable result and a
 
 ## 1. Improve a proposal before recommending it
 
-Follow [review protocol](review-protocol.md): draft → independent review → revision, three times, then a fresh independent check of the exact final text. Coach, science, data and gym participate every time; nutrition also participates during a cut or fueling decision. Do not rewrite the rubric to rescue a score. The [fitness predicate](fitness-rubric.md#final-release-predicate) and bounded call budget determine release or hold.
+Follow [review protocol](review-protocol.md): draft → independent review → revision, three times, then a fresh independent check of the exact final text. Coach, science, data and gym participate every time; add nutrition, conditioning and culinary as required by the current [role selection](roles.md). Derive the call budget from the actual required role set, including recipe-only and combined plans. Do not rewrite the rubric to rescue a score. The [fitness predicate](fitness-rubric.md#final-release-predicate) and bounded call budget determine release or hold.
 
 Each revision must answer actual findings or record why no supported change is needed. A no-change revision is valid when the findings justify it. After failure, preserve the reason and smallest useful next step; do not silently start another loop. A new cycle requires addressing the cause and remaining within an authorized revision scope. Unsupported confidence or another vote does not close a material issue.
 

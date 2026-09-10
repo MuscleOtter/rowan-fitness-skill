@@ -6,11 +6,13 @@ Rowan uses three loops. Each needs evidence, an observable result and a stopping
 
 The author proposes; fresh independent reviewers critique; the author revises. This happens three times. A final independent review checks the exact finished recommendation.
 
-The board grades goal fit, training quality, feasibility, recovery, nutrition when relevant, evidence and data quality. Every applicable score must exceed 8.5; critical areas and the overall quality mean must reach 9. An unresolved material problem cannot be averaged away. Scores describe proposal quality, not the probability of achieving a goal.
+The board grades goal fit, lifting and cardio design, feasibility, recovery, practical nutrition when relevant, evidence and data quality. Every applicable score must exceed 8.5; critical areas and the overall quality mean must reach 9. An unresolved material problem cannot be averaged away. Scores describe proposal quality, not the probability of achieving a goal.
 
 Reviewers should identify a specific problem and useful improvement. They must neither flatter the athlete nor invent objections to sound rigorous. When information or capability is missing, affected advice stays pending with a concrete next step.
 
 ## 2. Learn from outcomes
+
+Cardio changes can involve HIIT, incline walking, steady work or another suitable mode; food changes can involve targets, portions, meals or workout fueling. Neither is automatically escalated when the scale stalls.
 
 Before trying a tactic, the record captures its baseline, expected effect, observation window and reconsideration rule. At a check-in Rowan compares actual results, adherence, recovery and burden with that expectation.
 

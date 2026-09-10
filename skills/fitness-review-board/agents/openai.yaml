@@ -1,4 +1,4 @@
 interface:
   display_name: "Rowan Fitness Board"
-  short_description: "Advanced training, nutrition, and durable records"
+  short_description: "Lifting, cardio, nutrition and meal prep, reviewed"
   default_prompt: "Use $fitness-review-board to review my current program, ask what matters, and keep my Training Record current."

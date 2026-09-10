@@ -24,6 +24,18 @@ For Apple users, offer Apple Health as an optional collection hub. Keep two path
 | Watch, scale or nutrition/workout app → Apple Health | Compatible app/model, enabled relevant data types and a dated sample visible in Health with its source. |
 | Apple Health → this Rowan session | An actual authorized Health-compatible reader/bridge exposed here, plus a successful read of the intended athlete's relevant sample. An export is a dated snapshot, not a live connection. |
 
+### Start with Claude on iPhone
+
+Prefer Claude's native Apple Health reader before suggesting an export app, a Shortcut, a shared folder or a custom server. Claude documents this as a US Pro/Max beta in its iPhone app. Check actual tools first; eligibility alone does not prove this session can read Health. This native feature reads data; it does not write to Health. [Current Claude instructions](https://support.claude.com/en/articles/11869619-use-claude-with-ios-apps).
+
+Make setup one next action at a time. If the reader is available, request only the athlete-authorized categories and useful range; let iOS present any required permission prompt, then verify a real dated sample. Reuse existing grants. If this host lacks a reader, offer the iPhone route first when applicable: “Open Claude on your iPhone and say: ‘Read my Apple Health workouts from the last two weeks. Give me a short summary for Rowan: the exact date range, dated workouts and durations, sources and missing details. Label it a snapshot of my data and say where it is recorded.’ Then choose what to share in the Health prompt.” Adjust the category/range to the athlete's request. Ask about phone/plan/region only when needed to choose a route, not when actual capabilities already answer it.
+
+If no prompt or reader appears, check app version and documented eligibility, then the chosen Health categories. Offer a selected summary/export or **skip for now** if unavailable or declined. Do not make setup depend on buying an app or enabling sensitive memory. Keep ordinary logging available. Only offer a third-party export route if native access cannot meet the need and the athlete wants that alternative.
+
+The phone can produce this data-only summary even if Rowan is not loaded there; bring it back to a session that can read the skill. Naming Rowan does not load its rules. A phone read does not confer desktop access, unattended refresh or independent reviewers. When moving hosts, use the current [Training Record](memory.md) or one compact handoff containing athlete/source identity, range, actual observations, missing fields and save status; use an authorized conversation-retrieval tool or the supplied record when available, otherwise ask for one paste. Do not ask the athlete to retype supplied data. Until the receiving host performs its own read, label that input a phone-origin snapshot. Keep the full fitness-review gate on hosts without delegation; Health access alone never approves a new plan.
+
+### Other readers and exports
+
 If the user asks to connect automatically, carry out the supported setup within existing authorization. Reuse grants already supplied. Where a native authorization screen or account selection is required, guide that one step and resume after it succeeds; never bypass it, claim to grant it, or ask for an Apple password. A skill alone supplies no HealthKit entitlement, phone app, reader or scheduler. iCloud Health syncing between Apple devices does not establish a Rowan connection.
 
 Choose the smallest relevant data types and date range with the athlete: completed workouts and dates; weight trend or nutrition intake when relevant to their goal; heart rate/activity or sleep only when useful and wanted. Do not request all health categories by default. Keep Health writes off unless separately requested; importing history does not need them. Verify app/model support rather than promising Cronometer, VeSync or a particular workout app exports every field. Health summaries may omit sets/reps/load, so preserve the original training log for those details.
@@ -48,6 +60,7 @@ Every import receipt pairs its connection/refresh mode with the actual [memory s
 Checked 2026-09-09; recheck when controls, capabilities or supported fields change. These sources establish platform behavior, not this athlete's permissions or data completeness.
 
 - [Claude chat search and memory](https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context).
+- [Claude iPhone apps and native Health access](https://support.claude.com/en/articles/11869619-use-claude-with-ios-apps) and [Anthropic's personal-health integration announcement](https://www.anthropic.com/news/healthcare-life-sciences).
 - [Apple: manage Health data, app access and source priority](https://support.apple.com/en-us/108779).
 - [Apple: share/export Health data](https://support.apple.com/guide/iphone/share-your-health-data-iph5ede58c3d/ios).
 - [Apple: HealthKit setup](https://developer.apple.com/documentation/healthkit/setting-up-healthkit) and [authorization](https://developer.apple.com/documentation/healthkit/authorizing-access-to-health-data).

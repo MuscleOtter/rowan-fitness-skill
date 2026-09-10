@@ -4,11 +4,13 @@
 
 Sage is required for every cut-related recommendation. Establish the user's goal, adult status, current routine, representative intake coverage, constraints, preferences, hunger/energy, and recovery before personalizing targets. Existing professional guidance and relevant conditions take priority over generic estimates; clarify conflicts rather than silently replacing them. Do not diagnose or alter prescribed treatment.
 
-A split alone does not establish a fat-loss strategy. Assess sustained energy balance, resistance-training continuity, protein adequacy, practical adherence, and recovery together. Do not prescribe “eat back all Watch calories,” infer intake from missing logs, guarantee a completion date, or mechanically apply a fixed calories-per-pound rule. A calculated energy target is an estimate with inputs, assumptions, uncertainty, and a planned review window. Select and verify appropriate evidence before choosing a number; do not hard-code the same deficit, protein target, or rate for every user.
+A split alone does not establish a fat-loss strategy. Assess sustained energy balance, resistance-training continuity, the [cardio assessment](cardio-conditioning.md), protein adequacy, practical adherence, and recovery together. Do not prescribe “eat back all Watch calories,” infer intake from missing logs, guarantee a completion date, or mechanically apply a fixed calories-per-pound rule. A calculated energy target is an estimate with inputs, assumptions, uncertainty, and a planned review window. Select and verify appropriate evidence before choosing a number; do not hard-code the same deficit, protein target, or rate for every user.
 
 If calorie tracking is unwanted or burdensome, consider reviewed habit/portion approaches instead. Ask what the user can maintain with their budget, food access, cooking, social meals, and dietary restrictions. Food labels are not moral judgments. Supplements are not a default requirement; claims about them require current applicable evidence and scope checks.
 
 A proposed cut plan specifies: why the pace is appropriate; how existing training is preserved/adapted; the nutrition approach and its evidence; practical alternatives; agreed progress and adherence measures; symptoms/limits that prompt reassessment; an observation window; and the logic for keeping, easing, or changing the approach. Strength/performance, hunger, fatigue, and recovery can matter alongside scale trend. Weight fluctuation alone is insufficient evidence to change targets. If the goal is reached under the agreed measurement rule, confirm it and offer reviewed maintenance planning instead of silently continuing the cut.
+
+For complete intake calibration, meal structure, macronutrient/fueling choices, hydration, adherence and adjustment rules, use [nutrition programming](nutrition-programming.md).
 
 ## Specific escalation
 

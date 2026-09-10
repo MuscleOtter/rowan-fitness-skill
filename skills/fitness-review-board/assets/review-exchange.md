@@ -14,7 +14,7 @@ Never insert this envelope or the reviewer's response into the payload being has
 ## Coordinator substantive payload
 
 - Package/rubric version, cycle ID, stage (1/2/3/final), candidate ID:
-- Reviewer role ID and assigned quality/fitness-area coverage:
+- Reviewer role ID, person/role/stage display label, and assigned quality/fitness-area coverage:
 - Execution mode and known provider/model/context ID; privacy scope:
 - Current user request and exact goal/priorities/critical fitness areas:
 - Relevant factual brief with dates, units, sources, uncertainty, current restrictions, program/history, equipment, nutrition implications and data coverage:

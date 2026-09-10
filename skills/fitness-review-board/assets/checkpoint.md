@@ -2,7 +2,7 @@
 
 Fill with this user's actual facts; `unknown` is a valid value. Save outside the skill folder. This is a template, not a preapproved plan.
 
-- Schema: FRB-state-1.4 (adds optional source registry; preserve older fields and unknowns)
+- Schema: FRB-state-1.5 (adds optional cardio, nutrition and recipe context; preserve older fields, approvals and unknowns)
 - Profile ID / preferred name:
 - Revision / parent revision / created date and timezone:
 - Authoritative location or manual copy selected by user:
@@ -18,8 +18,12 @@ Fill with this user's actual facts; `unknown` is a valid value. Save outside the
 - Experience, schedule/time limits, preferences and tone:
 - Existing program/source/version; support/adapt/replace choice:
 - Current phase/block/week, anchor movements, progression/deload rules, familiarity with effort scales:
+- Cardio goals/current mode, frequency/duration/effort, recent tolerance; preferred/avoided modes; relation to lifting/sport:
+- Intensity method/scale, zone source and uncertainty if used; comparable cardio baseline/conditions and next review:
 - What works; what the user wants to keep; previous failed tactics:
-- Nutrition approach, constraints, targets and their source if any:
+- Nutrition approach, constraints, targets and their source/uncertainty if any; preferred tracking/portion route:
+- Repeatable meals/substitutions, training-time fuel/hydration if applicable; adherence/hunger and adjustment/maintenance triggers:
+- Recipe/variant IDs and approved portion/ingredient conditions; taste/satiety, prep burden, kitchen/storage and repeat/avoid feedback if used:
 - Devices/data availability, units, coverage, sync lineage:
 - Gym/exercise IDs, equipment/setup, likes/dislikes, alternatives:
 
