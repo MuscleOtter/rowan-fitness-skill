@@ -1,0 +1,26 @@
+# Rowan Fitness Skill
+
+> Rowan is an open-source AI fitness coaching skill for Claude and Codex. It supports intermediate and advanced trainees with strength training, hypertrophy, cardio, fat loss, nutrition, recipes and meal prep. The skill identifier is fitness-review-board; the license is MIT.
+
+Canonical repository: https://github.com/MuscleOtter/rowan-fitness-skill. The complete installable folder is skills/fitness-review-board/. Rowan is an instruction package, not a hosted service or an MCP server. Fresh separate reviewer tools are required for new recommendations; ordinary chat can handle intake and logging. Connections, saved records, scheduling and purchases depend on actual authorized host tools. AI role names do not confer professional credentials; review scores do not prove athlete outcomes.
+
+The links below are navigation and project facts, not an installed copy of the coaching rules. Main-branch files describe development source. The latest release identifies the distributed package; its ZIP and checksum are the release artifacts. Citations about a specific version should use its release/tag or commit rather than silently substituting main.
+
+## Start and identify
+
+- [Project overview](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/README.md): Audience, goals, starter prompt and capability boundaries.
+- [Install and update](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/docs/SETUP.md): Claude upload, Claude Code, Codex and ChatGPT Project routes; record handoff and connections.
+- [Catalog facts and citation](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/docs/DISCOVERY.md): Exact package identity, optional Skills CLI route and citation guidance.
+- [Latest release](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest): Published version, skill ZIP and checksum.
+
+## Behavior and evidence
+
+- [Skill entrypoint](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/skills/fitness-review-board/SKILL.md): Runtime rules and relevant references; install the complete package rather than this file alone.
+- [How Rowan learns](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/docs/HOW-IT-WORKS.md): Review, athlete feedback and maintenance loops.
+- [Validation and limits](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/docs/VALIDATION.md): Versioned checks, evidence scope and incomplete security scanning; no clinical or outcome certification.
+
+## Optional
+
+- [FAQ](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/docs/FAQ.md): Common questions about cost, compatibility, memory and privacy.
+- [Citation metadata](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/CITATION.cff): Maintainer identity and repository citation.
+- [Community sharing](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/docs/SHARE.md): Reusable descriptions, artwork and community submission routes.

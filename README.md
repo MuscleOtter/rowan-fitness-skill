@@ -1,8 +1,8 @@
-# Rowan Fitness Skill
+# Rowan — AI Fitness Skill for Claude and Codex
 
 ![Rowan: Train with intent. Review with evidence. An AI fitness skill for your assistant, with vintage iron-gym artwork.](docs/assets/rowan-card.jpg)
 
-Rowan is a free, open-source set of instructions you add to your AI assistant. Built for intermediate and advanced trainees, it brings lifting, cardio, nutrition and meal prep into one coaching conversation. Start with your program, equipment and goals; proposed changes get separate AI reviews.
+Rowan is a free, open-source **AI fitness coaching skill for Claude and Codex**, built for intermediate and advanced trainees. It brings strength training, muscle growth, cardio, fat loss, nutrition and meal prep into one conversation. Start with your program, equipment and goals; proposed changes get separate AI reviews. The installable skill is named `fitness-review-board`.
 
 **For new recommendations, use a session with separate reviewer tools.** Rowan checks your actual setup; ordinary chat can handle intake and logging. Your AI assistant's fees and usage limits apply. No GitHub account or coding is needed for the Claude upload.
 
@@ -93,6 +93,25 @@ At check-ins, Rowan compares what happened with what was expected: keep useful t
 ### Get the folder
 
 Use the [extraction instructions](docs/SETUP.md#get-the-folder) for local installs or ChatGPT uploads. Keep the ZIP intact for Claude's Skills upload.
+
+## For agents and skill catalogs
+
+| Field | Value |
+|---|---|
+| Skill identifier | `fitness-review-board` |
+| Package directory | [`skills/fitness-review-board`](skills/fitness-review-board/SKILL.md) — install the complete folder |
+| Format and license | Agent Skills (`SKILL.md` with YAML metadata); MIT |
+| Host requirements | Claude Code, capable Cowork sessions or Codex can run reviews when fresh reviewer and file tools are available. Ordinary chat supports intake/logging; ChatGPT uses the documented Project fallback. |
+
+[Agent documentation index](llms.txt) · [Catalog and citation details](docs/DISCOVERY.md) · [Validation](docs/VALIDATION.md)
+
+The open-source Skills CLI can discover the package without installing it:
+
+```bash
+npx skills add MuscleOtter/rowan-fitness-skill --list
+```
+
+For terminal installation, see the [Skills CLI route](docs/DISCOVERY.md#install-with-the-skills-cli). The [Claude upload](#start-in-claude) remains the simplest start without a terminal.
 
 ## Help Rowan improve
 

@@ -33,3 +33,17 @@ For a short demo, install Rowan and use fictional information: “I lift four da
 Describe Rowan as an AI skill. It requires a compatible assistant and real separate-review tools for new recommendations. Connections, reminders and purchases depend on actual tools and authorization. It is an independent project with no claimed affiliation with an AI provider or workout brand.
 
 Review scores are internal judgments, not clinical validation or a promise of progress. Do not turn illustrative prompts into testimonials or imply that every integration has been tested live. Link to [validation and limits](VALIDATION.md) for evidence.
+
+## Where to share Rowan
+
+Recommended routes, checked 2026-09-09. These are opportunities, not claims that Rowan is already listed or endorsed. Recheck each community's current rules before submitting.
+
+| Community | Best approach and timing |
+|---|---|
+| [skills.sh](https://www.skills.sh/docs/faq#how-do-i-get-my-skill-listed-on-the-leaderboard) | Best direct discovery route for skill users and agents. Its FAQ describes automatic listing from genuine user installations through the Skills CLI. Share the [exact install/discovery route](DISCOVERY.md#install-with-the-skills-cli); do not manufacture installs or rankings. |
+| [r/ClaudeAI showcase](https://www.reddit.com/r/ClaudeAI/comments/1qe5wtt/rule_7_is_getting_a_glowup_less_spam_more_how_the/) | Show a real demo and explain accurately how Claude contributed. The moderator guidance asks for a project substantially built/designed with Claude, free access to try it, minimal promotion and no referral links. Do not exaggerate Claude's role; Rowan itself is free but the assistant may require a subscription. |
+| [Show HN](https://news.ycombinator.com/showhn.html) | Share the usable open-source package, a concise demonstration and the design decisions. The maker should be available for questions. A landing page or routine version bump alone is insufficient; do not solicit votes. |
+| [Composio Awesome Claude Skills](https://github.com/ComposioHQ/awesome-claude-skills/blob/master/CONTRIBUTING.md) | Submit through its contribution process after a documented Claude trial. It requires a real use case, examples, accessible documentation and Claude testing; disclose exactly which host behavior was tested. The repository currently requests a skill folder plus README entry, so consider the maintenance cost of a second copy. |
+| [VoltAgent Awesome Agent Skills](https://github.com/VoltAgent/awesome-agent-skills/blob/main/CONTRIBUTING.md) | Later, once real users have adopted Rowan. Its guide explicitly excludes brand-new skills and requires community usage. Then propose a short attributed link under the appropriate community category. |
+
+Start with a concrete setup/logging demonstration and its actual save status. New-prescription demos need the full required board; a simulated example should say so. Share public project facts and volunteered, de-identified feedback, never a private Training Record. Use the reusable copy above as a starting point, then adapt it to each community.

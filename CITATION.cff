@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you discuss or use Rowan, cite this repository and identify the release or commit you used."
+type: software
+title: "Rowan Fitness Skill"
+authors:
+  - family-names: "Dworkin"
+    given-names: "Bradley"
+repository-code: "https://github.com/MuscleOtter/rowan-fitness-skill"
+url: "https://github.com/MuscleOtter/rowan-fitness-skill"
+license: MIT
+abstract: >-
+  An open-source AI fitness coaching skill for intermediate and advanced trainees.
+  Combines strength training, cardio, nutrition and meal prep with independent
+  AI review of proposed changes and a portable Training Record. Host tools and
+  permissions determine available review, memory and integration capabilities.
+keywords:
+  - agent skills
+  - Claude
+  - Codex
+  - fitness coaching
+  - strength training
+  - cardio
+  - nutrition
+  - meal prep
