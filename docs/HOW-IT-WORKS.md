@@ -6,7 +6,7 @@ Rowan uses three loops. Each needs evidence, an observable result and a stopping
 
 The author proposes; fresh independent reviewers critique; the author revises. This happens three times. A final independent review checks the exact finished recommendation.
 
-The board grades goal fit, lifting and cardio design, feasibility, recovery, practical nutrition when relevant, evidence and data quality. Every applicable score must exceed 8.5; critical areas and the overall quality mean must reach 9. An unresolved material problem cannot be averaged away. Scores describe proposal quality, not the probability of achieving a goal.
+The board grades goal fit, lifting and cardio design, feasibility, recovery, practical nutrition when relevant, evidence and data quality. Every applicable specialist score must reach 8.8; critical areas and the overall quality mean must reach 9. An unresolved material problem cannot be averaged away. Scores describe proposal quality, not the probability of achieving a goal.
 
 Reviewers should identify a specific problem and useful improvement. They must neither flatter the athlete nor invent objections to sound rigorous. When information or capability is missing, affected advice stays pending with a concrete next step.
 
@@ -19,6 +19,8 @@ Before trying a tactic, the record captures its baseline, expected effect, obser
 The decision can be **keep**, **pending**, **investigate**, **propose revision** or **reverse**. One noisy measurement is not enough to declare failure. Failed tactics stay in context so Rowan does not repeat them without a reason. New exercise or nutrition instructions return to the review loop.
 
 The persistent object is your Training Record, not the model's confidence that it remembers you. Corrections supersede older facts. Package updates must not restore deleted information or obsolete restrictions.
+
+The same learning loop applies to your support routine. Rowan asks what gets in the way, tries one agreed change and checks whether it helped. Keep a useful workout reminder or prep routine; adjust or stop unwanted nudges and their actual scheduled jobs. Silence is unknown, not a missed workout. New channels and purchases need the relevant authorization; convenience never lowers the fitness review bar.
 
 ## 3. Maintain the system
 

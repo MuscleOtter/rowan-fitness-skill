@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.8.0 — 2026-09-09
+
+Adds a personal follow-through routine owned by Rowan: optional phone delivery of approved workouts, brief check-ins, reminders and grocery help through actual authorized tools. Tracks configuration, delivery and purchase states honestly; reconciles uncertain sends/orders; verifies stop/snooze; and learns which support to keep, adjust or discard. Existing routines and chat-only use remain valid. No job, message, device connection or purchase is activated by installing the package.
+
+Raises every applicable final fitness specialist score and final skill-review dimension floor to 8.8. All existing 9.0 and stricter requirements remain. Historical grades keep their original rubric; criteria and weights are unchanged. Updates the portable Training Record with minimal workflow preferences, permissions, receipts and learning decisions.
+
 ## 1.7.0 — 2026-09-09
 
 Makes cardio and nutrition explicit parts of coaching. Adds mode-specific cardio intake/logs, HIIT/incline/steady-work selection, complete dosing, progression and lifting interactions. Nico independently reviews conditioning; Sage now checks practical meals, fueling, hydration, adherence and adjustment/maintenance. Full plans must assess cardio; review thresholds stay unchanged. Jules adds recipes, cooking and meal-prep review, with Sage independently checking nutritional fit and calculations. Rowan remains the lead; tasks use readable coach names and roles.

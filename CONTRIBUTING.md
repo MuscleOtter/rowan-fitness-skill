@@ -4,7 +4,7 @@ Prefer a specific failure, a small fix and evidence that the fix works. For issu
 
 1. Edit `skills/fitness-review-board/`. Keep personal state outside the repository.
 2. Bump the version in `SKILL.md` and add a short `CHANGELOG.md` entry.
-3. Exercise the relevant cases in `references/verification.md`. Preserve required reviewers, grading floors and exact-final approval. Recursion or maintenance changes require three independent critique/revision passes under `references/maintenance-rubric.md`.
+3. Exercise the relevant cases in `references/verification.md`. Preserve required reviewers, grading floors and exact-final approval. Every applicable final specialist score must reach 8.8; existing 9.0 and stricter requirements remain. Recursion or maintenance changes require three independent critique/revision passes under `references/maintenance-rubric.md`, with every final dimension at least 8.8. Never regrade historical reports automatically or lower criteria to pass.
 4. Run `python3 tools/package.py`, then `python3 tools/package.py --check`. The script builds a deterministic ZIP and SHA-256 list from the skill folder. It does not assess coaching quality.
 5. Review every changed file and the final archive for private information. Commit the source, docs and generated distribution together. Publish a versioned GitHub release with the ZIP and checksum file.
 

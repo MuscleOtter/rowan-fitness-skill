@@ -2,7 +2,7 @@
 
 Fill with this user's actual facts; `unknown` is a valid value. Save outside the skill folder. This is a template, not a preapproved plan.
 
-- Schema: FRB-state-1.5 (adds optional cardio, nutrition and recipe context; preserve older fields, approvals and unknowns)
+- Schema: FRB-state-1.6 (adds optional personal-workflow state; preserve older facts, approvals and unknowns)
 - Profile ID / preferred name:
 - Revision / parent revision / created date and timezone:
 - Authoritative location or manual copy selected by user:
@@ -26,6 +26,19 @@ Fill with this user's actual facts; `unknown` is a valid value. Save outside the
 - Recipe/variant IDs and approved portion/ingredient conditions; taste/satiety, prep burden, kitchen/storage and repeat/avoid feedback if used:
 - Devices/data availability, units, coverage, sync lineage:
 - Gym/exercise IDs, equipment/setup, likes/dislikes, alternatives:
+
+## Personal workflow and follow-through
+
+Fill only for selected routines; keep secrets in the host's account controls.
+
+- Routine/tactic ID and revision; obstacle and chosen support; active/proposed/paused/stopped status and reason:
+- Athlete/account identity; channel/destination reference and verified reach/access; trigger/timezone/travel rule:
+- Quiet hours, frequency/contact limit, permitted notification detail; current authorization and exclusions:
+- Current plan/recipe/record dependencies; actual job/provider IDs and next run when known:
+- Setup/read-back; last attempted/ran/accepted/delivered-if-confirmed status; pending/unknown sends or order reconciliation:
+- Grocery basket/order ID, scoped budget/substitution/fulfillment permissions, confirmed status; no payment credentials:
+- Trial baseline/benefit/window, observed usefulness/burden, keep/adjust/stop decision and next check:
+- Stop/snooze controls applied or pending; discarded tactics/context not to retry without new justification:
 
 ## Source registry and history coverage
 

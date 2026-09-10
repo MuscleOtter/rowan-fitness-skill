@@ -4,17 +4,17 @@ The skill supplies instructions, templates and interface metadata. It installs n
 
 ## First-use setup
 
-Each host family has a folder route that can run the board and save the record, and a chat route that cannot. Install the identical `fitness-review-board/` folder either way; keep its single root intact.
+Use the install route for the actual host below. Folder installs can expose reviewer and file tools; account-uploaded skills can also use them in a capable session such as Cowork. Verify the current tools before promising a board or a saved record. Keep the complete package intact.
 
 ### Claude
 
-**Claude Code:** put the folder in `~/.claude/skills/` for all projects, or in a project's `.claude/skills/`. It loads on the next turn and `/fitness-review-board` starts it explicitly. This is the Claude route that can actually run the board and save the record.
+**Claude Code:** put the folder in `~/.claude/skills/` for all projects, or in a project's `.claude/skills/`. It loads on the next turn and `/fitness-review-board` starts it explicitly. With available fresh-context reviewer and file tools, this route can run the board and save the record.
 
 **Claude.ai:** **Customize → Skills → upload the skill ZIP → enable it**, following the [current official instructions](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills). Claude's guide requires code execution to be enabled. If Skills or upload is unavailable, check that setting and any organization restrictions using the linked guide. Explain the needed setting; do not change it automatically.
 
 ### ChatGPT and Codex
 
-**Codex:** put the folder in `~/.codex/skills/`. `$fitness-review-board` starts it, and `agents/openai.yaml` in the folder supplies the display name and default prompt. This is the OpenAI route that can actually run the board and save the record.
+**Codex:** put the folder in `~/.codex/skills/`. `$fitness-review-board` starts it, and `agents/openai.yaml` in the folder supplies the display name and default prompt. With available fresh-context reviewer and file tools, this route can run the board and save the record.
 
 **ChatGPT app:** no folder install exists, so the instructions must be supplied as files. The athlete creates a Project and uploads this skill's `SKILL.md`, `references/` and `assets/` as Project knowledge, plus their current `athlete.md`. Verify the session can quote a specific rule from an uploaded file before relying on it. Retrieval over uploaded files is not the same as a loaded skill: re-read the relevant reference before a consequential step rather than assuming it is in context. This route gives the rules and the record; it does not give delegation, so new prescriptions still need the manual fallback.
 
@@ -78,6 +78,10 @@ Report only what matters, once: “I can run the independent reviews here and sa
 A first substantive review task can establish whether delegation works; it is not necessary to run a ceremonial probe for every role. Missing or failed tool calls follow the shared retry budget and remain unavailable until resolved. Reserve the final round's capacity. Reserve four calls per required reviewer: 16 for four core roles, 20 for five roles, 24 for six (including nutrition plus culinary in recipe-only work), or 28 for all seven, but the user need not manually shuttle their contents when delegation exists. Bundle useful approved contingencies in a coherent plan to avoid repeating a whole cycle for predictable gym disruptions.
 
 This is a portable dispatch procedure, not a preinstalled server or a promise that all Claude interfaces support it. Native tool names differ. Use only tools actually provided by the current host; do not invent commands or install an adapter without authorization.
+
+## Personal workflow delivery
+
+For phone plans, check-ins, reminders and grocery help, use [personal workflow](personal-workflow.md). Discover actual scheduling, send, shopping and file tools and verify the relevant execution environment/destination. A local desktop tool is not necessarily available to a cloud job, and a phone app does not imply unattended SMS or Health reading. Prefer an existing supported route; retain truthful configured/ran/accepted/delivered states. No useful route means a small chat/file/list fallback, not a new service by default.
 
 ## Manual fallback, only when chosen
 

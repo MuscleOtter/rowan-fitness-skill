@@ -1,8 +1,10 @@
-# Fitness recommendation rubric v1.2
+# Fitness recommendation rubric v1.3
 
-These are the user's quality anchors, not measured percentiles of real trainers: **4.7** represents generic average-trainer advice; **8.5** is strong personalized work; **9** is excellent and decision-ready; **10** is an aspirational professional-athlete-quality fit to this person's goal and circumstances. A 10 does not require an elite athlete's training load. Grades measure quality under available evidence, not guaranteed results. The separate skill-development rubric uses 5 as its midpoint; do not confuse the two.
+These are the user's quality anchors, not measured percentiles of real trainers: **4.7** represents generic average-trainer advice; **8.8** is the minimum strong personalized work required for release; **9** is excellent and decision-ready; **10** is an aspirational professional-athlete-quality fit to this person's goal and circumstances. A 10 does not require an elite athlete's training load. Grades measure quality under available evidence, not guaranteed results. The separate skill-development rubric uses 5 as its midpoint; do not confuse the two.
 
-v1.2 makes conditioning and practical nutrition coverage explicit; score anchors, weights and release floors are unchanged. Apply the new assignments to new review cycles. Preserve previous reports with their actual rubric/roles; never relabel historical approval as proof that added checks ran. Reassess when a current full-plan review or changed facts require it.
+v1.3 is a user-authorized prospective increase: every applicable specialist score must reach 8.8; the stricter G/S/E/H, goal-critical and weighted-mean ≥9 requirements remain. Weights and role coverage are unchanged. Apply it to new review cycles; preserve historical rubric/roles/scores without claiming added checks ran. Reassess when a current review or changed facts requires it.
+
+This raises a minimum; it never lowers a stricter previously agreed requirement. Actual scores can decrease when evidence warrants it; do not inflate them to create an upward trend.
 
 ## Quality dimensions
 
@@ -33,10 +35,10 @@ For each applicable cell the reviewer supplies a 1–10 score, evidence-based re
 Release only when all hold:
 
 1. All required stage reports are present and bound to their own stage's exact candidate/inputs. All required **final** reports bind to the exact final candidate/inputs; earlier reports are not expected to bind to the final revision.
-2. Every required applicable cell has valid coverage. Each quality dimension and fitness area is **strictly greater than 8.5**. G/S/E/H and each goal-critical fitness area are **at least 9**. Weighted quality mean is **at least 9**, before rounding.
+2. Every required applicable cell has valid coverage. Every assigned final specialist score and each resulting quality dimension/fitness area is **at least 8.8**. G/S/E/H and each goal-critical fitness area are **at least 9**. Weighted quality mean is **at least 9**, before rounding.
 3. No open material finding, unknown decision-critical input, invalid binding, required reviewer failure, stale dependency, or unresolved scope/safety issue remains.
 4. The candidate is still appropriate under the user's current constraints and goal. Delivery is its exact approved action text; memory activation follows its separate save rules.
 
-Display rounded scores only after evaluating the unrounded predicate. A mean of 8.96 fails; 8.5 in any applicable cell fails. A 9.6 mean with a material concern fails. If every reviewer supplies 9s without grounded reasons, the report is invalid rather than proof of excellence.
+Display rounded scores only after evaluating the unrounded predicate. A mean of 8.96 fails; 8.79 in any applicable cell fails. A 9.6 mean with a material concern fails. If every reviewer supplies 9s without grounded reasons, the report is invalid rather than proof of excellence.
 
 Findings are `material` (could change suitability, safety, goal attainment, authorization, data validity or what the user does) or `minor` (clarity/presentation with no action consequence). Each has ID, evidence, affected text/criterion, consequence, concrete fix, owner role and closure evidence. Reviewer critique targets the proposal, never the user's worth or compliance. Maintain standards even if three passes do not earn release; do not inflate scores to finish.

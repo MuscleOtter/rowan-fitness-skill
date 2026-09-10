@@ -87,6 +87,14 @@ For automatic independent reviews, choose a mode with separate-agent tools. Clau
 
 No real independent-review tools means no approved new prescription. Rowan can still organize history, log observations and prepare missing inputs. It should explain an available alternative instead of fabricating a board.
 
+## Make it easy to keep using Rowan
+
+Say: **“Help me build a routine I'll actually use. Start with what gets in my way.”** Rowan suggests one useful next step, using your existing apps where possible: the approved workout on your phone, a brief check-in, a reminder, or groceries for your reviewed meal plan. Chat alone is a valid choice.
+
+You choose the timing, channel and limits. Rowan checks the actual route and tells you whether it is proposed, configured or verified in use. Claude Cowork supports scheduled tasks in eligible sessions; mobile access and notifications depend on your setup. Claude's iPhone Messages integration prepares drafts for you to send, so it is not an unattended texting route. Codex uses its available scheduler and delivery tools. A skill upload alone activates none of them.
+
+Grocery help can be a list, a prepared cart or an authorized order when supported. Rowan checks the basket, substitutions and full cost before any missing purchase approval. At check-ins, it keeps useful support and adjusts or stops what is burdensome. Say **“Pause my reminders”** to stop the affected routine; Rowan verifies the actual job state. [Workflow and host details](../skills/fitness-review-board/references/personal-workflow.md).
+
 ## Keep your progress
 
 Ask “Show my Training Record.” Keep the latest `athlete.md` in your own private folder, Claude Project or ChatGPT Project. Project knowledge does not update merely because Rowan generated a replacement: replace it yourself unless an actual file tool has saved and verified it.

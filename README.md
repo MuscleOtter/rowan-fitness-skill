@@ -4,6 +4,8 @@
 
 Rowan is a portable AI coaching skill for intermediate and advanced athletes. Bring your lifting, cardio, nutrition, gym and goals. Rowan helps you log training, understand progress and prepare changes that independent reviewers must check before recommendation.
 
+Make it fit your day: Rowan can also help organize approved workouts, check-ins and groceries through your available apps. Keep the support that helps; change or stop what gets in the way.
+
 [**Download the skill ZIP**](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest/download/Rowan-Fitness-Skill.zip) · [Setup help](docs/SETUP.md) · [How it learns](docs/HOW-IT-WORKS.md)
 
 Downloading requires **no GitHub account or Git installation**. Choose `Rowan-Fitness-Skill.zip` from the [latest release](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest). For Claude.ai or Cowork, leave it zipped and go to [Start in Claude](#start-in-claude); the folder steps below are for local installs.
@@ -26,7 +28,7 @@ Run the commands below from that directory, adjusting the source path to match t
 
 ## Start in Claude
 
-**Claude Code** — the Claude route that can run the full board and save your record
+**Claude Code** — supports the full board and saved records when reviewer and file tools are available
 
 ```bash
 mkdir -p ~/.claude/skills && cp -R fitness-review-board ~/.claude/skills/
@@ -40,7 +42,7 @@ Then `/fitness-review-board`, or just start talking about your training.
 
 ## Start in ChatGPT or Codex
 
-**Codex CLI** — the OpenAI route that can run the full board and save your record
+**Codex CLI** — supports the full board and saved records when reviewer and file tools are available
 
 ```bash
 mkdir -p ~/.codex/skills && cp -R fitness-review-board ~/.codex/skills/
@@ -68,6 +70,7 @@ Whichever host you chose, start a conversation and paste:
 | “Should I use HIIT, incline walks or another cardio option?” | Compare fit, conditioning and fatigue; review a complete dose and progression alongside lifting. |
 | “Make my nutrition easier to follow.” | Review practical meals/portions, training fuel, hunger and adjustment rules that fit your life. |
 | “Give me recipes and a meal-prep plan.” | Develop practical portions, cooking steps, shopping and storage; independently check nutrition and recipe feasibility. |
+| “Help me stay on track.” | Agree one useful routine: a phone workout, brief check-in, reminder or grocery help. Verify the route, then learn whether it helps. |
 | “Review my week.” | Compare results with expectations; keep, investigate or propose a reviewed change. |
 | “This machine is always busy.” | Learn the constraint and retrieve an applicable approved alternative, or queue a review. |
 | “Show my Training Record.” | Give you the current portable record and an honest save status. |

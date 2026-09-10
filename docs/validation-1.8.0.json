@@ -1,0 +1,190 @@
+{
+  "format": "Rowan maintainer scan summary, not an upstream raw report or security certification",
+  "generated_at": "2026-09-10T00:30:16.288525+00:00",
+  "target": {
+    "repository": "https://github.com/MuscleOtter/rowan-fitness-skill",
+    "release": "v1.8.0",
+    "release_url": "https://github.com/MuscleOtter/rowan-fitness-skill/releases/tag/v1.8.0",
+    "skill_path": "skills/fitness-review-board",
+    "version": "1.8.0",
+    "package_sha256": "8f821b928d5982bf6f7ba4a199859613d92e80c544b6f2a3094e855050fea138",
+    "file_count": 23,
+    "skill_tree_digest": {
+      "algorithm": "sha256",
+      "digest": "e75c2b8b2bdd2affd64f4543f42bd29ea46defb1210e1fb8edcb457411f0a584",
+      "file_count": 23
+    }
+  },
+  "evaluator": {
+    "repository": "https://github.com/NVIDIA/SkillEvaluator.git",
+    "commit": "ff349e0d9f03868fc27d1e2bbd62eb849cba66c9",
+    "commit_url": "https://github.com/NVIDIA/SkillEvaluator/commit/ff349e0d9f03868fc27d1e2bbd62eb849cba66c9",
+    "mode": "tier1",
+    "options": [
+      "validate",
+      "--no-llm",
+      "--no-dedup"
+    ],
+    "environment_policy": "minimal_static",
+    "exit_code": 1
+  },
+  "overall_status": "incomplete",
+  "passed_validators": 10,
+  "total_validators": 11,
+  "incomplete_scans": [
+    "skillspector"
+  ],
+  "checks": [
+    {
+      "validator": "Schema & Repository Governance",
+      "status": "passed",
+      "errors": [],
+      "notes": []
+    },
+    {
+      "validator": "Semantic Version Validation",
+      "status": "passed",
+      "errors": [],
+      "notes": []
+    },
+    {
+      "validator": "Security Scan",
+      "status": "incomplete",
+      "errors": [
+        "skillspector 2.9.5/2.9.6 JSON field 'analysis_completeness.status' must be absent; security scan did not complete"
+      ],
+      "notes": []
+    },
+    {
+      "validator": "PII Scan",
+      "status": "passed",
+      "errors": [],
+      "notes": []
+    },
+    {
+      "validator": "License Compliance",
+      "status": "passed",
+      "errors": [],
+      "notes": []
+    },
+    {
+      "validator": "Code Risk Analysis",
+      "status": "passed",
+      "errors": [],
+      "notes": [
+        "No code files found - skipping code risk analysis"
+      ]
+    },
+    {
+      "validator": "Secrets Detection",
+      "status": "passed",
+      "errors": [],
+      "notes": []
+    },
+    {
+      "validator": "Code Integrity & Hygiene",
+      "status": "passed",
+      "errors": [],
+      "notes": []
+    },
+    {
+      "validator": "Unicode Smuggling Detection",
+      "status": "passed",
+      "errors": [],
+      "notes": []
+    },
+    {
+      "validator": "QUALITY",
+      "status": "passed",
+      "errors": [],
+      "notes": []
+    },
+    {
+      "validator": "SCRIPT_LINT",
+      "status": "passed",
+      "errors": [],
+      "notes": [
+        "[OK] lint: No scripts/ or tools/ directory found"
+      ]
+    }
+  ],
+  "quality_heuristic": {
+    "score": 83.2,
+    "grade": "B",
+    "meaning": "Heuristic documentation score; not an independent fitness-board grade or outcome measure"
+  },
+  "advisories": [
+    {
+      "validator": "Schema & Repository Governance",
+      "severity": "medium",
+      "message": "Missing recommended section: '## Instructions'"
+    },
+    {
+      "validator": "Schema & Repository Governance",
+      "severity": "medium",
+      "message": "Missing recommended section: '## Examples'"
+    },
+    {
+      "validator": "Schema & Repository Governance",
+      "severity": "low",
+      "message": "Unexpected 'LICENSE.md' in skill root"
+    },
+    {
+      "validator": "QUALITY",
+      "severity": "low",
+      "message": "No examples provided"
+    },
+    {
+      "validator": "QUALITY",
+      "severity": "medium",
+      "message": "SKILL_SPEC recommended field missing: 'version'"
+    },
+    {
+      "validator": "QUALITY",
+      "severity": "medium",
+      "message": "SKILL_SPEC recommended field missing: 'metadata.tags'"
+    },
+    {
+      "validator": "QUALITY",
+      "severity": "low",
+      "message": "Description doesn't mention WHEN to use this skill"
+    },
+    {
+      "validator": "QUALITY",
+      "severity": "low",
+      "message": "No '## Purpose' section"
+    },
+    {
+      "validator": "QUALITY",
+      "severity": "low",
+      "message": "No mention of error handling or validation"
+    },
+    {
+      "validator": "QUALITY",
+      "severity": "low",
+      "message": "No prerequisites/requirements documented"
+    },
+    {
+      "validator": "QUALITY",
+      "severity": "low",
+      "message": "No limitations documented"
+    },
+    {
+      "validator": "QUALITY",
+      "severity": "low",
+      "message": "No troubleshooting section documented"
+    },
+    {
+      "validator": "QUALITY",
+      "severity": "medium",
+      "message": "Deeply nested references in recipes-meal-prep.md"
+    }
+  ],
+  "limits": [
+    "Only the 23-file distributable skill was scanned; repository packaging code was separately inspected and exercised.",
+    "Claude route documentation and exposed Codex tool descriptions were inspected; no real phone notification, calendar/reminder operation, purchase or Health import was performed.",
+    "Independent authored-skill reviews and separately generated fictional response probes do not establish a full prescription-board execution or longitudinal athlete outcomes.",
+    "Raw reports remain in the private audit folder; local paths and host metadata are omitted from this summary.",
+    "Scan dependencies were resolved by the evaluator environment; this receipt does not pin the complete transitive toolchain."
+  ]
+}

@@ -1,9 +1,13 @@
 # Frozen recursive-coaching release rubric
 
-Rubric version: 1.0  
+Rubric version: 1.1
 Frozen: 2026-09-09  
 Reviewer: independent recursion and maintenance reviewer  
-Basis: the delegated user scope only; no candidate package, earlier review, or prior score was inspected before this rubric was written.
+Original v1.0 basis: independently written against the delegated scope before inspecting its candidate or prior scores.
+
+User-authorized amendment, 2026-09-09: raise every dimension floor from 8.5 to 8.8 for subsequent skill reviews. Scores may use tenths so the requested threshold is representable. The eight criteria and weights are unchanged; historical reviews keep their original rubric and are not upgraded. Freeze this v1.1 rubric before the new review sequence; do not change it to fit results.
+
+This raises a minimum; it never lowers a stricter previously agreed requirement. Actual scores can decrease when evidence warrants it; do not inflate them to create an upward trend.
 
 ## Scope and scoring contract
 
@@ -15,9 +19,9 @@ Keep these three claims separate in every review:
 2. **Demonstrated execution:** which behaviors were actually exercised, in what host or explicit simulation, against which candidate version, with what observable results. A written example is not an execution trace; simulation is not host verification.
 3. **Longitudinal athlete outcomes:** changes observed over time in a real athlete, with confounders and uncertainty. Neither a strong specification nor a successful test establishes these outcomes.
 
-Score each dimension from 1 to 10, permitting half-point increments. **5 means a credible mid-level implementation:** useful basic behavior with substantial omissions. **8.5 means consistently strong, usable, and adequately supported within the stated release scope, with no material defect. 10 is aspirational, exceptional capability and usability**, not proof that every athlete wants the skill or that it improves all athletes' outcomes.
+Score each dimension from 1 to 10, permitting one-decimal increments. **5 means a credible mid-level implementation:** useful basic behavior with substantial omissions. **8.8 is the release minimum: consistently strong, usable, adequately supported within the stated scope, with no material defect. 10 is aspirational, exceptional capability and usability**, not proof that every athlete wants the skill or that it improves all athletes' outcomes.
 
-Weighted score = sum(weight × dimension score) / 100. Release requires **every dimension ≥ 8.5 and no material defect**; an aggregate score cannot compensate for a weak dimension. An unsupported criterion must be recorded as unverified or deficient, with its effect on the relevant claim and score explained. Do not award credit for planned work, inferred hidden behavior, or confident prose. If evidence is missing, identify the smallest useful check. Do not demand unavailable longitudinal evidence merely to judge authored adequacy; do not silently turn authored adequacy into a claim of demonstrated efficacy.
+Weighted score = sum(weight × dimension score) / 100. Release requires **every dimension ≥ 8.8 and no material defect**; an aggregate score cannot compensate for a weak dimension or reviewer. Apply this to every required final skill-review report; earlier drafts may fail while being revised. Do not round a lower score up to 8.8. Numeric granularity is a reporting convention, not measured precision. An unsupported criterion must be recorded as unverified or deficient, with its effect on the relevant claim and score explained. Do not award credit for planned work, inferred hidden behavior, or confident prose. If evidence is missing, identify the smallest useful check. Do not demand unavailable longitudinal evidence merely to judge authored adequacy; do not silently turn authored adequacy into a claim of demonstrated efficacy.
 
 ## Dimensions
 
