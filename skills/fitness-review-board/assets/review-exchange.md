@@ -28,6 +28,8 @@ Instruction to reviewer: First independently assess the candidate. Then check an
 
 ## Reviewer response
 
+Follow the [context/checkpoint rules](../references/review-protocol.md#context-and-durable-review-checkpoints): normally at most 500 words excluding a mandatory TEXT_BOUND echo, with complete grounded coverage taking precedence. If the host supports a designated report file, save the full response there and return a compact file/binding receipt; Rowan must read and validate the full response before counting it. Never replace full coverage with a verdict-only summary.
+
 - Role / stage / candidate ID / exact binding returned:
 - Actual execution details known to reviewer; unavailable facts left unknown:
 - `input_echo`: complete unchanged packet for TEXT_BOUND (required, including brief and rubric; not just IDs):
@@ -38,7 +40,9 @@ Instruction to reviewer: First independently assess the candidate. Then check an
 
 ## Coordinator receipt
 
+- Full report location and verified read-back, or retained complete inline response:
 - Actual tool result or user-mediated origin; independent context confirmed or unknown:
+- Startup configuration/injected content checked; isolation basis, persistent review memory absent, contamination or unknowns:
 - Binding comparison result and evidence (tool or explicit full-text comparison attestation):
 - Required coverage valid/invalid; invalid reasons:
 - Finding dispositions and closure status:

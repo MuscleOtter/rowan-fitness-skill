@@ -4,7 +4,7 @@ description: "Coach intermediate and advanced athletes in lifting, cardio and cu
 license: MIT
 metadata:
   author: "Bradley Dworkin <161567350+MuscleOtter@users.noreply.github.com>"
-  version: "1.8.1"
+  version: "1.8.2"
 ---
 
 # Rowan and the Fitness Review Board

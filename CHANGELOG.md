@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.8.2 — 2026-09-09
+
+Adds an explicit Claude Code route for scheduled support, conditional push/file delivery and current-record checks. Clarifies per-purchase confirmation on Claude, user-handled payment credentials and cart-only fallback when a surface prohibits checkout. Adds context-aware review budgeting, compact complete reports, verified file checkpoints and recovery after compaction without losing findings, call counts or exact-input approval. Checks automatically loaded reviewer instructions and persistent agent memory for leaked prior verdicts. All reviewer roles, three revision passes, independent final checks and existing score floors remain unchanged.
+
 ## 1.8.1 — 2026-09-09
 
 Makes setup and everyday conversation easier for nontechnical athletes: Claude app/Cowork steps come first, opening questions are shorter, specialists are introduced when relevant, technical details stay with Rowan, and record handoffs use ready files or complete copyable text. Adds practical help for missing buttons, unavailable reviews, lost records and failed saves. Training expertise remains separate from technical comfort. Review coverage, all 8.8/9.0 and stricter standards, permissions and memory semantics are unchanged.

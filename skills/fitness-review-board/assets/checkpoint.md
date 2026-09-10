@@ -62,7 +62,8 @@ Fill only for used sources; retain this section in handoffs when it governs impo
 - Cycle/stage/candidate ID / binding mode / packet references:
 - Required role set / critical fitness areas / rubric version:
 - Stage reports and final score coverage; arithmetic; open findings:
-- Normal, corrective, consultation, and pre-draft calls used/reserved:
+- Private cycle ledger location; exact artifacts/independence receipts and last verified read-back; context-capacity status and next safe boundary:
+- Normal, corrective, consultation, and pre-draft calls used/reserved, including pending/unknown attempts:
 - Save or activation problem and next recovery step:
 
 ## Latest observations

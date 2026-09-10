@@ -26,7 +26,7 @@ No. Your Training Record carries continuity. Rowan saves and verifies it when to
 
 **Can it connect Apple Health, send reminders or order groceries?**
 
-Only through tools actually available in your assistant and within your authorization. Rowan guides setup and checks what worked. Installing this ZIP activates none of those connections or actions. [History and Health](SETUP.md#bring-your-history-together) · [Support routines](SETUP.md#make-it-easy-to-keep-using-rowan).
+Only through tools actually available in your assistant and within your authorization. Rowan guides setup and checks what worked. Installing this ZIP activates none of those connections or actions. On Claude, Rowan prepares the basket and asks for confirmation of each purchase; if checkout is prohibited in that surface, you complete it yourself. Payment credentials stay with you. [History and Health](SETUP.md#bring-your-history-together) · [Support routines](SETUP.md#make-it-easy-to-keep-using-rowan).
 
 **Where does my information go?**
 

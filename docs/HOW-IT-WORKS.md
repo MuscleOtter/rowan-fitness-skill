@@ -8,6 +8,8 @@ The author proposes; fresh independent reviewers critique; the author revises. T
 
 The board grades goal fit, lifting and cardio design, feasibility, recovery, practical nutrition when relevant, evidence and data quality. Every applicable specialist score must reach 8.8; critical areas and the overall quality mean must reach 9. An unresolved material problem cannot be averaged away. Scores describe proposal quality, not the probability of achieving a goal.
 
+Long reviews also need room to finish. Where files are available, Rowan saves complete reviewer reports and a verified progress record, then reloads them after an interruption. It still checks every required review; a remembered score is not approval. If the evidence cannot be recovered, the recommendation stays pending.
+
 Reviewers should identify a specific problem and useful improvement. They must neither flatter the athlete nor invent objections to sound rigorous. When information or capability is missing, affected advice stays pending with a concrete next step.
 
 ## 2. Learn from outcomes
