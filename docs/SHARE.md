@@ -4,15 +4,15 @@ Use the [repository](https://github.com/MuscleOtter/rowan-fitness-skill) as the 
 
 ## One sentence
 
-> Rowan is an open-source AI coaching skill for experienced trainees that brings lifting, cardio, nutrition and meal prep into one conversation, with separate AI reviews before new recommendations.
+> Rowan is an open-source AI coaching skill for experienced trainees that brings training, nutrition and sleep into one conversation, with practical support for following through and separate AI reviews before new recommendations.
 
 ## Short post
 
-> Meet Rowan: AI coaching for people who already train. Bring your program, gym and goals. Rowan helps organize your training and food, preserve what works, and put proposed changes through separate AI reviews. Free skill; your AI assistant's usage fees and limits apply. Get started: https://github.com/MuscleOtter/rowan-fitness-skill
+> Meet Rowan: AI coaching for people who already train. Bring your program, gym and goals. Rowan considers training, food and sleep, helps with everyday obstacles, preserves what works, and puts proposed changes through separate AI reviews. Free skill; your AI assistant's usage fees and limits apply. Get started: https://github.com/MuscleOtter/rowan-fitness-skill
 
 ## Community introduction
 
-> Rowan is a free, open-source skill for intermediate and advanced trainees. It starts with the program you already follow and brings lifting, cardio, nutrition, recipes and meal prep into the same conversation.
+> Rowan is a free, open-source skill for intermediate and advanced trainees. It starts with the program you already follow and brings lifting, cardio, nutrition, recipes, meal prep and sleep into the same conversation. It helps find practical ways to follow through, remembers declined support, and keeps personal experiments and working memory bounded.
 >
 > The central rule: new recommendations go through three critique-and-rewrite passes and a separate final check. When those reviewers aren't available, Rowan can still organize history and log workouts. Your Training Record carries goals and progress between conversations.
 >

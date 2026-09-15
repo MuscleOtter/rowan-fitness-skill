@@ -4,7 +4,9 @@
 
 Makes goal progress and sustainable adherence explicit, adds creative obstacle-solving and suppression of declined suggestions, and bounds personal experiments and memory. Quinn gains targeted research stewardship with a deduplicated evidence queue. Routing policy v2 keeps Mara/Quinn universal and makes Ellis/Kit conditional on relevant data/exercise questions; other domain triggers, all three revision passes, score floors and exact-final checks remain. Fitness rubric v1.5 clarifies conditional coverage; FRB-state-1.8 adds optional continuity fields. Call-count reductions are policy arithmetic, not demonstrated token savings. Full clinical-cycle testing remains deferred; see the new validation receipt for actual focused checks.
 
-## 1.9.0 — 2026-09-15 (prepared for review; not published)
+Includes Wren and the sleep-coaching work prepared in 1.9.0. Follow-up repository documentation clarifies separate Codex desktop/CLI, Claude and ChatGPT installation updates, verification and historical validation status. These documentation corrections leave the 1.10.0 skill package and checksum unchanged.
+
+## 1.9.0 — 2026-09-15 (unreleased preparation; superseded by 1.10.0)
 
 Adds Wren — Sleep & Recovery as the ninth named team member and sleep as a third coaching pillar alongside training and nutrition. Full weekly/program reviews, every cut-related recommendation and sleep-relevant advice include independent sleep review. Adds practical assessment, clinical recognition/referral boundaries and a topic-indexed clinical evidence catalog with actual search dates, publication status, evidence cutoffs, access limits and targeted freshness checks before consequential advice.
 

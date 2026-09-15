@@ -126,8 +126,9 @@
     "environment": "isolated local validator environment; PyYAML dependency installed after unavailable in default runtimes"
   },
   "automations": {
-    "dependency_hourly_check": "paused by explicit user request",
-    "monthly_research": "configured/read back; first execution unobserved; generic public research only; no private athlete records; max 3 topics/6 queries/8 source reads per run"
+    "configuration_check": "A bounded monthly research configuration was saved and read back; first execution unobserved.",
+    "host_scope": "Schedules require separate host-native setup; the skill ZIP creates no job or notifications.",
+    "research_limits": "Generic public research only; max 3 topics/6 queries/8 source reads per run; no private athlete records."
   },
   "claude_compatibility": {
     "checked": "2026-09-15",
@@ -135,7 +136,7 @@
     "description_characters": 184,
     "format_check": "passes inspected Claude packaging requirements",
     "portable_routing_research": "no required Codex-specific tools",
-    "local_claude_code_install": "27 files match reviewed source; prior 1.8.2 backed up outside discovery",
+    "local_claude_code_install": "Local-folder installation check matched all 27 reviewed release files; account upload is a separate target.",
     "account_upload": "not performed; update instructions supplied",
     "live_claude_board": "unverified; clinical cycle user-deferred",
     "sources": [
@@ -143,5 +144,21 @@
       "https://support.claude.com/en/articles/12512180-use-skills-in-claude",
       "https://code.claude.com/docs/en/sub-agents"
     ]
+  },
+  "codex_compatibility": {
+    "checked": "2026-09-15",
+    "local_install": "All 27 installed files match the reviewed release, including agents/openai.yaml.",
+    "structure_check": "skill-creator quick_validate.py passed before activation; complete file comparison passed after activation.",
+    "scope": "Local installation integrity only; no new live clinical board executed. Separate ChatGPT Project uploads were not inspected or changed."
+  },
+  "documentation_update_checks": {
+    "checked": "2026-09-15",
+    "local_links_checked": 223,
+    "errors": [],
+    "zip_sha256": "d376bb842ddace1476171a4f38b9a3e8805d2214f1d8c28948ec65d6214b6663",
+    "archive_entries": 27,
+    "scope": "structure, internal links and exact distribution bytes only",
+    "skill_package_changed": false,
+    "independent_documentation_review": "No blocking factual inconsistency found in the documentation-only diff."
   }
 }

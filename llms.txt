@@ -19,6 +19,10 @@ The links below are navigation and project facts, not an installed copy of the c
 - [Sleep coaching](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/skills/fitness-review-board/references/sleep-recovery.md): Wren's assessment, participation, coaching and clinical boundaries.
 - [Clinical sleep evidence](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/skills/fitness-review-board/references/sleep-evidence.md): Dated source catalog, search coverage and checks before consequential advice; not a continuously updated service.
 - [How Rowan learns](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/docs/HOW-IT-WORKS.md): Review, athlete feedback and maintenance loops.
+- [Task-specific review teams](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/skills/fitness-review-board/references/task-routing.md): Required specialists, proportionate work and bounded review calls.
+- [Practical adherence support](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/skills/fitness-review-board/references/personal-workflow.md): Useful support at the point of choice, declined suggestions and outcomes that matter to the athlete.
+- [Bounded memory](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/skills/fitness-review-board/references/memory.md): Working summaries, indexed history, protected corrections and continuity.
+- [Research stewardship](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/skills/fitness-review-board/references/research-upkeep.md): Quinn's targeted evidence checks, science ledger and optional host-specific research watch.
 - [Validation and limits](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/docs/VALIDATION.md): Versioned checks, evidence scope and incomplete security scanning; no clinical or outcome certification.
 
 ## Optional
