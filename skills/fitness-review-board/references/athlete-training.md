@@ -38,7 +38,7 @@ Deloads and block changes need a stated purpose and evidence. Do not automatical
 
 ## Cutting while preserving performance
 
-Sage joins every cut decision. Assess energy intake/coverage, protein adequacy, hunger, training performance, recovery, adherence and time horizon together. For a trained athlete, stable strength or rep performance during weight loss can be useful evidence; it is not proof of unchanged muscle mass. Consumer body-fat readings do not establish small tissue changes. A deficit and training load must be workable together; do not escalate both automatically after stalled scale readings.
+Sage and Wren join every cut decision; assess sleep using [sleep and recovery](sleep-recovery.md). Assess energy intake/coverage, protein adequacy, hunger, training performance, recovery, adherence and time horizon together. For a trained athlete, stable strength or rep performance during weight loss can be useful evidence; it is not proof of unchanged muscle mass. Consumer body-fat readings do not establish small tissue changes. A deficit and training load must be workable together; do not escalate both automatically after stalled scale readings.
 
 The plan defines personally appropriate performance/recovery guardrails and an observation window, with a nutrition approach supported by applicable current evidence. It does not guarantee maximal strength gain and maximal fat loss at once. Do not import recommendations from untrained or clinical populations into advanced athletes without explaining the limits. Use the shared nutrition/evidence reference before numerical targets.
 

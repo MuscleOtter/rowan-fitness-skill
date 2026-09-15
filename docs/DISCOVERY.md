@@ -10,7 +10,7 @@ Rowan Fitness Skill is the project name. **`fitness-review-board` is the install
 | Repository path | [`skills/fitness-review-board/`](../skills/fitness-review-board/SKILL.md); copy the complete folder |
 | Published package | [Latest skill ZIP](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest/download/Rowan-Fitness-Skill.zip) and [SHA-256 checksum](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest/download/SHA256SUMS.txt); anonymous download |
 | Audience | Intermediate and advanced trainees; technical experience is unnecessary |
-| Use cases | Strength training, hypertrophy, cardio/conditioning, fat-loss cuts, nutrition, recipes, meal prep and workout-history continuity |
+| Use cases | Strength training, hypertrophy, cardio/conditioning, fat-loss cuts, nutrition, recipes, meal prep, sleep/recovery and workout-history continuity |
 | Host boundary | Claude Code, Cowork and Codex only run the board when actual fresh reviewer tools exist. Claude chat and ChatGPT Project fallbacks support intake/logging; new recommendations require the prescribed independent review route. |
 | Cost | Free skill; assistant subscriptions, usage and connected services may cost extra |
 | Runtime | Instructions and templates; no bundled application server, MCP connector, database or background service |

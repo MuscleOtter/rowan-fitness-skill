@@ -14,6 +14,10 @@ For imports: preview relevant fields and date span, map units, preserve raw sour
 
 For nutrition logs preserve date/range and coverage, actual foods/portions or intake totals with units, target versus consumed, raw/cooked/estimated status when relevant, and original source. Training/rest context, appetite, energy and practical barriers can explain outcomes. Do not silently fill incomplete days or turn uncertain portions into exact intake. Use [nutrition programming](nutrition-programming.md) for reviewed interpretation.
 
+## Sleep observations
+
+Ellis keeps sleep opportunity/time in bed, reported actual sleep, device estimates and daytime experience separate. Retain dated start/end/timezone when known, reporting date, source, coverage and uncertainty; follow [sleep records](sleep-recovery.md#records-and-continuity) for overnight periods, naps, travel and clock changes. Missing nights are not zero sleep; conflicting estimates remain attributable until resolved. Do not average incompatible sources or treat mirrored imports as additional sleep. Sleep-stage scores do not establish diagnosis, adequacy or training readiness. Simple estimates can answer a narrow question without connecting a wearable.
+
 ## Devices: ownership is not access
 
 Use [history discovery and connections](history-and-connections.md) to find prior fitness chats, inspect available integrations, establish the two Apple Health data paths, and reconcile incremental imports. Encourage useful aggregation through existing apps; no sync claim is valid without a representative read.

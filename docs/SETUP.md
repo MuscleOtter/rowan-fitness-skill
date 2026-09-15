@@ -110,7 +110,7 @@ Rowan handles the team. When separate reviewers are available, you can keep talk
 <details>
 <summary>Technical details for reviewers and host setup</summary>
 
-For automatic independent reviews, choose a mode with separate-agent tools. Claude Code, Cowork and Codex may provide them; Rowan must check the actual session, not the product name. A reviewer also has to start from an empty context — a fork or continuation mode that inherits the conversation is not an independent reviewer, however correct its report looks. A complete new-plan review takes four calls per required reviewer: 16 for the core board, 20 with nutrition or conditioning, 24 when both participate, and 28 when a combined plan also includes recipes/meal prep reviewed by Jules. Tasks use names such as “Nico — Conditioning — Pass 1” when the host supports custom labels. Logging and retrieving unchanged, valid approved plans use lighter routes.
+For automatic independent reviews, choose a mode with separate-agent tools. Claude Code, Cowork and Codex may provide them; Rowan must check the actual session, not the product name. A reviewer also has to start from an empty context — a fork or continuation mode that inherits the conversation is not an independent reviewer, however correct its report looks. A complete new-plan review takes four calls per required reviewer: 12 for three required roles, 16 for four, up to 32 for all eight. [Task routing](../skills/fitness-review-board/references/task-routing.md) selects specialists by the actual decision. Mara and Quinn always review new advice, and all required roles participate at every stage. Tasks use names such as “Nico — Conditioning — Pass 1” when the host supports custom labels. Logging and retrieving unchanged, valid approved plans use lighter routes.
 
 No real independent-review tools means no approved new prescription. Rowan can still organize history, log observations and prepare missing inputs. It should explain an available alternative instead of fabricating a board.
 
@@ -162,6 +162,16 @@ If there is no Health reader, use a selected app export or small summary. A full
 | Codex CLI | Move the existing `~/.codex/skills/fitness-review-board/` to a uniquely named backup outside the skills directory, then copy in the new folder. |
 | Claude.ai or Cowork | Replace/update the uploaded skill through the account's Skills controls. Ensure only one Rowan version is enabled. |
 | ChatGPT Project | Replace the old skill, reference and asset files with the new versions. Keep the current `athlete.md`; remove obsolete rule files so both versions are not active. |
+
+### Check the update in Claude
+
+Claude Code's local folder and Claude chat/Cowork's uploaded skill are separate installation routes. Updating GitHub or the local folder does not by itself replace an account upload. In **Customize → Skills**, update/replace Rowan with the latest release ZIP and keep only the intended version enabled. If no update control appears, keep the old ZIP for rollback, disable the old Rowan, and upload the new ZIP through the available create/upload control. Enable only the new version; if Claude requires removing the disabled duplicate first, delete that old skill upload and re-upload. Keep your latest Training Record separately and start a fresh conversation so earlier loaded instructions do not compete with the update. [Claude's current upload guide](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills).
+
+Ask Claude: **“Read Rowan's installed SKILL.md and tell me its version. Read task-routing.md and research-upkeep.md. Explain who reviews a sleep-only request, how you remember declined suggestions, and where my Training Record can actually be saved. Do not create a new fitness plan for this check.”** A name or confident version guess is not proof of loading; Claude should read the files and state actual capabilities.
+
+Rowan's new routing, adherence, memory and research rules use the same package on Claude and Codex. `agents/openai.yaml` is optional Codex display metadata, not a Claude dependency. Claude's ordinary chat can log, explain and retrieve applicable approved instructions; automatic boards require actual fresh-context delegation in that session. In Claude Code, use non-fork reviewers; `/fork` and `/subtask` inherit the conversation and cannot satisfy Rowan's independence rule. [Claude subagent documentation](https://code.claude.com/docs/en/sub-agents).
+
+Scheduled jobs belong to the host where they were created. A research watch configured in Codex does not transfer through the ZIP into Claude. Rowan can perform on-use evidence checks in Claude and configure a Claude-native watch only when requested and available; reuse an existing watch instead of duplicating it. No upload itself starts notifications or changes your personal record. These compatibility notes were checked against official documentation on 2026-09-15; live Claude board execution remains unverified.
 
 For an existing Claude Code folder install, this creates a unique backup outside skill discovery. Run it before copying in the new folder:
 

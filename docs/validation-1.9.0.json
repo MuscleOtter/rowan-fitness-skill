@@ -1,0 +1,115 @@
+{
+  "format": "Rowan v1.9.0 preparation and validation receipt; not a release or clinical certification",
+  "generated_at": "2026-09-15T16:26:44.383456+00:00",
+  "status": "IMPLEMENTED; PREPARED FOR USER REVIEW; FURTHER VALIDATION DEFERRED",
+  "target": {
+    "repository": "https://github.com/MuscleOtter/rowan-fitness-skill",
+    "base_commit": "9763ebc47feed7063380007d0432252f185aea0b",
+    "branch": "codex/rowan-sleep-1.9.0",
+    "version": "1.9.0",
+    "skill_path": "skills/fitness-review-board",
+    "source_file_count": 25,
+    "package_sha256": "1dfc5067648c8695a21ef92798c1119bed3de54704d07bdc60e9eec820f2ac50",
+    "skill_tree_digest": "e89d9528d09be18e1cb55242044d7cff318e6146ea694591bdf80e38af5fc83b",
+    "published": false,
+    "installed": false
+  },
+  "independent_development_review": {
+    "contract": "Nine package-quality dimensions and eight maintenance dimensions; unchanged prospective floor8.8; three fresh non-fork critics. Historical rubric/grades preserved.",
+    "passes": [
+      {
+        "pass": 1,
+        "package_weighted": 9.027,
+        "maintenance_weighted": 9.07,
+        "all_dimensions_at_least_8_8": false,
+        "findings": "Incomplete AASM search cutoff, setup count, roster formatting; execution evidence pending."
+      },
+      {
+        "pass": 2,
+        "package_weighted": 9.064,
+        "maintenance_weighted": 9.129,
+        "all_dimensions_at_least_8_8": true,
+        "material_authored_defects": 0
+      },
+      {
+        "pass": 3,
+        "package_weighted": 9.085,
+        "maintenance_weighted": 9.132,
+        "all_dimensions_at_least_8_8": true,
+        "material_authored_defects": 0,
+        "exact_current_source_zip_manifest_match": true
+      }
+    ],
+    "independence_basis": "Actual fresh fork_turns=none launches plus separate observed-startup attestations; no author transcript, prior grades or peer verdicts supplied. Separate AI contexts can share model errors.",
+    "final_delivery_and_six_dimension_usability_review": "PENDING; pass3 archive inspection is not the contracted fresh final delivery review."
+  },
+  "behavior_evidence": {
+    "immediate_response_cases": 21,
+    "independent_responder_contexts": 2,
+    "scope": "AI-generated one-turn fictional responses, not21 full independent boards. B15 additionally performed isolated local file operations with read-back.",
+    "behaviors_exercised": [
+      "sleep-only intake without a device",
+      "full program/cut/recipe role selection including Wren",
+      "shift/travel and caffeine/late-training intake",
+      "one poor night without automatic training cancellation",
+      "conflicting measurements, mirrored imports and missing nights",
+      "insomnia, breathing pauses, restless-leg symptoms and dangerous sleepiness referral/safety boundaries",
+      "new conflicting research, old cutoff, abstract-only access and mock retraction",
+      "missing Wren, material dissent, changed schedule and contaminated-reviewer holds",
+      "legacy record correction, optional sleep fields and stopped-tactic preservation"
+    ],
+    "known_failed_case": "B09 repeated the initial catalog omission of2024/2025 search updates. Its raw output is retained as failed historical date evidence.",
+    "corrected_date_test": "B21 independently reopened original AASM sources and verified June2025 latest search, April2026 publication and September15,2026 checking as distinct dates.",
+    "remaining_cases": "No material deviation found in inspected immediate-response scope; no live athlete or cross-host outcomes claimed."
+  },
+  "synthetic_recommendation_execution": {
+    "required": "One complete five-role cycle: three review/revision passes and five fresh exact-final reviews,20 successful reports.",
+    "status": "INCOMPLETE; no sleep recommendation released",
+    "native_attempt": {
+      "valid_pass1_reports": 2,
+      "failed_launches": 3,
+      "reason": "Native agent thread limit; two shared technical retries exhausted. Held with exact reports and packets retained."
+    },
+    "standalone_attempt": {
+      "valid_reports": 0,
+      "incomplete_report_rejected": 1,
+      "reason": "First report did not assess the assigned Health/data integrity criterion. Its numeric/qualifies output was not accepted as approval.",
+      "configured_model_retry": "Failed before review: installed standalone CLI version does not support the configured model. No CLI upgrade, global model setting change or further retry performed."
+    },
+    "scores_and_hold_integrity": "No fabricated reviewer, substituted self-review, lowered floor or completed-cycle claim. Remaining work retained privately."
+  },
+  "clinical_evidence": {
+    "catalog_checked": "2026-09-15",
+    "topics": 9,
+    "scope": "Selected primary guidelines and human research, with search terms, original-source status checks and access/cutoff limitations retained privately. Not an exhaustive systematic review or a claim that every topic is fully current.",
+    "corrected_guideline_cutoff": "AASM2026 combination guidance: initial Oct/Nov2023; updates Oct2024/June2025; latest reported search June2025.",
+    "indexed_status_check": "All22 requested primary PubMed records returned; two linked errata investigated and recorded. No retraction notice in returned records; not proof of universal absence.",
+    "source_links": "31 original catalog links checked;25 direct successes,4 originals accessible through research transport,2 direct DOI opens blocked but exact original publisher records confirmed through indexed results. Two added erratum links checked separately.",
+    "retained_limits": [
+      "Some abstracts only; exact cutoffs for several older sources remain unknown.",
+      "Final full shift-work guideline publication status not confirmed.",
+      "2022 MSLT/MWT and2024 IOC REDs errata recorded with narrow decision relevance.",
+      "Consequential use must recheck relevant authority and later evidence; access gaps can hold affected advice."
+    ]
+  },
+  "static_checks": {
+    "package_rebuild_and_check": "passed",
+    "source_zip_byte_parity": true,
+    "local_links_checked": 198,
+    "local_link_failures": [],
+    "git_diff_check": "passed",
+    "structure_validator": "skill-creator quick_validate passed with PyYAML environment",
+    "privacy_scope": "All25 ZIP members are skill instructions/templates/metadata/license; no private fictional records, review payloads, scripts or personal athlete data included.",
+    "new_security_scan": "NOT RUN; historical1.8.2 scan remains incomplete and is not a1.9.0 result."
+  },
+  "pending_acceptance": [
+    "User will select and run a different validation test later.",
+    "Complete synthetic recommendation execution and fresh final delivery/usability certification are not established by this preparation."
+  ],
+  "limits": [
+    "Not published or installed.",
+    "No clinician, real athlete, wearable integration, real scheduled task, purchase or longitudinal outcome tested.",
+    "Raw fictional data/reviewer outputs remain in private local audit storage."
+  ],
+  "user_direction": "After requesting token efficiency, user chose to use a different test for later review. No further reviewer calls or host upgrades will be run in this preparation."
+}
