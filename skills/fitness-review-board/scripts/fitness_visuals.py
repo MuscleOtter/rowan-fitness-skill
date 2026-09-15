@@ -104,6 +104,28 @@ def validate(spec):
     return spec
 
 
+def validate_handoff(handoff):
+    """Validate a descriptive visual handoff and its optional nested chart."""
+    keys(handoff, {"kind", "version", "request_class", "status", "chart", "selection_reason", "data_notes"})
+    require(handoff["kind"] == "fitness_visual_handoff", "Unknown handoff kind")
+    require(type(handoff["version"]) is int and handoff["version"] == 1, "Unsupported handoff version")
+    require(text(handoff["request_class"]), "Request class is required")
+    require(handoff["status"] in ("ready", "partial", "blocked"), "Unknown handoff status")
+    require(text(handoff["selection_reason"]), "Selection reason is required")
+    notes = handoff["data_notes"]
+    require(isinstance(notes, list) and all(text(note) for note in notes), "Data notes must be text")
+    chart = handoff["chart"]
+    if handoff["status"] == "ready":
+        require(isinstance(chart, dict), "Ready handoff requires a chart")
+    if handoff["status"] == "blocked":
+        require(chart is None, "Blocked handoff cannot carry a chart")
+    if chart is None:
+        require(notes, "A handoff without a chart needs a data note")
+    if chart is not None:
+        validate(chart)
+    return handoff
+
+
 def escape(value):
     # Entities are decoded as text after Markdown syntax/autolink recognition.
     # Encode punctuation directly; never backslash-escape a generated entity.
@@ -150,6 +172,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("input", help="Private JSON file, or - for stdin")
     parser.add_argument("--table", action="store_true", help="Emit escaped Markdown instead of a validation receipt")
+    parser.add_argument("--handoff", action="store_true", help="Validate a fitness_visual_handoff v1 wrapper")
     args = parser.parse_args()
     try:
         if args.input == "-":
@@ -159,8 +182,13 @@ def main():
                 raw = source.read(MAX_BYTES + 1)
         require(len(raw) <= MAX_BYTES, "Input exceeds 1 MB")
         spec = json.loads(raw.decode("utf-8"), object_pairs_hook=unique_object, parse_constant=reject_constant)
-        validate(spec)
-        print(markdown(spec) if args.table else "Valid fitness_chart v1 structure; source truth and display not verified.", end="\n" if not args.table else "")
+        if args.handoff:
+            require(not args.table, "Handoff validation cannot emit a table")
+            validate_handoff(spec)
+            print("Valid fitness_visual_handoff v1 structure; source truth and display not verified.")
+        else:
+            validate(spec)
+            print(markdown(spec) if args.table else "Valid fitness_chart v1 structure; source truth and display not verified.", end="\n" if not args.table else "")
         return 0
     except (ValueError, OSError, RecursionError):
         # Do not echo private cells, local paths or raw JSON from parsing errors.

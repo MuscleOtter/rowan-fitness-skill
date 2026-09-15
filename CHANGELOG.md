@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.12.0 — 2026-09-15 (prepared for review; not published)
+
+Defines the visual handoff orchestration for descriptive progress requests: Rowan routes, Ellis verifies/selects, and Rowan presents; Quinn joins only for interpretation or actionable advice. Adds a dependency-free `fitness_visual_handoff v1` wrapper validator and regression coverage. The handoff validates structure only; it does not prove source truth, create a connection or approve recommendations.
+
 ## 1.11.0 — 2026-09-15 (prepared for review; not published)
 
 Gives Ellis ownership of small, source-aware tables and graphs. Adds an on-demand visual contract, optional dependency-free validator/Markdown-table renderer, and regression tests. Native line/bar charts remain conditional on actual host tools; there is no bundled JavaScript chart runtime, MCP server, data upload or new service. Rowan remains the user-facing coach. Descriptive display does not invoke a prescription board; all new recommendations keep existing review gates. Host-rendered graph appearance and cross-host execution still require live testing.

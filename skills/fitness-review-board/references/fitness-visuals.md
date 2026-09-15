@@ -2,6 +2,36 @@
 
 Load only for a requested visual, an exact-value comparison, or a progress pattern that a visual materially clarifies. Ellis owns data preparation and visual choice; Rowan presents the result in the normal conversation. Do not create a dashboard for routine logging. A consultation with Ellis is not an independent review or an extra mandatory agent call.
 
+## Visual handoff orchestration
+
+Treat a chart-only request as one bounded descriptive route, not a committee conversation:
+
+1. **Rowan routes the request.** Capture the user's question, requested period, preferred format if any, and whether they asked only to see the record or also asked what it means/what to change. Do not make a scientific or coaching claim while routing.
+2. **Ellis prepares one handoff.** When separate execution is available, use the readable task label **Ellis — Health Data — Visual Request**. Ellis reads only authorized sources, verifies identity/units/dates/coverage, preserves unknowns and lineage, chooses the smallest useful view, and returns `fitness_visual_handoff v1` below. If separate execution is unavailable, Rowan performs this checklist and reports that the host could not run a separate Ellis context; never invent a consultation.
+3. **Rowan renders the handoff.** Validate the nested `fitness_chart v1` payload when a helper is available, use the host's actual chart surface, and keep the user-facing response to one useful view plus a short descriptive note. If the renderer cannot preserve provenance, units or missingness, use the handoff's table/plain-text fallback.
+4. **Run the short finish check.** Confirm source notes, units, unknowns, label fit, mobile fit, theme/contrast and that the chart does not imply a clinical assessment. A data problem returns to Ellis; a display problem returns to Rowan. Do not restart Quinn for a cosmetic issue.
+
+Quinn is **not** required for a descriptive chart or exact-value table. Add Quinn only when the user asks for evidence-based interpretation, causal explanation or a change recommendation; then follow [task routing](task-routing.md). If the request becomes actionable, the existing Mara/Quinn and triggered-specialist review gates apply. Ellis's factual handoff can inform that review, but Quinn remains the science/research reviewer and does not become the source of personal measurement truth.
+
+The portable handoff is an internal bridge, not user-facing JSON:
+
+```json
+{
+  "kind": "fitness_visual_handoff", "version": 1,
+  "request_class": "descriptive_visual", "status": "ready",
+  "chart": { "kind": "fitness_chart", "version": 1, "view": "table",
+    "title": "Fictional recent log", "summary": "Two fictional rows are shown.",
+    "columns": [{"key":"date","label":"Date","type":"date"}],
+    "rows": [{"date":"2026-09-08"}],
+    "provenance": {"sources":["Fictional log"],"coverage":"Sep 8, 2026; fictional example"},
+    "notes": [] },
+  "selection_reason": "A compact table preserves the exact fictional rows.",
+  "data_notes": ["Fictional example only."]
+}
+```
+
+`status` is `ready`, `partial` or `blocked`. `ready` requires a chart; `blocked` carries no chart and a useful `data_notes` explanation. A `partial` handoff may carry a chart with limitations. A host may validate this wrapper with `scripts/fitness_visuals.py --handoff`; validation checks shape only and never proves source truth or approves advice.
+
 ## Choose the smallest useful view
 
 | Question | Default |

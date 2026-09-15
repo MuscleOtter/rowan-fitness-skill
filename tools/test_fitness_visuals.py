@@ -32,7 +32,41 @@ def example(view="line"):
     return result
 
 
+def handoff(status="ready", chart=None):
+    if chart is None and status == "ready":
+        chart = example("table")
+    return {
+        "kind": "fitness_visual_handoff", "version": 1,
+        "request_class": "descriptive_visual", "status": status,
+        "chart": chart,
+        "selection_reason": "A compact fictional view preserves the requested record.",
+        "data_notes": ["Fictional example only."],
+    }
+
+
 class VisualTests(unittest.TestCase):
+    def test_handoff_contract(self):
+        for status in ("ready", "partial"):
+            value = handoff(status)
+            self.assertIs(visuals.validate_handoff(value), value)
+        blocked = handoff("blocked")
+        blocked["data_notes"] = ["No authorized source was available."]
+        self.assertIs(visuals.validate_handoff(blocked), blocked)
+        for mutate in (
+            lambda h: h.update(kind="fitness_chart"),
+            lambda h: h.update(version=2),
+            lambda h: h.update(status="unknown"),
+            lambda h: h.update(status="ready", chart=None),
+            lambda h: h.update(status="blocked", chart=example("table")),
+            lambda h: h.update(status="partial", chart=None, data_notes=[]),
+            lambda h: h.update(data_notes="not a list"),
+            lambda h: h.update(chart=example("radar")),
+        ):
+            value = handoff()
+            mutate(value)
+            with self.subTest(mutate=mutate), self.assertRaises(ValueError):
+                visuals.validate_handoff(value)
+
     @unittest.skipUnless(os.environ.get("MARKED_MODULE"), "Optional installed marked parser not supplied")
     def test_parsed_markdown_round_trip(self):
         class Parsed(HTMLParser):
@@ -167,6 +201,9 @@ class VisualTests(unittest.TestCase):
         result = run(json.dumps(example()).encode(), "--table")
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertIn(b"Unknown", result.stdout)
+        result = run(json.dumps(handoff()).encode(), "--handoff")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn(b"Valid fitness_visual_handoff v1", result.stdout)
         for raw in (b'{"private":', b'{"x":1,"x":2}', b'{"x":NaN}', b'\xff', b' ' * (visuals.MAX_BYTES + 1)):
             result = run(raw)
             self.assertEqual(result.returncode, 1)
