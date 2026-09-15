@@ -1,7 +1,7 @@
 {
   "version": "1.10.0",
   "date": "2026-09-15",
-  "status": "prepared local pilot; three distinct independent source critiques complete; not published or installed",
+  "status": "pilot release; three distinct independent source critiques complete",
   "baseline": {
     "version": "1.9.0",
     "commit": "ff6e10c8166179d590fce1f3bc0c415db7f2a7e4",
@@ -128,5 +128,20 @@
   "automations": {
     "dependency_hourly_check": "paused by explicit user request",
     "monthly_research": "configured/read back; first execution unobserved; generic public research only; no private athlete records; max 3 topics/6 queries/8 source reads per run"
+  },
+  "claude_compatibility": {
+    "checked": "2026-09-15",
+    "archive_files": 27,
+    "description_characters": 184,
+    "format_check": "passes inspected Claude packaging requirements",
+    "portable_routing_research": "no required Codex-specific tools",
+    "local_claude_code_install": "27 files match reviewed source; prior 1.8.2 backed up outside discovery",
+    "account_upload": "not performed; update instructions supplied",
+    "live_claude_board": "unverified; clinical cycle user-deferred",
+    "sources": [
+      "https://support.claude.com/en/articles/12512198-how-to-create-custom-skills",
+      "https://support.claude.com/en/articles/12512180-use-skills-in-claude",
+      "https://code.claude.com/docs/en/sub-agents"
+    ]
   }
 }

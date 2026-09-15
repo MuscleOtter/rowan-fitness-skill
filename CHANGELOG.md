@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.10.0 — 2026-09-15 (local pilot; not published)
+## 1.10.0 — 2026-09-15 (pilot release)
 
 Makes goal progress and sustainable adherence explicit, adds creative obstacle-solving and suppression of declined suggestions, and bounds personal experiments and memory. Quinn gains targeted research stewardship with a deduplicated evidence queue. Routing policy v2 keeps Mara/Quinn universal and makes Ellis/Kit conditional on relevant data/exercise questions; other domain triggers, all three revision passes, score floors and exact-final checks remain. Fitness rubric v1.5 clarifies conditional coverage; FRB-state-1.8 adds optional continuity fields. Call-count reductions are policy arithmetic, not demonstrated token savings. Full clinical-cycle testing remains deferred; see the new validation receipt for actual focused checks.
 

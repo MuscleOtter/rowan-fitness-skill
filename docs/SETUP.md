@@ -163,6 +163,16 @@ If there is no Health reader, use a selected app export or small summary. A full
 | Claude.ai or Cowork | Replace/update the uploaded skill through the account's Skills controls. Ensure only one Rowan version is enabled. |
 | ChatGPT Project | Replace the old skill, reference and asset files with the new versions. Keep the current `athlete.md`; remove obsolete rule files so both versions are not active. |
 
+### Check the update in Claude
+
+Claude Code's local folder and Claude chat/Cowork's uploaded skill are separate installation routes. Updating GitHub or the local folder does not by itself replace an account upload. In **Customize → Skills**, update/replace Rowan with the latest release ZIP and keep only the intended version enabled. If no update control appears, keep the old ZIP for rollback, disable the old Rowan, and upload the new ZIP through the available create/upload control. Enable only the new version; if Claude requires removing the disabled duplicate first, delete that old skill upload and re-upload. Keep your latest Training Record separately and start a fresh conversation so earlier loaded instructions do not compete with the update. [Claude's current upload guide](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills).
+
+Ask Claude: **“Read Rowan's installed SKILL.md and tell me its version. Read task-routing.md and research-upkeep.md. Explain who reviews a sleep-only request, how you remember declined suggestions, and where my Training Record can actually be saved. Do not create a new fitness plan for this check.”** A name or confident version guess is not proof of loading; Claude should read the files and state actual capabilities.
+
+Rowan's new routing, adherence, memory and research rules use the same package on Claude and Codex. `agents/openai.yaml` is optional Codex display metadata, not a Claude dependency. Claude's ordinary chat can log, explain and retrieve applicable approved instructions; automatic boards require actual fresh-context delegation in that session. In Claude Code, use non-fork reviewers; `/fork` and `/subtask` inherit the conversation and cannot satisfy Rowan's independence rule. [Claude subagent documentation](https://code.claude.com/docs/en/sub-agents).
+
+Scheduled jobs belong to the host where they were created. A research watch configured in Codex does not transfer through the ZIP into Claude. Rowan can perform on-use evidence checks in Claude and configure a Claude-native watch only when requested and available; reuse an existing watch instead of duplicating it. No upload itself starts notifications or changes your personal record. These compatibility notes were checked against official documentation on 2026-09-15; live Claude board execution remains unverified.
+
 For an existing Claude Code folder install, this creates a unique backup outside skill discovery. Run it before copying in the new folder:
 
 ```bash
