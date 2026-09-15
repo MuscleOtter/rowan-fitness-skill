@@ -1,0 +1,119 @@
+{
+  "version": "1.10.1",
+  "checked": "2026-09-15",
+  "base_version": "1.10.0",
+  "scope": "Focused instruction-loading, context accounting and scheduled-research capability repair.",
+  "changed_runtime_files": [
+    "SKILL.md",
+    "references/review-protocol.md",
+    "references/research-upkeep.md"
+  ],
+  "unchanged_contract": "Reviewer selection, three revision passes, exact-final verification, rubric weights/floors, permission boundaries and personal-record schema.",
+  "reference_load": {
+    "method": "Whitespace-delimited word count, not a Claude tokenizer or runtime trace",
+    "files": {
+      "SKILL.md": 1247,
+      "references/personal-workflow.md": 2951,
+      "references/onboarding.md": 1816,
+      "references/history-and-connections.md": 2069,
+      "references/memory.md": 2354,
+      "references/roles.md": 1623,
+      "references/recursion-maintenance.md": 2649,
+      "references/hosts.md": 2515
+    },
+    "reference_words_deferred": 2951,
+    "condition": "First-use intake without an immediate support/reminder/delivery/grocery need. Conditional support routes remain.",
+    "percent_claim": "No universal percentage or measured billed-token reduction established.",
+    "step1_reference_words_before": 9190,
+    "step1_reference_words_after": 6239,
+    "step1_reference_word_reduction_percent": 32.1,
+    "measurement_scope": "Four directly required Step 1 references before versus three after; excludes entrypoint, roles, upkeep, optional hosts, user history, tools and later-stage loads."
+  },
+  "source_reviews": [
+    {
+      "pass": 1,
+      "zip_sha256": "a551e1c2608ccb9fa20995ca73cdb361091f5f6450cec224db614e062f2ed256",
+      "scores": [
+        9.2,
+        9.2,
+        9.2,
+        9.2,
+        9.2,
+        9.2,
+        9.0,
+        9.0
+      ],
+      "weighted": 9.158,
+      "result": "No demonstrated material defect in the bounded three-file patch; all frozen dimension floors met.",
+      "disposition": "No-change revision warranted; preserve the same candidate."
+    },
+    {
+      "pass": 2,
+      "zip_sha256": "a551e1c2608ccb9fa20995ca73cdb361091f5f6450cec224db614e062f2ed256",
+      "scores": [
+        9.1,
+        9.2,
+        9.2,
+        9.2,
+        9.2,
+        9.2,
+        9.0,
+        9.0
+      ],
+      "weighted": 9.142,
+      "result": "No demonstrated material defect in the bounded three-file patch; all frozen dimension floors met.",
+      "disposition": "No-change revision warranted; preserve the same candidate."
+    },
+    {
+      "pass": 3,
+      "zip_sha256": "a551e1c2608ccb9fa20995ca73cdb361091f5f6450cec224db614e062f2ed256",
+      "scores": [
+        9.0,
+        9.0,
+        9.0,
+        9.0,
+        9.1,
+        9.0,
+        9.0,
+        8.8
+      ],
+      "weighted": 8.989,
+      "result": "No demonstrated material defect in the bounded three-file patch; all frozen dimension floors met.",
+      "disposition": "No-change revision warranted; preserve the same candidate."
+    }
+  ],
+  "unestablished": [
+    "Actual Claude token/billing savings or a universal 32% reduction",
+    "Live research-job search/source/delivery execution",
+    "Separate Claude account or ChatGPT Project upload",
+    "Full live clinical board execution",
+    "Longitudinal athlete outcomes"
+  ],
+  "zip_sha256": "a551e1c2608ccb9fa20995ca73cdb361091f5f6450cec224db614e062f2ed256",
+  "behavior_checks": {
+    "cases": 6,
+    "passed": 6,
+    "candidate_zip_sha256": "a551e1c2608ccb9fa20995ca73cdb361091f5f6450cec224db614e062f2ed256",
+    "method": "One fresh reviewer independently wrote single-pass fictional routing outputs from the candidate instructions.",
+    "cases_exercised": [
+      "First-use goal/program intake without support request",
+      "First-use reminder-help request",
+      "Reference/report-heavy context with no token meter",
+      "Interactive web available, scheduled-job web absent",
+      "Configured research watch with no observed run",
+      "Successful public search/source-read/result-save fixture without private athlete records"
+    ],
+    "limits": "Simulated decisions only; not observed Claude tool execution, real scheduling, repeated reliability or clinical board execution."
+  },
+  "artifact_checks": {
+    "local_links_checked": 226,
+    "errors": [],
+    "zip_sha256": "a551e1c2608ccb9fa20995ca73cdb361091f5f6450cec224db614e062f2ed256",
+    "archive_entries": 27,
+    "scope": "structure, internal links and exact distribution bytes only"
+  },
+  "structure_check": {
+    "tool": "skill-creator quick_validate.py",
+    "result": "valid"
+  }
+}
