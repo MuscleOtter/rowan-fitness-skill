@@ -154,6 +154,7 @@ Use fictional data and record actual agent calls, output validation and renderin
 | Scientific or causal question; request to change the dose | Route interpretation to Quinn and actionable changes through the existing review gates; no advice release from the visual wrapper. |
 | Text-only host; style-only request | Produce the same-row text table where supported; style-only changes do not create a clinical review or imply native graph support. |
 | Day/Night, 320/360-pixel width, long labels, point near an edge | Inspect the real output for contrast, keyboard operation, clipping and collisions; repair once and recheck, or use the readable fallback. |
+| Native Claude chat versus Code terminal; selected and inactive theme controls | Deliver through the actual native inline tool where available, not Codex markers or an artifact/file substitution. Check unselected button text in both modes after host styling; keep a same-row table fallback. |
 
 ## Routing, adherence and bounded-memory regressions (1.10.0)
 

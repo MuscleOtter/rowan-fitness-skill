@@ -1,16 +1,35 @@
 {
   "version": "1.12.0",
   "date": "2026-09-15",
-  "status": "feature candidate; not published or installed",
+  "status": "source update; release not published; installations not updated",
   "integrated_main": "a55436c",
   "archive_files": 31,
-  "archive_sha256": "9a2edf03169ff5636ed2f4cdb91e92c0637bab8d09999fc34c9549474733feba",
+  "archive_sha256": "44f78efcfb254ef4dfce5a6c97ea509e9e6def4521771eb443dc95e20bbfb65e",
   "checks": {
     "unittest_methods": {"passed": 12, "skipped": 0, "optional_marked_supplied": true},
     "skill_structure": "passed",
     "exact_archive_bytes": "passed",
     "independent_source_review": "no material findings; 26 handoff and 108 malformed-field probes",
     "agent_execution": "fresh-context local fallback and separate fresh Ellis handoff on fictional walking data",
+    "codex_inline": {
+      "delivery": "native in-message visual; user positively acknowledged",
+      "sandbox_preview_widths_px": [320, 360, 736],
+      "day_night_exact_values_keyboard": "passed in sandboxed preview"
+    },
+    "claude_web_inline": {
+      "surface": "Claude web chat in Chrome; native in-message visual",
+      "input": "portable instruction excerpts and fictional six-day handoff; not installed ZIP",
+      "follow_up_revisions": 3,
+      "repairs": ["inactive-button contrast", "narrow heading and unit spacing", "bottom-axis spacing and visually hidden theme status"],
+      "final_browser_widths": ["normal", 320, 360],
+      "final_plot_widths_px_approx": [695, 201, 237],
+      "themes": ["day", "night"],
+      "clipped_svg_labels": false,
+      "overlapping_svg_labels": false,
+      "exact_six_rows_and_missing_day_gap": "passed",
+      "keyboard_day_selection_and_pressed_state": "passed",
+      "polite_theme_status": "present and visually hidden"
+    },
     "browser_preview": {
       "surface": "standalone Chromium preview, not native in-message integration",
       "widths_px": [320, 360, 736],
@@ -25,7 +44,8 @@
   "limits": [
     "Fictional data only; no live health connection or source-truth certification.",
     "The helper is a contract validator and Markdown fallback, not an agent dispatcher or bundled chart runtime.",
-    "Cross-host native in-message rendering and mobile-app behavior remain unverified.",
+    "Claude evidence uses prompted visual-instruction excerpts, not installed-ZIP activation or full skill end-to-end execution.",
+    "Cowork, Claude Code visual surfaces, ChatGPT app and native mobile-app behavior remain unverified.",
     "One line/table preview does not establish every metric, label or chart output.",
     "No complete clinical-board execution, clinical grade or athlete outcome is claimed.",
     "No release or installation update was performed."

@@ -27,6 +27,8 @@ The links below are navigation and project facts, not an installed copy of the c
 
 ## Optional
 
+- [Progress visuals](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/docs/VISUALS.md): Native in-message delivery, Claude/Codex differences, Day/Night, exact-value fallback and fictional acceptance test.
+
 - [FAQ](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/docs/FAQ.md): Common questions about cost, compatibility, memory and privacy.
 - [Citation metadata](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/CITATION.cff): Maintainer identity and repository citation.
 - [Community sharing](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/docs/SHARE.md): Reusable descriptions, artwork and community submission routes.

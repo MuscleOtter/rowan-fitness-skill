@@ -1,6 +1,6 @@
 # Validation and limits
 
-## 1.12.0 visual handoff and style candidate (not published or installed)
+## 1.12.0 visual handoff and style (source update; release not published)
 
 The feature incorporates main through `a55436c`, including 1.10.1's conditional intake loading, context preflight and research-job verification. It adds a descriptive handoff contract, portable Rowan style guidance and one scoped CSS asset. The helper validates structure and renders Markdown tables; it is not an agent dispatcher, source verifier, clinical reviewer or JavaScript chart runtime.
 
@@ -10,9 +10,13 @@ A fresh-context tester exercised the local fallback after finding no nested dele
 
 A generated standalone browser preview was checked at 320, 360 and 736 pixels in Day and Night modes. All six checks had no page overflow, clipped SVG labels or label-label overlaps; the unknown date remained a gap between two line segments. Keyboard theme selection, pressed state and polite status update worked. Screenshots were visually inspected at phone and normal width. This tests one generated line/table example, not every possible label, metric or host.
 
-The shipped style requires a short actual-output review, with a repair/recheck or readable fallback. Native in-message rendering in Claude and ChatGPT, mobile-app behavior, a full clinical review cycle, and athlete outcomes remain unverified. No private athlete data or development traces are included. See the [bounded validation receipt](validation-1.12.0.json).
+The shipped style requires a short actual-output review, with a repair/recheck or readable fallback. A Codex in-message visual was delivered and positively acknowledged by the user; its sandboxed preview passed the same six width/theme checks, exact-value disclosure and keyboard activation. This is not a ChatGPT-app test.
 
-The final-output review caught excessive procedural handoff text in the generated preview. The style guidance now distinguishes concise user-facing limitations from internal instructions and historical agent status. The preview was repaired while retaining the full handoff; all six width/theme checks and the keyboard check passed again. All 221 checked repository-local Markdown links resolve.
+The final-output review caught excessive procedural handoff text in the generated preview. The style guidance now distinguishes concise user-facing limitations from internal instructions and historical agent status. The preview was repaired while retaining the full handoff; all six width/theme checks and the keyboard check passed again. Subsequent Claude testing identified host button-style contrast and narrow-container spacing issues; the style guidance now explicitly checks inactive controls, axis-unit/top-tick separation and host menu clearance.
+
+Claude evidence is a prompted-excerpt smoke test: relevant portable visual rules and the fictional Ellis rows were pasted into ordinary Claude web chat in Chrome, which generated a native in-message chart. Three follow-up revisions addressed inactive-button contrast, narrow heading/unit spacing, and bottom-axis spacing plus the user's request to hide the visible theme-status sentence. The final chart passed Day/Night label-clipping and label-overlap checks at normal width and 320/360px browser widths (actual embedded plots approximately 695/201/237px). Screenshots confirmed the final normal Day and narrow Night presentation. This is not first-pass success or a guarantee of arbitrary generated layouts.
+
+The final exact-value disclosure preserved all six rows, including the unknown date; the chart retained its missing-day gap. Keyboard activation selected Day with the correct pressed state, and its polite status remained available but visually hidden. It is not an installed-ZIP loading/activation test or a Claude Code, Cowork, mobile-app or full clinical-board execution. No private athlete data, chat links, screenshots or development traces are published. See the [bounded validation receipt](validation-1.12.0.json) and [visual setup/test guide](VISUALS.md).
 
 ## 1.11.0 visualization candidate (not published or installed)
 

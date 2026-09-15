@@ -92,7 +92,7 @@ The first validates structure and basic semantics; the second emits an escaped M
 
 ## Render using actual capabilities
 
-1. Use the current host's documented native chart interface when exposed. Translate the verified contract to its actual schema; do not invent a universal ChatGPT/Claude tool name or assume arbitrary JSON renders. Preserve data, missingness, units and source notes. If the renderer cannot preserve them, use the table.
+1. Prefer the current host's native in-message visual interface for a quick chart when exposed; see [Claude native delivery](hosts.md#native-claude-visual-delivery). Translate the verified contract to that tool's actual schema; do not invent a universal ChatGPT/Claude tool name or assume arbitrary JSON renders. Codex content markers and local paths are not a Claude delivery mechanism. Preserve data, missingness, units and source notes. If the renderer cannot preserve them, use the table.
 2. If an already configured, authorized interactive artifact or MCP Apps view exists, it may render the same data. Use its actual contract and verify display. Do not install, enable, host or publish anything as an implicit step; do not send health data to public chart/image services or new providers without authorization.
 3. Otherwise show an escaped Markdown table or a plain-text list where tables are unsupported. An optional local image/file is an attachment only unless inline preview actually works. Say briefly when a requested graph could not be displayed; do not report it as rendered.
 

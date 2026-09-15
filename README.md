@@ -51,6 +51,14 @@ Illustrative behavior from the instructions—not a live test or athlete result:
 
 A useful log can stay that brief. For a change, try: **“I like my lifting split. Review how cardio and meal prep fit around it.”** Rowan gathers the missing context and arranges the required reviews.
 
+## See your progress in the conversation
+
+Ask **“Show my recent progress as a chart, right here in the chat.”** Rowan chooses a useful line, bar chart or exact-value table from your available records. Controllable visuals use Rowan's neutral-paper/oxblood style, Day/Night choices and a short readability check. Missing data stays missing.
+
+Claude web/desktop chat and Cowork document native inline visuals; other surfaces depend on their actual tools. A terminal gets a readable table, not a promised interactive chart. New coaching advice still needs the normal reviews. [Visuals, compatibility and a quick test](docs/VISUALS.md).
+
+The source branch contains the 1.12.0 visual work; a merge does not update the latest release download or any installed copy. Check the version you actually installed.
+
 ## A second look before a new recommendation
 
 Rowan’s instructions require **three critique-and-rewrite passes**, followed by a separate check of the finished recommendation. If reviewers cannot run or material concerns remain, Rowan must hold the recommendation. [How the review works](docs/HOW-IT-WORKS.md#1-improve-advice-before-release).
