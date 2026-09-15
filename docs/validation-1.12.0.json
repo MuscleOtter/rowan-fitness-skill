@@ -1,0 +1,33 @@
+{
+  "version": "1.12.0",
+  "date": "2026-09-15",
+  "status": "feature candidate; not published or installed",
+  "integrated_main": "a55436c",
+  "archive_files": 31,
+  "archive_sha256": "9a2edf03169ff5636ed2f4cdb91e92c0637bab8d09999fc34c9549474733feba",
+  "checks": {
+    "unittest_methods": {"passed": 12, "skipped": 0, "optional_marked_supplied": true},
+    "skill_structure": "passed",
+    "exact_archive_bytes": "passed",
+    "independent_source_review": "no material findings; 26 handoff and 108 malformed-field probes",
+    "agent_execution": "fresh-context local fallback and separate fresh Ellis handoff on fictional walking data",
+    "browser_preview": {
+      "surface": "standalone Chromium preview, not native in-message integration",
+      "widths_px": [320, 360, 736],
+      "themes": ["day", "night"],
+      "overflow": false,
+      "clipped_svg_labels": false,
+      "overlapping_svg_labels": false,
+      "missing_day_line_gap": "preserved",
+      "keyboard_theme_and_live_status": "passed"
+    }
+  },
+  "limits": [
+    "Fictional data only; no live health connection or source-truth certification.",
+    "The helper is a contract validator and Markdown fallback, not an agent dispatcher or bundled chart runtime.",
+    "Cross-host native in-message rendering and mobile-app behavior remain unverified.",
+    "One line/table preview does not establish every metric, label or chart output.",
+    "No complete clinical-board execution, clinical grade or athlete outcome is claimed.",
+    "No release or installation update was performed."
+  ]
+}

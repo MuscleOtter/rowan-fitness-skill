@@ -7,11 +7,11 @@ Load only for a requested visual, an exact-value comparison, or a progress patte
 Treat a chart-only request as one bounded descriptive route, not a committee conversation:
 
 1. **Rowan routes the request.** Capture the user's question, requested period, preferred format if any, and whether they asked only to see the record or also asked what it means/what to change. Do not make a scientific or coaching claim while routing.
-2. **Ellis prepares one handoff.** When separate execution is available, use the readable task label **Ellis — Health Data — Visual Request**. Ellis reads only authorized sources, verifies identity/units/dates/coverage, preserves unknowns and lineage, chooses the smallest useful view, and returns `fitness_visual_handoff v1` below. If separate execution is unavailable, Rowan performs this checklist and reports that the host could not run a separate Ellis context; never invent a consultation.
-3. **Rowan renders the handoff.** Validate the nested `fitness_chart v1` payload when a helper is available, use the host's actual chart surface, and keep the user-facing response to one useful view plus a short descriptive note. If the renderer cannot preserve provenance, units or missingness, use the handoff's table/plain-text fallback.
+2. **Ellis prepares one handoff.** When a separate consultation is useful and available, use the readable task label **Ellis — Health Data — Visual Request**. Supply the user's question/period, authorized source rows or readable record pointers, relevant corrections, and available output formats. Ellis verifies identity/units/dates/coverage, preserves unknowns and lineage, chooses the smallest useful view, and returns `fitness_visual_handoff v1` below to Rowan. Without a separate call, Rowan applies the same data checklist locally. Never claim a separate Ellis consultation ran unless it did; explain the distinction when asked or when consequential.
+3. **Rowan renders the handoff.** Validate the wrapper and its nested chart with `--handoff` when a helper is available. Read [Rowan visual style](rowan-visual-style.md) when the host permits styling. Carry `data_notes` and chart limitations into the user-facing result, including when falling back to a table derived from the same verified rows. Keep one useful view plus a short descriptive note. A blocked handoff gets its explanation and the smallest missing input, with no graph. A partial handoff without a chart also gets only an explanation.
 4. **Run the short finish check.** Confirm source notes, units, unknowns, label fit, mobile fit, theme/contrast and that the chart does not imply a clinical assessment. A data problem returns to Ellis; a display problem returns to Rowan. Do not restart Quinn for a cosmetic issue.
 
-Quinn is **not** required for a descriptive chart or exact-value table. Add Quinn only when the user asks for evidence-based interpretation, causal explanation or a change recommendation; then follow [task routing](task-routing.md). If the request becomes actionable, the existing Mara/Quinn and triggered-specialist review gates apply. Ellis's factual handoff can inform that review, but Quinn remains the science/research reviewer and does not become the source of personal measurement truth.
+Quinn is **not** required for a descriptive chart, exact-value table or explanation of an axis. Consult Quinn when scientific interpretation or causal claims need evidence: send the specific question, verified observations and their limitations; receive supported claims, uncertainty and applicable sources. Rowan presents the answer. A consultation is not approval. Any actionable recommendation follows [task routing](task-routing.md), including Mara, Quinn and every triggered specialist. Ellis remains the owner of personal measurement truth. A style-only follow-up reuses unchanged verified rows and needs only Rowan's display check.
 
 The portable handoff is an internal bridge, not user-facing JSON:
 
@@ -20,7 +20,7 @@ The portable handoff is an internal bridge, not user-facing JSON:
   "kind": "fitness_visual_handoff", "version": 1,
   "request_class": "descriptive_visual", "status": "ready",
   "chart": { "kind": "fitness_chart", "version": 1, "view": "table",
-    "title": "Fictional recent log", "summary": "Two fictional rows are shown.",
+    "title": "Fictional recent log", "summary": "One fictional row is shown.",
     "columns": [{"key":"date","label":"Date","type":"date"}],
     "rows": [{"date":"2026-09-08"}],
     "provenance": {"sources":["Fictional log"],"coverage":"Sep 8, 2026; fictional example"},
@@ -30,7 +30,7 @@ The portable handoff is an internal bridge, not user-facing JSON:
 }
 ```
 
-`status` is `ready`, `partial` or `blocked`. `ready` requires a chart. A `blocked` handoff carries no chart: set `"chart": null` or omit the key, and give a useful `data_notes` explanation. A `partial` handoff may carry a chart with limitations. A host may validate this wrapper with `scripts/fitness_visuals.py --handoff`; validation checks shape only and never proves source truth or approves advice.
+`request_class` must be `descriptive_visual`; route interpretation/advice separately even when the same request also asks for a chart. `status` is `ready`, `partial` or `blocked`. `ready` requires a chart. A `blocked` handoff carries no chart: set `"chart": null` or omit the key, and give a useful `data_notes` explanation. `partial` requires a limitation in `data_notes` and may carry a chart. Run `python3 scripts/fitness_visuals.py /path/to/private/handoff.json --handoff` to validate the wrapper. It checks shape only: it does not dispatch agents, verify sources, check a renderer or approve advice. Host agent tools perform any actual delegation.
 
 ## Choose the smallest useful view
 

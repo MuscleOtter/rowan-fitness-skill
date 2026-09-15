@@ -142,6 +142,19 @@ For real use, pre-agree a practical review interval and user-acceptable burden. 
 Skill changes must have a concrete demonstrated failure or useful request, a narrow revision, an exact-package independent review and relevant regression checks. Freeze the development rubric before grading; use its per-dimension threshold rather than rewriting the rubric after seeing scores. Personal learning stays in personal memory and does not silently modify universal instructions.
 
 
+## Descriptive visual regressions (1.12.0)
+
+Use fictional data and record actual agent calls, output validation and rendering separately. A helper check is not a source check or proof that an agent was called.
+
+| Case | Required observable behavior |
+|---|---|
+| A different metric, one unknown day, only a partial manual log | Preserve units, dates, source limits and null; a daily line breaks at unknowns. Exact values remain available. |
+| Ready without a chart; blocked with omitted chart; partial with no explanation | Reject ready and unexplained partial; accept an explained blocked handoff without inventing rows. |
+| Independent Ellis consultation available versus unavailable | Report the actual consultation or local fallback honestly; both preserve the same input facts. |
+| Scientific or causal question; request to change the dose | Route interpretation to Quinn and actionable changes through the existing review gates; no advice release from the visual wrapper. |
+| Text-only host; style-only request | Produce the same-row text table where supported; style-only changes do not create a clinical review or imply native graph support. |
+| Day/Night, 320/360-pixel width, long labels, point near an edge | Inspect the real output for contrast, keyboard operation, clipping and collisions; repair once and recheck, or use the readable fallback. |
+
 ## Routing, adherence and bounded-memory regressions (1.10.0)
 
 These focused scenarios exercise immediate routing/state behavior, not full prescription-board execution. Report the actual response and save/read-back status; do not substitute authored expected results for execution.

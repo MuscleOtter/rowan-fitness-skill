@@ -110,7 +110,7 @@ def validate_handoff(handoff):
          {"chart"})
     require(handoff["kind"] == "fitness_visual_handoff", "Unknown handoff kind")
     require(type(handoff["version"]) is int and handoff["version"] == 1, "Unsupported handoff version")
-    require(text(handoff["request_class"]), "Request class is required")
+    require(handoff["request_class"] == "descriptive_visual", "Unsupported request class")
     require(handoff["status"] in ("ready", "partial", "blocked"), "Unknown handoff status")
     require(text(handoff["selection_reason"]), "Selection reason is required")
     notes = handoff["data_notes"]
@@ -120,8 +120,8 @@ def validate_handoff(handoff):
         require(isinstance(chart, dict), "Ready handoff requires a chart")
     if handoff["status"] == "blocked":
         require(chart is None, "Blocked handoff cannot carry a chart")
-    if chart is None:
-        require(notes, "A handoff without a chart needs a data note")
+    if chart is None or handoff["status"] == "partial":
+        require(notes, "Missing or partial data needs a data note")
     if chart is not None:
         validate(chart)
     return handoff

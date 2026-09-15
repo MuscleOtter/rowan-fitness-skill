@@ -63,10 +63,12 @@ class VisualTests(unittest.TestCase):
         for mutate in (
             lambda h: h.update(kind="fitness_chart"),
             lambda h: h.update(version=2),
+            lambda h: h.update(request_class="prescription"),
             lambda h: h.update(status="unknown"),
             lambda h: h.update(status="ready", chart=None),
             lambda h: h.update(status="blocked", chart=example("table")),
             lambda h: h.update(status="partial", chart=None, data_notes=[]),
+            lambda h: h.update(status="partial", chart=example("table"), data_notes=[]),
             lambda h: h.update(data_notes="not a list"),
             lambda h: h.update(chart=example("radar")),
         ):

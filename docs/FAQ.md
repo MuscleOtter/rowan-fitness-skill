@@ -2,7 +2,7 @@
 
 **Who is Rowan for?**
 
-Intermediate and advanced trainees who want their existing training, conditioning, food and progress considered together. Bring your own goals and experience; you do not need technical skills. It is designed to support an existing routine as well as review proposed changes.
+Intermediate and advanced trainees who want their existing training, conditioning, food, sleep and progress considered together. Bring your own goals and experience; you do not need technical skills. It is designed to support an existing routine as well as review proposed changes.
 
 **Is this an app, and what does it cost?**
 
@@ -39,3 +39,7 @@ They express AI reviewers' judgments under the skill's rubric. They do not estab
 **How do I update or stop using it?**
 
 Follow [Update or remove](SETUP.md#update-or-remove). Keep your newest Training Record. If you enabled scheduled support, disable those jobs separately; removing the skill does not remove them or delete your chats.
+
+**Does updating GitHub update every app?**
+
+No. Codex desktop/CLI and Claude Code each use a local installation; Claude chat/Cowork uses an account upload; ChatGPT Projects use uploaded files. Update each copy you use and have the assistant read its installed version. Local folder checks do not establish account-upload or live-board success. [Verify each installation](SETUP.md#verify-each-installation).
