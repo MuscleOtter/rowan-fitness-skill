@@ -2,7 +2,7 @@
 
 ![Rowan: Train with intent. Review with evidence. An AI fitness skill for your assistant, with vintage iron-gym artwork.](docs/assets/rowan-card.jpg)
 
-Rowan is a free, open-source **AI fitness coaching skill for Claude and Codex**, built for intermediate and advanced trainees. It brings strength training, muscle growth, cardio, fat loss, nutrition and meal prep into one conversation. Start with your program, equipment and goals; proposed changes get separate AI reviews. The installable skill is named `fitness-review-board`.
+Rowan is a free, open-source **AI fitness coaching skill for Claude and Codex**, built for intermediate and advanced trainees. It brings strength training, muscle growth, cardio, fat loss, nutrition, meal prep and sleep into one conversation. Training, nutrition and sleep are its three coaching pillars. Start with your program, equipment and goals; proposed changes get separate AI reviews. The installable skill is named `fitness-review-board`.
 
 **For new recommendations, use a session with separate reviewer tools.** Rowan checks your actual setup; ordinary chat can handle intake and logging. Your AI assistant's fees and usage limits apply. No GitHub account or coding is needed for the Claude upload.
 
@@ -25,20 +25,21 @@ One recent workout note or screenshot is enough to begin. Rowan introduces himse
 ## Built around your training
 
 <details>
-<summary>Explore lifting, cardio, food and everyday support</summary>
+<summary>Explore training, food, sleep and everyday support</summary>
 
 | What matters to you | What Rowan is designed to help with |
 |---|---|
 | Keep a program you like | Review actual sessions, progression and equipment before proposing changes. |
 | Balance lifting and cardio | Assess HIIT, incline walking or other conditioning alongside workload, recovery and preferences. |
 | Make nutrition practical | Review fueling, portions, hunger, dietary constraints and cutting strategies when relevant. |
+| Improve sleep and recovery | Assess routines, timing, daytime functioning and fit with training/fueling; review personalized changes using dated clinical evidence. |
 | Get food onto the table | Develop recipes, meal prep and shopping lists with culinary and nutrition review. |
 | Use the history you already have | Gather relevant authorized chats and available tracking data; accept rough notes when connections are unavailable. |
 | Follow through | Choose useful check-ins, phone access or grocery support through available, authorized tools. |
 
 </details>
 
-A cut is one use case. You can also bring strength, muscle growth, conditioning, performance or consistency goals. Rowan asks what success means to **you**.
+A cut is one use case. You can also bring strength, muscle growth, conditioning, sleep/recovery, performance or consistency goals. Rowan asks what success means to **you**.
 
 ## What using Rowan looks like
 
@@ -72,7 +73,7 @@ Fictional illustration of the rules; no reviewer execution or athlete result is 
 <details>
 <summary>Meet the review team</summary>
 
-**Rowan** coordinates your coaching. **Mara** challenges the plan, **Quinn** checks evidence, **Ellis** checks data and **Kit** knows equipment. **Nico** reviews conditioning, **Sage** reviews nutrition and **Jules** handles recipes and meal prep. Required reviewers still participate even when only Rowan speaks to you.
+**Rowan** coordinates your coaching. **Mara** challenges the plan, **Quinn** checks evidence, **Ellis** checks data and **Kit** knows equipment. **Nico** reviews conditioning, **Sage** reviews nutrition and **Jules** handles recipes and meal prep. **Wren** owns sleep and recovery, joining full program reviews, cut-related recommendations and sleep-relevant advice. Required reviewers still participate even when only Rowan speaks to you.
 
 </details>
 
@@ -102,6 +103,8 @@ Use the [extraction instructions](docs/SETUP.md#get-the-folder) for local instal
 | Package directory | [`skills/fitness-review-board`](skills/fitness-review-board/SKILL.md) — install the complete folder |
 | Format and license | Agent Skills (`SKILL.md` with YAML metadata); MIT |
 | Host requirements | Claude Code, capable Cowork sessions or Codex can run reviews when fresh reviewer and file tools are available. Ordinary chat supports intake/logging; ChatGPT uses the documented Project fallback. |
+
+[Sleep coaching and clinical boundaries](skills/fitness-review-board/references/sleep-recovery.md) · [Sleep research sources and freshness](skills/fitness-review-board/references/sleep-evidence.md)
 
 [Agent documentation index](llms.txt) · [Catalog and citation details](docs/DISCOVERY.md) · [Validation](docs/VALIDATION.md)
 

@@ -53,9 +53,13 @@ At the user's check-in or an actually configured schedule:
 1. Compare actual work and intake with the plan and last hypothesis. Inspect adherence, coverage, comparable equipment/effort, recovery and burden; missing logs are not missed workouts.
 2. Choose **keep / investigate / propose revision / reverse / pending**, citing the relevant observations. Keep effective exercises and habits; retain negative results so a failed tactic is not repeatedly proposed.
 3. Before proposing a change, define expected outcome, metric, baseline value or comparison observations with dates/source, observation window, minimum usable coverage, meaningful-change rule, guardrail, confounders and reassessment trigger. An unknown baseline stays unknown; if the comparison depends on it, keep the result pending/investigate rather than reconstructing a favorable baseline afterward. These are individualized, not universal physiological thresholds. Change one interpretable factor when practical; acknowledge limited attribution when changes are bundled.
-4. Submit new actionable fitness/nutrition instructions through the full board. After execution, compare the observed result with the expectation and record why to retain, revise or reverse it. A high proposal score is not an achieved fitness outcome.
+4. Submit new actionable fitness/nutrition/sleep instructions through the full board. After execution, compare the observed result with the expectation and record why to retain, revise or reverse it. A high proposal score is not an achieved fitness outcome.
 
 Label knowledge as reported preference, single observation, repeated comparable observations or a tested tactic with adherence/confounders recorded. None proves causality by itself. A few flat weigh-ins do not establish a plateau. Repeated documented machine crowding can justify investigating an option; absent logs cannot. Missed sessions can reveal a schedule mismatch without requiring more volume. Personal learning updates the athlete's record; it does not silently rewrite the universal skill or grading rubric.
+
+## Sleep and evidence continuity
+
+The optional FRB-state-1.7 sleep fields extend older records without inventing observations or changing historical approvals. Carry the athlete's actual sleep context, source/coverage, successful and failed tactics, and relevant care constraints using [sleep records](sleep-recovery.md#records-and-continuity). Keep per-use sleep research in private review records: source/version, publication date, evidence cutoff, actual last search/check, access gaps, affected decisions and next trigger. A saved source URL is not a completed freshness check. Evidence that materially changes action invalidates the affected approval and returns it to review; mere publication or package age is not evidence that every plan became invalid. Update the universal catalog only through reviewed package releases.
 
 ## When QMD or SQLite earns its place
 

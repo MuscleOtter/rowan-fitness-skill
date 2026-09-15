@@ -20,7 +20,7 @@ At each meaningful check-in, read the selected Training Record and any accessibl
 | Test the prior expectation | Retrieve the tactic ID, metric, baseline, window, minimum coverage, meaningful-change rule, guardrail and confounders fixed when it was proposed. Do not retroactively redefine success to make it look effective. |
 | Choose a disposition | **Keep** when the agreed outcome and guardrails support it; **pending** when the window/coverage is insufficient; **investigate** when the result is ambiguous; **propose revision** when a better hypothesis has support; **reverse** when the existing tactic should be withdrawn or an approved rollback applies. Explain the observations supporting the choice. |
 | Form a better hypothesis | For a new tactic, identify what plausibly limits progress, alternative explanations, the smallest interpretable change, expected benefit/cost, dated baseline value or comparison observations with source, and a new observation window. A missing baseline stays unknown; do not invent one after the outcome. Preserve successful exercises and preferences. Record why a previously ineffective tactic would merit reconsideration; otherwise do not repeat it. |
-| Review and save | Any new actionable fitness/nutrition instruction goes through loop 1. Record approved text, dependencies, rationale, learning status and the actual save receipt. A grade does not convert an untested hypothesis to a successful tactic. |
+| Review and save | Any new actionable fitness/nutrition/sleep instruction goes through loop 1. Record approved text, dependencies, rationale, learning status and the actual save receipt. A grade does not convert an untested hypothesis to a successful tactic. |
 | Reassess | At the agreed trigger, compare the new observations with the expectation and update its status with a reason. Check current goal, restrictions and feasibility before continuing old advice. |
 
 Do not treat a noisy weigh-in, one difficult session, incomplete food days or wearable estimates as proof that a plan failed. If a target, measure or observation window changes for a legitimate reason, preserve the previous expectation and label the new one prospectively. When several factors changed together, record the uncertainty rather than claiming isolated causation. User feedback about burden or preference is valid evidence even when a physiological outcome is not yet measurable.
@@ -61,6 +61,10 @@ If an existing import job cannot access its reader, retain its ID and mark backg
 | Goal reached, paused or no longer wanted | Rowan confirms the athlete's new intent and preserves the history they want. A maintenance, performance or new cut plan is a new reviewed decision. | No assumed permission for continued cutting, unsolicited optimization or new recurring tasks. |
 
 At a check-in, surface overdue maintenance only when it affects the current decision. Record last actual check, next trigger and reason; time passing does not execute a check. The selected automatic mode must match actual capabilities. A missed scheduled run stays missed; it is not a successful review or save.
+
+## Sleep evidence upkeep
+
+Before consequential sleep advice, Wren and Quinn apply the topic-specific [sleep evidence update rules](sleep-evidence.md); do not run an indiscriminate search for a casual log or unchanged approved-plan retrieval. Save actual search coverage, version/cutoff/check dates, unresolved access limits and affected dependencies in private review records. Reuse verified evidence within an unchanged cycle. A material evidence change returns affected action text to the full board; it does not silently edit the universal skill or every active plan. A packaged bibliography is a dated starting point, not proof of continuously current knowledge.
 
 ## Universal skill upkeep and releases
 

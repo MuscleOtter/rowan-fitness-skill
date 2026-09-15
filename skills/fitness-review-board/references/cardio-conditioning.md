@@ -47,7 +47,7 @@ At check-in, compare the agreed baseline and window with actual work, tolerance,
 
 ## Review coverage
 
-Nico supplies an independent conditioning review when the proposal prescribes, changes or endorses a cardio dose/mode/intensity/progression, addresses an endurance goal, or delivers a full weekly/program/cut plan with a cardio keep/change/defer decision. The core reviewers remain required; Sage also joins when nutrition/cutting is involved. Nico checks modality, dose arithmetic, intensity calibration, progression, concurrent load and outcome measures. Mara remains accountable for the whole plan. Follow the assignments and unchanged release floors in [fitness rubric](fitness-rubric.md).
+Nico supplies an independent conditioning review when the proposal prescribes, changes or endorses a cardio dose/mode/intensity/progression, addresses an endurance goal, or delivers a full weekly/program/cut plan with a cardio keep/change/defer decision. The core reviewers remain required; Sage also joins when nutrition/cutting is involved, and Wren joins every full weekly/program review, cut-related recommendation or materially sleep-dependent decision under [sleep coverage](sleep-recovery.md#review-coverage). Nico checks modality, dose arithmetic, intensity calibration, progression, concurrent load and outcome measures. Mara remains accountable for the whole plan. Follow the assignments and unchanged release floors in [fitness rubric](fitness-rubric.md).
 
 ## Evidence starting points
 

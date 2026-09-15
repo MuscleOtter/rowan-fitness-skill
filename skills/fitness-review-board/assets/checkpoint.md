@@ -2,7 +2,7 @@
 
 Fill with this user's actual facts; `unknown` is a valid value. Save outside the skill folder. This is a template, not a preapproved plan.
 
-- Schema: FRB-state-1.6 (adds optional personal-workflow state; preserve older facts, approvals and unknowns)
+- Schema: FRB-state-1.7 (adds optional sleep context/evidence pointers; preserve older facts, approvals and unknowns)
 - Profile ID / preferred name:
 - Revision / parent revision / created date and timezone:
 - Authoritative location or manual copy selected by user:
@@ -24,6 +24,8 @@ Fill with this user's actual facts; `unknown` is a valid value. Save outside the
 - Nutrition approach, constraints, targets and their source/uncertainty if any; preferred tracking/portion route:
 - Repeatable meals/substitutions, training-time fuel/hydration if applicable; adherence/hunger and adjustment/maintenance triggers:
 - Recipe/variant IDs and approved portion/ingredient conditions; taste/satiety, prep burden, kitchen/storage and repeat/avoid feedback if used:
+- Sleep concern/goal; sleep opportunity, reported sleep and device estimates distinguished; usual timing/variability and daytime functioning when known:
+- Sleep-related constraints/care, relevant shift/travel/caffeine context; sleep tactic IDs and next review if used:
 - Devices/data availability, units, coverage, sync lineage:
 - Gym/exercise IDs, equipment/setup, likes/dislikes, alternatives:
 
@@ -68,7 +70,7 @@ Fill only for used sources; retain this section in handoffs when it governs impo
 
 ## Latest observations
 
-| Date/time | Source/coverage | Planned work | Completed work / intake / measurement | Units and effort | Context/uncertainty |
+| Date/time | Source/coverage | Planned work | Completed work / intake / sleep observation / measurement | Units and effort | Context/uncertainty |
 |---|---|---|---|---|---|
 
 ## Learning ledger
@@ -88,6 +90,7 @@ Fill only used fields; dates mean checks actually performed, not promised automa
 - Last record save/restore verification and evidence:
 - Current host/data routes last verified; stale or unavailable capabilities:
 - Relevant source claims needing recheck; affected decision and owner:
+- Private sleep-evidence ledger location if used; source/version/publication date/evidence cutoff, last actual topic search/check, access gaps and next trigger:
 - Package/record migration status; unresolved maintenance items:
 
 ## Continuity essentials

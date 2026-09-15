@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.9.0 — 2026-09-15 (prepared for review; not published)
+
+Adds Wren — Sleep & Recovery as the ninth named team member and sleep as a third coaching pillar alongside training and nutrition. Full weekly/program reviews, every cut-related recommendation and sleep-relevant advice include independent sleep review. Adds practical assessment, clinical recognition/referral boundaries and a topic-indexed clinical evidence catalog with actual search dates, publication status, evidence cutoffs, access limits and targeted freshness checks before consequential advice.
+
+Fitness rubric v1.4 adds sleep coverage while preserving all score floors, weights, three revision passes and exact-final verification. FRB-state-1.7 adds optional sleep context and private evidence pointers without inventing history or regrading historical approvals. No new connection, background job or clinical treatment service is installed.
+
 ## 1.8.2 — 2026-09-09
 
 Adds an explicit Claude Code route for scheduled support, conditional push/file delivery and current-record checks. Clarifies per-purchase confirmation on Claude, user-handled payment credentials and cart-only fallback when a surface prohibits checkout. Adds context-aware review budgeting, compact complete reports, verified file checkpoints and recovery after compaction without losing findings, call counts or exact-input approval. Checks automatically loaded reviewer instructions and persistent agent memory for leaked prior verdicts. All reviewer roles, three revision passes, independent final checks and existing score floors remain unchanged.

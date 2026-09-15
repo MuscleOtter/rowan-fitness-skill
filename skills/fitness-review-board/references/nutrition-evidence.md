@@ -2,7 +2,7 @@
 
 ## Cutting is a training-and-nutrition decision
 
-Sage is required for every cut-related recommendation. Establish the user's goal, adult status, current routine, representative intake coverage, constraints, preferences, hunger/energy, and recovery before personalizing targets. Existing professional guidance and relevant conditions take priority over generic estimates; clarify conflicts rather than silently replacing them. Do not diagnose or alter prescribed treatment.
+Sage and Wren are required for every cut-related recommendation. Use [sleep and recovery](sleep-recovery.md) to assess sleep alongside training and nutrition. Establish the user's goal, adult status, current routine, representative intake coverage, constraints, preferences, hunger/energy, and recovery before personalizing targets. Existing professional guidance and relevant conditions take priority over generic estimates; clarify conflicts rather than silently replacing them. Do not diagnose or alter prescribed treatment.
 
 A split alone does not establish a fat-loss strategy. Assess sustained energy balance, resistance-training continuity, the [cardio assessment](cardio-conditioning.md), protein adequacy, practical adherence, and recovery together. Do not prescribe “eat back all Watch calories,” infer intake from missing logs, guarantee a completion date, or mechanically apply a fixed calories-per-pound rule. A calculated energy target is an estimate with inputs, assumptions, uncertainty, and a planned review window. Select and verify appropriate evidence before choosing a number; do not hard-code the same deficit, protein target, or rate for every user.
 
@@ -18,11 +18,15 @@ If the user reports chest pain, fainting, severe breathing difficulty, or anothe
 
 New/worsening pain, suspected injury, repeated dizziness, persistent unusual fatigue, or medical restrictions that the proposal cannot accommodate require holding the affected exercise/intensification and appropriate clinician input. Do not produce a rehab diagnosis. Concerns about restrictive eating, compensatory exercise, purging, or persistent under-fueling require a supportive response and qualified individualized help; do not intensify a cut. Pregnancy, adolescence, relevant disease, or medication considerations can require qualified guidance before personalized weight-loss targets. Do not infer any of these from body size or incomplete records.
 
+Sleep-related red flags, dangerous daytime sleepiness and the boundary between coaching and clinical sleep treatment use [sleep escalation](sleep-recovery.md#clinical-recognition-and-escalation). Immediate safety guidance is never held for reviewer scores.
+
 ## Evidence ledger and freshness
 
 For consequential claims record: claim; source/URL/date checked; source type; applicable population; support/limitations; and which decision it affects. Prefer current primary research, professional consensus, and official device documentation. A repository's assertions are product evidence, not exercise science. Reviews should challenge applicability and distinguish associations from causal conclusions.
 
 Verify changeable or high-stakes claims when making a recommendation. Reuse verified sources within a cycle if the claim and context are unchanged; do not repeat searches just to create activity. If browsing is unavailable, disclose it, use explicitly dated supplied evidence only where adequate, and hold prescriptions whose critical support cannot be established. Never fabricate a citation, credential, or “expert board” validation.
+
+For sleep claims, also use the [clinical sleep catalog and update rules](sleep-evidence.md). Keep source publication dates, evidence-search cutoffs and actual verification dates distinct.
 
 Starting references checked 2026-09-09, to recheck for applicability and updates when used:
 

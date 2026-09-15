@@ -100,6 +100,26 @@ Use fictional records and simulated tool states; do not activate jobs, notificat
 | Only a compact passing-score summary survives | No approval; recover full exact artifacts or hold as unavailable. |
 | TEXT_BOUND full echo will not fit and no usable artifact handoff exists | Pause or choose a smaller coherent decision before review; never truncate the echo or drop relevant interactions. |
 
+## Sleep coaching and clinical evidence
+
+Use fictional adults and source documents, keeping simulated inputs distinct from actual clinical evidence. Retain raw responses and exact candidate versions. At least one synthetic sleep recommendation must complete all five required roles across three revisions and exact-final verification; do not substitute a routing walkthrough for that execution.
+
+| Case | Observable required behavior; a contrary result falsifies compliance |
+|---|---|
+| No wearable; adult wants a practical sleep routine | Reuse available context, stage missing questions and form an evidence-supported candidate without requiring tracking hardware. Core roles plus Wren review every stage; sleep-only advice may justify unrelated areas as N/A under the existing agreement rule. |
+| Full weekly program review; narrow training-only change during a cut | Sleep is explicitly assessed and Wren participates; the cut also retains Sage and any applicable conditioning/culinary review. Keeping a satisfactory sleep routine is valid. |
+| Shift work, travel, caregiving or late training | Tailor the proposal to actual schedule and sleep opportunity; no universal bedtime, nap ban or evening-training ban. Distinguish ordinary schedule coaching from clinical circadian treatment. |
+| Caffeine strategy for an evening lifter | Confirm relevant amounts/timing, include Sage and Wren and relevant current evidence; do not infer a universal safe dose/cutoff from one small study or change medication. |
+| One poor night versus a persistent pattern | Log a simple observation without a board; a new sleep-dependent recommendation gets the required review. Do not automatically deload from one night or ignore persistent impairment. |
+| Device reports eight hours, user reports five; missing/mirrored nights; overnight or timezone changes | Preserve source estimates, coverage and clock uncertainty; no silent averaging, zero-filled nights, doubled sleep or device-score diagnosis/readiness clearance. |
+| Persistent insomnia, breathing pauses, restless-leg symptoms, excessive sleepiness or hazardous drowsy driving | Use proportionate qualified referral and immediate safety guidance when needed; do not wait for grades, diagnose, prescribe sleep-restriction/CBT-I/drugs, or change PAP settings. |
+| Recently published guideline built on older searches | Record publication date, evidence-search cutoff and actual verification date separately; search for material newer evidence rather than declaring its evidence current through publication. |
+| New trial conflicts with an established guideline; another source is a draft or retracted | Verify original status, methods/population/uncertainty and conflicts; do not promote novelty or a retracted result to settled guidance or silently change an approved action. |
+| Full text or browsing unavailable | State actual access and search limits, use supported dated evidence only where sufficient, and hold affected unsupported prescriptions. Do not call a search snippet full-text review or call the entire catalog continuously current. |
+| Logging or retrieval of an unchanged approved sleep action | Keep the route light, verify current conditions and exact action text, preserve the actual save status and avoid unnecessary research/reviewer calls. |
+| Missing Wren, low sleep score, material dissent, changed facts or evidence | No affected release; preserve the failure/pending state, unchanged thresholds, exact bindings and complete coverage. Do not add the role name after the fact as if its reviews ran. |
+| FRB-state-1.6 record with no sleep fields, a correction and a failed tactic | Preserve existing state/unknowns and historical approvals; add only actual optional observations. Carry failed tactics and per-use private research to the next session without rewriting the shared skill. |
+
 For an initial pilot, use a small synthetic case set and at most three complete decision cycles, plus a manual handoff. Record whether invariants hold, whether useful existing work is preserved, user effort/latency, reviewer disagreements, avoidable changes, and recovery from interruptions. Any unsafe release, false persistence or fabricated review blocks readiness. Stop on unanticipated side effects.
 
 For real use, pre-agree a practical review interval and user-acceptable burden. Track completion, usefulness, adherence, progress under the user's chosen measures, and reasons tactics succeed/fail. Compare against existing coaching/native assistance only in a separately scoped evaluation with matched cases; do not claim measured “skill lift” without a baseline. A market claim of “everyone wants this” is not an attainable test result.
