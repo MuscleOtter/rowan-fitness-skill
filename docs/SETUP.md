@@ -111,7 +111,7 @@ This gives Rowan the rules and your record. It does not give independent reviewe
 
 Ask **“Use Rowan to show my progress as an inline chart with Day/Night choices.”** Claude web/desktop chat and Cowork have documented native custom visuals; use that route for quick progress rather than asking for a separate artifact. Rowan checks the session and uses an exact-value table when a graph is unavailable. Claude Code terminal does not gain chat's visual interface through a skill install.
 
-The source version 1.12.0 includes the visual handoff and style. Verify the installed/uploaded version; updating a branch does not update release downloads or account uploads. [Fictional smoke test, supported surfaces and limits](VISUALS.md).
+Release 1.12.0 includes the visual handoff and style. Verify the installed/uploaded version; a new release does not update a folder install or account upload you already have. [Fictional smoke test, supported surfaces and limits](VISUALS.md).
 
 ## What the board needs
 

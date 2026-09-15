@@ -1,12 +1,12 @@
 # Changelog
 
-## 1.12.0 — 2026-09-15 (source update; release not published)
+## 1.12.0 — 2026-09-15
 
 Defines the visual handoff orchestration for descriptive progress requests: Rowan routes, Ellis verifies/selects, and Rowan presents; Quinn joins only for interpretation or actionable advice. Adds a dependency-free `fitness_visual_handoff v1` wrapper validator and regression coverage. The handoff validates structure only; it does not prove source truth, create a connection or approve recommendations. A blocked handoff may omit `chart` as well as set it to null, matching the written contract. The host tool maps now state where a table or chart can actually render, and the packaging check ignores interpreter bytecode so running the tests cannot change the archive.
 
 Adds an on-demand Rowan visual style reference and locally scoped CSS: neutral paper, oxblood, condensed headings, Day/Night choices, plot-only light grids and phone-width label checks. No notebook ruling, remote fonts or chart runtime are bundled. Ellis consultation is conditional, not mandatory overhead for every chart; Quinn handles scientific interpretation, while new advice retains the existing review gates. Partial handoffs must explain their limitations. Incorporates main's 1.10.1 loading and host-verification fixes without reverting them.
 
-Clarifies native Claude web/desktop chat and Cowork inline delivery, distinct from artifacts and Claude Code terminal output. Uses each host's own rendering contract rather than transplanting Codex markers. Adds setup/FAQ/visual documentation and an inactive-control contrast check based on a live Claude visual smoke test. See validation for actual results and limits; branch updates do not install the skill or publish a release.
+Clarifies native Claude web/desktop chat and Cowork inline delivery, distinct from artifacts and Claude Code terminal output. Uses each host's own rendering contract rather than transplanting Codex markers. Adds setup/FAQ/visual documentation and an inactive-control contrast check based on a live Claude visual smoke test. See validation for actual results and limits; publishing this release does not update a folder install or account upload you already have.
 
 ## 1.11.0 — 2026-09-15 (unreleased preparation; included in 1.12.0)
 

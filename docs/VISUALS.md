@@ -20,7 +20,7 @@ Anthropic's [custom visual guide](https://support.claude.com/en/articles/1397953
 
 ## Verify your installed copy
 
-First ask Rowan to read the version from its installed or uploaded `SKILL.md` and open `references/fitness-visuals.md` plus `references/rowan-visual-style.md`. The visuals are in source version 1.12.0. A GitHub merge does not replace your installation or change the latest release asset; follow [installation verification](SETUP.md#verify-each-installation).
+First ask Rowan to read the version from its installed or uploaded `SKILL.md` and open `references/fitness-visuals.md` plus `references/rowan-visual-style.md`. The visuals are in release 1.12.0. A new release does not replace a copy you already installed or uploaded; follow [installation verification](SETUP.md#verify-each-installation).
 
 Then use this fictional test; do not import it as your health history:
 

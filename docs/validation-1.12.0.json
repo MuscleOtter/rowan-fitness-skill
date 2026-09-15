@@ -1,7 +1,7 @@
 {
   "version": "1.12.0",
   "date": "2026-09-15",
-  "status": "source update; release not published; installations not updated",
+  "status": "public release; bounded visual-handoff checks complete; installation and account upload are separate per-host steps",
   "integrated_main": "a55436c",
   "archive_files": 31,
   "archive_sha256": "44f78efcfb254ef4dfce5a6c97ea509e9e6def4521771eb443dc95e20bbfb65e",

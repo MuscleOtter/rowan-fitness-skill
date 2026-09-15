@@ -57,7 +57,7 @@ Ask **“Show my recent progress as a chart, right here in the chat.”** Rowan 
 
 Claude web/desktop chat and Cowork document native inline visuals; other surfaces depend on their actual tools. A terminal gets a readable table, not a promised interactive chart. New coaching advice still needs the normal reviews. [Visuals, compatibility and a quick test](docs/VISUALS.md).
 
-The source branch contains the 1.12.0 visual work; a merge does not update the latest release download or any installed copy. Check the version you actually installed.
+The visual work ships in release 1.12.0; publishing it does not update a copy you already installed or uploaded. Check the version you actually installed.
 
 ## A second look before a new recommendation
 

@@ -1,6 +1,6 @@
 # Validation and limits
 
-## 1.12.0 visual handoff and style (source update; release not published)
+## 1.12.0 visual handoff and style
 
 The feature incorporates main through `a55436c`, including 1.10.1's conditional intake loading, context preflight and research-job verification. It adds a descriptive handoff contract, portable Rowan style guidance and one scoped CSS asset. The helper validates structure and renders Markdown tables; it is not an agent dispatcher, source verifier, clinical reviewer or JavaScript chart runtime.
 
