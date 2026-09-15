@@ -1,10 +1,17 @@
 # Validation and limits
 
+**1.10.1 is a focused loading and host-verification repair.** First-use intake no longer unconditionally opens the 2,951-word personal-workflow reference; support requests still load it through the existing conditional routes. Context preflight counts coaching references and retained reports. Scheduled research checks web/source access in the job's actual environment and distinguishes configuration from observed execution. Roles, rubrics, review stages and permission boundaries are preserved. [1.10.1 validation record](validation-1.10.1.json).
+
+Three fresh, bounded maintenance critiques found no demonstrated material defect; all fixed dimension floors passed. Final authored-adequacy score: 8.989/10. One reviewer exercised six fictional routing decisions, all passing; these are simulated outputs, not observed Claude execution. All 27 ZIP files match the final source, and 226 local links pass.
+
+The directly required Step 1 references shrink from 9,190 to 6,239 words (32.1%). This scope excludes the entrypoint, other activation references, user history and tools; it is reproducible source-text accounting, not measured Claude tokens or a guaranteed full-turn saving. Actual loading, model tokenization, caching and conversation history affect cost. These changes do not establish live Claude scheduling, a full clinical recommendation cycle or athlete outcomes.
+
+## Earlier version evidence
+
 **1.10.0 is a pilot release.** Three distinct fresh source critics completed the fixed maintenance review. Pass 1 found a scientific-ledger save/conflict gap; the candidate was corrected. The second and third critiques found no material source defect. Final authored-adequacy score: **9.062/10**, every dimension at least 8.8. All 27 final ZIP entries match the reviewed source byte-for-byte; structure and local-link checks pass.
 
 One independent agent completed 12 single-pass fictional immediate-response/routing scenarios, including four held-out cases and local fixture saves/read-backs. The final critic found those behaviors consistent with final instructions, while noting that the tester did not echo an exact candidate digest. This is bounded execution evidence, not exact-final runtime certification. Full clinical-cycle execution remains user-deferred; compaction, scientific-ledger concurrency and late specialist discovery have authored scenarios but no live execution in this phase. No longitudinal fitness outcome or measured token saving is claimed. See the [1.10.0 receipt](validation-1.10.0.json). Claude package compatibility was checked against current official documentation: the 27-file archive and its 184-character description satisfy the inspected format requirements. Local Codex and Claude Code installation checks matched all 27 reviewed release files. These establish folder integrity; separate ChatGPT Project and Claude account uploads, and live Claude board execution, remain unverified. [Verify each installation](SETUP.md#verify-each-installation).
 
-## Earlier version evidence
 
 **1.9.0 was an unreleased preparation checkpoint, superseded by 1.10.0.** Wren added sleep assessment, dated clinical evidence, optional Training Record fields and mandatory sleep review where specified. Three fresh external source critics completed the established passes; that candidate had no identified material instruction defect. Its last package/maintenance scores were 9.085/9.132, with every dimension at least 8.8. Those grades do not approve an athlete recommendation.
 

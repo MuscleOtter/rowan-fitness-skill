@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.10.1 — 2026-09-15
+
+Defers `personal-workflow.md` until practical adherence/support setup needs it, instead of loading its 2,951 words for every first-use intake. Context preflight explicitly counts loaded and upcoming coaching references and retained reports. Scheduled research checks the actual job environment's web/source access and result route, distinguishing configured jobs from observed execution and preserving freshness on failed searches. Existing reviewer roles, three revision passes, independent final checks, rubrics and permissions are unchanged. Word counts describe avoided reference text; no fixed percentage or measured Claude token saving is claimed. See the [1.10.1 validation record](docs/validation-1.10.1.json).
+
 ## 1.10.0 — 2026-09-15 (pilot release)
 
 Makes goal progress and sustainable adherence explicit, adds creative obstacle-solving and suppression of declined suggestions, and bounds personal experiments and memory. Quinn gains targeted research stewardship with a deduplicated evidence queue. Routing policy v2 keeps Mara/Quinn universal and makes Ellis/Kit conditional on relevant data/exercise questions; other domain triggers, all three revision passes, score floors and exact-final checks remain. Fitness rubric v1.5 clarifies conditional coverage; FRB-state-1.8 adds optional continuity fields. Call-count reductions are policy arithmetic, not demonstrated token savings. Full clinical-cycle testing remains deferred; see the new validation receipt for actual focused checks.
