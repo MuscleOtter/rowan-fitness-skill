@@ -18,7 +18,8 @@ def artifacts():
     if not (SKILL / "SKILL.md").is_file():
         raise SystemExit("Missing SKILL.md")
     for p in files:
-        if p.suffix not in {".md", ".yaml"} or p.name == "athlete.md":
+        helper = p.relative_to(SKILL).as_posix() == "scripts/fitness_visuals.py"
+        if (p.suffix not in {".md", ".yaml"} and not helper) or p.name == "athlete.md":
             raise SystemExit(f"Unexpected skill file: {p.relative_to(SKILL)}")
     output = io.BytesIO()
     with zipfile.ZipFile(output, "w", compression=zipfile.ZIP_DEFLATED) as archive:

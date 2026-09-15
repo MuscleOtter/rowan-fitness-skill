@@ -1,6 +1,8 @@
 # Easy setup and actual host capabilities
 
-The skill supplies instructions, templates and interface metadata. It installs no device connector, database, scheduler or external account. Prefer native tools that are already available and authorized. The athlete should be able to chat normally while Rowan handles the workflow.
+The skill supplies instructions, templates, interface metadata and an optional Python-standard-library table/chart validator. It installs no device connector, database, scheduler or external account. Prefer native tools that are already available and authorized. The athlete should be able to chat normally while Rowan handles the workflow.
+
+For data presentation, use [tables and graphs](fitness-visuals.md). Check actual Markdown-table, native-chart, image or artifact capabilities separately from reviewer tools. A skill or JSON payload does not install a renderer; a local HTML file is not necessarily an inline chat widget. Use a table fallback when the current surface cannot display a graph. Do not install a chart library, MCP App/server or connector merely to answer a progress question.
 
 ## First-use setup
 

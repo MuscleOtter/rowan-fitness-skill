@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.11.0 — 2026-09-15 (prepared for review; not published)
+
+Gives Ellis ownership of small, source-aware tables and graphs. Adds an on-demand visual contract, optional dependency-free validator/Markdown-table renderer, and regression tests. Native line/bar charts remain conditional on actual host tools; there is no bundled JavaScript chart runtime, MCP server, data upload or new service. Rowan remains the user-facing coach. Descriptive display does not invoke a prescription board; all new recommendations keep existing review gates. Host-rendered graph appearance and cross-host execution still require live testing.
+
 ## 1.10.0 — 2026-09-15 (pilot release)
 
 Makes goal progress and sustainable adherence explicit, adds creative obstacle-solving and suppression of declined suggestions, and bounds personal experiments and memory. Quinn gains targeted research stewardship with a deduplicated evidence queue. Routing policy v2 keeps Mara/Quinn universal and makes Ellis/Kit conditional on relevant data/exercise questions; other domain triggers, all three revision passes, score floors and exact-final checks remain. Fitness rubric v1.5 clarifies conditional coverage; FRB-state-1.8 adds optional continuity fields. Call-count reductions are policy arithmetic, not demonstrated token savings. Full clinical-cycle testing remains deferred; see the new validation receipt for actual focused checks.

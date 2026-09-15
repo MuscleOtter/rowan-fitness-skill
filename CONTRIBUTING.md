@@ -12,6 +12,10 @@ Nontechnical feedback is welcome: use the [feedback form](https://github.com/Mus
 
 Documentation-only corrections need proportionate checks. Do not rerun unrelated fitness tests or raise scores merely to produce a more impressive release. Do not describe earlier-version execution as a test of changed behavior.
 
+For the optional visualization helper, run `python3 -B -m unittest discover -s tools`. The `-B` flag keeps bytecode caches out of the distributable; the packager allows only the named helper, not arbitrary executable files. Tests cover contract validation and Markdown output, not native chart rendering or coaching effectiveness.
+
+The optional parsed-output test uses an existing Node/`marked` installation: set `MARKED_MODULE` to that module's absolute ESM path before running the same tests. It explicitly skips when unavailable; no runtime dependency is added to the skill.
+
 For changes only to repository documentation, check links and `python3 tools/package.py --check`; keep the skill version and published ZIP unchanged. Keep README download and release links on `/latest/`, without a hardcoded current version. When publishing a new skill version, verify that the public download matches the packaged checksum without signing in.
 
 When reporting a scan, identify **both** the Rowan target (repository, commit or release, and package checksum) and the evaluator (repository and exact commit). Link each commit to its own repository. Record scan configuration, date and incomplete checks; retain the raw report privately and publish a summary without local paths or personal records. [The 1.5.2 receipt](docs/validation-1.5.2.json) is an example. Preserve failed and incomplete results as reported; neither is a passing security assessment.
