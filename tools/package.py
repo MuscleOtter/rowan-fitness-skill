@@ -14,7 +14,8 @@ def artifacts():
     files = sorted(SKILL.rglob("*"))
     if any(p.is_symlink() for p in files):
         raise SystemExit("Refusing to package symlinks")
-    files = [p for p in files if p.is_file()]
+    # Interpreter bytecode is build output, not skill content: never packaged or installed.
+    files = [p for p in files if p.is_file() and "__pycache__" not in p.parts]
     if not (SKILL / "SKILL.md").is_file():
         raise SystemExit("Missing SKILL.md")
     for p in files:

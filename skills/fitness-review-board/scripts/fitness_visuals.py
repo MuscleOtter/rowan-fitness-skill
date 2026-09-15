@@ -106,7 +106,8 @@ def validate(spec):
 
 def validate_handoff(handoff):
     """Validate a descriptive visual handoff and its optional nested chart."""
-    keys(handoff, {"kind", "version", "request_class", "status", "chart", "selection_reason", "data_notes"})
+    keys(handoff, {"kind", "version", "request_class", "status", "selection_reason", "data_notes"},
+         {"chart"})
     require(handoff["kind"] == "fitness_visual_handoff", "Unknown handoff kind")
     require(type(handoff["version"]) is int and handoff["version"] == 1, "Unsupported handoff version")
     require(text(handoff["request_class"]), "Request class is required")
@@ -114,7 +115,7 @@ def validate_handoff(handoff):
     require(text(handoff["selection_reason"]), "Selection reason is required")
     notes = handoff["data_notes"]
     require(isinstance(notes, list) and all(text(note) for note in notes), "Data notes must be text")
-    chart = handoff["chart"]
+    chart = handoff.get("chart")
     if handoff["status"] == "ready":
         require(isinstance(chart, dict), "Ready handoff requires a chart")
     if handoff["status"] == "blocked":

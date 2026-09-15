@@ -2,7 +2,7 @@
 
 ## 1.12.0 — 2026-09-15 (prepared for review; not published)
 
-Defines the visual handoff orchestration for descriptive progress requests: Rowan routes, Ellis verifies/selects, and Rowan presents; Quinn joins only for interpretation or actionable advice. Adds a dependency-free `fitness_visual_handoff v1` wrapper validator and regression coverage. The handoff validates structure only; it does not prove source truth, create a connection or approve recommendations.
+Defines the visual handoff orchestration for descriptive progress requests: Rowan routes, Ellis verifies/selects, and Rowan presents; Quinn joins only for interpretation or actionable advice. Adds a dependency-free `fitness_visual_handoff v1` wrapper validator and regression coverage. The handoff validates structure only; it does not prove source truth, create a connection or approve recommendations. A blocked handoff may omit `chart` as well as set it to null, matching the written contract. The host tool maps now state where a table or chart can actually render, and the packaging check ignores interpreter bytecode so running the tests cannot change the archive.
 
 ## 1.11.0 — 2026-09-15 (prepared for review; not published)
 

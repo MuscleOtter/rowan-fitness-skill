@@ -52,6 +52,14 @@ class VisualTests(unittest.TestCase):
         blocked = handoff("blocked")
         blocked["data_notes"] = ["No authorized source was available."]
         self.assertIs(visuals.validate_handoff(blocked), blocked)
+        omitted = handoff("blocked")
+        omitted["data_notes"] = ["No authorized source was available."]
+        del omitted["chart"]
+        self.assertIs(visuals.validate_handoff(omitted), omitted)
+        missing_ready = handoff()
+        del missing_ready["chart"]
+        with self.assertRaises(ValueError):
+            visuals.validate_handoff(missing_ready)
         for mutate in (
             lambda h: h.update(kind="fitness_chart"),
             lambda h: h.update(version=2),

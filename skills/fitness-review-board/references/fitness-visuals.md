@@ -30,7 +30,7 @@ The portable handoff is an internal bridge, not user-facing JSON:
 }
 ```
 
-`status` is `ready`, `partial` or `blocked`. `ready` requires a chart; `blocked` carries no chart and a useful `data_notes` explanation. A `partial` handoff may carry a chart with limitations. A host may validate this wrapper with `scripts/fitness_visuals.py --handoff`; validation checks shape only and never proves source truth or approves advice.
+`status` is `ready`, `partial` or `blocked`. `ready` requires a chart. A `blocked` handoff carries no chart: set `"chart": null` or omit the key, and give a useful `data_notes` explanation. A `partial` handoff may carry a chart with limitations. A host may validate this wrapper with `scripts/fitness_visuals.py --handoff`; validation checks shape only and never proves source truth or approves advice.
 
 ## Choose the smallest useful view
 
