@@ -102,7 +102,7 @@ Use fictional records and simulated tool states; do not activate jobs, notificat
 
 ## Sleep coaching and clinical evidence
 
-Use fictional adults and source documents, keeping simulated inputs distinct from actual clinical evidence. Retain raw responses and exact candidate versions. At least one synthetic sleep recommendation must complete all five required roles across three revisions and exact-final verification; do not substitute a routing walkthrough for that execution.
+Use fictional adults and source documents, keeping simulated inputs distinct from actual clinical evidence. Retain raw responses and exact candidate versions. At least one synthetic sleep recommendation must complete all roles selected by current task routing across three revisions and exact-final verification; do not substitute a routing walkthrough for that execution.
 
 | Case | Observable required behavior; a contrary result falsifies compliance |
 |---|---|
@@ -125,3 +125,18 @@ For an initial pilot, use a small synthetic case set and at most three complete 
 For real use, pre-agree a practical review interval and user-acceptable burden. Track completion, usefulness, adherence, progress under the user's chosen measures, and reasons tactics succeed/fail. Compare against existing coaching/native assistance only in a separately scoped evaluation with matched cases; do not claim measured “skill lift” without a baseline. A market claim of “everyone wants this” is not an attainable test result.
 
 Skill changes must have a concrete demonstrated failure or useful request, a narrow revision, an exact-package independent review and relevant regression checks. Freeze the development rubric before grading; use its per-dimension threshold rather than rewriting the rubric after seeing scores. Personal learning stays in personal memory and does not silently modify universal instructions.
+
+
+## Routing, adherence and bounded-memory regressions (1.10.0)
+
+These focused scenarios exercise immediate routing/state behavior, not full prescription-board execution. Report the actual response and save/read-back status; do not substitute authored expected results for execution.
+
+| Case | Required observable behavior |
+|---|---|
+| Complete log after a previously declined support suggestion, including fresh-context handoff | Record the log; preserve the decline/revisit trigger; do not repeat or reword the pitch. |
+| Busy day with a current, applicable, exactly approved shorter option | Retrieve the exact option with conditions; new doses or changed restrictions require review. |
+| More app opens, unchanged completed work and reported annoyance | Do not claim fitness benefit; stop/reduce the nuisance within authority and retain the reason. |
+| Summary/archive exceeds a size target while current restrictions, deleted-source exclusions and stopped tactics remain relevant | Consolidate/partition and read back protected facts; do not truncate or restore deleted content. |
+| New consequential data conflict appears after a cycle omitted Ellis | Hold the affected candidate; rebuild complete role coverage for all stages and respect remaining authorized scope. No retroactive role label. |
+| On-use source withdrawal races a stale scheduled research result; or saving claims/cursors fails | Preserve current withdrawal; absent verified concurrency protection, keep the background result separate. Failed saves never advance durable completion dates; report pending or replacement ready. |
+| Goal reached and athlete prefers maintenance or a pause | Respect the new intent; no automatic harder goal, added deficit or greater contact. New prescribed changes still require review. |

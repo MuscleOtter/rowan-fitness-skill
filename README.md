@@ -73,7 +73,7 @@ Fictional illustration of the rules; no reviewer execution or athlete result is 
 <details>
 <summary>Meet the review team</summary>
 
-**Rowan** coordinates your coaching. **Mara** challenges the plan, **Quinn** checks evidence, **Ellis** checks data and **Kit** knows equipment. **Nico** reviews conditioning, **Sage** reviews nutrition and **Jules** handles recipes and meal prep. **Wren** owns sleep and recovery, joining full program reviews, cut-related recommendations and sleep-relevant advice. Required reviewers still participate even when only Rowan speaks to you.
+**Rowan** coordinates your coaching. **Mara** challenges the plan, **Quinn** checks evidence and maintains the research queue, **Ellis** checks data and **Kit** knows equipment. **Nico** reviews conditioning, **Sage** reviews nutrition and **Jules** handles recipes and meal prep. **Wren** owns sleep and recovery, joining full program reviews, cut-related recommendations and sleep-relevant advice. Mara and Quinn review every new recommendation; [task-specific routing](skills/fitness-review-board/references/task-routing.md) adds the required specialists. Rowan also helps solve practical adherence obstacles, remembers declined support, and measures whether the routine helps your chosen goal.
 
 </details>
 

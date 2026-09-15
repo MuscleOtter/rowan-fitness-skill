@@ -2,7 +2,7 @@
 
 Fill with this user's actual facts; `unknown` is a valid value. Save outside the skill folder. This is a template, not a preapproved plan.
 
-- Schema: FRB-state-1.7 (adds optional sleep context/evidence pointers; preserve older facts, approvals and unknowns)
+- Schema: FRB-state-1.8 (optional adherence, routing and memory-lifecycle fields; preserve older facts, approvals and unknowns)
 - Profile ID / preferred name:
 - Revision / parent revision / created date and timezone:
 - Authoritative location or manual copy selected by user:
@@ -40,6 +40,8 @@ Fill only for selected routines; keep secrets in the host's account controls.
 - Setup/read-back; last attempted/ran/accepted/delivered-if-confirmed status; pending/unknown sends or order reconciliation:
 - Grocery basket/order ID, scoped budget/substitution/fulfillment permissions, confirmed status; no payment credentials:
 - Trial baseline/benefit/window, observed usefulness/burden, keep/adjust/stop decision and next check:
+- Relevant obstacle, chosen option/approved fallback reference, meaningful goal outcome and tolerated burden:
+- Declined/snoozed idea and reason; suppression/revisit trigger; no repeated pitch without changed reason:
 - Stop/snooze controls applied or pending; discarded tactics/context not to retry without new justification:
 
 ## Source registry and history coverage
@@ -62,7 +64,7 @@ Fill only for used sources; retain this section in handoffs when it governs impo
 - Exact approved action text or accessible canonical file:
 - Approval validity/conditions and dependent fact revisions:
 - Cycle/stage/candidate ID / binding mode / packet references:
-- Required role set / critical fitness areas / rubric version:
+- Required role set / routing policy version and reasons / critical fitness areas / rubric version:
 - Stage reports and final score coverage; arithmetic; open findings:
 - Private cycle ledger location; exact artifacts/independence receipts and last verified read-back; context-capacity status and next safe boundary:
 - Normal, corrective, consultation, and pre-draft calls used/reserved, including pending/unknown attempts:
@@ -92,6 +94,8 @@ Fill only used fields; dates mean checks actually performed, not promised automa
 - Relevant source claims needing recheck; affected decision and owner:
 - Private sleep-evidence ledger location if used; source/version/publication date/evidence cutoff, last actual topic search/check, access gaps and next trigger:
 - Package/record migration status; unresolved maintenance items:
+- Current summary size/compaction trigger, archive index and last invariant read-back:
+- Generic science-ledger pointer and relevant claim IDs; incomplete topic searches stay dated and pending:
 
 ## Continuity essentials
 

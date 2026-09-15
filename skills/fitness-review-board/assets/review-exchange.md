@@ -46,6 +46,7 @@ Follow the [context/checkpoint rules](../references/review-protocol.md#context-a
 - Binding comparison result and evidence (tool or explicit full-text comparison attestation):
 - Required coverage valid/invalid; invalid reasons:
 - Finding dispositions and closure status:
+- Routing policy/reasons, distinct material findings by role/stage, unsupported criticisms, actual calls/retries/time and tokens if exposed; no invented savings:
 - Exact next candidate ID or unchanged-with-reason:
 - Final only: cell minima, unrounded weighted mean, all release predicates, current-dependency check, release and save status:
 
