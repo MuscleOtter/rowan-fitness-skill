@@ -85,11 +85,13 @@ At check-ins, Rowan compares what happened with what was expected: keep useful t
 
 ## Start in ChatGPT or Codex
 
-**Codex:** ask “Install fitness-review-board from https://github.com/MuscleOtter/rowan-fitness-skill, then help me get started.” A session with the supported installer can handle the files and check review capabilities.
+**Codex desktop or CLI:** ask “Install or update fitness-review-board from https://github.com/MuscleOtter/rowan-fitness-skill, then help me get started.” A local session with the supported installer can handle the files and check review capabilities. [Local installation](docs/SETUP.md#codex-desktop-and-cli).
 
 **ChatGPT:** [add the rule files to a Project](docs/SETUP.md#chatgpt-app). Naming Rowan alone does not install it. Intake and logging work with readable rules; new recommendations need independent review elsewhere.
 
 **Claude Code:** follow the [folder-install instructions](docs/SETUP.md#claude-code).
+
+Already using Rowan in more than one app? [Update and verify each installed copy](docs/SETUP.md#verify-each-installation). Publishing on GitHub does not update local skill folders or account uploads.
 
 ### Get the folder
 
