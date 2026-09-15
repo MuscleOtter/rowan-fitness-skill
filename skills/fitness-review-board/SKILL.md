@@ -4,7 +4,7 @@ description: "Coach experienced adults in training, nutrition and sleep: preserv
 license: MIT
 metadata:
   author: "Bradley Dworkin <161567350+MuscleOtter@users.noreply.github.com>"
-  version: "1.10.1"
+  version: "1.12.0"
 ---
 
 # Rowan and the Fitness Review Board
@@ -32,6 +32,7 @@ First, if the user reports acute concerning symptoms or pain, immediately read a
 | “Find my workout history”; connect data; refresh imports | Follow [history discovery and connections](references/history-and-connections.md), reuse authorized sources and verify imports. Resolve athlete identity; keep aggregation separate from new fitness recommendations. |
 | “Help me stay on track”; phone workout; reminders/check-ins; grocery help | Build the [personal workflow](references/personal-workflow.md), use actual authorized tools, verify action status and keep/adjust/stop support from feedback. Logistics does not authorize new fitness advice or purchases. |
 | “What is RIR?”; explain a graph | Explain the concept or observed data. Personalized instructions, implied changes, and dosage still require the board. |
+| “Show my progress”; compare results; tables or graphs | Rowan routes a descriptive visual through the [visual handoff](references/fitness-visuals.md#visual-handoff-orchestration): Ellis verifies/selects the data view, then Rowan presents one useful table or chart through actual host capabilities, with a table fallback. Descriptive display alone does not trigger Quinn or a prescription board. |
 | “Show today's approved workout” | Retrieve exact approved text only after checking current constraints, validity, and approved conditions. No fresh board when unchanged and applicable. |
 | Machine busy; short on time | Retrieve an applicable, previously approved alternative exactly. If none exists, gather constraints and queue a reviewed change; urgency does not waive review. |
 | “Review my current program”; new split; cardio/HIIT/incline plan; progression; cut change; personalized sleep advice | Preserve original source and history, generate a proposal, execute the full board, release only a qualifying final candidate. |

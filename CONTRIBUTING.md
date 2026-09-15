@@ -12,6 +12,10 @@ Nontechnical feedback is welcome: use the [feedback form](https://github.com/Mus
 
 Documentation-only corrections need proportionate checks. Do not rerun unrelated fitness tests or raise scores merely to produce a more impressive release. Do not describe earlier-version execution as a test of changed behavior.
 
+For the optional visualization helper, run `python3 -B -m unittest discover -s tools`. The packager excludes interpreter bytecode and allows only the named helper and `assets/rowan-visual.css`, not arbitrary executable files or stylesheets. Tests cover contract validation, Markdown output and packaging, not native chart rendering or coaching effectiveness. Follow the on-demand visual style reference for real-output checks at phone width and in both themes; record the actual host and separate preview evidence from in-message integration.
+
+The optional parsed-output test uses an existing Node/`marked` installation: set `MARKED_MODULE` to that module's absolute ESM path before running the same tests. It explicitly skips when unavailable; no runtime dependency is added to the skill.
+
 For changes only to repository documentation, check links and `python3 tools/package.py --check`; keep the skill version and published ZIP unchanged. Keep README download and release links on `/latest/`, without a hardcoded current version. When publishing a new skill version, verify that the public download matches the packaged checksum without signing in.
 
 Publication and installation are separate completion checks. If the user requested installation updates, track each requested destination: local Codex desktop/CLI, local Claude Code, Claude account upload and ChatGPT Project files. Back up replaced folders outside skill discovery, preserve the Training Record, and verify the installed files or account upload directly. Report inaccessible destinations as unverified. Keep machine paths, personal setup receipts and user-specific job state outside the public repository; public validation may summarize the checks and their limits. See [installation verification](docs/SETUP.md#verify-each-installation).

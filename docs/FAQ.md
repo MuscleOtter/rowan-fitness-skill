@@ -28,6 +28,10 @@ No. Your Training Record carries continuity. Rowan saves and verifies it when to
 
 Only through tools actually available in your assistant and within your authorization. Rowan guides setup and checks what worked. Installing this ZIP activates none of those connections or actions. On Claude, Rowan prepares the basket and asks for confirmation of each purchase; if checkout is prohibited in that surface, you complete it yourself. Payment credentials stay with you. [History and Health](SETUP.md#bring-your-history-together) · [Support routines](SETUP.md#make-it-easy-to-keep-using-rowan).
 
+**Can Rowan show charts inside the message?**
+
+Yes, when your current assistant exposes that surface. Source version 1.12.0 supports native in-message visuals in capable Claude/Codex sessions, with a readable table fallback. Claude's web/desktop chat visuals are distinct from artifacts and Claude Code's terminal. Day/Night and exact values stay local to the view; nothing is saved to your Training Record just by drawing it. [Compatibility and a fictional test](VISUALS.md).
+
 **Where does my information go?**
 
 The package itself has no telemetry service or hosted athlete database. Your chosen assistant and connected services still process data under their own policies. Keep records in your private location, outside the skill folder and this public repository. Never put health exports, private chats or account credentials in public feedback.

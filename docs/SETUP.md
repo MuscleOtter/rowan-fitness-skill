@@ -107,6 +107,12 @@ There is no skills folder, so the instructions have to be uploaded as files. Nam
 
 This gives Rowan the rules and your record. It does not give independent reviewers, so new prescriptions still need the manual review route or an agent-capable session. ChatGPT's code interpreter is per-conversation storage like Claude.ai's, so Rowan gives you a replacement record to keep rather than claiming a saved file.
 
+## Charts directly in the conversation
+
+Ask **“Use Rowan to show my progress as an inline chart with Day/Night choices.”** Claude web/desktop chat and Cowork have documented native custom visuals; use that route for quick progress rather than asking for a separate artifact. Rowan checks the session and uses an exact-value table when a graph is unavailable. Claude Code terminal does not gain chat's visual interface through a skill install.
+
+The source version 1.12.0 includes the visual handoff and style. Verify the installed/uploaded version; updating a branch does not update release downloads or account uploads. [Fictional smoke test, supported surfaces and limits](VISUALS.md).
+
 ## What the board needs
 
 Rowan handles the team. When separate reviewers are available, you can keep talking to Rowan while it organizes their work. Otherwise it explains that new advice is waiting for review and offers one practical way forward. Manual copying between reviewer chats is an optional fallback, not a normal setup step.

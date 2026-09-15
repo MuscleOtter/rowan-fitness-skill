@@ -14,11 +14,14 @@ def artifacts():
     files = sorted(SKILL.rglob("*"))
     if any(p.is_symlink() for p in files):
         raise SystemExit("Refusing to package symlinks")
-    files = [p for p in files if p.is_file()]
+    # Interpreter bytecode is build output, not skill content: never packaged or installed.
+    files = [p for p in files if p.is_file() and "__pycache__" not in p.parts]
     if not (SKILL / "SKILL.md").is_file():
         raise SystemExit("Missing SKILL.md")
     for p in files:
-        if p.suffix not in {".md", ".yaml"} or p.name == "athlete.md":
+        helper = p.relative_to(SKILL).as_posix() == "scripts/fitness_visuals.py"
+        style = p.relative_to(SKILL).as_posix() == "assets/rowan-visual.css"
+        if (p.suffix not in {".md", ".yaml"} and not helper and not style) or p.name == "athlete.md":
             raise SystemExit(f"Unexpected skill file: {p.relative_to(SKILL)}")
     output = io.BytesIO()
     with zipfile.ZipFile(output, "w", compression=zipfile.ZIP_DEFLATED) as archive:
