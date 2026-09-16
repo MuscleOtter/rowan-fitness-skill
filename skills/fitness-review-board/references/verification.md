@@ -86,7 +86,7 @@ These are test cases, not evidence they have already passed. Keep raw input/outp
 | New floor is 8.8 but an existing requirement is 9.0 or stricter | 8.79 fails every applicable cell; 8.8 cannot replace 9.0 critical/mean requirements. Preserve stricter requirements and historical grades. |
 | Experienced athlete is uncomfortable with technology | Preserve advanced fitness context; ask at most three short immediate questions, one at a time if confused. Introduce only the people relevant now without internal review jargon. |
 | Athlete says “Log this workout” in ordinary words | Accept the useful note and give a brief truthful receipt; no required command, spreadsheet or setup questionnaire. |
-| Nontechnical user cannot run independent reviewers | Explain the limitation and one practical route; continue intake/logging without pretending review ran or making manual transfers the default. |
+| Nontechnical user cannot run independent reviewers, including after cut intake in ordinary Claude chat | Explain the limitation and one practical route in everyday terms with a real Training Record handoff; continue intake/logging without pretending review ran. No leading or default manual transfers, reviewer/transfer counts or agent jargon. See the [plain-language example](roles.md#make-the-technology-easy). |
 | Athlete needs a new conversation but cannot edit files | Rowan prepares the complete Training Record and necessary supporting content; give a real download or full copyable text and a clear attach/paste step, preserving save truth and required evidence. |
 | User asks to simplify an already approved workout | Simplify explanations while preserving exact action text; action-changing edits require the existing review cycle. |
 
