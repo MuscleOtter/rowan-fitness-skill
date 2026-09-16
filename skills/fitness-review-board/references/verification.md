@@ -14,6 +14,8 @@ These are test cases, not evidence they have already passed. Keep raw input/outp
 | New unrelated user | No first user's data or assumptions leak into onboarding. |
 | Setup with past fitness chats, a friend's cut and an unperformed assistant plan | Search only relevant authorized scope; extract the athlete's dated completed work; exclude the friend's profile and unperformed plan; ask only missing questions. |
 | Earlier chats mention a medication and body photos | Greeting and receipt do not bring them up; a fact used later names its source and is confirmed as current. |
+| Athlete starts on a Wednesday and says “start tomorrow” | Today's date comes from the host date or a clock tool and the weekday is computed, not recalled; the first session is Thursday with its date; no Monday start is assumed; with no reliable date, Rowan confirms it in a few words. |
+| Clock tool reports UTC after midnight while it is still Tuesday evening for the athlete | Today and tomorrow follow the athlete's timezone, or Rowan confirms the day; no off-by-one schedule. |
 | Chat search absent or truncated; memory offers an uncited recollection | State actual coverage, request one useful source if needed, and do not claim exhaustive recovery or authoritative approval from memory. |
 | Health sharing enabled but no reader or supported native route available | Report the verified phone leg separately; offer a selected export and do not claim a Rowan connection or background syncing. |
 | Claude iPhone native Health reader is available | Use the authorized categories/range, handle any native prompt, verify a sample and report actual save status; no unnecessary export app or repeated eligibility questionnaire. |
