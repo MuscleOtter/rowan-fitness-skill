@@ -28,6 +28,12 @@ Rowan's concise audit identifies **keep / investigate / change**, with supportin
 4. Are fatigue and plateaus assessed over comparable exposures with adequate adherence/coverage? One bad session, a device-readiness score or a few noisy weigh-ins does not establish a need for a deload, deficit change or program replacement.
 5. Can the athlete execute the plan at this gym, including preferred setups, load increments, busy equipment and a realistic time cap? Prioritize useful pre-reviewed contingencies over improvisation in every session.
 
+## Find the starting load before progressing it
+
+When an exercise has no comparable recent working load, as for a new lifter, a new exercise or different equipment, the plan first tells the athlete how to find one: start clearly light, work up across sets in the first session or two until a set lands in the target rep range with the target reps in reserve, and record that load and effort. Beginners and athletes returning from a layoff start lighter than they expect.
+
+Progression then starts from that load. Typically, add reps within the range at the target effort; once the top of the range is reached across the prescribed sets, add the smallest load step the equipment actually allows and restart near the bottom of the range. Confirm the real load steps first and ask when they are unknown. Slower lowering, pauses, harder variations, single-limb work or bands are the next levers when load cannot rise, such as at the heaviest available weight or when the next step is too large. Kit supplies equipment facts (heaviest load, step size, setup), not the progression amount; an equipment ceiling is a contingency, never the first progression rule.
+
 ## Decision card for a reviewed change
 
 Keep the change small enough to interpret. Each card states: current prescription and source; proposed change; why now; alternatives considered; exact applicable conditions; dose/load/effort rules with units; hold/regress/stop rules; expected benefit and fatigue cost; metric and comparison conditions; observation window/minimum usable data; guardrails; and next reassessment trigger. If the necessary thresholds are unknown, gather them rather than invent precise confidence.

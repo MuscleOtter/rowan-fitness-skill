@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.14.0 — 2026-09-16 (unreleased preparation)
+
+Fixes problems a tester hit in a full first plan. Changes made after the athlete's feedback are now new candidates reviewed before release: in the tester's session, a load-finding method, a new hanging progression, caffeine and supplement advice and a medication-related caution were added after release as “within approved scope” without review, while the plan still read as board-cleared. Until a revision passes, the last approved version stays active, and plans now carry visible versions (Plan v1, v2) with their actual review status, a short “What changed and why” list and a way back to an earlier version when its conditions still hold. Rowan also may not invent a lighter review or let the athlete choose one; in that session the athlete was offered a one-pass “standard” review that the rules do not define.
+
+Plans now find a starting load before progressing it. The tester's plan jumped to what to do “once 25 kg feels easy”, using the heaviest dumbbell from the equipment list as a progression rule before any working load existed, with load steps never confirmed. Progression now adds reps, then the smallest real load step; tempo, pauses, variations and bands are for when load cannot rise, and Kit's equipment facts bound progression without setting it.
+
+Nutrition moves up front. Sage joins every full weekly/program review (routing policy v3), and full plans show nutrition targets near the top with a starting energy range, its method and uncertainty, a protein target and practical food moves. Unknown intake is estimated from app history, a recall, weight trend or an equation, with a short log refining rather than delaying guidance; appetite-suppressing medication shifts the emphasis to energy and protein floors with the prescriber involved. An optional nutrition session with Sage follows the first plan. Setup now asks about alcohol and nicotine once, kindly and with the reason, and the no-shame rule names them explicitly.
+
+None of these changes has been exercised on a live host. Review depth itself is unchanged: every new or revised recommendation still requires three critique/revision passes and exact-final verification.
+
 ## 1.13.0 — 2026-09-16 (unreleased preparation)
 
 Makes first use ask where the athlete already tracks the history their goal needs. When tools do not already show it, one of the three opening questions asks where they track workouts, if anywhere, in everyday words; “nowhere” is a normal answer. Once a source is named, Rowan offers one small step at a time (a screenshot first, then a recent export, and a connection only on request), checks the app's current help before giving export steps and never asks for a login. Reassurance must be true: nothing connects unless asked, but what Rowan reads is sent to the model. Facts found in earlier chats are confirmed with their source before use, and medications, health conditions and body photos stay out of greetings and receipts.

@@ -30,6 +30,10 @@ A local single-writer convention is not a concurrency guarantee. If another writ
 
 If the record and subsequent updates cannot all be recovered, identify the missing interval and request the latest export or affected facts. Do not merge from guessed chat recollections. Compaction must preserve active restrictions, successful/failed tactics, unresolved questions, pending hypotheses and approval dependencies. “I remember you” does not demonstrate complete records.
 
+## Plan versions the athlete can see
+
+Number each released plan (Plan v1, v2 and so on) with its date and actual review status, and keep earlier versions. A new version opens with a short “What changed and why” list. Say “reviewed” only for a version that passed review; changes still waiting are labeled as proposals. If the athlete wants an earlier version back, retrieve its exact text only when its approval conditions still hold for current goals, restrictions, equipment and medications; otherwise the return is a new candidate for review.
+
 Keep review and save status distinct internally. Suggested statuses: `RECORDED_IN_CHAT`, `REPLACEMENT_READY`, `FILE_SAVED_VERIFIED`, `SAVE_PENDING`, and `CONFLICT_NEEDS_INPUT`; old schema statuses may be mapped with their original meaning preserved. A review can pass while a save fails. A reviewed plan may be used in-session only if its relevant inputs are still known-current; keep the prior durable record and provide the unsaved replacement. Conflicting/unknown current authority or a new restriction blocks stale activation, not merely storage.
 
 Before releasing advice, compare the reviewed snapshot to current decision-critical facts. Ask only if a material fact or authority is actually uncertain. Current explicit user selection and corrections already supply authority; do not demand repetitive confirmations. Ordinary unsaved observations do not erase a valid approval unless they affect its assumptions.

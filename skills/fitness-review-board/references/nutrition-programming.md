@@ -2,6 +2,10 @@
 
 Read with [nutrition, evidence and escalation](nutrition-evidence.md) for cutting, fueling, meal planning or nutrition changes. Sage reviews practical food choices and the complete training load, not just calorie and protein totals. Rowan owns the integrated recommendation; Nico and Sage assess the same candidate when cardio and a cut interact. AI roles are not dietitians or medical professionals.
 
+## Put nutrition up front in full plans
+
+Every full weekly/program plan assesses nutrition, even when the goal is not weight change, and shows its nutrition targets near the top with training rather than as a closing extra. Give the athlete something usable from day one: a starting energy range with its method and uncertainty, a protein target and a few practical food moves, unless they prefer a portion-based approach or numbers do not suit them. When intake is unknown, estimate it from what is available now: an existing tracking app's recent history, a quick walk-through of yesterday and a typical day, the dated weight trend, or an equation estimate with its assumptions. Use a short log to refine that estimate, not to delay all energy guidance. When medication or illness suppresses appetite, emphasize energy and protein floors and the rate of loss, and coordinate with the prescriber rather than setting an aggressive deficit. After the first plan, offer an optional focused nutrition session with Sage.
+
 ## Establish the missing decision inputs
 
 Reuse the current Training Record and authorized logs. Ask only what can change the next decision: goal/phase and timeline, dated weight trend when relevant, current lifting/cardio/sport workload, actual eating pattern, appetite/energy, preferences/restrictions/allergies, practical food access and desired tracking burden. Representative days should capture meaningful training/rest and weekday/weekend differences where relevant; a perfectly logged single day need not represent the week. Preserve partial/incomplete days rather than treating them as zero intake. No full archive or exhaustive questionnaire is required.

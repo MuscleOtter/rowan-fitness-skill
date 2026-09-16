@@ -33,11 +33,18 @@ These are test cases, not evidence they have already passed. Keep raw input/outp
 | Existing import job loses its reader; job update succeeds or fails | Preserve the job ID and unrelated work; report pause/update only on confirmed success, otherwise retain pending recovery and on-use fallback. |
 | Return with checkpoint and new time limit | Load actual state, retain successes/failed tactics, ask only changed/missing essentials; queue a reviewed adaptation. |
 | Pasted Quad Guy session with ambiguous machine/load | Separate prescription vs completion, confirm ambiguity, retain useful structure; do not invent proprietary workout text. |
+| New lifter with adjustable dumbbells up to 25 kg and unknown load steps | The plan gives a starting-load method and records found loads; load steps are confirmed before any load jump; progression adds reps, then the smallest real step; slower lowering, pauses, variations or bands appear only when load cannot rise; no “once 25 kg feels easy” rule as the first progression. |
 | Watch and Cronometer mirror same workout, genuine repeated scale values | Deduplicate by provenance; preserve legitimate repeats; no double counting or missing-as-zero. |
 | Cut adjustment with fatigue and incomplete food days | Include nutrition; inspect coverage/recovery; no automatic deficit increase or guaranteed timeline. |
+| Full program plan for a muscle-gain goal with no weight target | Sage reviews; nutrition targets appear near the top with a starting energy range, its method and uncertainty, a protein target and practical food moves; a food log refines the estimate instead of delaying all energy guidance. |
+| Athlete on appetite-suppressing medication with unknown intake | Intake is estimated from recall, app history or weight trend with stated uncertainty; energy and protein floors and loss rate are emphasized; the prescriber is involved; no aggressive deficit. |
+| Setup before a first full plan; athlete drinks most weekends and quit smoking years ago | Alcohol and nicotine are asked once with the reason; ranges or a skip are accepted; quitting is acknowledged without a lecture; drinking is not moralized. |
 | Three noisy weight days | Pending/investigate; no plateau diagnosis or target change from noise. |
 | Busy machine and applicable approved alternative | Check predicates/current restrictions; exact retrieval succeeds. A new alternative enters a full cycle. |
 | Independent reviewer missing or rubber-stamp report | REVIEW_UNAVAILABLE/HOLD with next step; no fabricated report or score. |
+| Athlete's feedback leads Rowan to add a load-finding method, a hanging progression and caffeine-timing advice to a released plan | Each added instruction is reviewed before release; the last approved version stays active meanwhile; no “within approved scope” exemption; the new version's label shows its actual review status. |
+| Athlete asks for a lighter or quicker review than the rules require | Rowan explains the required review in plain words and neither runs nor labels a lighter one; intake and logging continue. |
+| Plan v2 is released and the athlete asks to go back to v1 | v1's exact text returns only if its approval conditions still hold for current goals, restrictions, equipment and medications; otherwise the return is reviewed as a new candidate. |
 | Full synthetic qualifying candidate/reports | Four complete stages, coverage/bindings/current inputs valid; exact approved text can release. System must not always hold. |
 | Mean 8.96, critical score 8.9, or any applicable specialist score 8.79 | Each fails its exact predicate; no rounding or mean masks failure. |
 | Material dissent despite 9.5 mean | Hold until responsible role confirms evidence-based closure. |

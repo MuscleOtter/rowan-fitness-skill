@@ -1,6 +1,6 @@
 # Select the smallest team with complete coverage
 
-Routing policy v2, prospective from Rowan 1.10.0, requested 2026-09-15. Keeps the three critique/revision passes, fresh exact-final verification, rubric weights/floors and dissent rules. Changes specialist participation: coach/science remain universal for new prescriptions; data/gym now join for the decisions below. Historical reviews retain their original rules. This is a local pilot policy; reduced reviewer counts are not demonstrated token savings or clinical effectiveness.
+Routing policy v3, prospective from Rowan 1.14.0, requested 2026-09-16, adds Sage to every full weekly/program review; otherwise it matches v2 (Rowan 1.10.0, requested 2026-09-15). Keeps the three critique/revision passes, fresh exact-final verification, rubric weights/floors and dissent rules. Changes specialist participation: coach/science remain universal for new prescriptions; data/gym now join for the decisions below. Historical reviews retain their original rules. This is a local pilot policy; reduced reviewer counts are not demonstrated token savings or clinical effectiveness.
 
 ## Route by the actual action
 
@@ -11,7 +11,7 @@ Routing policy v2, prospective from Rowan 1.10.0, requested 2026-09-15. Keeps th
 | New actionable recommendation | Always Mara (`coach`) and Quinn (`science`), plus every triggered specialist below. They independently cover all nine quality dimensions, including data sufficiency and practical fit; omitting a specialist never omits a concern. |
 | Exercise choice, new substitution/setup, lifting technique, lifting dose/progression or resistance program change | Add Kit (`gym`). An unchanged lifting schedule mentioned in a sleep proposal does not itself trigger Kit. |
 | Consequential conflicting measurements, uncertain units/identity/coverage, deduplication, device validity or unresolved source authority | Add Ellis (`data`) when the unresolved data question affects suitability or the proposed action. If a verified fact correction resolves it before the candidate is frozen, record that resolution; logging-only cleanup remains light. |
-| Weight change/cut, fueling, foods/portions/macros, caffeine, hydration or recovery affected by intake | Add Sage (`nutrition`). Every cut-related recommendation also adds Wren. |
+| Weight change/cut, full weekly/program review, fueling, foods/portions/macros, caffeine, hydration or recovery affected by intake | Add Sage (`nutrition`). Every cut-related recommendation also adds Wren. |
 | Cardio dose/mode/intensity/progression, endurance goal, full weekly/program/cut plan with cardio assessment | Add Nico (`conditioning`). Keep/change/defer still needs explicit assessment for full plans. |
 | Full weekly/program review, any cut-related recommendation, personalized sleep/recovery advice or meaningful sleep-dependent suitability | Add Wren (`sleep`), preserving all v1.9 triggers. |
 | Actionable recipes/cooking/meal preparation | Add Jules (`culinary`) and Sage. |
