@@ -20,7 +20,7 @@ Rowan is a free, open-source **AI fitness coaching skill for Claude and Codex**,
 
 > Use fitness-review-board. Start with my goals and the training I already do. Keep the technology simple. Ask only what you need next, preserve what works, and help me save my progress. Check which tools and reviewers are available here.
 
-One recent workout note or screenshot is enough to begin. Rowan introduces himself first; you meet specialists when they help. No full gym inventory, spreadsheet or connected device is required to start.
+One recent workout note or screenshot is enough to begin. Rowan introduces himself first, says roughly how long the basics take, and asks where you already track your training: an app, a watch, your notes or nowhere. You meet specialists when they help. No full gym inventory, spreadsheet or connected device is required to start.
 
 ## Built around your training
 
@@ -29,12 +29,12 @@ One recent workout note or screenshot is enough to begin. Rowan introduces himse
 
 | What matters to you | What Rowan is designed to help with |
 |---|---|
-| Keep a program you like | Review actual sessions, progression and equipment before proposing changes. |
+| Keep a program you like | Review actual sessions, progression and equipment before proposing changes; find starting weights for new exercises before progressing them. |
 | Balance lifting and cardio | Assess HIIT, incline walking or other conditioning alongside workload, recovery and preferences. |
-| Make nutrition practical | Review fueling, portions, hunger, dietary constraints and cutting strategies when relevant. |
+| Make nutrition practical | Check nutrition in every full plan. You choose calorie numbers, portions or no nutrition coaching; Rowan estimates a starting point from what you already have and asks about alcohol and nicotine without judgment. |
 | Improve sleep and recovery | Assess routines, timing, daytime functioning and fit with training/fueling; review personalized changes using dated clinical evidence. |
 | Get food onto the table | Develop recipes, meal prep and shopping lists with culinary and nutrition review. |
-| Use the history you already have | Gather relevant authorized chats and available tracking data; accept rough notes when connections are unavailable. |
+| Use the history you already have | Ask where you already track training, gather relevant authorized chats and data, and start with a screenshot or rough note instead of a connection. |
 | Follow through | Choose useful check-ins, phone access or grocery support through available, authorized tools. |
 
 </details>
@@ -61,7 +61,7 @@ The visual work ships in release 1.12.0; publishing it does not update a copy yo
 
 ## A second look before a new recommendation
 
-Rowan’s instructions require **three critique-and-rewrite passes**, followed by a separate check of the finished recommendation. If reviewers cannot run or material concerns remain, Rowan must hold the recommendation. [How the review works](docs/HOW-IT-WORKS.md#1-improve-advice-before-release).
+Rowan’s instructions require **three critique-and-rewrite passes**, followed by a separate check of the finished recommendation. If reviewers cannot run or material concerns remain, Rowan must hold the recommendation. Changes you ask for after a plan is released are reviewed again before they replace it, and each plan shows its version and review status. [How the review works](docs/HOW-IT-WORKS.md#1-improve-advice-before-release).
 
 These are AI roles, not credentialed human professionals. Their judgments are not measured success rates. [See the evidence and limits](docs/VALIDATION.md).
 
@@ -81,13 +81,13 @@ Fictional illustration of the rules; no reviewer execution or athlete result is 
 <details>
 <summary>Meet the review team</summary>
 
-**Rowan** coordinates your coaching. **Mara** challenges the plan, **Quinn** checks evidence and maintains the research queue, **Ellis** checks data and **Kit** knows equipment. **Nico** reviews conditioning, **Sage** reviews nutrition and **Jules** handles recipes and meal prep. **Wren** owns sleep and recovery, joining full program reviews, cut-related recommendations and sleep-relevant advice. Mara and Quinn review every new recommendation; [task-specific routing](skills/fitness-review-board/references/task-routing.md) adds the required specialists. Rowan also helps solve practical adherence obstacles, remembers declined support, and measures whether the routine helps your chosen goal.
+**Rowan** coordinates your coaching. **Mara** challenges the plan, **Quinn** checks evidence and maintains the research queue, **Ellis** checks data and **Kit** knows equipment. **Nico** reviews conditioning, **Sage** reviews nutrition and joins every full program review, and **Jules** handles recipes and meal prep. **Wren** owns sleep and recovery, joining full program reviews, cut-related recommendations and sleep-relevant advice. Mara and Quinn review every new recommendation; [task-specific routing](skills/fitness-review-board/references/task-routing.md) adds the required specialists. Rowan also helps solve practical adherence obstacles, remembers declined support, and measures whether the routine helps your chosen goal.
 
 </details>
 
 ## Progress you can carry with you
 
-Your **Training Record** holds your goals, program, decisions and progress. Say **“Save my Training Record.”** Rowan verifies a save when possible, or prepares a download or complete text to carry into your next conversation. You do not need to edit its contents.
+Your **Training Record** holds your goals, program, decisions and progress. Say **“Save my Training Record.”** Rowan verifies a save when possible, or prepares a download or complete text to carry into your next conversation. You do not need to edit its contents. Each released plan carries a version, such as Plan v2, with what changed, whether it was reviewed, and a way back to an earlier version that still fits.
 
 At check-ins, Rowan compares what happened with what was expected: keep useful tactics, investigate uncertain results and review changes. Upkeep runs when you return; background reminders and device access require separate, verified setup. [How it learns](docs/HOW-IT-WORKS.md) · [Connect your history and Apple Health](docs/SETUP.md#bring-your-history-together)
 

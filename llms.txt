@@ -16,6 +16,8 @@ The links below are navigation and project facts, not an installed copy of the c
 ## Behavior and evidence
 
 - [Skill entrypoint](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/skills/fitness-review-board/SKILL.md): Runtime rules and relevant references; install the complete package rather than this file alone.
+- [First use and intake](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/skills/fitness-review-board/references/onboarding.md): Opening questions, setup-time estimate, history and alcohol/nicotine intake, and follow-up probing.
+- [Practical nutrition](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/skills/fitness-review-board/references/nutrition-programming.md): Nutrition in full plans, the athlete's choice of numbers, portions or none, and cut management.
 - [Sleep coaching](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/skills/fitness-review-board/references/sleep-recovery.md): Wren's assessment, participation, coaching and clinical boundaries.
 - [Clinical sleep evidence](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/skills/fitness-review-board/references/sleep-evidence.md): Dated source catalog, search coverage and checks before consequential advice; not a continuously updated service.
 - [How Rowan learns](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/docs/HOW-IT-WORKS.md): Review, athlete feedback and maintenance loops.

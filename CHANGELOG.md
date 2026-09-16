@@ -10,6 +10,8 @@ Nutrition moves up front. Sage joins every full weekly/program review (routing p
 
 Also corrects parts of 1.13.0 found in an adversarial review: follow-up probing digs freely into training history but raises injuries, past diets and other health history only when a plan decision needs them; receipts can say health details were found without reciting them and raise safety conflicts plainly; the date rule confirms the day when no tool can work out the weekday and follows the athlete's date style; the greeting calls its time estimate rough, allows for longer intakes and has a fresh-start version for beginners; and the opening tracking question asks one thing. The package check now explains that source downloads omit `dist/`.
 
+The README, How It Works, FAQ, Setup, llms.txt and Validation pages now describe these changes. A link check of 412 internal links and 109 external links found one dead source, ACSM's exercise-intensity infographic, which now points to its new address.
+
 None of these changes has been exercised on a live host. Review depth itself is unchanged: every new or revised recommendation still requires three critique/revision passes and exact-final verification.
 
 ## 1.13.0 — 2026-09-16 (unreleased preparation)

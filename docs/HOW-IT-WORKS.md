@@ -6,15 +6,17 @@ Rowan uses three loops. Each needs evidence, an observable result and a stopping
 
 The author proposes; fresh independent reviewers critique; the author revises. This happens three times. A final independent review checks the exact finished recommendation.
 
-The board grades goal fit, lifting and cardio design, feasibility, sleep and other recovery, practical nutrition when relevant, evidence and data quality. Every applicable specialist score must reach 8.8; critical areas and the overall quality mean must reach 9. An unresolved material problem cannot be averaged away. Scores describe proposal quality, not the probability of achieving a goal.
+The board grades goal fit, lifting and cardio design, feasibility, sleep and other recovery, practical nutrition (always in full plans), evidence and data quality. Every applicable specialist score must reach 8.8; critical areas and the overall quality mean must reach 9. An unresolved material problem cannot be averaged away. Scores describe proposal quality, not the probability of achieving a goal.
 
 [Decision-specific teams](../skills/fitness-review-board/references/task-routing.md) retain Mara and Quinn for goal fit and science, add relevant specialists, and preserve all three revision passes plus exact-final verification. [Adherence support](../skills/fitness-review-board/references/personal-workflow.md#solve-the-obstacle-at-the-point-of-choice) focuses on timely practical choices; a quiet, working routine needs no extra prompt. Quinn owns [targeted research upkeep](../skills/fitness-review-board/references/research-upkeep.md).
+
+Feedback on a released plan is gathered into one revision and reviewed again before it replaces the plan. Until then the last approved version stays in effect, except for parts that new facts such as pain affect, which pause at once. Warnings that only say to stop or see a doctor are never held back. Each plan carries a version, what changed and its actual review status.
 
 Long reviews also need room to finish. Where files are available, Rowan saves complete reviewer reports and a verified progress record, then reloads them after an interruption. It still checks every required review; a remembered score is not approval. If the evidence cannot be recovered, the recommendation stays pending.
 
 Reviewers should identify a specific problem and useful improvement. They must neither flatter the athlete nor invent objections to sound rigorous. When information or capability is missing, affected advice stays pending with a concrete next step.
 
-Wren owns the sleep assessment in full programs, every cut-related recommendation and sleep-relevant advice. Keeping a satisfactory routine is a valid outcome. Clinical research supports coaching, recognition and referral; the AI does not diagnose disorders or change treatment. The [sleep evidence catalog](../skills/fitness-review-board/references/sleep-evidence.md) separates publication dates, evidence cutoffs and verification dates. Wren checks relevant guideline updates and new research before consequential sleep advice, recording access limits rather than promising complete or continuous coverage.
+Sage assesses nutrition in every full program; you choose calorie numbers, portions or no nutrition coaching. Wren owns the sleep assessment in full programs, every cut-related recommendation and sleep-relevant advice. Keeping a satisfactory routine is a valid outcome. Clinical research supports coaching, recognition and referral; the AI does not diagnose disorders or change treatment. The [sleep evidence catalog](../skills/fitness-review-board/references/sleep-evidence.md) separates publication dates, evidence cutoffs and verification dates. Wren checks relevant guideline updates and new research before consequential sleep advice, recording access limits rather than promising complete or continuous coverage.
 
 ## 2. Learn from outcomes
 

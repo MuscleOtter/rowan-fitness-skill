@@ -10,11 +10,23 @@ Rowan is a free, MIT-licensed set of instructions and templates you add to an AI
 
 **Do I need GitHub, a terminal or a connected watch?**
 
-No GitHub account is needed to download the public ZIP. Claude's upload route needs no terminal. A rough workout note is enough to start; device connections are optional.
+No GitHub account is needed to download the public ZIP. Claude's upload route needs no terminal. A rough workout note is enough to start; device connections are optional. Rowan asks where you already track training and starts with a screenshot or the app's own export rather than a connection.
+
+**How long does setup take?**
+
+Rowan estimates about 5–10 minutes for the basics, longer when there is a lot to cover, such as medications, sleep data or equipment. That estimate has not yet been timed with real users. Digging into what has worked for you goes at your pace, and you can skip anything you'd rather not share. A reviewed plan comes after the reviews run.
+
+**Will Rowan ask about my diet, drinking or smoking?**
+
+For nutrition, you choose calorie numbers, portions or no nutrition coaching, and Rowan never pushes numbers on someone who declines them. Before a first full plan or cut, adults are asked once about alcohol and nicotine, with the reason: they affect recovery, sleep and calories. Ranges or skipping are fine, and there is no judgment.
 
 **Will it replace my program or trainer?**
 
 It starts by learning what you already follow, what is working and what you want to preserve. You can ask for support, selective adaptation or a new plan. A preferred program can still receive candid critique; preserving it does not mean endorsing every recommendation.
+
+**What if I want changes to my plan?**
+
+Tell Rowan everything you would change. It gathers your feedback into one revision and reviews it before it replaces your plan. Until then the last approved version stays in effect, except anything your new information affects, such as new pain. Each plan shows its version and review status, and you can ask for an earlier version back if it still fits.
 
 **What happens if the review team cannot run?**
 

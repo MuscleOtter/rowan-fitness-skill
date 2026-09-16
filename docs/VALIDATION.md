@@ -1,5 +1,11 @@
 # Validation and limits
 
+## 1.12.1–1.14.0 onboarding and tester fixes (unreleased)
+
+These versions change instructions, not code paths, except for a source-archive test and a clearer package-check message. On September 16, 2026, the package check verified 31 skill files and exact distribution bytes, 13 unittest methods passed with the optional parsed-Markdown test skipped, and every local skill link and anchor resolved. The new source-archive test fails without the `.gitattributes` rule and passes with it, and a simulated GitHub source download contains no nested ZIP. The onboarding greeting example measures 116 words against its 80–130 word limit.
+
+The 1.14.0 fixes respond to one live tester session on Claude, read afterwards from documents the maintainer shared; it was not a controlled test and its details stay private. An adversarial review of 1.13.0 and 1.14.0 found 14 problems, all corrected, but it was performed by the same AI model that wrote the changes, so it is a self-review rather than independent evaluation. None of the changed behavior has been exercised on a live host, and the 5–10 minute setup estimate has not been timed.
+
 ## 1.12.0 visual handoff and style
 
 The feature incorporates main through `a55436c`, including 1.10.1's conditional intake loading, context preflight and research-job verification. It adds a descriptive handoff contract, portable Rowan style guidance and one scoped CSS asset. The helper validates structure and renders Markdown tables; it is not an agent dispatcher, source verifier, clinical reviewer or JavaScript chart runtime.

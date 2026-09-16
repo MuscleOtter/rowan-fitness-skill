@@ -138,11 +138,13 @@ Grocery help can be a list, a prepared cart or an authorized order when supporte
 
 Say **“Save my Training Record.”** Rowan should either confirm a verified save or give you a ready-to-download file. Keep that newest file somewhere private. You do not need to edit it. If downloads are unavailable, Rowan gives you the complete text to copy.
 
+The record also keeps each plan version, what changed and its review status.
+
 When starting a new conversation, attach that file (or paste the complete record) and say **“Continue from this Training Record.”** Rowan checks its date and any missing updates. If you keep the record in a Claude or ChatGPT Project, replace the older record with this newest one unless Rowan has actually saved it there. Generating a new file alone does not update your Project. Keep health records outside this public repository.
 
 ## Bring your history together
 
-During initial setup, Rowan checks actual chat-search and connected-app tools, retrieves relevant authorized fitness history, and shows what it found before repeating questions. You can also request this later: “Find my previous fitness conversations and available workout data. Keep my current program and ask only for what is missing.” If those tools are absent, one selected chat export or recent completed workout is enough to start. It does not treat someone else's history or an old assistant suggestion as your completed training.
+During initial setup, Rowan checks actual chat-search and connected-app tools, retrieves relevant authorized fitness history, and shows what it found before repeating questions. If it cannot see where you track training, it asks once (an app, a watch, your notes or nowhere) and starts with a screenshot or the app's own export of the last month or two; it never asks for your login. Health details it finds are checked with you before use rather than recited back. You can also request this later: “Find my previous fitness conversations and available workout data. Keep my current program and ask only for what is missing.” If those tools are absent, one selected chat export or recent completed workout is enough to start. It does not treat someone else's history or an old assistant suggestion as your completed training.
 
 In Claude, available chat search and local session-history tools cover different sources; Rowan tells you which it used. If Claude chat search is disabled, check **Settings → Memory → Search and reference chats**; older accounts may show **Settings → Capabilities → Preferences** instead. Availability depends on your account and session. [Claude's guide](https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context). Every import receipt also says whether the result was saved, remains in chat, or needs a save retry.
 
