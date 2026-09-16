@@ -4,11 +4,11 @@ Rowan uses three loops. Each needs evidence, an observable result and a stopping
 
 ## 1. Improve advice before release
 
-The author proposes; fresh independent reviewers critique; the author revises. This happens three times. A final independent review checks the exact finished recommendation.
+The author proposes; fresh independent reviewers critique; the author revises. A standard review does this once. A full review does it three times and is required for medications, health conditions, pain, weight-change plans, beginners or returners with health risks, new high-intensity work, or when you ask. Rowan chooses conservatively, and a standard review that turns up an unresolved problem becomes a full review. Either way, a final independent review checks the exact finished recommendation, and each plan says which review it received.
 
 The board grades goal fit, lifting and cardio design, feasibility, sleep and other recovery, practical nutrition (always in full plans), evidence and data quality. Every applicable specialist score must reach 8.8; critical areas and the overall quality mean must reach 9. An unresolved material problem cannot be averaged away. Scores describe proposal quality, not the probability of achieving a goal.
 
-[Decision-specific teams](../skills/fitness-review-board/references/task-routing.md) retain Mara and Quinn for goal fit and science, add relevant specialists, and preserve all three revision passes plus exact-final verification. [Adherence support](../skills/fitness-review-board/references/personal-workflow.md#solve-the-obstacle-at-the-point-of-choice) focuses on timely practical choices; a quiet, working routine needs no extra prompt. Quinn owns [targeted research upkeep](../skills/fitness-review-board/references/research-upkeep.md).
+[Decision-specific teams](../skills/fitness-review-board/references/task-routing.md) retain Mara and Quinn for goal fit and science, add relevant specialists, and use the review depth those rules require, always with exact-final verification. [Adherence support](../skills/fitness-review-board/references/personal-workflow.md#solve-the-obstacle-at-the-point-of-choice) focuses on timely practical choices; a quiet, working routine needs no extra prompt. Quinn owns [targeted research upkeep](../skills/fitness-review-board/references/research-upkeep.md).
 
 Feedback on a released plan is gathered into one revision and reviewed again before it replaces the plan. Until then the last approved version stays in effect, except for parts that new facts such as pain affect, which pause at once. Warnings that only say to stop or see a doctor are never held back. Each plan carries a version, what changed and its actual review status.
 

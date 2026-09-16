@@ -38,7 +38,7 @@ A program's own progression rules take precedence. When it does not define them,
 
 Keep the change small enough to interpret. Each card states: current prescription and source; proposed change; why now; alternatives considered; exact applicable conditions; dose/load/effort rules with units; hold/regress/stop rules; expected benefit and fatigue cost; metric and comparison conditions; observation window/minimum usable data; guardrails; and next reassessment trigger. If the necessary thresholds are unknown, gather them rather than invent precise confidence.
 
-Autoregulation can use a familiar RIR/RPE approach or measured velocity when equipment and evidence support it. It is not a license to replace the program based on a mood score. A coach may approve a bounded progression range and specific contingencies together; later retrieval must remain within those exact conditions. A new range, changed condition, new exercise or new dose outside approval needs the full board.
+Autoregulation can use a familiar RIR/RPE approach or measured velocity when equipment and evidence support it. It is not a license to replace the program based on a mood score. A coach may approve a bounded progression range and specific contingencies together; later retrieval must remain within those exact conditions. A new range, changed condition, new exercise or new dose outside approval needs review.
 
 Deloads and block changes need a stated purpose and evidence. Do not automatically unload every fourth week or preserve accumulated fatigue to prove toughness. Persistent unusual fatigue/pain needs the safety route. Avoid mistaking decreased motivation caused by schedule friction for physiological overtraining, or diagnosing overtraining from chat.
 

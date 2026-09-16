@@ -1,5 +1,9 @@
 # Validation and limits
 
+## 1.15.0 review depths (unreleased)
+
+Adds standard and full review depths with conservative full-review triggers. On September 16, 2026, the package check, unit tests and internal link check passed. This changes review stage counts, which the project's own rules treat as an evaluated amendment requiring independent critique; that evaluation has not been run. No review under the new depth rules has been executed on a live host, and the call counts are arithmetic, not measured savings.
+
 ## 1.12.1–1.14.0 onboarding and tester fixes (unreleased)
 
 These versions change instructions, not code paths, except for a source-archive test and a clearer package-check message. On September 16, 2026, the package check verified 31 skill files and exact distribution bytes, 13 unittest methods passed with the optional parsed-Markdown test skipped, and every local skill link and anchor resolved. The new source-archive test fails without the `.gitattributes` rule and passes with it, and a simulated GitHub source download contains no nested ZIP. The onboarding greeting example measures 116 words against its 80–130 word limit.

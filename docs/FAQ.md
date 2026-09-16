@@ -28,6 +28,10 @@ It starts by learning what you already follow, what is working and what you want
 
 Tell Rowan everything you would change. It gathers your feedback into one revision and reviews it before it replaces your plan. Until then the last approved version stays in effect, except anything your new information affects, such as new pain. Each plan shows its version and review status, and you can ask for an earlier version back if it still fits.
 
+**How thorough is the review?**
+
+In a standard review, each required specialist critiques the plan once, Rowan revises it, and a separate check confirms the finished version. A full review has three rounds and is required when medications, health conditions, pain, weight-change plans, new high-intensity work or a beginner with health risks are involved. You can always ask for a full review, but not for less than the rules require. Each plan says which review it received.
+
 **What happens if the review team cannot run?**
 
 Rowan can organize history, collect missing details and log completed work. It holds new fitness recommendations until the required separate reviews can run. A list of AI names in one reply is not an independent review. [App capabilities and setup](SETUP.md#what-the-board-needs).

@@ -47,7 +47,7 @@ Clinical literature may concern treatments outside this role's scope; it remains
 
 ## Review coverage
 
-Require `sleep` at **all three revision passes and exact-final verification** for:
+Require `sleep` at **every review pass and exact-final verification** for:
 
 - Any new personalized sleep/recovery instruction or endorsement, including routines, timing/duration changes or sleep-based training decisions.
 - Every full weekly/program review and every cut-related recommendation, including narrow training-only or food changes during a cut.
@@ -57,13 +57,13 @@ A passing score cannot substitute for the missing Wren report. Mara and Quinn re
 
 Wren scores **G/P/F/S/E/H/M/C**, plus **recovery and adherence**, under the [fitness rubric](fitness-rubric.md). Recovery explicitly includes sleep and is goal-critical for personalized sleep recommendations and full weekly/program reviews; cuts already make it critical. Keep the existing recovery identifier and weights. Apply the same minimum scores, independent contexts, material-finding closure, exact input bindings and release predicate as every other required reviewer.
 
-Logging, intake, factual research explanations without personalized action, immediate safety escalation and exact retrieval of still-applicable approved advice retain their existing light routes. A mention of tiredness in a log is not an automatic full board. A new recommendation responding to meaningful sleep concerns is. When Wren is not required for a narrow candidate, record the scope reason in the reviewer assignment; do not demand an unnecessary sleep questionnaire to justify it.
+Logging, intake, factual research explanations without personalized action, immediate safety escalation and exact retrieval of still-applicable approved advice retain their existing light routes. A mention of tiredness in a log is not an automatic review board. A new recommendation responding to meaningful sleep concerns is. When Wren is not required for a narrow candidate, record the scope reason in the reviewer assignment; do not demand an unnecessary sleep questionnaire to justify it.
 
 ## Records and continuity
 
 ### Wren through the critic passes
 
-Use the existing [three-pass cycle](review-protocol.md#the-cycle), with Mara independently challenging whether the integrated proposal can serve the athlete's actual goal and Quinn independently checking the science. Wren contributes its own findings and assigned scores at every stage; Rowan then revises the whole candidate. Wren's specialty never substitutes for coach or science criticism.
+Use the [review cycle](review-protocol.md#the-cycle) at its required depth, with Mara independently challenging whether the integrated proposal can serve the athlete's actual goal and Quinn independently checking the science. Wren contributes its own findings and assigned scores at every stage; Rowan then revises the whole candidate. Wren's specialty never substitutes for coach or science criticism.
 
 | Stage | Sleep-specific criticism in addition to full assigned coverage |
 |---|---|
@@ -72,7 +72,7 @@ Use the existing [three-pass cycle](review-protocol.md#the-cycle), with Mara ind
 | Pass 3 — execution and robustness | Are actions/conditions understandable and supportable, records interpretable, observation/reconsideration rules useful, and responses to missing data or changed symptoms sound? |
 | Exact-final verification | Independently reassess the complete final candidate, required coverage and material-finding closure against exact inputs. Do not inherit a passing score from an earlier draft. |
 
-The stage emphasis never narrows the assigned rubric. Every score needs evidence and a concrete improvement or a supported explanation of why none is needed. Nonmonotonic scores are acceptable; three passes do not guarantee release, and a high average cannot conceal a weak area or unresolved concern.
+The stage emphasis never narrows the assigned rubric; in standard review, pass 1 covers all three emphases. Every score needs evidence and a concrete improvement or a supported explanation of why none is needed. Nonmonotonic scores are acceptable; completed passes do not guarantee release, and a high average cannot conceal a weak area or unresolved concern.
 
 ### Optional sleep state
 

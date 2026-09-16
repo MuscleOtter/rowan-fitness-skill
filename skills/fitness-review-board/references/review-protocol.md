@@ -1,10 +1,10 @@
-# Independent review, three revisions, exact-final check
+# Independent review at standard or full depth, exact-final check
 
 ## Trigger and scope
 
 Review every new actionable training/nutrition/sleep recommendation: workouts, cardio/HIIT/incline prescriptions, split/dose/intensity/progression changes, new substitutions, calorie/macros, food strategies, or personalized sleep/recovery instructions. Select Wren under [sleep review coverage](sleep-recovery.md#review-coverage), including every full weekly/program review and cut-related recommendation. Bundled advice is one exact candidate. Calling a prescription “education” or “just a small change” cannot bypass review. Factual summaries, intake, logging, and immediate safety escalation follow the light routes in SKILL.md. Attributed display of an existing unreviewed routine is history, not an endorsement or a recommendation to execute it.
 
-**Revisions after feedback.** When the athlete's feedback changes a released plan, every added or altered instruction is a new candidate reviewed before release: exercises and progressions, methods for finding loads, start-date or schedule changes that alter dose or sequence, food, supplement, caffeine or alcohol guidance, sleep timing, and tailored health guidance around their medications or conditions. “Within approved scope” is not an exemption for a new instruction. Only rewording that changes no action, recording facts or goals, and logistics within existing authorization skip review; when unsure, review. Gather the athlete's current feedback into one revision before reviewing, checking briefly that they have finished when it is unclear, rather than reviewing each message's change separately. Until the revision passes, the last approved version stays active except for any part the new facts affect, such as new pain, a changed restriction or unavailable equipment: pause those parts under the dependency rule in [the cycle](#the-cycle), and label anything newer not yet reviewed. The athlete cannot choose a lighter review than this protocol requires. Immediate safety escalation, and warnings that only tell the athlete to stop an activity or seek medical care, never wait for review; tailored instructions around them still do.
+**Revisions after feedback.** When the athlete's feedback changes a released plan, every added or altered instruction is a new candidate reviewed before release: exercises and progressions, methods for finding loads, start-date or schedule changes that alter dose or sequence, food, supplement, caffeine or alcohol guidance, sleep timing, and tailored health guidance around their medications or conditions. “Within approved scope” is not an exemption for a new instruction. Only rewording that changes no action, recording facts or goals, and logistics within existing authorization skip review; when unsure, review. Gather the athlete's current feedback into one revision before reviewing, checking briefly that they have finished when it is unclear, rather than reviewing each message's change separately. Choose its depth under [review depth](#choose-the-review-depth). Until the revision passes, the last approved version stays active except for any part the new facts affect, such as new pain, a changed restriction or unavailable equipment: pause those parts under the dependency rule in [the cycle](#the-cycle), and label anything newer not yet reviewed. The athlete cannot choose a lighter review than this protocol requires. Immediate safety escalation, and warnings that only tell the athlete to stop an activity or seek medical care, never wait for review; tailored instructions around them still do.
 
 Rowan assembles a frozen decision snapshot: request and current goal; relevant restrictions and provenance; actual current program/history; equipment and schedule; relevant sleep/nutrition context; data coverage; evidence and its freshness; applicable/critical rubric areas; and exact proposed user-facing action text. Candidate assumptions must be explicit. Do not send raw messages or unrelated health history. The minimum relevant facts may differ by role but must not omit facts that could affect that role's judgment. Record dependencies to the current goal/profile/program/equipment revisions.
 
@@ -31,16 +31,36 @@ No silent truncation. If a packet does not fit, reduce it to a smaller coherent 
 
 Byte-level procedure: write/freeze `payload.txt` → compute digest H → write separate `envelope` containing H → provide both → compare reviewer-returned H and actual consumed payload to the canonical bytes. Editing either a factual brief or candidate creates different bytes and a new digest; the old report is invalid. Envelope bookkeeping must never mutate the payload. In HASH_BOUND mode the retained envelope is outside the hashed content; in TEXT_BOUND mode the complete substantive payload is what must be echoed and compared.
 
+## Choose the review depth
+
+Review depth policy v1, prospective from Rowan 1.15.0, requested 2026-09-16. Every new or revised recommendation gets one of two depths, chosen by Rowan before dispatch and recorded with its reason. Both use the same required roles, rubric, score floors, independence, binding and hold rules.
+
+- **Standard review:** pass 1 and final verification. Every required role critiques D0 once, covering goal and failure modes, feasibility and interactions, and execution and robustness; Rowan revises into D1; fresh contexts verify the exact D1. Standard is the default when no full-review trigger applies.
+- **Full review:** all three passes and final verification.
+
+Full review is required when any of these apply; when unsure, choose full:
+
+1. Medications, diagnosed conditions, pregnancy or postpartum status, or clinician-directed restrictions could affect suitability.
+2. Current or recent pain, injury or unexplained symptoms.
+3. A cut or other intentional weight-change plan, including medication-driven weight loss.
+4. Someone new to structured training, or returning after a long layoff, who also has a health condition or cardiometabolic risk factor.
+5. New high-intensity work for this athlete, such as HIIT, sprints or maximal-effort testing, or a large jump in overall training load.
+6. The athlete asks for full review.
+
+The athlete can raise the depth but never lower it below these rules. A standard review escalates to full when final verification does not pass, a required role confirms a material finding is still open, or a trigger appears during the cycle. Escalation continues from D1 into passes 2 and 3 and a new final verification; the standard final-verification reports inform that revision but do not count as a pass. New facts that invalidate dependencies still suspend the cycle under the rules below. Release labels name the actual depth, such as “Reviewed (standard)” or “Reviewed (full)”.
+
 ## The cycle
 
-`D0 → reviews 1 → D1 → reviews 2 → D2 → reviews 3 → D3 → final verification → release or hold`
+Full: `D0 → reviews 1 → D1 → reviews 2 → D2 → reviews 3 → D3 → final verification → release or hold`
 
-All required roles review at all four stages. Passes 1–3 each have a revision step; final verification is a separate integrity and substantive check of D3, not a fourth rewrite hidden as approval.
+Standard: `D0 → reviews 1 → D1 → final verification → release, hold or escalate`
 
-1. **Pass 1: goal and failure modes.** Independently assess likely goal attainment, current-program continuity, suitability, missing facts, dose, evidence, and foreseeable failure. Rowan records dispositions and rewrites D0 into D1.
-2. **Pass 2: feasibility and interaction.** Independently test D1 against actual gym/time/preferences, nutrition/recovery interactions, adherence, data limitations, alternatives, and prior issue closure. Rewrite into D2.
-3. **Pass 3: execution and robustness.** Independently test D2 for ambiguous instructions, messy data, interruptions, progression/hold logic, safeguards and monitoring. Rewrite into D3.
-4. **Final verification.** Fresh contexts review the entire D3 under the full rubric, validate closure and absence of new material problems, and bind their reports to the exact D3 input packets. Evaluate the release predicate mechanically from recorded scores/coverage. Show concise rationale and residual nonmaterial caveats with the approved action text.
+All required roles review at every stage of the chosen depth: two stages for standard review, four for full review. Each pass has a revision step; final verification is a separate integrity and substantive check of the last revision (D1 for standard, D3 for full), not an extra rewrite hidden as approval.
+
+1. **Pass 1: goal and failure modes.** Independently assess likely goal attainment, current-program continuity, suitability, missing facts, dose, evidence, and foreseeable failure. Rowan records dispositions and rewrites D0 into D1. In standard review, pass 1 also covers the pass 2 and pass 3 questions below.
+2. **Pass 2 (full review): feasibility and interaction.** Independently test D1 against actual gym/time/preferences, nutrition/recovery interactions, adherence, data limitations, alternatives, and prior issue closure. Rewrite into D2.
+3. **Pass 3 (full review): execution and robustness.** Independently test D2 for ambiguous instructions, messy data, interruptions, progression/hold logic, safeguards and monitoring. Rewrite into D3.
+4. **Final verification.** Fresh contexts review the entire final candidate (D1 in standard review, D3 in full review) under the full rubric, validate closure and absence of new material problems, and bind their reports to the exact final input packets. Evaluate the release predicate mechanically from recorded scores/coverage. Show concise rationale and residual nonmaterial caveats with the approved action text.
 
 Every stage still assesses its assigned full rubric; the stage focus is additional emphasis, not permission to skip coverage. A no-change revision is allowed only when findings warrant no change, with a specific recorded reason; renaming a draft is not a substantive pass. Closure can be confirmed by a new worker in the same responsible role; do not require the original worker to remain alive.
 
@@ -48,7 +68,7 @@ Rowan records each finding as fixed, disputed with evidence, pending input, or u
 
 ## Limits, interruption, and failure
 
-For N reviewers required by [task routing](task-routing.md), reserve **4N** normal invocations including final checks. Standalone sleep or a narrow lifting substitution with clear data normally has N=3 and 12 calls; adding a relevant fourth role gives 16; five roles use 20; all eight use 32. These are call counts, not measured token savings. Allow at most **two** shared technical correction/retry invocations (malformed report, tool failure, wrong binding) and **one** disputed-finding consultation, plus at most two pre-draft fact consultations. Maximum per cycle is **4N+5**. Count every attempted call and reserve final capacity first. Reports normally stay within 500 words excluding a required TEXT_BOUND echo; complete coverage and evidence take precedence. Use the marginal-value receipt in task routing. Do not repeat the candidate/rubric in HASH_BOUND reports or create extra polish passes. The three required revisions and independent final checks remain mandatory; unresolved material issues hold the affected advice.
+For N reviewers required by [task routing](task-routing.md), reserve **2N** normal invocations for standard review and **4N** for full review, including final checks; escalating a standard review adds **3N** (passes 2 and 3 and a new final verification). Standalone sleep or a narrow lifting substitution with clear data normally has N=3: 6 calls standard or 12 full; four roles use 8 or 16; five use 10 or 20; all eight use 16 or 32. These are call counts, not measured token savings. Allow at most **two** shared technical correction/retry invocations (malformed report, tool failure, wrong binding) and **one** disputed-finding consultation, plus at most two pre-draft fact consultations. Maximum per cycle is **2N+5** for standard review, **4N+5** for full review and **5N+5** for an escalated standard review. Count every attempted call and reserve final capacity first. Reports normally stay within 500 words excluding a required TEXT_BOUND echo; complete coverage and evidence take precedence. Use the marginal-value receipt in task routing. Do not repeat the candidate/rubric in HASH_BOUND reports or create extra polish passes. The revisions required by the chosen depth and independent final checks remain mandatory; unresolved material issues hold the affected advice.
 
 ### Context and durable review checkpoints
 

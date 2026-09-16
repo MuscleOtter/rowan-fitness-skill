@@ -61,7 +61,7 @@ The visual work ships in release 1.12.0; publishing it does not update a copy yo
 
 ## A second look before a new recommendation
 
-Rowan’s instructions require **three critique-and-rewrite passes**, followed by a separate check of the finished recommendation. If reviewers cannot run or material concerns remain, Rowan must hold the recommendation. Changes you ask for after a plan is released are reviewed again before they replace it, and each plan shows its version and review status. [How the review works](docs/HOW-IT-WORKS.md#1-improve-advice-before-release).
+Rowan's instructions require separate specialist reviews before a new recommendation is released. A **standard review** is one critique-and-rewrite pass plus a separate check of the finished recommendation. A **full review** adds two more passes and is required when medications, health conditions, pain, weight-change plans or new high-intensity work are involved, when a standard review turns up a problem it can't close, or when you ask for it. If reviewers cannot run or material concerns remain, Rowan must hold the recommendation. Changes you ask for after a plan is released are reviewed again before they replace it, and each plan shows its version and which review it received. [How the review works](docs/HOW-IT-WORKS.md#1-improve-advice-before-release).
 
 These are AI roles, not credentialed human professionals. Their judgments are not measured success rates. [See the evidence and limits](docs/VALIDATION.md).
 

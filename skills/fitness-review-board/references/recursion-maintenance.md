@@ -39,7 +39,7 @@ The athlete’s routine upkeep is small: log useful observations and report chan
 
 ### Automatic upkeep
 
-**Automatic on use is the default.** At each activation, use already loaded current context and the selected record to check for changed restrictions/goals, pending unsaved updates, stale decision-critical data, due learning windows and failed maintenance items. Read the file again only when needed to establish its current revision or a change is plausible. Run only affected checks; a complete log does not trigger a questionnaire, a web sweep or a full board. Before releasing advice, complete any check that affects its validity. At a meaningful check-in, automatically merge the accessible observations and issue the actual save/replacement receipt.
+**Automatic on use is the default.** At each activation, use already loaded current context and the selected record to check for changed restrictions/goals, pending unsaved updates, stale decision-critical data, due learning windows and failed maintenance items. Read the file again only when needed to establish its current revision or a change is plausible. Run only affected checks; a complete log does not trigger a questionnaire, a web sweep or a review board. Before releasing advice, complete any check that affects its validity. At a meaningful check-in, automatically merge the accessible observations and issue the actual save/replacement receipt.
 
 At meaningful check-ins or source changes, follow [history discovery and connections](history-and-connections.md) to refresh authorized new/changed observations using the saved source scope and represented interval. Preserve corrections, deletion exclusions and deduplication lineage across chats. A failed save must not advance a durable import cursor. Use completed imports and athlete feedback to improve coverage and reduce repeated questions; do not expand collection or change training merely to create activity. A background import also needs a reader that actually works in that background environment.
 
@@ -66,7 +66,7 @@ At a check-in, surface overdue maintenance only when it affects the current deci
 
 ## Sleep evidence upkeep
 
-Before consequential sleep advice, Wren and Quinn apply the topic-specific [sleep evidence update rules](sleep-evidence.md); do not run an indiscriminate search for a casual log or unchanged approved-plan retrieval. Save actual search coverage, version/cutoff/check dates, unresolved access limits and affected dependencies in private review records. Reuse verified evidence within an unchanged cycle. A material evidence change returns affected action text to the full board; it does not silently edit the universal skill or every active plan. A packaged bibliography is a dated starting point, not proof of continuously current knowledge.
+Before consequential sleep advice, Wren and Quinn apply the topic-specific [sleep evidence update rules](sleep-evidence.md); do not run an indiscriminate search for a casual log or unchanged approved-plan retrieval. Save actual search coverage, version/cutoff/check dates, unresolved access limits and affected dependencies in private review records. Reuse verified evidence within an unchanged cycle. A material evidence change returns affected action text to review; it does not silently edit the universal skill or every active plan. A packaged bibliography is a dated starting point, not proof of continuously current knowledge.
 
 ## Universal skill upkeep and releases
 
@@ -80,7 +80,7 @@ When a demonstrated defect, repeated friction, changed host behavior or user req
 4. Verify the exact final package and installed/exported bytes. Ship only the entrypoint, used references/templates and host metadata. Keep development critiques, raw test inputs/results, old candidates and scanner reports in a separate private audit location; preserve useful evidence without forcing it into every installation.
 5. Report version, what changed, actual checks, limitations and any user action. If an update fails, preserve the last usable package and current personal record. Restore package code/instructions only; a package rollback must never restore deleted facts, obsolete restrictions or an old active plan. Review affected advice against current facts.
 
-No maintenance operation silently buys services, enables permissions, installs a database, sends health records to a new destination or removes useful history. Existing explicit authorization remains usable; ordinary logging alone is not permission to rewrite the shared skill. A calendar interval alone is not a reason to search, reinstall or rerun a full board.
+No maintenance operation silently buys services, enables permissions, installs a database, sends health records to a new destination or removes useful history. Existing explicit authorization remains usable; ordinary logging alone is not permission to rewrite the shared skill. A calendar interval alone is not a reason to search, reinstall or rerun a review board.
 
 ## Tests for the loops
 

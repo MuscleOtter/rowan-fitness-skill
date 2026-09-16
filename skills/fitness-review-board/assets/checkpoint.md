@@ -61,10 +61,10 @@ Fill only for used sources; retain this section in handoffs when it governs impo
 
 - Review decision / release status:
 - Session-active plan ID / durable-active plan ID:
-- Plan version history (version / date / actual review status / what changed / approval conditions):
+- Plan version history (version / date / actual review status and depth / what changed / approval conditions):
 - Exact approved action text or accessible canonical file:
 - Approval validity/conditions and dependent fact revisions:
-- Cycle/stage/candidate ID / binding mode / packet references:
+- Cycle/stage/candidate ID / review depth and reason / binding mode / packet references:
 - Required role set / routing policy version and reasons / critical fitness areas / rubric version:
 - Stage reports and final score coverage; arithmetic; open findings:
 - Private cycle ledger location; exact artifacts/independence receipts and last verified read-back; context-capacity status and next safe boundary:
