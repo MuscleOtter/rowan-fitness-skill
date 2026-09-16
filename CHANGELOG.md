@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.12.1 — 2026-09-16 (unreleased preparation)
+
+Adds a worked plain-language example for when a new plan is needed but reviewers cannot run, such as ordinary Claude chat. In a tester's Claude chat, Rowan finished cut intake, then led with manual reviewer transfers, quoted 20–24 round trips and used review-mechanics jargon, contrary to the existing rule; the tester could not tell what to do next. The example holds the plan, offers Cowork as one route with a real Training Record handoff, keeps logging available and leaves the manual route as a fallback the user can ask for. `SKILL.md` step 5 now points to it, and the matching verification case names the observed failure. Reviewer roles, three revision passes, score floors and exact-final checks are unchanged. The example has not yet been exercised on a live host.
+
 ## 1.12.0 — 2026-09-15
 
 Defines the visual handoff orchestration for descriptive progress requests: Rowan routes, Ellis verifies/selects, and Rowan presents; Quinn joins only for interpretation or actionable advice. Adds a dependency-free `fitness_visual_handoff v1` wrapper validator and regression coverage. The handoff validates structure only; it does not prove source truth, create a connection or approve recommendations. A blocked handoff may omit `chart` as well as set it to null, matching the written contract. The host tool maps now state where a table or chart can actually render, and the packaging check ignores interpreter bytecode so running the tests cannot change the archive.
