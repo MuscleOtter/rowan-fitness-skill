@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.13.0 — 2026-09-16 (unreleased preparation)
+
+Makes first use ask where the athlete already tracks the history their goal needs. When tools do not already show it, one of the three opening questions asks where they track workouts, if anywhere, in everyday words; “nowhere” is a normal answer. Once a source is named, Rowan offers one small step at a time (a screenshot first, then a recent export, and a connection only on request), checks the app's current help before giving export steps and never asks for a login. Reassurance must be true: nothing connects unless asked, but what Rowan reads is sent to the model. Facts found in earlier chats are confirmed with their source before use, and medications, health conditions and body photos stay out of greetings and receipts.
+
+The greeting now says the basics take about 5–10 minutes and that digging up what has actually worked takes longer, at the athlete's pace; it invites them to skip anything they would rather not share and promises no finish time for a reviewed plan. Probing aims at what has worked: follow-up questions build on the athlete's last answer, turn a vague reply into one concrete recent example, and over later turns dig into their best stretch of progress, stalls, past injuries and cuts, and what they stuck with, in their own terms and one or two questions per message. Fitness vocabulary is welcome; tool and review jargon is not. The time estimate has not been timed with a real user, and none of these changes has been exercised on a live host.
+
 ## 1.12.0 — 2026-09-15
 
 Defines the visual handoff orchestration for descriptive progress requests: Rowan routes, Ellis verifies/selects, and Rowan presents; Quinn joins only for interpretation or actionable advice. Adds a dependency-free `fitness_visual_handoff v1` wrapper validator and regression coverage. The handoff validates structure only; it does not prove source truth, create a connection or approve recommendations. A blocked handoff may omit `chart` as well as set it to null, matching the written contract. The host tool maps now state where a table or chart can actually render, and the packaging check ignores interpreter bytecode so running the tests cannot change the archive.
