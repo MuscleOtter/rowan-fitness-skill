@@ -6,6 +6,8 @@ Canonical repository: https://github.com/MuscleOtter/rowan-fitness-skill. The co
 
 The links below are navigation and project facts, not an installed copy of the coaching rules. Main-branch files describe development source. The latest release identifies the distributed package; its ZIP and checksum are the release artifacts. Citations about a specific version should use its release/tag or commit rather than silently substituting main.
 
+Current main version: 1.15.1. See the [maintenance validation receipt](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/docs/validation-1.15.1.json). Main ZIP/checksum links are in the README; release links below remain version-free and may identify an earlier published package.
+
 ## Start and identify
 
 - [Project overview](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/README.md): Audience, goals, starter prompt and capability boundaries.

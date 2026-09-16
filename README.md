@@ -8,6 +8,8 @@ Rowan is a free, open-source **AI fitness coaching skill for Claude and Codex**,
 
 [**Download skill ZIP**](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest/download/Rowan-Fitness-Skill.zip) · [Start in Claude](#start-in-claude) · [Other apps](#start-in-chatgpt-or-codex) · [FAQ](docs/FAQ.md)
 
+Main currently contains **1.15.1**: [reviewed changes](CHANGELOG.md#1151--2026-09-16-main-release-not-published) and [validation](docs/VALIDATION.md#1151-reviewed-maintenance-fixes). The download button above follows the latest published release. For this main-branch build, use the [main ZIP](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/dist/Rowan-Fitness-Skill.zip) and [matching checksum](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/dist/SHA256SUMS.txt).
+
 ## Start in Claude
 
 1. **Download** the [skill ZIP](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest/download/Rowan-Fitness-Skill.zip). Leave it zipped.

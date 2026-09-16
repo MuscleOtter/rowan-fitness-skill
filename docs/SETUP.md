@@ -32,6 +32,8 @@ These are starting expectations. Rowan checks the current app and explains only 
 
 ## Get the folder
 
+Main and the latest release may differ. The [README download notes](../README.md) identify the current main build and its matching ZIP/checksum; the release links below always follow the latest published release. A push to main does not update an installed copy.
+
 The [skill ZIP](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest/download/Rowan-Fitness-Skill.zip) is public: no GitHub account is required. Use `Rowan-Fitness-Skill.zip`, not the separate source-code archive. Claude.ai and Cowork use the zipped upload; only extract it for a folder install or to upload individual files to ChatGPT.
 
 Both copy-the-folder routes need `fitness-review-board/` on your machine. Either works:
@@ -120,7 +122,7 @@ Rowan handles the team. When separate reviewers are available, you can keep talk
 <details>
 <summary>Technical details for reviewers and host setup</summary>
 
-For automatic independent reviews, choose a mode with separate-agent tools. Claude Code, Cowork and Codex may provide them; Rowan must check the actual session, not the product name. A reviewer also has to start from an empty context — a fork or continuation mode that inherits the conversation is not an independent reviewer, however correct its report looks. A complete new-plan review takes four calls per required reviewer: 12 for three required roles, 16 for four, up to 32 for all eight. [Task routing](../skills/fitness-review-board/references/task-routing.md) selects specialists by the actual decision. Mara and Quinn always review new advice, and all required roles participate at every stage. Tasks use names such as “Nico — Conditioning — Pass 1” when the host supports custom labels. Logging and retrieving unchanged, valid approved plans use lighter routes.
+For automatic independent reviews, choose a mode with separate-agent tools. Claude Code, Cowork and Codex may provide them; Rowan must check the actual session, not the product name. A reviewer also has to start from an empty context — a fork or continuation mode that inherits the conversation is not an independent reviewer, however correct its report looks. A standard review takes two calls per required reviewer (6 for three roles, up to 16 for eight); a full review takes four (12 for three, up to 32 for eight). The review protocol defines full-review triggers, escalation and bounded retries. [Task routing](../skills/fitness-review-board/references/task-routing.md) selects specialists by the actual decision. Mara and Quinn always review new advice, and all required roles participate at every stage. Tasks use names such as “Nico — Conditioning — Pass 1” when the host supports custom labels. Logging and retrieving unchanged, valid approved plans use lighter routes.
 
 No real independent-review tools means no approved new prescription. Rowan can still organize history, log observations and prepare missing inputs. It should explain an available alternative instead of fabricating a board.
 

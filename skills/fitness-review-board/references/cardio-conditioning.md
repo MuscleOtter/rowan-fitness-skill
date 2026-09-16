@@ -23,7 +23,7 @@ Specify the intensity method and scale. Name and anchor the chosen scale; cardio
 
 ## Deliver an executable, integrated prescription
 
-After the full review gate, the exact approved action text contains:
+After the required review gate at the depth selected by the review protocol, the exact approved action text contains:
 
 - Purpose and selected mode, with a short reason over the relevant alternatives.
 - Sessions/frequency and placement alongside lifting, sport and recovery within the actual weekly time budget.

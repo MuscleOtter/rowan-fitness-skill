@@ -13,7 +13,7 @@ Never insert this envelope or the reviewer's response into the payload being has
 
 ## Coordinator substantive payload
 
-- Package/rubric version, cycle ID, stage (1/2/3/final), candidate ID:
+- Package/rubric version, depth-policy version, selected depth/reason, cycle ID, stage (1/2/3/final), candidate ID:
 - Reviewer role ID, person/role/stage display label, and assigned quality/fitness-area coverage (including sleep when required; no omitted specialist):
 - Execution mode and known provider/model/context ID; privacy scope:
 - Current user request and exact goal/priorities/critical fitness areas:

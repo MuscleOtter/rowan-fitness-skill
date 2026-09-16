@@ -1,0 +1,38 @@
+{
+  "version": "1.15.1",
+  "date": "2026-09-16",
+  "base_commit": "fc5b45eea094233d07d2ad5840b85af6d6d3af0f",
+  "scope": "Reviewed maintenance fixes to 1.15.0; main-branch update, not a GitHub release or installation update.",
+  "archive_sha256": "d7fa8215e529a969a88329aa23fa089d0f8a70610384bed5b6051b75dc37091c",
+  "archive_files": 31,
+  "maintenance": {
+    "rubric": "1.2",
+    "prospective_authorization_date": "2026-09-16",
+    "independent_critique_rounds": 3,
+    "exact_final_source_review": "completed; no material defect",
+    "independent_evidence_audit": "completed; no actionable finding"
+  },
+  "execution": {
+    "standard": {
+      "reports": 6,
+      "attempts": 8,
+      "passed": true
+    },
+    "full": {
+      "reports": 12,
+      "attempts": 12,
+      "passed": true
+    },
+    "method": "Fresh non-inheriting Codex contexts reviewing fictional narrow sleep-only packets; same-model context separation.",
+    "continuation": "Retained valid reports and unchanged exact inputs; no budget reset or reused reviewer.",
+    "source_applicability": "Frozen references predate four wording/routing clarifications. Reviewed delta does not change fixture assignments, scores or final predicate; not exact-final runtime certification."
+  },
+  "version_only_delta": "Only SKILL.md version metadata differs from the exact reviewed skill source; all other skill bytes unchanged.",
+  "limits": [
+    "No real athlete outcomes or clinical equivalence established",
+    "No measured token savings or independent model-error guarantee",
+    "No live Claude installation test",
+    "Historical security scan remains incomplete"
+  ],
+  "evidence_retention": "Raw review artifacts retained privately; this is a bounded public summary."
+}
