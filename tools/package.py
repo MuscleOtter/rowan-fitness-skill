@@ -47,6 +47,8 @@ if __name__ == "__main__":
     args = parser.parse_args()
     outputs, count = artifacts()
     if args.check:
+        if not DIST.is_dir():
+            raise SystemExit("Missing dist/: GitHub source downloads omit it. Work from a clone, or run python3 tools/package.py first.")
         for name, data in outputs.items():
             path = DIST / name
             if not path.is_file() or path.read_bytes() != data:
