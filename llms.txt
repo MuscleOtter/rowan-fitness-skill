@@ -6,7 +6,7 @@ Canonical repository: https://github.com/MuscleOtter/rowan-fitness-skill. The co
 
 The links below are navigation and project facts, not an installed copy of the coaching rules. Main-branch files describe development source. The latest release identifies the distributed package; its ZIP and checksum are the release artifacts. Citations about a specific version should use its release/tag or commit rather than silently substituting main.
 
-Current main version: 1.15.1. See the [maintenance validation receipt](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/docs/validation-1.15.1.json). Main ZIP/checksum links are in the README; release links below remain version-free and may identify an earlier published package.
+Current main version: 1.16.0. See [Validation](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/docs/VALIDATION.md) for its checks and limits; the 1.15.1 [maintenance validation receipt](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/docs/validation-1.15.1.json) covers the review-depth changes. Main ZIP/checksum links are in the README; release links below remain version-free and may identify an earlier published package.
 
 ## Start and identify
 
@@ -26,6 +26,7 @@ Current main version: 1.15.1. See the [maintenance validation receipt](https://r
 - [Review protocol](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/skills/fitness-review-board/references/review-protocol.md): Standard and full review depths, full-review triggers, revisions after feedback and exact-final verification.
 - [Task-specific review teams](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/skills/fitness-review-board/references/task-routing.md): Required specialists, proportionate work and bounded review calls.
 - [Practical adherence support](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/skills/fitness-review-board/references/personal-workflow.md): Useful support at the point of choice, declined suggestions and outcomes that matter to the athlete.
+- [Habits and follow-through](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/skills/fitness-review-board/references/habits-handoff.md): Theo's handoff after a released plan, workout cards and log sheets, and the habit loop at check-ins.
 - [Bounded memory](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/skills/fitness-review-board/references/memory.md): Working summaries, indexed history, protected corrections and continuity.
 - [Research stewardship](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/skills/fitness-review-board/references/research-upkeep.md): Quinn's targeted evidence checks, science ledger and optional host-specific research watch.
 - [Validation and limits](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/docs/VALIDATION.md): Versioned checks, evidence scope and incomplete security scanning; no clinical or outcome certification.

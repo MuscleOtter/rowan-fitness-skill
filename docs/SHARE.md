@@ -12,7 +12,7 @@ Use the [repository](https://github.com/MuscleOtter/rowan-fitness-skill) as the 
 
 ## Community introduction
 
-> Rowan is a free, open-source skill for intermediate and advanced trainees. It starts with the program you already follow and brings lifting, cardio, nutrition, recipes, meal prep and sleep into the same conversation. It helps find practical ways to follow through, remembers declined support, and keeps personal experiments and working memory bounded.
+> Rowan is a free, open-source skill for intermediate and advanced trainees. It starts with the program you already follow and brings lifting, cardio, nutrition, recipes, meal prep and sleep into the same conversation. Its habits coach, Theo, helps turn an approved plan into a routine without guilt or streak pressure, remembers declined support, and keeps personal experiments and working memory bounded.
 >
 > The central rule: new recommendations go through separate AI specialist review and a final check, with three critique-and-rewrite passes whenever health, injury or weight-change risks are involved. When those reviewers aren't available, Rowan can still organize history and log workouts. Your Training Record carries goals and progress between conversations.
 >

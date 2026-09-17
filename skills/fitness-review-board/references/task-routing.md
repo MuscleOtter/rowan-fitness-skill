@@ -7,6 +7,7 @@ Routing policy v3, prospective from Rowan 1.14.0, requested 2026-09-16, adds Sag
 | Request | Required execution |
 |---|---|
 | Intake, complete log, factual explanation, memory correction, logistics within existing authorization | Rowan handles it; no prescription board. Ellis may resolve consequential import/identity ambiguity. A specialist consultation is not approval. |
+| Handoff after a released plan, habit loop, reminders, workout cards or log sheets within existing authorization | Theo (`habits`) leads with Rowan; no prescription board. Materials repeat approved text exactly; any added, removed, shortened or rescheduled action returns to review. |
 | Retrieve an unchanged applicable approved plan/alternative | Rowan checks current restrictions and approval conditions and retrieves exact text; no new board. |
 | New actionable recommendation | Always Mara (`coach`) and Quinn (`science`), plus every triggered specialist below. They independently cover all nine quality dimensions, including data sufficiency and practical fit; omitting a specialist never omits a concern. |
 | Exercise choice, new substitution/setup, lifting technique, lifting dose/progression or resistance program change | Add Kit (`gym`). An unchanged lifting schedule mentioned in a sleep proposal does not itself trigger Kit. |

@@ -32,3 +32,20 @@ Original research deferrals: automatic device ingestion, background nudges, form
 Scope clarification, 2026-09-09: [history discovery and connections](history-and-connections.md) now orchestrates imports through already available authorized host readers. Bundled ingestion adapters remain deferred; this skill does not supply a phone app, HealthKit reader or background service. This addition does not refresh the original community research.
 
 Fitness prescriptions require professional evidence and applicability assessment under [nutrition and evidence](nutrition-evidence.md), not popularity in a skill directory. Package grades describe instruction quality. They do not establish fitness outcomes, security certification, user satisfaction or improvement over ordinary coaching without a separately measured comparison.
+
+## Habits and follow-through
+
+Added 2026-09-16 for Theo in [habits and handoff](habits-handoff.md). The maintainer supplied *Atomic Habits* bonus handouts (implementation intentions, habit stacking, the habit loop, scorecard, tracker, habit contract and a cheat sheet), the book's figure captions and a *5 am Club* excerpt; a tester's weekly log sheet informed the log-sheet fields. These informed newly written instructions; no text or template is bundled.
+
+| Source idea | Adopted as | Rejected |
+|---|---|---|
+| When-and-where plans and habit stacking | One plan per new approved action, tied to an existing routine | Rigid scripts for every behavior |
+| Environment design and starter steps | One or two ease tactics; a starter step begins the full approved session | Reducing approved dose outside review |
+| Habit tracking | Simple ticks and patterns over weeks | “Don't break the chain” streak pressure |
+| Scorecard of current habits | Optional helping / getting in the way / neutral notes | Good or bad labels and exhaustive logs |
+| Accountability partners and habit contracts | Sharing the athlete chooses to do | Penalties, bets, public costs, contacting others for the athlete |
+| Identity-based habits | The athlete's own words, never body shape | Identity pressure |
+| Early-rising and relentless-effort slogans | Nothing | Pushing through, trading sleep for earlier starts, shaming excuses |
+| Headline statistics | Nothing | Unsourced multipliers and fixed day counts |
+
+The research behind the design is listed in [habits and handoff](habits-handoff.md#sources-and-inspiration).

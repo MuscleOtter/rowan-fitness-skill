@@ -28,7 +28,7 @@ The decision can be **keep**, **pending**, **investigate**, **propose revision**
 
 Your Training Record carries your progress between conversations; an assistant saying it remembers you is not a saved record. Corrections replace older facts. Package updates must not restore deleted information or obsolete restrictions.
 
-The same learning loop applies to your support routine. Rowan asks what gets in the way, tries one agreed change and checks whether it helped. Keep a useful workout reminder or prep routine; adjust or stop unwanted nudges and their actual scheduled jobs. Silence is unknown, not a missed workout. New channels and purchases need the relevant authorization; convenience never lowers the fitness review bar.
+The same learning loop applies to your routine. After a plan is approved, Theo offers to help you start it: when and where each session happens, reminders in your own apps, a workout card and a log sheet. At check-ins Theo works on one habit at a time, asks what gets in the way, tries one agreed change and checks whether it helped. A missed session is information, not failure, and Theo never changes the approved plan; changes go back through review. Keep a useful workout reminder or prep routine; adjust or stop unwanted nudges and their actual scheduled jobs. Silence is unknown, not a missed workout. New channels and purchases need the relevant authorization; convenience never lowers the fitness review bar.
 
 ## 3. Maintain the system
 

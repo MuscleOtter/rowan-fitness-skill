@@ -1,5 +1,9 @@
 # Validation and limits
 
+## 1.16.0 habits and follow-through
+
+Adds Theo's handoff and habit loop as instructions only; no code paths change. On September 16, 2026, the package check, unit tests and internal link check passed. The three cited habit studies were confirmed in Crossref. The plan and the build each received an adversarial self-review by the AI model that wrote them, with the findings corrected. That is not the three independent maintenance critique rounds required by maintenance rubric v1.2, which have not been run. No handoff, reminder, workout card, log sheet or habit loop has been exercised on a live host or with a real athlete.
+
 ## 1.15.1 reviewed maintenance fixes
 
 This main-branch update contains the reviewed 1.15.0 fixes described below, with the skill version changed to 1.15.1. Three independent maintenance critique/revision rounds and a fresh exact-final source/package check completed under prospective rubric v1.2, with no material defect remaining. A separate independent evidence audit verified all eighteen synthetic role reports, input bindings, counts, N/A agreement, final score calculations and approved-text readbacks.

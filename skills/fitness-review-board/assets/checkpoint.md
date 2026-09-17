@@ -2,7 +2,7 @@
 
 Fill with this user's actual facts; `unknown` is a valid value. Save outside the skill folder. This is a template, not a preapproved plan.
 
-- Schema: FRB-state-1.8 (optional adherence, routing and memory-lifecycle fields; preserve older facts, approvals and unknowns)
+- Schema: FRB-state-1.9 (optional habit handoff and habit-loop fields on top of 1.8's adherence, routing and memory-lifecycle fields; preserve older facts, approvals and unknowns)
 - Profile ID / preferred name:
 - Revision / parent revision / created date and timezone:
 - Authoritative location or manual copy selected by user:
@@ -42,6 +42,8 @@ Fill only for selected routines; keep secrets in the host's account controls.
 - Trial baseline/benefit/window, observed usefulness/burden, keep/adjust/stop decision and next check:
 - Relevant obstacle, chosen option/approved fallback reference, meaningful goal outcome and tolerated burden:
 - Declined/snoozed idea and reason; suppression/revisit trigger; no repeated pitch without changed reason:
+- Theo handoff: offered/declined/completed date; what changes; when-and-where plans in the athlete's words; chosen ease tactics; materials sent and format; agreed first check-in:
+- Habit loop: current habit ID, obstacle, one adjustment, tracking method, keep/adjust/drop decision, reason and next check:
 - Stop/snooze controls applied or pending; discarded tactics/context not to retry without new justification:
 
 ## Source registry and history coverage

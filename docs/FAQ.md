@@ -40,6 +40,10 @@ Rowan can organize history, collect missing details and log completed work. It h
 
 No. Your Training Record carries continuity. Rowan saves and verifies it when tools allow; otherwise, it prepares the current record for you to keep and attach next time. It should tell you whether something was saved or only recorded in chat. [Keep your progress](SETUP.md#keep-your-progress).
 
+**Will Rowan help me stick to the plan?**
+
+Yes, if you want it. After a plan is approved, Theo, Rowan's habits and follow-through coach, helps you start: when and where each session fits your week, reminders in apps you already use, a workout card for your phone and a simple log sheet. At check-ins Theo works on one habit at a time. There are no penalties, streak pressure or make-up workouts, and Theo never changes the approved plan. The approach draws on habit research and ideas popularized by *Atomic Habits*. If you already have a system, say so and Theo stays out of the way.
+
 **Can it connect Apple Health, send reminders or order groceries?**
 
 Only through tools actually available in your assistant and within your authorization. Rowan guides setup and checks what worked. Installing this ZIP activates none of those connections or actions. On Claude, Rowan prepares the basket and asks for confirmation of each purchase; if checkout is prohibited in that surface, you complete it yourself. Payment credentials stay with you. [History and Health](SETUP.md#bring-your-history-together) · [Support routines](SETUP.md#make-it-easy-to-keep-using-rowan).

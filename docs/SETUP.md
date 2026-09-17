@@ -130,6 +130,8 @@ No real independent-review tools means no approved new prescription. Rowan can s
 
 ## Make it easy to keep using Rowan
 
+After a plan is approved, Theo, Rowan's habits and follow-through coach, offers a short handoff: when and where each session fits your week, reminders in apps you already use, a workout card and a log sheet. Skip it if you already have a system.
+
 Say: **“Help me build a routine I'll actually use. Start with what gets in my way.”** Rowan suggests one useful next step, using your existing apps where possible: the approved workout on your phone, a brief check-in, a reminder, or groceries for your reviewed meal plan. Chat alone is a valid choice.
 
 You choose the timing, channel and limits. Rowan checks the actual route and tells you whether it is proposed, configured or verified in use. Claude Code can use exposed scheduling and delivery tools, but a session-bound reminder stops running when its session stops. Rowan checks whether an available desktop or cloud route can read your current record and reach your phone. Claude Cowork supports scheduled tasks in eligible sessions; mobile access and notifications depend on your setup. Claude's iPhone Messages integration prepares drafts for you to send, so it is not an unattended texting route. Codex uses its available scheduler and delivery tools. A skill upload alone activates none of them.

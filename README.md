@@ -8,7 +8,7 @@ Rowan is a free, open-source **AI fitness coaching skill for Claude and Codex**,
 
 [**Download skill ZIP**](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest/download/Rowan-Fitness-Skill.zip) · [Start in Claude](#start-in-claude) · [Other apps](#start-in-chatgpt-or-codex) · [FAQ](docs/FAQ.md)
 
-Main currently contains **1.15.1**: [reviewed changes](CHANGELOG.md#1151--2026-09-16-main-release-not-published) and [validation](docs/VALIDATION.md#1151-reviewed-maintenance-fixes). The download button above follows the latest published release. For this main-branch build, use the [main ZIP](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/dist/Rowan-Fitness-Skill.zip) and [matching checksum](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/dist/SHA256SUMS.txt).
+Main currently contains **1.16.0**: [changes](CHANGELOG.md#1160--2026-09-16-main-release-not-published) and [validation](docs/VALIDATION.md#1160-habits-and-follow-through). The download button above follows the latest published release. For this main-branch build, use the [main ZIP](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/dist/Rowan-Fitness-Skill.zip) and [matching checksum](https://raw.githubusercontent.com/MuscleOtter/rowan-fitness-skill/main/dist/SHA256SUMS.txt).
 
 ## Start in Claude
 
@@ -37,7 +37,7 @@ One recent workout note or screenshot is enough to begin. Rowan introduces himse
 | Improve sleep and recovery | Assess routines, timing, daytime functioning and fit with training/fueling; review personalized changes using dated clinical evidence. |
 | Get food onto the table | Develop recipes, meal prep and shopping lists with culinary and nutrition review. |
 | Use the history you already have | Ask where you already track training, gather relevant authorized chats and data, and start with a screenshot or rough note instead of a connection. |
-| Follow through | Choose useful check-ins, phone access or grocery support through available, authorized tools. |
+| Follow through | After a plan is approved, Theo helps you start: when and where, reminders in your own apps, a workout card and a log sheet. Check-ins work on one habit at a time, with no guilt about missed days. Skip it if you already have a system. |
 
 </details>
 
@@ -83,7 +83,7 @@ Fictional illustration of the rules; no reviewer execution or athlete result is 
 <details>
 <summary>Meet the review team</summary>
 
-**Rowan** coordinates your coaching. **Mara** challenges the plan, **Quinn** checks evidence and maintains the research queue, **Ellis** checks data and **Kit** knows equipment. **Nico** reviews conditioning, **Sage** reviews nutrition and joins every full program review, and **Jules** handles recipes and meal prep. **Wren** owns sleep and recovery, joining full program reviews, cut-related recommendations and sleep-relevant advice. Mara and Quinn review every new recommendation; [task-specific routing](skills/fitness-review-board/references/task-routing.md) adds the required specialists. Rowan also helps solve practical adherence obstacles, remembers declined support, and measures whether the routine helps your chosen goal.
+**Rowan** coordinates your coaching. **Mara** challenges the plan, **Quinn** checks evidence and maintains the research queue, **Ellis** checks data and **Kit** knows equipment. **Nico** reviews conditioning, **Sage** reviews nutrition and joins every full program review, and **Jules** handles recipes and meal prep. **Wren** owns sleep and recovery, joining full program reviews, cut-related recommendations and sleep-relevant advice. **Theo** helps turn an approved plan into a routine and isn't a reviewer. Mara and Quinn review every new recommendation; [task-specific routing](skills/fitness-review-board/references/task-routing.md) adds the required specialists. Theo helps solve practical adherence obstacles, remembers declined support, and checks whether the routine helps your chosen goal.
 
 </details>
 

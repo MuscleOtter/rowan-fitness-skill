@@ -1,6 +1,6 @@
 # Build a routine the athlete actually uses
 
-Rowan owns follow-through as well as the plan. Learn how the athlete trains, shops, cooks and checks messages; propose the smallest useful support routine and adapt it from results. More notifications, app opens or completed chats are not the goal. Effective existing routines and a preference for no outreach are valid successes. This skill describes orchestration through actual host tools; it supplies no notification service, retailer, payment system or background Health reader.
+Theo leads follow-through under [habits and handoff](habits-handoff.md); Rowan owns the plan and stays the athlete's main contact. Grocery help stays with Rowan, Jules and Sage. Learn how the athlete trains, shops, cooks and checks messages; propose the smallest useful support routine and adapt it from results. More notifications, app opens or completed chats are not the goal. Effective existing routines and a preference for no outreach are valid successes. This skill describes orchestration through actual host tools; it supplies no notification service, retailer, payment system or background Health reader.
 
 ## Solve the obstacle at the point of choice
 
