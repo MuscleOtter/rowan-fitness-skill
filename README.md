@@ -8,7 +8,7 @@ Rowan is a free, open-source **AI fitness coaching skill for Claude and Codex**,
 
 [**Download skill ZIP**](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest/download/Rowan-Fitness-Skill.zip) · [Start in Claude](#start-in-claude) · [Other apps](#start-in-chatgpt-or-codex) · [Update everywhere](docs/SETUP.md#update-everywhere-in-one-pass) · [FAQ](docs/FAQ.md)
 
-This branch contains the **1.18.0 release candidate**: [changes](CHANGELOG.md#1180--2026-09-18-unreleased-preparation) and [validation](docs/VALIDATION.md#1180-selected-1161-repairs). The candidate is not published yet; the download button follows the latest published release. Do not describe the current main branch as 1.18.0 until the release-prep branch is merged and synchronized.
+This branch contains the **1.18.0 release candidate**: [changes](CHANGELOG.md#1180--2026-09-18-unreleased-preparation), [validation](docs/VALIDATION.md#1180-selected-1161-repairs) and the [validation receipt](docs/validation-1.18.0.json). The candidate is not published yet, so the download button follows the latest published release. Once published, use the [1.18.0 release page](https://github.com/MuscleOtter/rowan-fitness-skill/releases/tag/v1.18.0), [versioned ZIP](https://github.com/MuscleOtter/rowan-fitness-skill/releases/download/v1.18.0/Rowan-Fitness-Skill.zip) and [versioned checksum](https://github.com/MuscleOtter/rowan-fitness-skill/releases/download/v1.18.0/SHA256SUMS.txt). Do not describe the current main branch as 1.18.0 until it is synchronized with this release.
 
 ## Start in Claude
 
@@ -61,7 +61,7 @@ Ask **“Show my recent progress as a chart, right here in the chat.”** Rowan 
 
 Claude web/desktop chat and Cowork document native inline visuals; other surfaces depend on their actual tools. A terminal gets a readable table, not a promised interactive chart. New coaching advice still needs the normal reviews. [Visuals, compatibility and a quick test](docs/VISUALS.md).
 
-The visual work ships in release 1.12.0; publishing it does not update a copy you already installed or uploaded. Check the version you actually installed.
+The visual handoff and style were introduced in release 1.12.0 and are carried forward in 1.18.0. Publishing a release does not update a copy you already installed or uploaded. Check the version you actually installed.
 
 ## A second look before a new recommendation
 

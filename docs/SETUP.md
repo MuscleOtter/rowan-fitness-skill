@@ -32,7 +32,7 @@ These are starting expectations. Rowan checks the current app and explains only 
 
 ## Get the folder
 
-Main and the latest release may differ. The [README download notes](../README.md) identify the current main build and its matching ZIP/checksum; the release links below always follow the latest published release. A push to main does not update an installed copy.
+The public branch and the latest release may differ until publication. The [README release notes](../README.md) identify the 1.18.0 candidate, its validation receipt and the versioned ZIP/checksum links; the download link below follows the latest published release. A push to any branch does not update an installed copy.
 
 The [skill ZIP](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest/download/Rowan-Fitness-Skill.zip) is public: no GitHub account is required. Use `Rowan-Fitness-Skill.zip`, not the separate source-code archive. Claude.ai and Cowork use the zipped upload; only extract it for a folder install or to upload individual files to ChatGPT.
 
@@ -113,7 +113,7 @@ This gives Rowan the rules and your record. It does not give independent reviewe
 
 Ask **“Use Rowan to show my progress as an inline chart with Day/Night choices.”** Claude web/desktop chat and Cowork have documented native custom visuals; use that route for quick progress rather than asking for a separate artifact. Rowan checks the session and uses an exact-value table when a graph is unavailable. Claude Code terminal does not gain chat's visual interface through a skill install.
 
-Release 1.12.0 includes the visual handoff and style. Verify the installed/uploaded version; a new release does not update a folder install or account upload you already have. [Fictional smoke test, supported surfaces and limits](VISUALS.md).
+The visual handoff and style were introduced in 1.12.0 and are included in 1.18.0. Verify the installed/uploaded version; a new release does not update a folder install or account upload you already have. [Fictional smoke test, supported surfaces and limits](VISUALS.md).
 
 ## What the board needs
 
@@ -186,8 +186,8 @@ Stop only the host that fails verification; restore its backup or re-enable its 
 ## Update or remove
 
 1. Preserve the latest accessible Training Record or replacement in its existing location. If there is no saved `athlete.md`, retain the old Rowan copy and continue from the current chat or legacy record; do not create an empty file just to update.
-2. Choose the target deliberately: the repository's main branch is a development copy, while the [latest published release ZIP](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest/download/Rowan-Fitness-Skill.zip) is a tagged release. Compare semantic versions before installing and stop if the download is lower than the version you already use unless you intentionally want a rollback.
-3. Keep the old copy enabled or retained as a uniquely named backup while installing the new one. Start a fresh session and ask: “Which Rowan version did you load? Read it from SKILL.md, then load my current Training Record.” Compare the version with the [release page](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest). If an upload or copy is partial, leave the old copy active, restore it from the backup, and retry; do not delete the only usable Rowan copy before the new version is read and verified.
+2. Choose the target deliberately: the repository's main branch is a development copy, while a tagged release is the supported installation target. For Rowan 1.18.0, use the [release page](https://github.com/MuscleOtter/rowan-fitness-skill/releases/tag/v1.18.0) and its [versioned ZIP](https://github.com/MuscleOtter/rowan-fitness-skill/releases/download/v1.18.0/Rowan-Fitness-Skill.zip) after publication; until then, use the [latest published release ZIP](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest/download/Rowan-Fitness-Skill.zip). Compare semantic versions before installing and stop if the download is lower than the version you already use unless you intentionally want a rollback.
+3. Keep the old copy enabled or retained as a uniquely named backup while installing the new one. Start a fresh session and ask: “Which Rowan version did you load? Read it from SKILL.md, then load my current Training Record.” Compare the version with the selected [release page](https://github.com/MuscleOtter/rowan-fitness-skill/releases/tag/v1.18.0). If an upload or copy is partial, leave the old copy active, restore it from the backup, and retry; do not delete the only usable Rowan copy before the new version is read and verified.
 4. If the record is from an older package or schema, use the [non-blocking migration guide](../skills/fitness-review-board/references/migration.md). It preserves the active plan and exact approved text, marks new fields unknown or not configured, guards against older packages rewriting newer schemas, and does not reopen review merely because the package changed. Keep ordinary logging available while a connector or save route is unavailable.
 
 | Installed in | Replace it this way |

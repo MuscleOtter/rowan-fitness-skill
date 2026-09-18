@@ -50,7 +50,7 @@ Only through tools actually available in your assistant and within your authoriz
 
 **Can Rowan show charts inside the message?**
 
-Yes, when your current assistant exposes that surface. Release 1.12.0 supports native in-message visuals in capable Claude/Codex sessions, with a readable table fallback. Claude's web/desktop chat visuals are distinct from artifacts and Claude Code's terminal. Day/Night and exact values stay local to the view; nothing is saved to your Training Record just by drawing it. [Compatibility and a fictional test](VISUALS.md).
+Yes, when your current assistant exposes that surface. The visual handoff was introduced in 1.12.0 and is carried forward in 1.18.0 for capable Claude/Codex sessions, with a readable table fallback. Claude's web/desktop chat visuals are distinct from artifacts and Claude Code's terminal. Day/Night and exact values stay local to the view; nothing is saved to your Training Record just by drawing it. [Compatibility and a fictional test](VISUALS.md).
 
 **Where does my information go?**
 
