@@ -17,7 +17,7 @@
     "final_reasoning": "medium",
     "result": "pass",
     "material_findings_remaining": 0,
-    "finding": "All reported findings were corrected and rechecked on clean public HEAD 10ef597."
+    "finding": "All reported findings were corrected and rechecked on clean public HEAD ac11f38."
   },
   "feature_review": {
     "source": "1.16.1 feature set",
