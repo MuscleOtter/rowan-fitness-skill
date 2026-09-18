@@ -1,11 +1,11 @@
 {
   "version": "1.18.0",
-  "status": "main synchronized; release tag and upload pending",
+  "status": "published",
   "checked_at": "2026-09-18",
   "maintenance_review": {
     "rounds": 3,
     "fresh_context_rounds": 3,
-    "result": "pass with release hold",
+    "result": "pass",
     "scope": "migration, plan-version dependencies, reminder/material state, outside-program provenance, pain holds and no-stall recovery",
     "material_findings_remaining": 0,
     "numeric_rubric_score": "not claimed"
@@ -44,7 +44,7 @@
   "limits": [
     "The interrupted Claude review and its pass rates remain historical and are not reused as 1.18.0 release scores.",
     "No live Apple Health reader, phone delivery, reminder job, Claude/Cowork execution or clinical/adherence outcome was established.",
-    "Public main is synchronized; no GitHub tag, release asset or release upload has been created yet.",
+    "GitHub tag v1.18.0 and release assets are published; live host execution remains unverified.",
     "Public main and the clean release branch are the approved publication sources; the local release-prep ref and other legacy refs retain historical private author metadata.",
     "The migration text requires byte-preserving read-only handling for newer-schema records, collision-safe legacy aliases and explicit unknown release dates; those edits passed the final fresh review."
   ]

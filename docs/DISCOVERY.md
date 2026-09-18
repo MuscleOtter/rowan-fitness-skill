@@ -31,7 +31,7 @@ Install a copy for Claude Code in the current project:
 npx skills add MuscleOtter/rowan-fitness-skill --skill fitness-review-board --agent claude-code --copy
 ```
 
-Use `--agent codex` for Codex; add `--global` only when you want installation for all projects. Preserve an existing install with the [update instructions](SETUP.md#update-or-remove) first. This repository route fetches the current default branch; use the versioned [1.18.0 release page](https://github.com/MuscleOtter/rowan-fitness-skill/releases/tag/v1.18.0) and [ZIP asset](https://github.com/MuscleOtter/rowan-fitness-skill/releases/download/v1.18.0/Rowan-Fitness-Skill.zip) after publication, or the [latest published release](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest) until then. CLI installation does not establish reviewer or device access.
+Use `--agent codex` for Codex; add `--global` only when you want installation for all projects. Preserve an existing install with the [update instructions](SETUP.md#update-or-remove) first. This repository route fetches the current default branch; use the published [1.18.0 release page](https://github.com/MuscleOtter/rowan-fitness-skill/releases/tag/v1.18.0) and [ZIP asset](https://github.com/MuscleOtter/rowan-fitness-skill/releases/download/v1.18.0/Rowan-Fitness-Skill.zip). CLI installation does not establish reviewer or device access.
 
 Discovery was exercised on 2026-09-09 using Skills CLI 1.5.25 in list-only mode with telemetry disabled. This checks package discovery, not installation or coaching execution. The CLI has its own [telemetry policy and opt-out](https://www.skills.sh/docs/cli#telemetry); Rowan's instruction package has no telemetry service.
 
