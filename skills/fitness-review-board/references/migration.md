@@ -29,7 +29,7 @@ New or changed training, nutrition, sleep, cardio, or action-bearing habit instr
 
 ## Plan versioning after migration
 
-Keep prior plan text and review evidence. A pending proposal receives the next stable `Plan vN` identifier when its action text first becomes a proposal; retain that number and its candidate/cycle ID through review or hold, but do not call it reviewed until release. When approved action text changes, release the next number (`Plan v2`, then `Plan v3`, and so on) with a canonical label:
+Keep prior plan text and review evidence. A pending proposal receives the next stable `Plan vN` identifier when its action text first becomes a proposal; retain that number and its candidate/cycle ID through review or hold, but do not call it reviewed until release. When that proposal passes review, release it under its already assigned number (`Plan v2`, then `Plan v3` for a distinct subsequent proposal), with a canonical label:
 
 | User-visible label | Meaning | May drive action-bearing cards/reminders? |
 |---|---|---|

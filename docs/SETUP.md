@@ -26,19 +26,19 @@ Start with your goal and the program you already use. A rough note or one workou
 | Claude Cowork | Upload the skill through your account; Rowan checks whether separate reviews and a saved record are available. |
 | Claude.ai chat | Upload the skill; use it for setup and logging. Download the record Rowan prepares when it cannot save a lasting copy. |
 | Claude Code / Codex | The assistant can manage files and reviews when the necessary tools are available. Manual folder instructions follow. |
-| ChatGPT app | Upload the rule files to a Project using the steps below. New prescriptions still need independent review. |
+| ChatGPT app | Use native skills when available, or the complete Project document described below. New prescriptions still need independent review. |
 
 These are starting expectations. Rowan checks the current app and explains only the limits relevant to what you want to do.
 
 ## Get the folder
 
-Main and the latest release are synchronized at 1.18.0. The [README release notes](../README.md) identify the published package, validation receipt and versioned ZIP/checksum links. A push to any branch does not update an installed copy.
+The latest published release is 1.18.0; this branch contains the unreleased 1.18.1 compatibility candidate. The [latest release](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest) provides the published package, validation receipt and ZIP/checksum assets. A push to any branch does not update an installed copy.
 
-The [skill ZIP](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest/download/Rowan-Fitness-Skill.zip) is public: no GitHub account is required. Use `Rowan-Fitness-Skill.zip`, not the separate source-code archive. Claude.ai and Cowork use the zipped upload; only extract it for a folder install or to upload individual files to ChatGPT.
+The [skill ZIP](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest/download/Rowan-Fitness-Skill.zip) is public: no GitHub account is required. Use `Rowan-Fitness-Skill.zip`, not the separate source-code archive. Claude.ai and Cowork use the zipped upload; only extract it for a folder install. ChatGPT Project setup uses the separate complete rules document described below.
 
 Both copy-the-folder routes need `fitness-review-board/` on your machine. Either works:
 
-**From the release ZIP** — on a Mac, double-click the ZIP in Finder. On Windows, right-click it in File Explorer and choose **Extract All**. Open the resulting `fitness-review-board` folder to find the files for ChatGPT. Keep the ZIP intact if you are uploading to Claude's Skills settings.
+**From the release ZIP** — on a Mac, double-click the ZIP in Finder. On Windows, right-click it in File Explorer and choose **Extract All**. The resulting `fitness-review-board` folder is ready for a folder install. Keep the ZIP intact if you are uploading to Claude's Skills settings.
 
 For terminal users, the equivalent command is:
 
@@ -88,26 +88,26 @@ Claude.ai's code execution is a per-conversation sandbox. A file written there d
 
 ### Codex desktop and CLI
 
-For local Codex desktop tasks and the CLI, install the complete skill in the local skills directory. This is separate from uploading files to a ChatGPT Project. The default location is shown below; if your setup uses a different `CODEX_HOME`, use its `skills/` directory.
+Use the host’s discovered skills directory. Current guidance lists `~/.agents/skills/` for user skills and `.agents/skills/` for repository skills. Existing installations may use `~/.codex/skills/` or a configured directory; inspect the loaded skill path before updating and avoid two active copies. [Official skill setup](https://learn.chatgpt.com/docs/build-skills).
+
+For a new install using the documented user directory:
 
 ```bash
-mkdir -p ~/.codex/skills && cp -R fitness-review-board ~/.codex/skills/
+mkdir -p ~/.agents/skills && cp -R fitness-review-board ~/.agents/skills/
 ```
 
-From a clone, use `skills/fitness-review-board` as the source. The skill is available on the next turn; start it with `$fitness-review-board`. `agents/openai.yaml` inside the folder supplies the display name and default prompt. A local Codex session has a shell and filesystem, so Rowan can save and verify `athlete.md` at a path you choose and can compute genuine SHA-256 bindings for review packets. Keep that record outside the skills directory. A copy installed on this machine does not establish installation on another computer or in a cloud task.
+From a clone, use `skills/fitness-review-board` as the source. For an existing installation, use [the staged update procedure](#update-or-remove), not an in-place copy that can retain obsolete files. Start with `$fitness-review-board` or the host's skill selector. If discovery has not refreshed, restart and verify the loaded path, version and files. Keep the Training Record in a separate authorized folder; file tools and fresh reviewers must be checked in the current session.
 
 ### ChatGPT app
 
-**For intake and logging; new recommendations need a separate review-capable session.** This route uploads individual rule files. Claude’s single-ZIP upload is the simpler starting route if you have access to it.
+Use native skill support when available in the desktop app; check the actual Skills controls and [official setup](https://learn.chatgpt.com/docs/build-skills). Where native installation is unavailable, use this Project fallback:
 
-There is no skills folder, so the instructions have to be uploaded as files. Naming the skill does not transfer it — a session that has only the starter prompt has Rowan's name and none of Rowan's rules.
+1. Download the matching `Rowan-Project-Knowledge.md` alongside the skill ZIP. For this unreleased candidate it is in `dist/` in a clone; source archives omit generated files, so a maintainer can run `python3 tools/package.py` first. The published 1.18.0 release does not include this new document yet.
+2. Create a private Project and upload that single complete rules document. Add your current Training Record separately or paste it into the conversation. Do not upload private records to the public repository.
+3. Ask Rowan to read `SKILL.md` and the relevant reference sections inside the document, tell you the version, and explain how new advice is checked. References are labeled with their original paths; find the corresponding section rather than treating a relative file link as a working attachment.
+4. Verify actual independent reviewer and save tools. If absent, continue intake/logging and use the existing review fallback; a native skill or Project does not itself supply those tools.
 
-1. Create a Project.
-2. Upload the contents of `fitness-review-board/` as Project knowledge: `SKILL.md`, everything in `references/`, and everything in `assets/`.
-3. If you already have a Training Record, upload it too or paste it at the start of the conversation. Otherwise, Rowan helps create your first record.
-4. Ask: “Read Rowan’s uploaded instructions. Tell me the version and how new advice is checked.” Rowan must verify the files itself; you do not need to interpret review formulas.
-
-This gives Rowan the rules and your record. It does not give independent reviewers, so new prescriptions still need the manual review route or an agent-capable session. ChatGPT's code interpreter is per-conversation storage like Claude.ai's, so Rowan gives you a replacement record to keep rather than claiming a saved file.
+[Project limits](https://help.openai.com/en/articles/10169521-projects-in-chatgpt) vary by plan. The two-document route avoids requiring 30 separate rule files. Retrieval can still omit content: if a required rule cannot be read, hold the affected recommendation and use a host that can load the complete package. A per-conversation file remains a replacement for you to keep, not a verified durable save.
 
 ## Charts directly in the conversation
 
@@ -193,19 +193,19 @@ Stop only the host that fails verification; restore its backup or re-enable its 
 | Installed in | Replace it this way |
 |---|---|
 | Claude Code | Prepare the new folder outside skill discovery, keep the old folder as a uniquely named backup, then switch the folder and verify the new version. For a project install, use that project's `.claude/skills/` instead. |
-| Codex desktop / CLI, local tasks | Prepare the new folder outside skill discovery, keep the old folder as a uniquely named backup, then switch the folder and verify the new version. Use the actual skills directory if `CODEX_HOME` is customized. |
+| Codex desktop / CLI, local tasks | Prepare the new folder outside skill discovery, keep the old folder as a uniquely named backup, then switch the folder and verify the new version. Use the actual discovered skills directory. |
 | Claude.ai or Cowork | Upload the new skill while retaining the old upload; once the new upload is ready, disable the old copy so only one is enabled, then verify the new version. If the upload is partial, re-enable the old copy and retry. |
-| ChatGPT Project | Keep a separate backup or temporary Project with the old files. Replace the rule, reference and asset files in the target only after the new set is ready, verify its version, then remove obsolete copies so both versions are not active. If the target is partial, restore the backup or use the temporary Project. |
+| ChatGPT Project | Keep a separate backup or temporary Project with the old files. Replace the complete rules document in the target only after the new document is ready, verify its version, then remove obsolete copies so both versions are not active. If the target is partial, restore the backup or use the temporary Project. |
 
 ### Verify each installation
 
 GitHub publication, Codex's local folder, Claude Code's local folder, Claude's account upload and ChatGPT Project files are separate update targets. Update the ones you use; success on one does not establish success on another. Preserve your latest Training Record outside the skill package.
 
-1. After replacement, start a fresh fitness conversation with the updated skill and your latest Training Record. For local Codex, the installed update is available on the next turn.
+1. After replacement, start a fresh fitness conversation with the updated skill and your latest Training Record. For local Codex, restart if the changed skill is not detected.
 2. Ask: **“Read Rowan's installed or uploaded SKILL.md and tell me its version. Open references/task-routing.md and references/research-upkeep.md. Explain how you select reviewers and remember declined suggestions. Tell me where my Training Record can actually be saved. Do not create a new fitness plan for this check.”** Compare the read version with the release you installed.
-3. Where filesystem access exists, compare the complete installed folder with the release contents, including supporting files and `agents/openai.yaml`. If account upload access is unavailable, record that installation as unverified. A successful ZIP download or a version guess is insufficient.
+3. A matching version alone is insufficient: development copies can share a label but have different bytes. Where filesystem access exists, compare the complete installed folder with the release contents, including supporting files and `agents/openai.yaml`. If account upload access is unavailable, record that installation as unverified. A successful ZIP download or a version guess is insufficient.
 
-For a ChatGPT Project, replace its uploaded rule, reference and asset files separately and remove obsolete rule copies. Keep its current Training Record. In any host, a package check does not prove that a full independent review board or background job has run.
+For a ChatGPT Project, replace its consolidated rules document and remove obsolete rule copies after verifying the new document. Keep its current Training Record. In any host, a package check does not prove that a full independent review board or background job has run.
 
 ### Check the update in Claude
 
@@ -224,7 +224,7 @@ rowan_backup_dir="$(mktemp -d "$HOME/rowan-skill-backup.XXXXXX")" &&
   mv "$HOME/.claude/skills/fitness-review-board" "$rowan_backup_dir/"
 ```
 
-For a default local Codex desktop or CLI install, use the same command with `.codex` in place of `.claude`. For a custom or project install, use its actual skill path. The command moves only the installed skill folder; your Training Record belongs in its separate private location.
+For Codex or a project install, substitute the actual discovered skill path; do not assume the Claude directory or a particular Codex legacy location. The command moves only the installed skill folder; your Training Record belongs in its separate private location.
 
 To roll back, restore the previous skill folder or upload its release ZIP. Verify the restored version before using it; an older package may inspect or log a newer-schema Training Record but must not parse, reserialize, save or migrate it. Return the original bytes unchanged only when exact pass-through is available, and keep your newest Training Record when rolling back instructions.
 

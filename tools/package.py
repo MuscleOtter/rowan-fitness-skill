@@ -3,6 +3,7 @@ from pathlib import Path
 import argparse
 import hashlib
 import io
+import re
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -35,9 +36,30 @@ def artifacts():
             archive.writestr(info, p.read_bytes())
     data = output.getvalue()
     checksum = hashlib.sha256(data).hexdigest()
+    # A single Project attachment avoids account file-count limits. Preserve
+    # each original UTF-8 file verbatim inside a collision-safe Markdown fence.
+    knowledge = [
+        "# Rowan Project knowledge\n\n"
+        "Complete source companion to the skill ZIP. This document supplies rules, "
+        "not tools or independent reviewers. Read SKILL.md first, then retrieve "
+        "the relevant source sections before consequential actions. Resolve relative "
+        "references by their original paths below; they are not separate attachments. "
+        "Scripts and CSS are source text, not installed executables or renderers. "
+        "Keep your private Training Record in a separate file.\n\n"
+        "## Source inventory\n\n"
+    ]
+    for p in files:
+        knowledge.append(f"- `{p.relative_to(SKILL).as_posix()}`\n")
+    for p in files:
+        source = p.read_bytes().decode("utf-8")
+        fence = "`" * (max((len(run) for run in re.findall(r'`+', source)), default=0) + 3)
+        knowledge.append(f"\n## Source: {p.relative_to(SKILL).as_posix()}\n\n{fence}text\n{source}\n{fence}\n")
+    project_data = "".join(knowledge).encode("utf-8")
+    project_checksum = hashlib.sha256(project_data).hexdigest()
     return {
         "Rowan-Fitness-Skill.zip": data,
-        "SHA256SUMS.txt": (checksum + "  Rowan-Fitness-Skill.zip\n").encode(),
+        "Rowan-Project-Knowledge.md": project_data,
+        "SHA256SUMS.txt": (checksum + "  Rowan-Fitness-Skill.zip\n" + project_checksum + "  Rowan-Project-Knowledge.md\n").encode(),
     }, len(files)
 
 

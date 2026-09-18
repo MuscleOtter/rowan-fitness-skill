@@ -70,7 +70,7 @@ Its exact approved text, review history and conditions stay in place. Missing fi
 
 **Does updating GitHub update every app?**
 
-No. Codex desktop/CLI and Claude Code each use a local installation; Claude chat/Cowork uses an account upload; ChatGPT Projects use uploaded files. Update each copy you use and have the assistant read its installed version. Local folder checks do not establish account-upload or live-board success. [Verify each installation](SETUP.md#verify-each-installation).
+No. Codex desktop/CLI and Claude Code each use a local installation; Claude chat/Cowork uses an account upload; ChatGPT uses a native installation where available or uploaded Project rules. Update each copy you use and verify its actual files as well as its installed version. Local folder checks do not establish account-upload or live-board success. [Verify each installation](SETUP.md#verify-each-installation).
 
 **Can I make one update apply everywhere?**
 
