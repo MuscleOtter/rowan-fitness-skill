@@ -1,6 +1,6 @@
 {
   "version": "1.18.0",
-  "status": "release candidate; publication held",
+  "status": "release candidate; clean public branch ready for publication approval",
   "checked_at": "2026-09-18",
   "maintenance_review": {
     "rounds": 3,
@@ -15,9 +15,9 @@
     "fresh_context_rounds": 5,
     "final_model": "gpt-6-astra",
     "final_reasoning": "medium",
-    "result": "hold",
-    "material_findings_remaining": 1,
-    "finding": "Private author address remains in the ancestry of the current candidate commit; publication route must avoid exposing that ancestry or receive explicit approval for a history rewrite."
+    "result": "pass",
+    "material_findings_remaining": 0,
+    "finding": "All reported findings were corrected and rechecked on clean public HEAD 10ef597."
   },
   "feature_review": {
     "source": "1.16.1 feature set",
@@ -32,19 +32,20 @@
     "git_diff_check": "pass"
   },
   "privacy_audit": {
-    "result": "hold",
-    "scope": "tracked source, repository object names/history, generated ZIP contents and release file list",
+    "result": "pass for clean public branch; legacy refs held",
+    "scope": "clean public branch source, its reachable history, generated ZIP contents and release file list",
     "athlete_records_in_release_tree": false,
     "private_health_or_training_values_in_release_tree": false,
     "private_chat_links_in_release_tree": false,
-    "private_author_email_in_repository_history": true,
+    "private_author_email_in_repository_history": false,
+    "private_author_email_in_legacy_refs": true,
     "public_metadata": ["maintainer name", "public GitHub no-reply address", "public repository links"]
   },
   "limits": [
     "The interrupted Claude review and its pass rates remain historical and are not reused as 1.18.0 release scores.",
     "No live Apple Health reader, phone delivery, reminder job, Claude/Cowork execution or clinical/adherence outcome was established.",
     "The ZIP and source are prepared locally; no GitHub tag, release or public upload has been performed.",
-    "Local candidate docs currently describe 1.18.0 while the local main ref is older; main synchronization or branch-specific wording is required before publication.",
+    "The clean public branch is the only approved publication source; local main and the release-prep ref are older and retain legacy private author metadata.",
     "The migration text requires byte-preserving read-only handling for newer-schema records, collision-safe legacy aliases and explicit unknown release dates; those edits passed the final fresh review."
   ]
 }

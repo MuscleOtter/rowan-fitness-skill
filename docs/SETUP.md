@@ -226,6 +226,6 @@ rowan_backup_dir="$(mktemp -d "$HOME/rowan-skill-backup.XXXXXX")" &&
 
 For a default local Codex desktop or CLI install, use the same command with `.codex` in place of `.claude`. For a custom or project install, use its actual skill path. The command moves only the installed skill folder; your Training Record belongs in its separate private location.
 
-To roll back, restore the previous skill folder or upload its release ZIP. Verify the restored version before using it; an older package must not save a newer-schema Training Record unless it has a lossless downgrade map. Keep your newest Training Record when rolling back instructions.
+To roll back, restore the previous skill folder or upload its release ZIP. Verify the restored version before using it; an older package may inspect or log a newer-schema Training Record but must not parse, reserialize, save or migrate it. Return the original bytes unchanged only when exact pass-through is available, and keep your newest Training Record when rolling back instructions.
 
 Disable or remove the skill through the host to stop using it. If you configured a background job, disable that job separately. Removing a skill does not delete your chats or personal records.
