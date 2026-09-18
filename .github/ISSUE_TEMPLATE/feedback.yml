@@ -1,0 +1,41 @@
+name: Feedback or a problem
+description: Help improve setup, coaching workflow or documentation.
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for helping improve Rowan. This is public: use fictional or de-identified examples. Do not include health records, private conversations, credentials or paid workout libraries."
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What would you like to share?
+      options:
+        - Setup or installation problem
+        - Something Rowan did not handle well
+        - Improvement idea
+        - Documentation issue
+    validations:
+      required: true
+  - type: input
+    id: app
+    attributes:
+      label: Which app were you using?
+      placeholder: "For example: Claude Cowork, Claude chat, Claude Code, Codex or ChatGPT"
+  - type: input
+    id: version
+    attributes:
+      label: Rowan version, if known
+      description: "You can ask Rowan which version it loaded. It is fine if setup did not get that far."
+  - type: textarea
+    id: context
+    attributes:
+      label: What were you trying to do?
+      description: "Describe the task and where you got stuck, or the improvement you want. A short fictional example helps."
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: What happened, and what would have helped?
+      description: "If you can reproduce a problem, include the few steps needed. Leave out personal details."
+    validations:
+      required: true

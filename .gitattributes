@@ -1,0 +1,3 @@
+# Keep the generated skill ZIP out of GitHub's source-code downloads (no ZIP inside a ZIP).
+# The installable skill is the Rowan-Fitness-Skill.zip release asset.
+/dist export-ignore

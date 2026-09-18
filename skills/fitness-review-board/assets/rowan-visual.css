@@ -1,0 +1,101 @@
+/* Optional host HTML/CSS starter. No data, fonts, scripts or network requests. */
+.rowan-visual {
+  --rowan-page: #fffefb;
+  --rowan-paper: #f9f8f4;
+  --rowan-ink: #1f1e1d;
+  --rowan-muted: #615e59;
+  --rowan-accent: #7e2f3b;
+  --rowan-grid: rgb(31 30 29 / 14%);
+  --rowan-on-accent: #fffefb;
+  background: var(--rowan-page);
+  color: var(--rowan-ink);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 12px;
+  max-width: 100%;
+  box-sizing: border-box;
+  color-scheme: light;
+}
+.rowan-visual[data-theme="night"] {
+  --rowan-page: #181717;
+  --rowan-paper: #211f1f;
+  --rowan-ink: #f5f1e7;
+  --rowan-muted: #c1bcb4;
+  --rowan-accent: #c97582;
+  --rowan-grid: rgb(245 241 231 / 16%);
+  --rowan-on-accent: #181717;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: dark) {
+  .rowan-visual:not([data-theme="day"]):not([data-theme="night"]) {
+    --rowan-page: #181717;
+    --rowan-paper: #211f1f;
+    --rowan-ink: #f5f1e7;
+    --rowan-muted: #c1bcb4;
+    --rowan-accent: #c97582;
+    --rowan-grid: rgb(245 241 231 / 16%);
+    --rowan-on-accent: #181717;
+    color-scheme: dark;
+  }
+}
+.rowan-visual .rowan-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.rowan-visual .rowan-heading {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.65rem;
+  line-height: 1.15;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+  overflow-wrap: anywhere;
+}
+.rowan-visual .rowan-caption,
+.rowan-visual .rowan-source {
+  color: var(--rowan-muted);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 8px 0;
+  overflow-wrap: anywhere;
+}
+.rowan-visual .rowan-controls { display: flex; flex-wrap: wrap; gap: 6px; }
+.rowan-visual .rowan-theme {
+  font: inherit;
+  background: transparent;
+  color: var(--rowan-ink);
+  border: 1px solid var(--rowan-grid);
+  border-radius: 4px;
+  padding: 7px 10px;
+  cursor: pointer;
+}
+.rowan-visual .rowan-theme[aria-pressed="true"] {
+  background: var(--rowan-accent);
+  color: var(--rowan-on-accent);
+}
+.rowan-visual .rowan-theme:focus-visible { outline: 2px solid var(--rowan-ink); outline-offset: 3px; }
+.rowan-visual .rowan-chart { display: block; width: 100%; height: auto; }
+.rowan-visual .rowan-chart text { fill: var(--rowan-ink); font: 12px Arial, sans-serif; }
+.rowan-visual .rowan-plot, .rowan-visual .rowan-label-bg { fill: var(--rowan-paper); }
+.rowan-visual .rowan-grid { stroke: var(--rowan-grid); stroke-width: 1; }
+.rowan-visual .rowan-axis { stroke: var(--rowan-muted); stroke-width: 1; }
+.rowan-visual .rowan-line { fill: none; stroke: var(--rowan-accent); stroke-width: 2.5; }
+.rowan-visual .rowan-point { fill: var(--rowan-paper); stroke: var(--rowan-accent); stroke-width: 2; }
+.rowan-visual .rowan-bar, .rowan-visual .rowan-point-latest { fill: var(--rowan-accent); }
+.rowan-visual .rowan-table-wrap { max-width: 100%; overflow-x: auto; }
+.rowan-visual .rowan-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+.rowan-visual .rowan-table th, .rowan-visual .rowan-table td {
+  padding: 9px 6px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--rowan-grid);
+  overflow-wrap: anywhere;
+}
+.rowan-visual .rowan-table .rowan-number { text-align: right; font-variant-numeric: tabular-nums; }
+@media (pointer: coarse) {
+  .rowan-visual .rowan-theme { min-width: 44px; min-height: 44px; }
+}

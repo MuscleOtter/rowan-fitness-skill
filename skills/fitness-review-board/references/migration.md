@@ -1,0 +1,48 @@
+# Updating Rowan without losing the athlete's plan
+
+Use this reference when the installed package, record schema or host copy is older than the Rowan package being loaded. The goal is to add new capabilities without rewriting personal truth, invalidating an unchanged approval or making the athlete repeat intake. A reachable older record means this is a **returning check-in**: load its open questions and skip first-use history discovery unless a decision-critical gap remains.
+
+## The non-blocking migration
+
+1. Read the latest accessible Training Record or replacement, its revision, package/schema version, save status, session-active plan ID, durable-active plan ID, any unsaved proposal relationship and source coverage. If no record is reachable, continue with facts in the current chat and say what interval is missing; do not create an empty replacement. If an older package is asked to read a newer schema, it may inspect or log only; it must not parse, reserialize, save, migrate or drop fields. An unchanged byte-for-byte pass-through is permitted only when the host can preserve the original bytes exactly. Keep the newer package/record pair otherwise.
+2. Preserve the exact approved action text, plan IDs, review reports, restrictions, source lineage, learning ledger, declined tactics and deletion exclusions. Package updates are instruction updates, not personal-record updates. If an exact canonical plan or review artifact is unreadable, preserve its ID/path/metadata and mark the affected state `REVIEW_UNAVAILABLE` or `pending`; never substitute a summary or claim that it was reviewed. Unaffected logging and intake continue.
+3. Add only fields the new package requires. A missing field is `unknown`, `not configured`, `not available` or `legacy/retained`, whichever is true. Never infer a completed workout, permission, reminder, review depth, source connection, agreement or outcome from the presence of an old plan.
+4. Map new capabilities without making them prerequisites:
+
+   | Capability added after the record was created | Migration value when absent | User action |
+   |---|---|---|
+   | Source registry and incremental imports | Preserve the old source/date/coverage; otherwise `unknown` or `partial` | Refresh only when the decision needs it or the athlete asks |
+   | Cardio, nutrition or sleep fields | Keep the old plan and mark the affected observation unknown | Ask only for the smallest missing fact before advice depends on it |
+   | Review-depth metadata | Keep the historical review status and depth if recorded; otherwise `unknown` | Use the current policy for the next new or changed recommendation; do not re-grade history |
+   | Theo handoff and habit-loop fields | `unknown` unless the record proves `not yet offered`; preserve any declined, stopped or completed state | Do not trigger or re-pitch a handoff solely because of migration; offer it only through the normal first-release or athlete-requested route |
+   | Workout cards and log sheets | Mark an existing artifact `legacy material` if its version/header cannot be verified | Generate a new card or sheet only on request or with a newly released reviewed plan, using exact approved text |
+
+5. If the selected active **released** plan has no visible version, assign a stable migration display identifier only after reading the visible plan history. Choose the lowest unused `Plan vN`; never assume `Plan v1` is free. When the record contains verifiable reviewed status/depth, exact approved text and its review artifact, use `Plan vN · Legacy · Reviewed (standard; original version unknown; ID <original plan ID>)` or `Plan vN · Legacy · Reviewed (full; original version unknown; ID <original plan ID>)` and allow retrieval while current conditions hold. When that evidence is missing or unreadable, use `Plan vN · Legacy (review status unknown; original version unknown; ID <original plan ID>)`. If history is incomplete or no stable plan ID exists, use a durable `Legacy Plan · <stable ID>` label or hold for input; do not guess a number. Persist the alias once and never use it to relabel multiple historical plans. If the original release date is absent, retain `original release date unknown`; downstream cards must print `release date unknown`, never the migration date. Preserve both session-active and durable-active IDs and any unsaved proposal relationship. A legacy plan with unknown review status is history-only: do not produce action-bearing cards, reminders or “approved workout” output from it until a reviewed candidate is available.
+6. Read back the migrated record and verify every referenced plan, review artifact and source path. If an authorized writable selected record exists and its schema is not newer than the loaded package, save to a new revision and compare the read-back. If the selected record is newer than the loaded package, use read/log-only mode: do not parse and reserialize it into a downgraded replacement, and do not advance its save status. An unchanged byte-for-byte pass-through may be returned only when the host can preserve the exact original bytes; otherwise record the observation in chat and say that no replacement was saved. For an older compatible record without an authorized writable location, preserve the old record and provide a complete replacement with `replacement ready` or `recorded in chat`. A partial upload keeps the old copy retained and restorable until the new copy is read and its version verified; local folder swaps restore the backup if verification fails.
+7. Finish with a short receipt: old package/schema, new package/schema, fields added or left unknown, active plan preserved, save status and the smallest next input **if any** that would unblock a decision. If none is needed, say so. Do not stop ordinary logging because an optional field, connector or save route is absent.
+
+## What does and does not reopen review
+
+An unchanged plan does not need a new review merely because Rowan was updated. Before using it, check current goals, restrictions, approval conditions and any new evidence that could affect its action text. If those still hold, retain the historical approval and its original review version.
+
+New or changed training, nutrition, sleep, cardio, or action-bearing habit instructions are a new candidate under the current review policy. A reminder time, calendar anchor or delivery-channel edit that changes no dose, sequence or approval condition is logistics within existing authorization; update its dependency receipt without incrementing the plan or reopening review. A record correction, source refresh or completed-workout log is not a plan revision unless it changes an approval dependency. New pain, a failed guardrail or a changed restriction pauses the affected action immediately; it does not authorize an improvised replacement.
+
+## Plan versioning after migration
+
+Keep prior plan text and review evidence. A pending proposal receives the next stable `Plan vN` identifier when its action text first becomes a proposal; retain that number and its candidate/cycle ID through review or hold, but do not call it reviewed until release. When approved action text changes, release the next number (`Plan v2`, then `Plan v3`, and so on) with a canonical label:
+
+| User-visible label | Meaning | May drive action-bearing cards/reminders? |
+|---|---|---|
+| `Plan vN · Reviewed (standard)` or `Plan vN · Reviewed (full)` | Exact candidate passed the named review depth | Yes, while conditions hold |
+| `Plan vN · Legacy · Reviewed (standard; original version unknown)` or `Plan vN · Legacy · Reviewed (full; original version unknown)` | Historical plan has verifiable review evidence but its original display version was not recorded | Yes, while current conditions hold |
+| `Plan vN · Proposal (pending review)` | Candidate text exists but has not passed review | No |
+| `Plan vN · Held (review unavailable/material issue)` | Release is withheld | No |
+| `Plan vN · Legacy (review status unknown)` | Historical plan with missing or unverifiable review evidence | No; history only |
+
+Each released or proposed history entry carries the date/state, actual depth when known, a short **What changed and why** list, current approval conditions, the previous version(s) and scope it supersedes, candidate/cycle ID, exact-text artifact path or digest when available, review ledger/report pointer, and the state of dependent cards, sheets, reminders and when-and-where plans (`active`, `replaced`, `paused` or `not-for-use`). The checkpoint template has optional fields for this receipt. Observation-only updates, source corrections and migration metadata do not increment the plan number. Handoff materials and reminders carry the plan version they depend on. A newly released version replaces affected old cards and sheets; unchanged reminders may remain only after their conditions are checked. Never overwrite the prior plan or call a proposal reviewed.
+
+The first-release Theo handoff is offered once after a reviewed plan. A later plan version updates affected materials and dependencies without a new pitch; a previously declined handoff remains declined unless the athlete asks or circumstances materially change.
+
+## Stop condition
+
+Ask the athlete for input only when two records conflict on a decision-critical fact, the active plan's authority cannot be determined, or a safety condition is missing. Otherwise migrate with explicit unknowns and keep intake, logging and retrieval available. A failed file save or unavailable connector is a reported limitation, not a reason to restart the whole onboarding flow.

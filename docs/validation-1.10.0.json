@@ -1,0 +1,164 @@
+{
+  "version": "1.10.0",
+  "date": "2026-09-15",
+  "status": "pilot release; three distinct independent source critiques complete",
+  "baseline": {
+    "version": "1.9.0",
+    "commit": "ff6e10c8166179d590fce1f3bc0c415db7f2a7e4",
+    "full_clinical_cycle": "user-deferred; not restarted"
+  },
+  "policy": {
+    "routing": "v2",
+    "fitness_rubric": "1.5",
+    "maintenance_rubric": "1.1 unchanged",
+    "state_schema": "FRB-state-1.8",
+    "critique_revision_stages": 3,
+    "exact_final_verification_required": true,
+    "all_score_floors_preserved": true
+  },
+  "source_critiques": [
+    {
+      "pass": 1,
+      "zip_sha256": "7b9c4029f82de4b68261dfdf571280ad117f32bd1368d4d916de05c0b2f3b302",
+      "scores": [
+        9.2,
+        9.1,
+        9.2,
+        9.0,
+        8.6,
+        8.7,
+        9.1,
+        8.8
+      ],
+      "weighted": 8.983,
+      "result": "hold; scientific-ledger save/conflict safeguards missing",
+      "disposition": "revised science-ledger save/conflict/deletion rules and regression cases before pass2"
+    },
+    {
+      "pass": 2,
+      "zip_sha256": "d376bb842ddace1476171a4f38b9a3e8805d2214f1d8c28948ec65d6214b6663",
+      "scores": [
+        9.2,
+        9.2,
+        9.1,
+        9.1,
+        9.0,
+        9.2,
+        8.9,
+        8.8
+      ],
+      "weighted": 9.077,
+      "result": "authored adequacy pass; no material source defect",
+      "disposition": "no-change revision; preserve exact bytes for third fresh critique"
+    },
+    {
+      "pass": 3,
+      "zip_sha256": "d376bb842ddace1476171a4f38b9a3e8805d2214f1d8c28948ec65d6214b6663",
+      "scores": [
+        9.2,
+        9.1,
+        9.2,
+        9.0,
+        9.0,
+        9.2,
+        8.9,
+        8.8
+      ],
+      "weighted": 9.062,
+      "result": "authored adequacy pass; no material source defect; exact source/ZIP verified",
+      "disposition": "no source change warranted"
+    }
+  ],
+  "behavior_checks": {
+    "cases": 12,
+    "passed": 12,
+    "held_out_cases": 4,
+    "candidate_zip_sha256": "7b9c4029f82de4b68261dfdf571280ad117f32bd1368d4d916de05c0b2f3b302",
+    "method": "one independent agent enacted immediate-response/routing outputs and actual local fictional fixture writes/read-backs; no clinical boards dispatched",
+    "limits": "single pass; no repeated-run reliability or longitudinal outcome inference",
+    "final_applicability": "Third fresh critic found the tested immediate behaviors semantically consistent with final source; this is not exact-final execution proof.",
+    "binding_limit": "Coordinator identified the tested pass1 snapshot from the delegated task and retained manifest; tester did not echo a candidate digest. No claim of byte-attested execution."
+  },
+  "role_count_examples": [
+    {
+      "request": "standalone sleep, clear data",
+      "old_normal_calls": 20,
+      "new_normal_calls": 12
+    },
+    {
+      "request": "lifting substitution during cut, clear data",
+      "old_normal_calls": 24,
+      "new_normal_calls": 20
+    },
+    {
+      "request": "recipe, no cut/sleep/data issues",
+      "old_normal_calls": 24,
+      "new_normal_calls": 16
+    },
+    {
+      "request": "sleep advice with consequential data conflict",
+      "old_normal_calls": 20,
+      "new_normal_calls": 16
+    }
+  ],
+  "count_claim": "4N policy arithmetic only; not observed board execution or measured token savings",
+  "unestablished": [
+    "complete live clinical recommendation cycle",
+    "longitudinal fitness/adherence outcomes",
+    "measured token savings",
+    "live monthly research-job execution",
+    "real device import or phone delivery",
+    "security certification",
+    "actual compaction preserving all protected state",
+    "concurrent scientific-ledger race/save-failure execution",
+    "late missing-specialist discovery after dispatch"
+  ],
+  "artifact_checks": {
+    "local_links_checked": 218,
+    "errors": [],
+    "zip_sha256": "d376bb842ddace1476171a4f38b9a3e8805d2214f1d8c28948ec65d6214b6663",
+    "archive_entries": 27,
+    "scope": "structure, internal links and exact distribution bytes only"
+  },
+  "structure_check": {
+    "tool": "skill-creator quick_validate.py",
+    "result": "valid",
+    "environment": "isolated local validator environment; PyYAML dependency installed after unavailable in default runtimes"
+  },
+  "automations": {
+    "configuration_check": "A bounded monthly research configuration was saved and read back; first execution unobserved.",
+    "host_scope": "Schedules require separate host-native setup; the skill ZIP creates no job or notifications.",
+    "research_limits": "Generic public research only; max 3 topics/6 queries/8 source reads per run; no private athlete records."
+  },
+  "claude_compatibility": {
+    "checked": "2026-09-15",
+    "archive_files": 27,
+    "description_characters": 184,
+    "format_check": "passes inspected Claude packaging requirements",
+    "portable_routing_research": "no required Codex-specific tools",
+    "local_claude_code_install": "Local-folder installation check matched all 27 reviewed release files; account upload is a separate target.",
+    "account_upload": "not performed; update instructions supplied",
+    "live_claude_board": "unverified; clinical cycle user-deferred",
+    "sources": [
+      "https://support.claude.com/en/articles/12512198-how-to-create-custom-skills",
+      "https://support.claude.com/en/articles/12512180-use-skills-in-claude",
+      "https://code.claude.com/docs/en/sub-agents"
+    ]
+  },
+  "codex_compatibility": {
+    "checked": "2026-09-15",
+    "local_install": "All 27 installed files match the reviewed release, including agents/openai.yaml.",
+    "structure_check": "skill-creator quick_validate.py passed before activation; complete file comparison passed after activation.",
+    "scope": "Local installation integrity only; no new live clinical board executed. Separate ChatGPT Project uploads were not inspected or changed."
+  },
+  "documentation_update_checks": {
+    "checked": "2026-09-15",
+    "local_links_checked": 223,
+    "errors": [],
+    "zip_sha256": "d376bb842ddace1476171a4f38b9a3e8805d2214f1d8c28948ec65d6214b6663",
+    "archive_entries": 27,
+    "scope": "structure, internal links and exact distribution bytes only",
+    "skill_package_changed": false,
+    "independent_documentation_review": "No blocking factual inconsistency found in the documentation-only diff."
+  }
+}

@@ -1,0 +1,231 @@
+# Setup
+
+[Claude upload](#claudeai-chat) · [ChatGPT](#chatgpt-app) · [Claude Code](#claude-code) · [Codex](#codex-desktop-and-cli) · [Your record](#keep-your-progress) · [Connections](#bring-your-history-together) · [Troubleshooting](#stuck-during-setup) · [Update or remove](#update-or-remove)
+
+## Start without a terminal
+
+Use the [three-step Claude setup](../README.md#start-in-claude): download the ready-made ZIP, upload it in Claude's Skills settings, then start Rowan. Choose Cowork in the message box when available so Rowan can check whether independent reviewers can run. You can use ordinary chat for setup and logging while review capability is unavailable.
+
+Start with your goal and the program you already use. A rough note or one workout screenshot is enough to begin; Rowan asks for other details when needed. You do not need to understand agents, edit files or connect a device to begin. The rest of this page covers specific apps and troubleshooting.
+
+## Stuck during setup
+
+| What happened | Next step |
+|---|---|
+| You downloaded a folder instead of a ZIP | Look in Downloads for the original `Rowan-Fitness-Skill.zip`. Upload that file, not the opened folder or GitHub's “Source code” archive. If it is gone, download the ready-made ZIP again and save it without opening/extracting it; no repackaging is needed. |
+| Skills or upload controls are missing | For an individual Claude account, check **Settings → Capabilities → Code execution and file creation**. Work accounts may need their owner to enable Skills or uploads. Follow [Claude's current guide](https://support.claude.com/en/articles/12512180-use-skills-in-claude); if your app looks different, try Claude on the web and tell Rowan which button you cannot find. |
+| Rowan isn't starting | Check that the uploaded skill is enabled, then paste the [starter prompt](../README.md#the-starter-prompt). Ask “Can you read Rowan's installed instructions and tell me their version?” Its name alone is not proof it loaded. |
+| Rowan cannot run the review team here | Continue logging or organizing your program. If Cowork is available, start a Cowork conversation with Rowan and your latest Training Record. Rowan checks the available tools; it cannot approve new advice by pretending the team ran. |
+| You cannot find your Training Record | Say “Help me find my latest Training Record.” Rowan checks accessible history/files, identifies gaps and can record today's log while recovering it. It must not guess your old plan. |
+| A save or connection failed | Tell Rowan what the app displayed. It should give one next step or a simpler fallback, without asking you to debug code, edit a database or supply passwords. |
+
+## Choose your app
+
+| App | What to expect |
+|---|---|
+| Claude Cowork | Upload the skill through your account; Rowan checks whether separate reviews and a saved record are available. |
+| Claude.ai chat | Upload the skill; use it for setup and logging. Download the record Rowan prepares when it cannot save a lasting copy. |
+| Claude Code / Codex | The assistant can manage files and reviews when the necessary tools are available. Manual folder instructions follow. |
+| ChatGPT app | Upload the rule files to a Project using the steps below. New prescriptions still need independent review. |
+
+These are starting expectations. Rowan checks the current app and explains only the limits relevant to what you want to do.
+
+## Get the folder
+
+Main and the latest release may differ. The [README download notes](../README.md) identify the current main build and its matching ZIP/checksum; the release links below always follow the latest published release. A push to main does not update an installed copy.
+
+The [skill ZIP](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest/download/Rowan-Fitness-Skill.zip) is public: no GitHub account is required. Use `Rowan-Fitness-Skill.zip`, not the separate source-code archive. Claude.ai and Cowork use the zipped upload; only extract it for a folder install or to upload individual files to ChatGPT.
+
+Both copy-the-folder routes need `fitness-review-board/` on your machine. Either works:
+
+**From the release ZIP** — on a Mac, double-click the ZIP in Finder. On Windows, right-click it in File Explorer and choose **Extract All**. Open the resulting `fitness-review-board` folder to find the files for ChatGPT. Keep the ZIP intact if you are uploading to Claude's Skills settings.
+
+For terminal users, the equivalent command is:
+
+```bash
+unzip Rowan-Fitness-Skill.zip
+```
+
+**From a clone** — the folder is at `skills/fitness-review-board`:
+
+```bash
+git clone https://github.com/MuscleOtter/rowan-fitness-skill.git && cd rowan-fitness-skill
+```
+
+The commands below assume you are in the directory holding `fitness-review-board/` (ZIP route) or the repository root (clone route). Adjust the source path to match the one you used.
+
+If you already have Rowan installed, follow [Update or remove](#update-or-remove) before copying. The backup location depends on your host.
+
+## Claude
+
+### Claude Code
+
+```bash
+mkdir -p ~/.claude/skills && cp -R fitness-review-board ~/.claude/skills/
+```
+
+From a clone, use `skills/fitness-review-board` as the source. Use a project's `.claude/skills/` instead of `~/.claude/skills/` if you want it scoped to one project. It loads on the next turn; `/fitness-review-board` starts it explicitly. Ask “Which Rowan version did you load? Read it from SKILL.md.”
+
+Keep your Training Record in your own folder, outside `~/.claude/skills/`, so skill updates never touch it.
+
+### Claude Cowork
+
+Cowork is documented as an agentic mode with subagent coordination and file access, so it may be able to run the board without a terminal. It does not read your local personal skills folder — install it through the account upload below, then ask Rowan what the session actually exposes before relying on a board or a save. [Cowork documentation](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork).
+
+### Claude.ai chat
+
+Claude chat and Cowork use the same account upload:
+
+1. [Download Rowan-Fitness-Skill.zip](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest/download/Rowan-Fitness-Skill.zip). Use this asset, not GitHub's “Source code” archive, and leave it zipped.
+2. In **Customize → Skills**, upload the ZIP and enable it. Keep the folder inside the ZIP intact. If the controls are missing, check that code execution is enabled and your organization permits Skills. [Claude's guide](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills).
+3. Paste the [starter prompt](../README.md#the-starter-prompt). Rowan should introduce itself, ask a few relevant questions and explain the capabilities available in your session.
+
+Claude.ai's code execution is a per-conversation sandbox. A file written there does not survive the conversation, so treat Rowan's record output as a replacement you save yourself.
+
+## ChatGPT and Codex
+
+<a id="codex-cli"></a>
+
+### Codex desktop and CLI
+
+For local Codex desktop tasks and the CLI, install the complete skill in the local skills directory. This is separate from uploading files to a ChatGPT Project. The default location is shown below; if your setup uses a different `CODEX_HOME`, use its `skills/` directory.
+
+```bash
+mkdir -p ~/.codex/skills && cp -R fitness-review-board ~/.codex/skills/
+```
+
+From a clone, use `skills/fitness-review-board` as the source. The skill is available on the next turn; start it with `$fitness-review-board`. `agents/openai.yaml` inside the folder supplies the display name and default prompt. A local Codex session has a shell and filesystem, so Rowan can save and verify `athlete.md` at a path you choose and can compute genuine SHA-256 bindings for review packets. Keep that record outside the skills directory. A copy installed on this machine does not establish installation on another computer or in a cloud task.
+
+### ChatGPT app
+
+**For intake and logging; new recommendations need a separate review-capable session.** This route uploads individual rule files. Claude’s single-ZIP upload is the simpler starting route if you have access to it.
+
+There is no skills folder, so the instructions have to be uploaded as files. Naming the skill does not transfer it — a session that has only the starter prompt has Rowan's name and none of Rowan's rules.
+
+1. Create a Project.
+2. Upload the contents of `fitness-review-board/` as Project knowledge: `SKILL.md`, everything in `references/`, and everything in `assets/`.
+3. If you already have a Training Record, upload it too or paste it at the start of the conversation. Otherwise, Rowan helps create your first record.
+4. Ask: “Read Rowan’s uploaded instructions. Tell me the version and how new advice is checked.” Rowan must verify the files itself; you do not need to interpret review formulas.
+
+This gives Rowan the rules and your record. It does not give independent reviewers, so new prescriptions still need the manual review route or an agent-capable session. ChatGPT's code interpreter is per-conversation storage like Claude.ai's, so Rowan gives you a replacement record to keep rather than claiming a saved file.
+
+## Charts directly in the conversation
+
+Ask **“Use Rowan to show my progress as an inline chart with Day/Night choices.”** Claude web/desktop chat and Cowork have documented native custom visuals; use that route for quick progress rather than asking for a separate artifact. Rowan checks the session and uses an exact-value table when a graph is unavailable. Claude Code terminal does not gain chat's visual interface through a skill install.
+
+Release 1.12.0 includes the visual handoff and style. Verify the installed/uploaded version; a new release does not update a folder install or account upload you already have. [Fictional smoke test, supported surfaces and limits](VISUALS.md).
+
+## What the board needs
+
+Rowan handles the team. When separate reviewers are available, you can keep talking to Rowan while it organizes their work. Otherwise it explains that new advice is waiting for review and offers one practical way forward. Manual copying between reviewer chats is an optional fallback, not a normal setup step.
+
+<details>
+<summary>Technical details for reviewers and host setup</summary>
+
+For automatic independent reviews, choose a mode with separate-agent tools. Claude Code, Cowork and Codex may provide them; Rowan must check the actual session, not the product name. A reviewer also has to start from an empty context — a fork or continuation mode that inherits the conversation is not an independent reviewer, however correct its report looks. A standard review takes two calls per required reviewer (6 for three roles, up to 16 for eight); a full review takes four (12 for three, up to 32 for eight). The review protocol defines full-review triggers, escalation and bounded retries. [Task routing](../skills/fitness-review-board/references/task-routing.md) selects specialists by the actual decision. Mara and Quinn always review new advice, and all required roles participate at every stage. Tasks use names such as “Nico — Conditioning — Pass 1” when the host supports custom labels. Logging and retrieving unchanged, valid approved plans use lighter routes.
+
+No real independent-review tools means no approved new prescription. Rowan can still organize history, log observations and prepare missing inputs. It should explain an available alternative instead of fabricating a board.
+
+</details>
+
+## Make it easy to keep using Rowan
+
+After a plan is approved, Theo, Rowan's habits and follow-through coach, offers a short handoff: when and where each session fits your week, reminders in apps you already use where your assistant can reach them, a workout card and a log sheet. Skip it if you already have a system.
+
+Say: **“Help me build a routine I'll actually use. Start with what gets in my way.”** Rowan suggests one useful next step, using your existing apps where possible: the approved workout on your phone, a brief check-in, a reminder, or groceries for your reviewed meal plan. Chat alone is a valid choice.
+
+You choose the timing, channel and limits. Rowan checks the actual route and tells you whether it is proposed, configured or verified in use. Claude Code can use exposed scheduling and delivery tools, but a session-bound reminder stops running when its session stops. Rowan checks whether an available desktop or cloud route can read your current record and reach your phone. Claude Cowork supports scheduled tasks in eligible sessions; mobile access and notifications depend on your setup. Claude's iPhone Messages integration prepares drafts for you to send, so it is not an unattended texting route. Codex uses its available scheduler and delivery tools. A skill upload alone activates none of them.
+
+Grocery help can be a list, a prepared cart or an authorized order when supported. Rowan checks the basket, substitutions and full cost before purchase approval. On Claude, each checkout needs your explicit confirmation; if purchases are prohibited in that surface, Rowan leaves the prepared cart for you to check out. You enter any payment credentials yourself. At check-ins, it keeps useful support and adjusts or stops what is burdensome. Say **“Pause my reminders”** to stop the affected routine; Rowan verifies the actual job state. [Workflow and host details](../skills/fitness-review-board/references/personal-workflow.md).
+
+## Keep your progress
+
+Say **“Save my Training Record.”** Rowan should either confirm a verified save or give you a ready-to-download file. Keep that newest file somewhere private. You do not need to edit it. If downloads are unavailable, Rowan gives you the complete text to copy.
+
+The record also keeps each plan version, what changed and its review status.
+
+When starting a new conversation, attach that file (or paste the complete record) and say **“Continue from this Training Record.”** Rowan checks its date and any missing updates. If you keep the record in a Claude or ChatGPT Project, replace the older record with this newest one unless Rowan has actually saved it there. Generating a new file alone does not update your Project. Keep health records outside this public repository.
+
+## Bring your history together
+
+During initial setup, Rowan checks actual chat-search and connected-app tools, retrieves relevant authorized fitness history, and shows what it found before repeating questions. If it cannot see where you track training, it asks once (an app, a watch, your notes or nowhere) and starts with a screenshot or the app's own export of the last month or two; it never asks for your login. Health details it finds are checked with you before use rather than recited back. You can also request this later: “Find my previous fitness conversations and available workout data. Keep my current program and ask only for what is missing.” If those tools are absent, one selected chat export or recent completed workout is enough to start. It does not treat someone else's history or an old assistant suggestion as your completed training.
+
+In Claude, available chat search and local session-history tools cover different sources; Rowan tells you which it used. If Claude chat search is disabled, check **Settings → Memory → Search and reference chats**; older accounts may show **Settings → Capabilities → Preferences** instead. Availability depends on your account and session. [Claude's guide](https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context). Every import receipt also says whether the result was saved, remains in chat, or needs a save retry.
+
+**Easiest Apple Health setup: use Claude on your iPhone.** With an eligible US Pro or Max account, ask: **“Read my Apple Health workouts from the last two weeks for Rowan.”** Choose what to share in the Health permission screen. Rowan checks a sample and carries the useful facts into your Training Record. This native reader is currently in beta; verify it is available in your app. [Claude's instructions](https://support.claude.com/en/articles/11869619-use-claude-with-ios-apps).
+
+No separate export app is needed for that native route. If you are using Claude Code or another desktop host, Rowan gives you a short phone prompt and can use the returned summary without retyping; the phone does not need Rowan installed just to supply that summary. A transferred summary is a snapshot; desktop access and background refresh are checked separately. If unavailable, say **“Skip Health for now”** and keep logging normally.
+
+Rowan also checks that the useful data from your apps is actually in Health. Owning an Apple Watch or syncing through iCloud does not by itself connect the current assistant session. [Apple's access and source guide](https://support.apple.com/en-us/108779).
+
+If there is no Health reader, use a selected app export or small summary. A full Health export is optional and contains much more than workouts. Refreshes run when you return unless a real scheduler and working background reader have been configured. Your Training Record retains source coverage and exclusions so repeated imports do not double-count workouts or restore deleted facts.
+
+## Other hosts
+
+| Host | Install | Start |
+|---|---|---|
+| Another skill-capable assistant | Install the entire `fitness-review-board` folder using that host's supported route. | “Use fitness-review-board.” |
+
+## Update everywhere in one pass
+
+There is no single switch that can replace Rowan inside every assistant account, but you can make the update repeatable. Choose one exact Rowan version and package first, then use that same package/version in the format each host requires. Keep the Training Record outside all skill uploads. For each host, replace or upload Rowan using the staged routes below, start a fresh conversation, and paste this one check:
+
+> Update Rowan to the exact package version I selected. Read `SKILL.md` and tell me the loaded version and record schema. Load my existing Training Record, run the non-blocking migration if it is older, preserve the exact plan and review evidence, and do not create a new fitness plan. Return: host, loaded package version, record schema, migration status, active plan ID/version, missing fields marked unknown, save status, and the smallest next input if any. If the record is newer than this package, use read/log-only mode and do not rewrite it.
+
+Keep a short receipt for each host:
+
+| Host | Loaded version | Record/schema | Migration | Active plan | Save status |
+|---|---|---|---|---|---|
+| Codex |  |  |  |  |  |
+| Claude Code |  |  |  |  |  |
+| Claude.ai / Cowork |  |  |  |  |  |
+| ChatGPT Project |  |  |  |  |  |
+
+Stop only the host that fails verification; restore its backup or re-enable its prior upload. The other hosts can continue independently. This gives one user-facing update routine without pretending that a local install changed a separate account upload.
+
+## Update or remove
+
+1. Preserve the latest accessible Training Record or replacement in its existing location. If there is no saved `athlete.md`, retain the old Rowan copy and continue from the current chat or legacy record; do not create an empty file just to update.
+2. Choose the target deliberately: the repository's main branch is a development copy, while the [latest published release ZIP](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest/download/Rowan-Fitness-Skill.zip) is a tagged release. Compare semantic versions before installing and stop if the download is lower than the version you already use unless you intentionally want a rollback.
+3. Keep the old copy enabled or retained as a uniquely named backup while installing the new one. Start a fresh session and ask: “Which Rowan version did you load? Read it from SKILL.md, then load my current Training Record.” Compare the version with the [release page](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest). If an upload or copy is partial, leave the old copy active, restore it from the backup, and retry; do not delete the only usable Rowan copy before the new version is read and verified.
+4. If the record is from an older package or schema, use the [non-blocking migration guide](../skills/fitness-review-board/references/migration.md). It preserves the active plan and exact approved text, marks new fields unknown or not configured, guards against older packages rewriting newer schemas, and does not reopen review merely because the package changed. Keep ordinary logging available while a connector or save route is unavailable.
+
+| Installed in | Replace it this way |
+|---|---|
+| Claude Code | Prepare the new folder outside skill discovery, keep the old folder as a uniquely named backup, then switch the folder and verify the new version. For a project install, use that project's `.claude/skills/` instead. |
+| Codex desktop / CLI, local tasks | Prepare the new folder outside skill discovery, keep the old folder as a uniquely named backup, then switch the folder and verify the new version. Use the actual skills directory if `CODEX_HOME` is customized. |
+| Claude.ai or Cowork | Upload the new skill while retaining the old upload; once the new upload is ready, disable the old copy so only one is enabled, then verify the new version. If the upload is partial, re-enable the old copy and retry. |
+| ChatGPT Project | Keep a separate backup or temporary Project with the old files. Replace the rule, reference and asset files in the target only after the new set is ready, verify its version, then remove obsolete copies so both versions are not active. If the target is partial, restore the backup or use the temporary Project. |
+
+### Verify each installation
+
+GitHub publication, Codex's local folder, Claude Code's local folder, Claude's account upload and ChatGPT Project files are separate update targets. Update the ones you use; success on one does not establish success on another. Preserve your latest Training Record outside the skill package.
+
+1. After replacement, start a fresh fitness conversation with the updated skill and your latest Training Record. For local Codex, the installed update is available on the next turn.
+2. Ask: **“Read Rowan's installed or uploaded SKILL.md and tell me its version. Open references/task-routing.md and references/research-upkeep.md. Explain how you select reviewers and remember declined suggestions. Tell me where my Training Record can actually be saved. Do not create a new fitness plan for this check.”** Compare the read version with the release you installed.
+3. Where filesystem access exists, compare the complete installed folder with the release contents, including supporting files and `agents/openai.yaml`. If account upload access is unavailable, record that installation as unverified. A successful ZIP download or a version guess is insufficient.
+
+For a ChatGPT Project, replace its uploaded rule, reference and asset files separately and remove obsolete rule copies. Keep its current Training Record. In any host, a package check does not prove that a full independent review board or background job has run.
+
+### Check the update in Claude
+
+Claude Code's local folder and Claude chat/Cowork's uploaded skill are separate installation routes. Updating GitHub or the local folder does not by itself replace an account upload. In **Customize → Skills**, update/replace Rowan with the latest release ZIP and keep only the intended version enabled. If no update control appears, keep the old ZIP for rollback, disable the old Rowan, and upload the new ZIP through the available create/upload control. Enable only the new version; if Claude requires removing the disabled duplicate first, delete that old skill upload and re-upload. Keep your latest Training Record separately and start a fresh conversation so earlier loaded instructions do not compete with the update. [Claude's current upload guide](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills).
+
+Ask Claude: **“Read Rowan's installed SKILL.md and tell me its version. Read task-routing.md and research-upkeep.md. Explain who reviews a sleep-only request, how you remember declined suggestions, and where my Training Record can actually be saved. Do not create a new fitness plan for this check.”** A name or confident version guess is not proof of loading; Claude should read the files and state actual capabilities.
+
+Rowan's new routing, adherence, memory and research rules use the same package on Claude and Codex. `agents/openai.yaml` is optional Codex display metadata, not a Claude dependency. Claude's ordinary chat can log, explain and retrieve applicable approved instructions; automatic boards require actual fresh-context delegation in that session. In Claude Code, use non-fork reviewers; `/fork` and `/subtask` inherit the conversation and cannot satisfy Rowan's independence rule. [Claude subagent documentation](https://code.claude.com/docs/en/sub-agents).
+
+Scheduled jobs belong to the host where they were created. A research watch configured in Codex does not transfer through the ZIP into Claude. Rowan can perform on-use evidence checks in Claude and configure a Claude-native watch only when requested and available; reuse an existing watch instead of duplicating it. No upload itself starts notifications or changes your personal record. These compatibility notes were checked against official documentation on 2026-09-15; live Claude board execution remains unverified.
+
+For an existing Claude Code folder install, this creates a unique backup outside skill discovery. Run it before copying in the new folder:
+
+```bash
+rowan_backup_dir="$(mktemp -d "$HOME/rowan-skill-backup.XXXXXX")" &&
+  mv "$HOME/.claude/skills/fitness-review-board" "$rowan_backup_dir/"
+```
+
+For a default local Codex desktop or CLI install, use the same command with `.codex` in place of `.claude`. For a custom or project install, use its actual skill path. The command moves only the installed skill folder; your Training Record belongs in its separate private location.
+
+To roll back, restore the previous skill folder or upload its release ZIP. Verify the restored version before using it; an older package must not save a newer-schema Training Record unless it has a lossless downgrade map. Keep your newest Training Record when rolling back instructions.
+
+Disable or remove the skill through the host to stop using it. If you configured a background job, disable that job separately. Removing a skill does not delete your chats or personal records.

@@ -1,0 +1,50 @@
+{
+  "version": "1.18.0",
+  "status": "release candidate; publication held",
+  "checked_at": "2026-09-18",
+  "maintenance_review": {
+    "rounds": 3,
+    "fresh_context_rounds": 3,
+    "result": "pass with release hold",
+    "scope": "migration, plan-version dependencies, reminder/material state, outside-program provenance, pain holds and no-stall recovery",
+    "material_findings_remaining": 0,
+    "numeric_rubric_score": "not claimed"
+  },
+  "adversarial_release_review": {
+    "rounds": 5,
+    "fresh_context_rounds": 5,
+    "final_model": "gpt-6-astra",
+    "final_reasoning": "medium",
+    "result": "hold",
+    "material_findings_remaining": 1,
+    "finding": "Private author address remains in the ancestry of the current candidate commit; publication route must avoid exposing that ancestry or receive explicit approval for a history rewrite."
+  },
+  "feature_review": {
+    "source": "1.16.1 feature set",
+    "result": "pass with live-host limits",
+    "invariant_tests": "21 run; 20 passed; 1 optional visual test skipped; migration execution not exercised",
+    "coverage": "Theo handoff, habit loop, exact cards and alternatives, pain holds, spacing/session moves, review-unavailable handoff, outside-program provenance and plan dependencies"
+  },
+  "package_checks": {
+    "skill_files": 33,
+    "exact_source_archive_bytes": true,
+    "markdown_links_and_anchors": "pass",
+    "git_diff_check": "pass"
+  },
+  "privacy_audit": {
+    "result": "hold",
+    "scope": "tracked source, repository object names/history, generated ZIP contents and release file list",
+    "athlete_records_in_release_tree": false,
+    "private_health_or_training_values_in_release_tree": false,
+    "private_chat_links_in_release_tree": false,
+    "private_author_email_in_repository_history": true,
+    "public_metadata": ["maintainer name", "public GitHub no-reply address", "public repository links"]
+  },
+  "limits": [
+    "The interrupted Claude review and its pass rates remain historical and are not reused as 1.18.0 release scores.",
+    "No live Apple Health reader, phone delivery, reminder job, Claude/Cowork execution or clinical/adherence outcome was established.",
+    "The ZIP and source are prepared locally; no GitHub tag, release or public upload has been performed.",
+    "Local candidate docs currently describe 1.18.0 while the local main ref is older; main synchronization or branch-specific wording is required before publication.",
+    "The migration text requires byte-preserving read-only handling for newer-schema records, collision-safe legacy aliases and explicit unknown release dates; those edits passed the final fresh review."
+  ]
+}

@@ -1,0 +1,112 @@
+# Training Record — athlete.md
+
+Fill with this user's actual facts; `unknown` is a valid value. Save outside the skill folder. This is a template, not a preapproved plan.
+
+- Schema: FRB-state-1.9 (optional habit handoff and habit-loop fields on top of 1.8's adherence, routing and memory-lifecycle fields; preserve older facts, approvals and unknowns)
+- Profile ID / preferred name:
+- Revision / parent revision / created date and timezone:
+- Authoritative location or manual copy selected by user:
+- Storage mode / save status / last read-back evidence:
+- Package version:
+- Status: intake / active / paused / needs-input
+
+## Current goal and context
+
+- Goal, priorities, measurement rule, date confirmed:
+- Current measurements (value, units, date, source, confidence):
+- Relevant restrictions and current symptoms, effective date/source:
+- Experience, schedule/time limits, preferences and tone:
+- Existing program/source/version; support/adapt/replace choice:
+- Current phase/block/week, anchor movements, progression/deload rules, familiarity with effort scales:
+- Cardio goals/current mode, frequency/duration/effort, recent tolerance; preferred/avoided modes; relation to lifting/sport:
+- Intensity method/scale, zone source and uncertainty if used; comparable cardio baseline/conditions and next review:
+- What works; what the user wants to keep; previous failed tactics:
+- Nutrition approach, constraints, targets and their source/uncertainty if any; preferred tracking/portion route:
+- Repeatable meals/substitutions, training-time fuel/hydration if applicable; adherence/hunger and adjustment/maintenance triggers:
+- Recipe/variant IDs and approved portion/ingredient conditions; taste/satiety, prep burden, kitchen/storage and repeat/avoid feedback if used:
+- Sleep concern/goal; sleep opportunity, reported sleep and device estimates distinguished; usual timing/variability and daytime functioning when known:
+- Sleep-related constraints/care, relevant shift/travel/caffeine context; sleep tactic IDs and next review if used:
+- Devices/data availability, units, coverage, sync lineage:
+- Gym/exercise IDs, equipment/setup, likes/dislikes, alternatives:
+
+## Personal workflow and follow-through
+
+Fill only for selected routines; keep secrets in the host's account controls.
+
+- Routine/tactic ID and revision; obstacle and chosen support; active/proposed/paused/stopped status and reason:
+- Athlete/account identity; channel/destination reference and verified reach/access; trigger/timezone/travel rule:
+- Quiet hours, frequency/contact limit, permitted notification detail; current authorization and exclusions:
+- Current plan/recipe/record dependencies; actual job/provider IDs and next run when known:
+- Setup/read-back; last attempted/ran/accepted/delivered-if-confirmed status; pending/unknown sends or order reconciliation:
+- Grocery basket/order ID, scoped budget/substitution/fulfillment permissions, confirmed status; no payment credentials:
+- Trial baseline/benefit/window, observed usefulness/burden, keep/adjust/stop decision and next check:
+- Relevant obstacle, chosen option/approved fallback reference, meaningful goal outcome and tolerated burden:
+- Declined/snoozed idea and reason; suppression/revisit trigger; no repeated pitch without changed reason:
+- Theo handoff: offered/declined/completed date; when-and-where plans in the athlete's words; chosen ease tactics; materials sent and format; first check-in; each marked proposed, or agreed with the athlete's own words and date; plan version the handoff and each material, reminder and when-and-where plan depend on:
+- Habit loop: current habit ID, obstacle, one adjustment, expected effect, how it is judged, window, tracking method, keep/adjust/stop/pending decision, reason, confounders and next check:
+- Stop/snooze controls applied or pending; discarded tactics/context not to retry without new justification:
+
+## Source registry and history coverage
+
+Fill only for used sources; retain this section in handoffs when it governs imports.
+
+- Athlete/profile identity; source/account label; source kind and locator:
+- Authorized read scope/date range, exclusions and content-free deleted-source IDs:
+- Original source → sync intermediaries → Rowan reader; supported metrics:
+- Availability status; each connection leg's setup/verification status:
+- Per-metric source authority, units/timezone and unresolved lineage conflicts:
+- Last attempted/read-success dates, searched/imported range, coverage/truncation:
+- Saved import cursor or interval represented with observations; reader boundary/overlap policy and late-correction limits; pending unsaved batch/pages:
+- Refresh mode and trigger; actual background reader/job evidence if configured:
+
+## Current plan and review state
+
+- Review decision / release status:
+- Session-active plan ID / durable-active plan ID:
+- Plan version history (version / date / canonical user-visible label / actual review status and depth / what changed / approval conditions / prior version(s) and supersession scope / candidate or cycle ID / exact-text artifact path or digest / review ledger or report pointer):
+- Dependent material state by plan version (card, log sheet, reminder, when-and-where plan: active / replaced / paused / not-for-use; artifact path or provider ID when known):
+- Exact approved action text or accessible canonical file:
+- Approval validity/conditions and dependent fact revisions:
+- Cycle/stage/candidate ID / depth-policy version, initial/current review depth, reason and transition history / binding mode / packet references:
+- Required role set / routing policy version and reasons / critical fitness areas / rubric version:
+- Stage reports and final score coverage; arithmetic; open findings:
+- Private cycle ledger location; exact artifacts/independence receipts and last verified read-back; context-capacity status and next safe boundary:
+- Normal, corrective, consultation, and pre-draft calls used/reserved, including pending/unknown attempts:
+- Save or activation problem and next recovery step:
+
+## Latest observations
+
+| Date/time | Source/coverage | Planned work | Completed work / intake / sleep observation / measurement | Units and effort | Context/uncertainty |
+|---|---|---|---|---|---|
+
+## Learning ledger
+
+| Tactic/hypothesis | Expected outcome / metric and dated baseline with source | Window and minimum coverage | Meaningful change / guardrail | Adherence and confounders | Result: pending/keep/investigate/revise/reverse; why |
+|---|---|---|---|---|---|
+
+For each decision, retain a stable tactic ID, related plan/version, observation dates and next review trigger. The baseline is a value or identified comparison observations with dates/source; unknown is valid. If a comparison needs a missing baseline, keep it pending/investigate rather than inventing one after seeing the result. Rejected or ineffective tactics remain findable while permitted; deletion requests take precedence. See the recursion reference for interpreting results rather than silently changing targets.
+
+## Maintenance status
+
+Fill only used fields; dates mean checks actually performed, not promised automation.
+
+- Agreed check-in trigger/interval; next due and reason:
+- Automatic upkeep mode: on-use / background configured / background unavailable or failed:
+- Actual scheduled job ID, scope, cadence/timezone, next run and last confirmed result when available:
+- Last record save/restore verification and evidence:
+- Current host/data routes last verified; stale or unavailable capabilities:
+- Relevant source claims needing recheck; affected decision and owner:
+- Private sleep-evidence ledger location if used; source/version/publication date/evidence cutoff, last actual topic search/check, access gaps and next trigger:
+- Package/record migration status; unresolved maintenance items:
+- Current summary size/compaction trigger, archive index and last invariant read-back:
+- Generic science-ledger pointer and relevant claim IDs; incomplete topic searches stay dated and pending:
+
+## Continuity essentials
+
+- Open questions (reason, blocking decision, owner, status):
+- Negative outcomes and tactics not to repeat without new justification:
+- Pending corrections/conflicts/stale facts:
+- Deleted-data tombstones without deleted content; withdrawn approvals:
+- Next check-in trigger and smallest useful next input:
+- Updates represented through (dates/coverage); later observations still only in chat:
+- Export/restore instructions: bring this complete checkpoint plus accessible referenced active-plan and review files to the next session; verify current constraints before activation.

@@ -1,0 +1,122 @@
+{
+  "format": "Rowan maintainer scan summary, not an upstream raw report or security certification",
+  "generated_at": "2026-09-09T23:09:33.178690+00:00",
+  "target": {
+    "repository": "https://github.com/MuscleOtter/rowan-fitness-skill",
+    "release": "v1.5.2",
+    "release_url": "https://github.com/MuscleOtter/rowan-fitness-skill/releases/tag/v1.5.2",
+    "skill_path": "skills/fitness-review-board",
+    "version": "1.5.2",
+    "package_sha256": "03f788a3bd772c82f4820ff2dee47b7d6e2a0419edfbf8c19eefec25d0214504",
+    "file_count": 18,
+    "skill_tree_digest": {
+      "algorithm": "sha256",
+      "digest": "a6fe505d2ecb24904dd4faec83d37d4d76324d718dfa1b0a7aadf19ff0b34872",
+      "file_count": 18
+    }
+  },
+  "evaluator": {
+    "repository": "https://github.com/NVIDIA/SkillEvaluator.git",
+    "commit": "ff349e0d9f03868fc27d1e2bbd62eb849cba66c9",
+    "commit_url": "https://github.com/NVIDIA/SkillEvaluator/commit/ff349e0d9f03868fc27d1e2bbd62eb849cba66c9",
+    "mode": "tier1",
+    "options": [
+      "validate",
+      "--no-llm",
+      "--no-dedup"
+    ],
+    "environment_policy": "minimal_static",
+    "exit_code": 1
+  },
+  "overall_status": "incomplete",
+  "passed_validators": 10,
+  "total_validators": 11,
+  "incomplete_scans": [
+    "skillspector"
+  ],
+  "checks": [
+    {
+      "validator": "Schema & Repository Governance",
+      "status": "passed",
+      "errors": [],
+      "notes": []
+    },
+    {
+      "validator": "Semantic Version Validation",
+      "status": "passed",
+      "errors": [],
+      "notes": []
+    },
+    {
+      "validator": "Security Scan",
+      "status": "incomplete",
+      "errors": [
+        "skillspector 2.9.5/2.9.6 JSON field 'analysis_completeness.status' must be absent; security scan did not complete"
+      ],
+      "notes": []
+    },
+    {
+      "validator": "PII Scan",
+      "status": "passed",
+      "errors": [],
+      "notes": []
+    },
+    {
+      "validator": "License Compliance",
+      "status": "passed",
+      "errors": [],
+      "notes": []
+    },
+    {
+      "validator": "Code Risk Analysis",
+      "status": "passed",
+      "errors": [],
+      "notes": [
+        "No code files found - skipping code risk analysis"
+      ]
+    },
+    {
+      "validator": "Secrets Detection",
+      "status": "passed",
+      "errors": [],
+      "notes": []
+    },
+    {
+      "validator": "Code Integrity & Hygiene",
+      "status": "passed",
+      "errors": [],
+      "notes": []
+    },
+    {
+      "validator": "Unicode Smuggling Detection",
+      "status": "passed",
+      "errors": [],
+      "notes": []
+    },
+    {
+      "validator": "QUALITY",
+      "status": "passed",
+      "errors": [],
+      "notes": []
+    },
+    {
+      "validator": "SCRIPT_LINT",
+      "status": "passed",
+      "errors": [],
+      "notes": [
+        "[OK] lint: No scripts/ or tools/ directory found"
+      ]
+    }
+  ],
+  "quality_heuristic": {
+    "score": 83.2,
+    "grade": "B",
+    "meaning": "Heuristic documentation score; not an independent fitness-board grade or outcome measure"
+  },
+  "limits": [
+    "Only the 18-file distributable skill was scanned; repository packaging code was separately inspected and exercised.",
+    "No live Claude session or real athlete outcome was tested.",
+    "The raw report remains in the private audit folder; local paths and host metadata are omitted from this summary.",
+    "Scan dependencies were resolved by the evaluator environment; this receipt does not pin the complete transitive toolchain."
+  ]
+}
