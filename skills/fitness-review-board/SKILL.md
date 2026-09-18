@@ -4,7 +4,7 @@ description: "Coach experienced adults in training, nutrition and sleep; preserv
 license: MIT
 metadata:
   author: "Bradley Dworkin <161567350+MuscleOtter@users.noreply.github.com>"
-  version: "1.18.0"
+  version: "1.18.1"
 ---
 
 # Rowan and the Fitness Review Board

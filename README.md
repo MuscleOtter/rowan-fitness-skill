@@ -8,7 +8,7 @@ Rowan is a free, open-source **AI fitness coaching skill for Claude and Codex**,
 
 [**Download skill ZIP**](https://github.com/MuscleOtter/rowan-fitness-skill/releases/latest/download/Rowan-Fitness-Skill.zip) · [Start in Claude](#start-in-claude) · [Other apps](#start-in-chatgpt-or-codex) · [Update everywhere](docs/SETUP.md#update-everywhere-in-one-pass) · [FAQ](docs/FAQ.md)
 
-Main now contains published **1.18.0**: [changes](CHANGELOG.md#1180--2026-09-18-published), [validation](docs/VALIDATION.md#1180-selected-1161-repairs) and the [validation receipt](docs/validation-1.18.0.json). Download the [1.18.0 release ZIP](https://github.com/MuscleOtter/rowan-fitness-skill/releases/download/v1.18.0/Rowan-Fitness-Skill.zip), check its [checksum](https://github.com/MuscleOtter/rowan-fitness-skill/releases/download/v1.18.0/SHA256SUMS.txt), or use the [release page](https://github.com/MuscleOtter/rowan-fitness-skill/releases/tag/v1.18.0).
+This branch contains the **1.18.1 release candidate**, with [host compatibility fixes](CHANGELOG.md#1181--2026-09-18-unreleased) and a [final compatibility review](docs/FINAL-COMPATIBILITY-REVIEW.md). The latest published package remains 1.18.0; candidate files and its Project document have not been released.
 
 ## Start in Claude
 
@@ -99,7 +99,7 @@ At check-ins, Rowan compares what happened with what was expected: keep useful t
 
 **Codex desktop or CLI:** ask “Install or update fitness-review-board from https://github.com/MuscleOtter/rowan-fitness-skill, then help me get started.” A local session with the supported installer can handle the files and check review capabilities. [Local installation](docs/SETUP.md#codex-desktop-and-cli).
 
-**ChatGPT:** [add the rule files to a Project](docs/SETUP.md#chatgpt-app). Naming Rowan alone does not install it. Intake and logging work with readable rules; new recommendations need independent review elsewhere.
+**ChatGPT:** use [native skill support where available, or the complete Project document](docs/SETUP.md#chatgpt-app). Verify loaded rules, reviewer tools and saving separately.
 
 **Claude Code:** follow the [folder-install instructions](docs/SETUP.md#claude-code).
 
@@ -116,7 +116,7 @@ Use the [extraction instructions](docs/SETUP.md#get-the-folder) for local instal
 | Skill identifier | `fitness-review-board` |
 | Package directory | [`skills/fitness-review-board`](skills/fitness-review-board/SKILL.md) — install the complete folder |
 | Format and license | Agent Skills (`SKILL.md` with YAML metadata); MIT |
-| Host requirements | Claude Code, capable Cowork sessions or Codex can run reviews when fresh reviewer and file tools are available. Ordinary chat supports intake/logging; ChatGPT uses the documented Project fallback. |
+| Host requirements | Claude Code, capable Cowork sessions or Codex can run reviews when fresh reviewer and file tools are available. Ordinary chat supports intake/logging; ChatGPT uses native skill support where exposed or the documented Project fallback. |
 
 [Sleep coaching and clinical boundaries](skills/fitness-review-board/references/sleep-recovery.md) · [Sleep research sources and freshness](skills/fitness-review-board/references/sleep-evidence.md)
 
