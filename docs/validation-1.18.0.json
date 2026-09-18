@@ -1,6 +1,6 @@
 {
   "version": "1.18.0",
-  "status": "release candidate; clean public branch ready for publication approval",
+  "status": "main synchronized; release tag and upload pending",
   "checked_at": "2026-09-18",
   "maintenance_review": {
     "rounds": 3,
@@ -32,7 +32,7 @@
     "git_diff_check": "pass"
   },
   "privacy_audit": {
-    "result": "pass for clean public branch; legacy refs held",
+    "result": "pass for public main; legacy refs held",
     "scope": "clean public branch source, its reachable history, generated ZIP contents and release file list",
     "athlete_records_in_release_tree": false,
     "private_health_or_training_values_in_release_tree": false,
@@ -44,8 +44,8 @@
   "limits": [
     "The interrupted Claude review and its pass rates remain historical and are not reused as 1.18.0 release scores.",
     "No live Apple Health reader, phone delivery, reminder job, Claude/Cowork execution or clinical/adherence outcome was established.",
-    "The ZIP and source are prepared locally; no GitHub tag, release or public upload has been performed.",
-    "The clean public branch is the only approved publication source; local main and the release-prep ref are older and retain legacy private author metadata.",
+    "Public main is synchronized; no GitHub tag, release asset or release upload has been created yet.",
+    "Public main and the clean release branch are the approved publication sources; the local release-prep ref and other legacy refs retain historical private author metadata.",
     "The migration text requires byte-preserving read-only handling for newer-schema records, collision-safe legacy aliases and explicit unknown release dates; those edits passed the final fresh review."
   ]
 }
