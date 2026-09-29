@@ -20,7 +20,7 @@ Sources checked: [OpenAI skills](https://learn.chatgpt.com/docs/build-skills), [
 
 The initial feature critic found no material defect in authored migration, plan versioning, review depth, save authority, or Theo rules. Nine fictional scenario walkthroughs informed that judgment. A separate worker generated eight fictional user replies and self-scored 48 scoped checks without observing a violation; those checks are model simulations, not live-host results or independent efficacy measurements.
 
-The revised candidate suite ran 22 tests: 21 passed and one optional Markdown-parser check skipped because its dependency was unavailable. The new packaging check tests exact reconstruction of every source section, including nested fences, Unicode and missing trailing newlines, and validates both asset checksums. An independent comparison also reconstructed all 33 real Project source sections and matched them and the ZIP against the skill files. Changed documentation file links and whitespace checks passed. A scoped scan found no private machine paths or secret markers in the changed public text or skill payload. The package contains public author attribution and a blank record template, not an athlete record; this is not a general security certification.
+The revised candidate suite ran 22 checks: the three packaging tests checked into `tools/test_package.py` (all passing, including exact reconstruction of every source section and both asset checksums) plus interactive review-time checks that are not part of the repository suite. One optional Markdown-parser check skipped because its dependency was unavailable. The new packaging check tests exact reconstruction of every source section, including nested fences, Unicode and missing trailing newlines, and validates both asset checksums. An independent comparison also reconstructed all 33 real Project source sections and matched them and the ZIP against the skill files. Changed documentation file links and whitespace checks passed. A scoped scan found no private machine paths or secret markers in the changed public text or skill payload. The package contains public author attribution and a blank record template, not an athlete record; this is not a general security certification.
 
 Live Claude account installation, Cowork reviewer startup, full native coaching cycles, cross-session recovery, Apple Health reads and reminder execution remain unverified. A native skill does not grant these capabilities. No private athlete data is included in fixtures or public artifacts.
 
@@ -32,7 +32,7 @@ The exact-final review inspected [candidate commit 38e5132](https://github.com/M
 
 - ZIP SHA-256: `6bbe065b63b5064740ea28294325e99d4d4dd064e90793baa431b654525e0c2a`
 - Project document SHA-256: `d7b0405c533ca22d90ef1a19a7825b46a054a3d7272ef196247c51b587460243`
-- Local execution: 21 tests passed, one optional check skipped; real artifact reconstruction and deterministic rebuild passed.
+- Local execution: the 3 checked-in tests pass; the remaining review-time checks are not reproducible from the repository. Real artifact reconstruction and deterministic rebuild passed.
 - Live host execution: unverified as detailed above.
 - Longitudinal athlete outcomes: not established.
 

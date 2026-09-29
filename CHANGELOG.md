@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.18.1 — 2026-09-18 (unreleased)
+## 1.18.1 — 2026-09-28 (unreleased)
 
 Corrects host setup: discover the actual Codex skill path, recognize native ChatGPT skills when exposed, and provide one complete Project knowledge document to avoid per-Project file-count limits. Installation verification compares files as well as version labels. Clarifies that a reviewed proposal keeps its assigned plan number and held-action quotations keep their warning adjacent without becoming portable action cards. Reviewer independence, prescription gates and personal-record semantics are unchanged. See the [compatibility review](docs/FINAL-COMPATIBILITY-REVIEW.md) for checks and limitations.
 
